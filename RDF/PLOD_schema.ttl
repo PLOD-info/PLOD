@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix gnjp: <http://geonames.jp/resource/> .
-@prefix plod: <https://plod.info/property/> .
+@prefix plod: <http://plod.info/property/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -121,15 +121,15 @@ dcterms:isReferencedBy rdf:type owl:ObjectProperty .
 foaf:age rdf:type owl:DatatypeProperty .
 
 
-###  https://plod.info/property/dateConfirmed
+###  http://plod.info/property/dateConfirmed
 plod:dateConfirmed rdf:type owl:DatatypeProperty .
 
 
-###  https://plod.info/property/dateFevered
+###  http://plod.info/property/dateFevered
 plod:dateFevered rdf:type owl:DatatypeProperty .
 
 
-###  https://plod.info/property/numberOfPatients
+###  http://plod.info/property/numberOfPatients
 plod:numberOfPatients rdf:type owl:DatatypeProperty .
 
 
@@ -196,41 +196,41 @@ gnjp:東京都 rdf:type owl:NamedIndividual ,
                                                             schema:MedicalCode .
 
 
-###  https://plod.info/data/12202001311
-<https://plod.info/data/12202001311> rdf:type owl:NamedIndividual ,
+###  http://plod.info/data/12202001311
+<http://plod.info/data/12202001311> rdf:type owl:NamedIndividual ,
                                               schema:Event ;
                                      rdfs:label "12202001311" .
 
 
-###  https://plod.info/data/12202001311-P01
-<https://plod.info/data/12202001311-P01> rdf:type owl:NamedIndividual ,
+###  http://plod.info/data/12202001311-P01
+<http://plod.info/data/12202001311-P01> rdf:type owl:NamedIndividual ,
                                                   schema:Patient ;
                                          plod:dateConfirmed "2020-01-31"^^schema:DateTime ;
                                          plod:dateFevered ""^^schema:DateTime ;
                                          rdfs:label "12202001311-P01" .
 
 
-###  https://plod.info/data/12202001311-P01-M01
-<https://plod.info/data/12202001311-P01-M01> rdf:type owl:NamedIndividual ,
+###  http://plod.info/data/12202001311-P01-M01
+<http://plod.info/data/12202001311-P01-M01> rdf:type owl:NamedIndividual ,
                                                       schema:MoveAction ;
                                              rdfs:label "12202001311-P01-M01" .
 
 
-###  https://plod.info/data/12202001311-P01-M02
-<https://plod.info/data/12202001311-P01-M02> rdf:type owl:NamedIndividual ,
+###  http://plod.info/data/12202001311-P01-M02
+<http://plod.info/data/12202001311-P01-M02> rdf:type owl:NamedIndividual ,
                                                       schema:MoveAction ;
                                              rdfs:label "12202001311-P01-M02" .
 
 
-###  https://plod.info/data/12202001311-R01
-<https://plod.info/data/12202001311-R01> rdf:type owl:NamedIndividual ,
+###  http://plod.info/data/12202001311-R01
+<http://plod.info/data/12202001311-R01> rdf:type owl:NamedIndividual ,
                                                   schema:Report ;
                                          plod:numberOfPatients "1"^^schema:Integer ;
                                          rdfs:label "12202001311-R01" .
 
 
-###  https://plod.info/entity/COVID-19
-<https://plod.info/entity/COVID-19> rdf:type owl:NamedIndividual ,
+###  http://plod.info/entity/COVID-19
+<http://plod.info/entity/COVID-19> rdf:type owl:NamedIndividual ,
                                              schema:InfectiousDisease ;
                                     rdfs:label "COVID-19" .
 

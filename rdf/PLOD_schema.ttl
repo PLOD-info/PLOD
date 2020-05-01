@@ -1,17 +1,17 @@
-@prefix : <http://plod.info/schema/> .
+@prefix : <http://plod.info/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix gnjp: <http://geonames.jp/resource/> .
-@prefix plod: <http://plod.info/schema/> .
+@prefix plod: <http://plod.info/rdf/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://plod.info/schema/> .
+@base <http://plod.info/rdf/> .
 
-<http://plod.info/schema/> rdf:type owl:Ontology .
+<http://plod.info/rdf/> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
@@ -73,19 +73,19 @@ schema:url rdf:type owl:ObjectProperty .
 #    Data properties
 #################################################################
 
-###  http://plod.info/schema/dateConfirmed
+###  http://plod.info/rdf/dateConfirmed
 plod:dateConfirmed rdf:type owl:DatatypeProperty ;
                    rdfs:domain schema:Report ;
                    rdfs:range xsd:dateTime .
 
 
-###  http://plod.info/schema/dateFevered
+###  http://plod.info/rdf/dateFevered
 plod:dateFevered rdf:type owl:DatatypeProperty ;
                  rdfs:domain schema:Report ;
                  rdfs:range xsd:dateTime .
 
 
-###  http://plod.info/schema/numberOfPatients
+###  http://plod.info/rdf/numberOfPatients
 plod:numberOfPatients rdf:type owl:DatatypeProperty ;
                       rdfs:domain schema:Report ;
                       rdfs:range xsd:integer .

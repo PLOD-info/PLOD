@@ -22,47 +22,71 @@ dcterms:isReferencedBy rdf:type owl:ObjectProperty .
 
 
 ###  http://schema.org/agent
-schema:agent rdf:type owl:ObjectProperty .
+schema:agent rdf:type owl:ObjectProperty ;
+             rdfs:domain schema:Action ;
+             rdfs:range schema:Organization ,
+                        schema:Person .
 
 
 ###  http://schema.org/code
-schema:code rdf:type owl:ObjectProperty .
+schema:code rdf:type owl:ObjectProperty ;
+            rdfs:domain schema:MedicalEntity ;
+            rdfs:range schema:MedicalCode .
 
 
 ###  http://schema.org/fromLocation
-schema:fromLocation rdf:type owl:ObjectProperty .
+schema:fromLocation rdf:type owl:ObjectProperty ;
+                    rdfs:domain schema:MoveAction ;
+                    rdfs:range schema:Place .
 
 
 ###  http://schema.org/healthCondition
-schema:healthCondition rdf:type owl:ObjectProperty .
+schema:healthCondition rdf:type owl:ObjectProperty ;
+                       rdfs:domain schema:Patient ;
+                       rdfs:range schema:MedicalCondition .
 
 
 ###  http://schema.org/homeLocation
-schema:homeLocation rdf:type owl:ObjectProperty .
+schema:homeLocation rdf:type owl:ObjectProperty ;
+                    rdfs:domain schema:Person ;
+                    rdfs:range schema:Place .
 
 
 ###  http://schema.org/instrument
-schema:instrument rdf:type owl:ObjectProperty .
+schema:instrument rdf:type owl:ObjectProperty ;
+                  rdfs:domain schema:Action .
 
 
 ###  http://schema.org/location
-schema:location rdf:type owl:ObjectProperty .
+schema:location rdf:type owl:ObjectProperty ;
+                rdfs:domain schema:Action ,
+                            schema:Event ,
+                            schema:Organization ;
+                rdfs:range schema:Place .
 
 
 ###  http://schema.org/mainEntity
-schema:mainEntity rdf:type owl:ObjectProperty .
+schema:mainEntity rdf:type owl:ObjectProperty ;
+                  rdfs:domain schema:CreativeWork .
 
 
 ###  http://schema.org/publisher
-schema:publisher rdf:type owl:ObjectProperty .
+schema:publisher rdf:type owl:ObjectProperty ;
+                 rdfs:domain schema:CreativeWork ;
+                 rdfs:range schema:Organization ,
+                            schema:Person .
 
 
 ###  http://schema.org/subjectOf
-schema:subjectOf rdf:type owl:ObjectProperty .
+schema:subjectOf rdf:type owl:ObjectProperty ;
+                 rdfs:range schema:CreativeWork ,
+                            schema:Event .
 
 
 ###  http://schema.org/toLocation
-schema:toLocation rdf:type owl:ObjectProperty .
+schema:toLocation rdf:type owl:ObjectProperty ;
+                  rdfs:domain schema:MoveAction ;
+                  rdfs:range schema:Place .
 
 
 ###  http://schema.org/url
@@ -135,28 +159,62 @@ foaf:age rdf:type owl:DatatypeProperty .
 #    Classes
 #################################################################
 
+###  http://schema.org/Action
+schema:Action rdf:type owl:Class .
+
+
+###  http://schema.org/Article
+schema:Article rdf:type owl:Class ;
+               rdfs:subClassOf schema:CreativeWork .
+
+
+###  http://schema.org/CreativeWork
+schema:CreativeWork rdf:type owl:Class .
+
+
 ###  http://schema.org/Event
 schema:Event rdf:type owl:Class .
 
 
 ###  http://schema.org/GovernmentOrganization
-schema:GovernmentOrganization rdf:type owl:Class .
+schema:GovernmentOrganization rdf:type owl:Class ;
+                              rdfs:subClassOf schema:Organization .
 
 
 ###  http://schema.org/InfectiousDisease
-schema:InfectiousDisease rdf:type owl:Class .
+schema:InfectiousDisease rdf:type owl:Class ;
+                         rdfs:subClassOf schema:MedicalCondition .
 
 
 ###  http://schema.org/MedicalCode
 schema:MedicalCode rdf:type owl:Class .
 
 
+###  http://schema.org/MedicalCondition
+schema:MedicalCondition rdf:type owl:Class ;
+                        rdfs:subClassOf schema:MedicalEntity .
+
+
+###  http://schema.org/MedicalEntity
+schema:MedicalEntity rdf:type owl:Class .
+
+
 ###  http://schema.org/MoveAction
-schema:MoveAction rdf:type owl:Class .
+schema:MoveAction rdf:type owl:Class ;
+                  rdfs:subClassOf schema:Action .
+
+
+###  http://schema.org/Organization
+schema:Organization rdf:type owl:Class .
 
 
 ###  http://schema.org/Patient
-schema:Patient rdf:type owl:Class .
+schema:Patient rdf:type owl:Class ;
+               rdfs:subClassOf schema:Person .
+
+
+###  http://schema.org/Person
+schema:Person rdf:type owl:Class .
 
 
 ###  http://schema.org/Place
@@ -164,7 +222,8 @@ schema:Place rdf:type owl:Class .
 
 
 ###  http://schema.org/Report
-schema:Report rdf:type owl:Class .
+schema:Report rdf:type owl:Class ;
+              rdfs:subClassOf schema:Article .
 
 
 ###  http://schema.org/WebPage

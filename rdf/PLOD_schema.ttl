@@ -89,10 +89,6 @@ schema:toLocation rdf:type owl:ObjectProperty ;
                   rdfs:range schema:Place .
 
 
-###  http://schema.org/url
-schema:url rdf:type owl:ObjectProperty .
-
-
 #################################################################
 #    Data properties
 #################################################################
@@ -149,6 +145,11 @@ schema:name rdf:type owl:DatatypeProperty .
 
 ###  http://schema.org/startTime
 schema:startTime rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/url
+schema:url rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:anyURI .
 
 
 ###  http://xmlns.com/foaf/0.1/age
@@ -305,7 +306,6 @@ gnjp:東京都 rdf:type owl:NamedIndividual ,
                                         dcterms:isReferencedBy <https://www.pref.chiba.lg.jp/shippei/kansenshou/keihatu-index.html> ;
                                         schema:mainEntity <http://plod.info/data/12202001311> ;
                                         schema:publisher <http://plod.info/data/ChibaPrefecturalGovernment> ;
-                                        schema:url <https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200131.html> ;
                                         plod:numberOfPatients 1 ;
                                         rdfs:label "12202001311-R01" .
 

@@ -254,8 +254,8 @@ gnjp:東京都 rdf:type owl:NamedIndividual ,
          rdfs:label "Tokyo" .
 
 
-###  http://plod.info/data/COVID-19
-<http://plod.info/data/COVID-19> rdf:type owl:NamedIndividual ,
+###  http://plod.info/rdf/COVID-19
+<http://plod.info/rdf/COVID-19> rdf:type owl:NamedIndividual ,
                                           schema:InfectiousDisease ;
                                  schema:code <http://purl.bioontology.org/ontology/ICD10/U07.1> ;
                                  schema:infectiousAgent "2019-nCoV" ;
@@ -263,53 +263,53 @@ gnjp:東京都 rdf:type owl:NamedIndividual ,
                                  rdfs:label "COVID-19" .
 
 
-###  http://plod.info/data/ChibaPrefecturalGovernment
-<http://plod.info/data/ChibaPrefecturalGovernment> rdf:type owl:NamedIndividual ,
+###  http://plod.info/rdf/ChibaPrefecturalGovernment
+<http://plod.info/rdf/ChibaPrefecturalGovernment> rdf:type owl:NamedIndividual ,
                                                             schema:GovernmentOrganization ;
                                                    schema:location gnjp:千葉県 ;
                                                    rdfs:label "Chiba Prefectural Government" ;
                                                    rdfs:seeAlso <http://www.wikidata.org/entity/Q21666178> .
 
 
-###  http://plod.info/data/12202001311
-<http://plod.info/data/12202001311> rdf:type owl:NamedIndividual ,
+###  http://plod.info/rdf/12202001311
+<http://plod.info/rdf/12202001311> rdf:type owl:NamedIndividual ,
                                              schema:Event ;
                                     rdfs:label "12202001311" .
 
 
-###  http://plod.info/data/12202001311-P01
-<http://plod.info/data/12202001311-P01> rdf:type owl:NamedIndividual ,
+###  http://plod.info/rdf/12202001311-P01
+<http://plod.info/rdf/12202001311-P01> rdf:type owl:NamedIndividual ,
                                                  schema:Patient ;
-                                        schema:healthCondition <http://plod.info/data/COVID-19> ;
+                                        schema:healthCondition <http://plod.info/rdf/COVID-19> ;
                                         schema:homeLocation gnjp:千葉県 ;
-                                        schema:subjectOf <http://plod.info/data/12202001311> ;
+                                        schema:subjectOf <http://plod.info/rdf/12202001311> ;
                                         rdfs:label "12202001311-P01" .
 
 
-###  http://plod.info/data/12202001311-P01-M01
-<http://plod.info/data/12202001311-P01-M01> rdf:type owl:NamedIndividual ,
+###  http://plod.info/rdf/12202001311-P01-M01
+<http://plod.info/rdf/12202001311-P01-M01> rdf:type owl:NamedIndividual ,
                                                      schema:MoveAction ;
-                                            schema:agent <http://plod.info/data/12202001311-P01> ;
+                                            schema:agent <http://plod.info/rdf/12202001311-P01> ;
                                             schema:fromLocation gnjp:東京都 ;
                                             schema:toLocation gnjp:大阪府 ;
                                             rdfs:label "12202001311-P01-M01" .
 
 
-###  http://plod.info/data/12202001311-P01-M02
-<http://plod.info/data/12202001311-P01-M02> rdf:type owl:NamedIndividual ,
+###  http://plod.info/rdf/12202001311-P01-M02
+<http://plod.info/rdf/12202001311-P01-M02> rdf:type owl:NamedIndividual ,
                                                      schema:MoveAction ;
-                                            schema:agent <http://plod.info/data/12202001311-P01> ;
+                                            schema:agent <http://plod.info/rdf/12202001311-P01> ;
                                             schema:fromLocation gnjp:大阪府 ;
                                             schema:toLocation gnjp:東京都 ;
                                             rdfs:label "12202001311-P01-M02" .
 
 
-###  http://plod.info/data/12202001311-R01
-<http://plod.info/data/12202001311-R01> rdf:type owl:NamedIndividual ,
+###  http://plod.info/rdf/12202001311-R01
+<http://plod.info/rdf/12202001311-R01> rdf:type owl:NamedIndividual ,
                                                  schema:Report ;
                                         dcterms:isReferencedBy <https://www.pref.chiba.lg.jp/shippei/kansenshou/keihatu-index.html> ;
-                                        schema:mainEntity <http://plod.info/data/12202001311> ;
-                                        schema:publisher <http://plod.info/data/ChibaPrefecturalGovernment> ;
+                                        schema:mainEntity <http://plod.info/rdf/12202001311> ;
+                                        schema:publisher <http://plod.info/rdf/ChibaPrefecturalGovernment> ;
                                         plod:numberOfPatients 1 ;
                                         schema:url "https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200131.html"^^xsd:anyURI ;
                                         rdfs:label "12202001311-R01" .

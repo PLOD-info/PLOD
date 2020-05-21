@@ -1,0 +1,936 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schema.org", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1", "http://plod.info/rdf" ],
+    "prefixList" : {
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "gnjp" : "http://geonames.jp/resource/",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "plod" : "http://plod.info/rdf/",
+      "dcterms" : "http://purl.org/dc/terms/",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "" : "http://plod.info/rdf/",
+      "xml" : "http://www.w3.org/XML/1998/namespace",
+      "schema" : "http://schema.org/",
+      "foaf" : "http://xmlns.com/foaf/0.1/",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "iri" : "http://plod.info/rdf/"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "46",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "48",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "32",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://schema.org/Person",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://schema.org/InfectiousDisease",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InfectiousDisease"
+    },
+    "individuals" : [ {
+      "iri" : "http://plod.info/rdf/COVID-19",
+      "baseIri" : "http://plod.info/rdf",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "en",
+          "value" : "2019-nCoV acute respiratory disease",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COVID-19",
+        "undefined" : "COVID-19"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://schema.org/Article",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Article"
+    },
+    "subClasses" : [ "26" ],
+    "attributes" : [ "external" ],
+    "id" : "25",
+    "superClasses" : [ "13" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "19", "0" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://schema.org/Action",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Action"
+    },
+    "subClasses" : [ "21" ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://schema.org/Organization",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "subClasses" : [ "18" ],
+    "attributes" : [ "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://schema.org/CreativeWork",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CreativeWork"
+    },
+    "subClasses" : [ "12", "25" ],
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "instances" : 0,
+    "union" : [ "13", "41" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "40"
+  }, {
+    "instances" : 0,
+    "union" : [ "41", "19", "6" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "42"
+  }, {
+    "instances" : 0,
+    "union" : [ "19", "0" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "45",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "46",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "48",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "32",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://schema.org/MedicalCondition",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MedicalCondition"
+    },
+    "subClasses" : [ "16" ],
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://schema.org/Patient",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Patient"
+    },
+    "individuals" : [ {
+      "iri" : "http://plod.info/rdf/12202001311-P01",
+      "baseIri" : "http://plod.info/rdf",
+      "labels" : {
+        "IRI-based" : "12202001311-P01",
+        "undefined" : "12202001311-P01"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://schema.org/Place",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Place"
+    },
+    "individuals" : [ {
+      "iri" : "http://geonames.jp/resource/大阪府",
+      "baseIri" : "http://geonames.jp/resource",
+      "labels" : {
+        "IRI-based" : "大阪府",
+        "undefined" : "Osaka"
+      }
+    }, {
+      "iri" : "http://geonames.jp/resource/東京都",
+      "baseIri" : "http://geonames.jp/resource",
+      "labels" : {
+        "IRI-based" : "東京都",
+        "undefined" : "Tokyo"
+      }
+    }, {
+      "iri" : "http://geonames.jp/resource/千葉県",
+      "baseIri" : "http://geonames.jp/resource",
+      "labels" : {
+        "IRI-based" : "千葉県",
+        "undefined" : "Chiba"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://schema.org/MedicalEntity",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MedicalEntity"
+    },
+    "subClasses" : [ "9" ],
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://schema.org/MoveAction",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MoveAction"
+    },
+    "individuals" : [ {
+      "iri" : "http://plod.info/rdf/12202001311-P01-M01",
+      "baseIri" : "http://plod.info/rdf",
+      "labels" : {
+        "IRI-based" : "12202001311-P01-M01",
+        "undefined" : "12202001311-P01-M01"
+      }
+    }, {
+      "iri" : "http://plod.info/rdf/12202001311-P01-M02",
+      "baseIri" : "http://plod.info/rdf",
+      "labels" : {
+        "IRI-based" : "12202001311-P01-M02",
+        "undefined" : "12202001311-P01-M02"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://schema.org/GovernmentOrganization",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GovernmentOrganization"
+    },
+    "individuals" : [ {
+      "iri" : "http://plod.info/rdf/ChibaPrefecturalGovernment",
+      "baseIri" : "http://plod.info/rdf",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q21666178",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ChibaPrefecturalGovernment",
+        "undefined" : "Chiba Prefectural Government"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "18",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://schema.org/MedicalCode",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MedicalCode"
+    },
+    "individuals" : [ {
+      "iri" : "http://purl.bioontology.org/ontology/ICD10/U07.1",
+      "baseIri" : "http://purl.bioontology.org/ontology/ICD10",
+      "labels" : {
+        "IRI-based" : "U07.1"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://schema.org/Event",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "individuals" : [ {
+      "iri" : "http://plod.info/rdf/12202001311",
+      "baseIri" : "http://plod.info/rdf",
+      "labels" : {
+        "IRI-based" : "12202001311",
+        "undefined" : "12202001311"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://schema.org/WebPage",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WebPage"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.pref.chiba.lg.jp/shippei/kansenshou/keihatu-index.html",
+      "baseIri" : "https://www.pref.chiba.lg.jp/shippei/kansenshou",
+      "labels" : {
+        "IRI-based" : "keihatu-index.html"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "12",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://schema.org/Report",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Report"
+    },
+    "individuals" : [ {
+      "iri" : "http://plod.info/rdf/12202001311-R01",
+      "baseIri" : "http://plod.info/rdf",
+      "labels" : {
+        "IRI-based" : "12202001311-R01",
+        "undefined" : "12202001311-R01"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "26",
+    "superClasses" : [ "25" ]
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://schema.org/codingSystem",
+    "baseIri" : "http://schema.org",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "codingSystem"
+    },
+    "domain" : "3",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://schema.org/startTime",
+    "baseIri" : "http://schema.org",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "startTime"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "5"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "8"
+  }, {
+    "range" : "13",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://schema.org/datePublished",
+    "baseIri" : "http://schema.org",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "datePublished"
+    },
+    "domain" : "13",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "14"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://schema.org/toLocation",
+    "baseIri" : "http://schema.org",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "toLocation"
+    },
+    "domain" : "21",
+    "attributes" : [ "external", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "9",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
+  }, {
+    "range" : "13",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "range" : "0",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "6",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "range" : "25",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://purl.org/dc/terms/isReferencedBy",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "isReferencedBy"
+    },
+    "domain" : "32",
+    "attributes" : [ "external", "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://schema.org/description",
+    "baseIri" : "http://schema.org",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "description"
+    },
+    "domain" : "32",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://schema.org/codeValue",
+    "baseIri" : "http://schema.org",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "codeValue"
+    },
+    "domain" : "3",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://schema.org/fromLocation",
+    "baseIri" : "http://schema.org",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "fromLocation"
+    },
+    "domain" : "21",
+    "attributes" : [ "external", "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://schema.org/gender",
+    "baseIri" : "http://schema.org",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "gender"
+    },
+    "domain" : "0",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://schema.org/publisher",
+    "baseIri" : "http://schema.org",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "publisher"
+    },
+    "domain" : "13",
+    "attributes" : [ "external", "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://schema.org/url",
+    "baseIri" : "http://schema.org",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "url"
+    },
+    "domain" : "32",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://plod.info/rdf/numberOfPatients",
+    "baseIri" : "http://plod.info/rdf",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "numberOfPatients"
+    },
+    "domain" : "26",
+    "attributes" : [ "datatype" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://schema.org/location",
+    "baseIri" : "http://schema.org",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "location"
+    },
+    "domain" : "42",
+    "attributes" : [ "external", "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://schema.org/homeLocation",
+    "baseIri" : "http://schema.org",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "homeLocation"
+    },
+    "domain" : "0",
+    "attributes" : [ "external", "object" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://plod.info/rdf/dateConfirmed",
+    "baseIri" : "http://plod.info/rdf",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "dateConfirmed"
+    },
+    "domain" : "26",
+    "attributes" : [ "datatype" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://schema.org/healthCondition",
+    "baseIri" : "http://schema.org",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "healthCondition"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://schema.org/infectiousAgent",
+    "baseIri" : "http://schema.org",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "infectiousAgent"
+    },
+    "domain" : "16",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://plod.info/rdf/dateFevered",
+    "baseIri" : "http://plod.info/rdf",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "dateFevered"
+    },
+    "domain" : "26",
+    "attributes" : [ "datatype" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://schema.org/endTime",
+    "baseIri" : "http://schema.org",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "endTime"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://schema.org/mainEntity",
+    "baseIri" : "http://schema.org",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "mainEntity"
+    },
+    "domain" : "13",
+    "attributes" : [ "external", "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://schema.org/code",
+    "baseIri" : "http://schema.org",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "code"
+    },
+    "domain" : "10",
+    "attributes" : [ "external", "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://schema.org/subjectOf",
+    "baseIri" : "http://schema.org",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "subjectOf"
+    },
+    "domain" : "45",
+    "attributes" : [ "external", "object" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://schema.org/instrument",
+    "baseIri" : "http://schema.org",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "instrument"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://schema.org/agent",
+    "baseIri" : "http://schema.org",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "agent"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "object" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/age",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "age"
+    },
+    "domain" : "45",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "69"
+  } ]
+}

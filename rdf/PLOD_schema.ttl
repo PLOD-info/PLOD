@@ -280,6 +280,7 @@ plod:COVID-19 rdf:type owl:NamedIndividual ,
                        schema:InfectiousDisease ;
               schema:code <http://purl.bioontology.org/ontology/ICD10/U07.1> ;
               schema:infectiousAgent "2019-nCoV" ;
+              schema:name "2019-nCoV acute respiratory disease"@en ;
               rdfs:label "COVID-19" .
 
 

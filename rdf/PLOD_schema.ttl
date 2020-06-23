@@ -27,6 +27,10 @@ schema:name rdf:type owl:AnnotationProperty ;
 #    Object Properties
 #################################################################
 
+###  http://plod.info/rdf/time
+plod:time rdf:type owl:ObjectProperty .
+
+
 ###  http://purl.org/dc/terms/isReferencedBy
 dcterms:isReferencedBy rdf:type owl:ObjectProperty .
 
@@ -180,6 +184,11 @@ foaf:age rdf:type owl:DatatypeProperty .
 #################################################################
 #    Classes
 #################################################################
+
+###  http://plod.info/rdf/CloseContact
+plod:CloseContact rdf:type owl:Class ;
+                  rdfs:label "Close Contact" .
+
 
 ###  http://schema.org/Action
 schema:Action rdf:type owl:Class .

@@ -1,12 +1,15 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>　.
 @prefix schema: <http://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix gnjp: <http://geonames.jp/resource/> .
 @prefix plod: <http://plod.info/rdf/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix meddra: <http://purl.bioontology.org/ontology/MEDDRA/> .
+@prefix icd11: <http://id.who.int/icd/entity/> .
 @prefix snomed: <http://purl.bioontology.org/ontology/SNOMEDCT/> .
 @prefix lnc: <http://purl.bioontology.org/ontology/LNC/> .
 
@@ -27,7 +30,7 @@
 <http://plod.info/rdf/2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01-C01> a schema:MedicalCondition ;
     rdfs:label  "2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01-C01" ;
     plod:dateConfirmed "2020-01-20"^^schema:DateTime ;
-    schema:signOrSymptom meddra:10011224, meddra:10039296;
+    schema:signOrSymptom obo:HP_0012735, obo:HP_0031417; #既存語彙で書いてみたが、独自にIDを振った方が日本語はかきやすいか？
     schema:description "".
 
 #症状の記載例⑧の書き方
@@ -45,18 +48,53 @@
     schema:description "".
 
 #陽性、陰性の表現
-lnc:LA6576-8 rdfs:label "positive"@en, "陽性"@ja.
-lnc:LA6577-6 rdfs:label "negative"@en, "陰性"@ja.
+lnc:LA6576-8 rdfs:label "positive"@en;
+skos:prefLabel "陽性"@ja.
+lnc:LA6577-6 rdfs:label "negative"@en;
+skos:prefLabel "陰性"@ja.
 
 #signOrSymptom下記はまとめて表現（①～⑦）
-meddra:10025482 rdfs:label "Malaise"@en, "倦怠感"@ja.
-meddra:10041802 rdfs:label "Sptum"@en, "喀痰"@ja.
-meddra:10016558 rdfs:label "Fever"@en, "発熱"@ja.
-meddra:10008531 rdfs:label "Chills"@en, "悪寒"@ja.
-meddra:10011224 rdfs:label "Cough"@en, "咳"@ja.
-meddra:10039296 rdfs:label "Runny nose"@en, "鼻水"@ja.
-meddra:10035664 rdfs:label "Pneumonia"@en, "肺炎"@ja.
+obo:HP_0012378 rdfs:label "Fatigue";
+skos:prefLabel "疲労"@ja;
+skos:altLabel "倦怠感"@ja;
+rdfs:seealso meddra:10025482;
+rdfs:seealso icd11:1841264793.
+
+obo:HP_0032016 rdfs:label "Abnormal sputum";
+skos:prefLabel "痰"@ja;
+skos:altlabel "喀痰"@ja;
+rdfs:seealso meddra:10041802;
+rdfs:seealso icd11:51680510.
+
+obo:HP_0001945 rdfs:label "fever";
+rdfs:prefLabel "熱"@ja;
+rdfs:seealso meddra:10016558;
+rdfs:seealso icd11:915343154.
+
+obo:HP_0025143 rdfs:label "Chills";
+skos:prefLabel "悪寒"@ja;
+rdfs:seealso meddra:10008531;
+rdfs:seealso icd11:1495646237.
+
+obo:HP_0012735 rdfs:label "Cough";
+skos:prefLabel "咳嗽"@ja;
+skos:altlabel "咳"@ja;
+rdfs:seealso meddra:10011224;
+rdfs:seealso meddra:2027526159.
+
+obo:HP_0031417 rdfs:label "Rhinorrhea";
+skos:prefLabel "鼻漏"@ja;
+skos:altLabel "鼻水"@ja;
+rdfs:seealso meddra:10039296.
+
+obo:HP_0002090 rdfs:label "Pneumonia";
+skos:prefLabel "肺炎"@ja;
+rdfs:seealso meddra:10035664;
+rdfs:seealso icd11:142052508 .
 
 #入院・退院の表現
-snomed:440654001 rdfs:label "Inpatient Environment"@en, "入院環境"@ja.
-snomed:440655000 rdfs:label "Outpatient Environment"@en, "退院環境"@ja.
+snomed:440654001 rdfs:label "Inpatient Environment"@en; 
+skos:prefLabel "入院環境"@ja.
+
+snomed:440655000 rdfs:label "Outpatient Environment"@en;
+skos:prefLabel "退院環境"@ja.

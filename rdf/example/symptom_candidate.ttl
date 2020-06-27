@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gnjp: <http://geonames.jp/resource/> .
+@prefix plod: <http://plod.info/rdf/> .
+@prefix meddra: <http://purl.bioontology.org/ontology/MEDDRA/> .
+@prefix snomed: <http://purl.bioontology.org/ontology/SNOMEDCT/> .
+@prefix lnc: <http://purl.bioontology.org/ontology/LNC/> .
+
+#患者さん側の記載から症状に繋げる 
+<http://plod.info/rdf/2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01> a schema:Patient ;
+    rdfs:label "2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01" ;
+    schema:subjectOf <http://plod.info/rdf/2c5c6a22-c1b3-4097-b119-dad4c1ba57b9> ;
+    schema:healthCondition <http://plod.info/entity/COVID-19> ,
+                  <http://plod.info/rdf/2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01-C01> ,
+                  <http://plod.info/rdf/2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01-C02> ,
+                  <http://plod.info/rdf/2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01-C03> ;
+    plod:dateConfirmed "2020-01-31"^^schema:DateTime ;
+    foaf:age "20s" ;
+    schema:gender "Female" ;
+    schema:homeLocation gnjp:千葉県.
+
+#症状の記載例①～⑦の書き方
+<http://plod.info/rdf/2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01-C01> a schema:MedicalCondition ;
+    rdfs:label  "2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01-C01" ;
+    plod:dateConfirmed "2020-01-20"^^schema:DateTime ;
+    schema:signOrSymptom meddra:10011224, meddra:10039296;
+    schema:description "".
+
+#症状の記載例⑧の書き方
+<http://plod.info/rdf/2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01-C02> a schema:MedicalCondition ;
+    rdfs:label  "2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01-C02" ;
+    plod:dateConfirmed "2020-01-23"^^schema:DateTime ;
+    schema:status snomed:440654001;
+    schema:description "".
+
+#症状の記載例⑨～⑩の書き方
+<http://plod.info/rdf/2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01-C03> a schema:MedicalCondition ;
+    rdfs:label  "2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01-C03" ;
+    plod:dateConfirmed "2020-01-23"^^schema:DateTime ;
+    schema:signdetected lnc:LA6576-8 ;
+    schema:description "".
+
+#陽性、陰性の表現
+lnc:LA6576-8 rdfs:label "positive"@en, "陽性"@ja.
+lnc:LA6577-6 rdfs:label "negative"@en, "陰性"@ja.
+
+#signOrSymptom下記はまとめて表現（①～⑦）
+meddra:10025482 rdfs:label "Malaise"@en, "倦怠感"@ja.
+meddra:10041802 rdfs:label "Sptum"@en, "喀痰"@ja.
+meddra:10016558 rdfs:label "Fever"@en, "発熱"@ja.
+meddra:10008531 rdfs:label "Chills"@en, "悪寒"@ja.
+meddra:10011224 rdfs:label "Cough"@en, "咳"@ja.
+meddra:10039296 rdfs:label "Runny nose"@en, "鼻水"@ja.
+meddra:10035664 rdfs:label "Pneumonia"@en, "肺炎"@ja.
+
+#入院・退院の表現
+snomed:440654001 rdfs:label "Inpatient Environment"@en, "入院環境"@ja.
+snomed:440655000 rdfs:label "Outpatient Environment"@en, "退院環境"@ja.

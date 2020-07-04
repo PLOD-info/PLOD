@@ -49,48 +49,48 @@
 
 #陽性、陰性の表現
 lnc:LA6576-8 rdfs:label "positive"@en;
-skos:prefLabel "陽性"@ja.
+    skos:prefLabel "陽性"@ja.
 lnc:LA6577-6 rdfs:label "negative"@en;
-skos:prefLabel "陰性"@ja.
+    skos:prefLabel "陰性"@ja.
 
 #signOrSymptom下記はまとめて表現（①～⑦）
 obo:HP_0012378 rdfs:label "Fatigue";
-skos:prefLabel "疲労"@ja;
-skos:altLabel "倦怠感"@ja;
-rdfs:seealso meddra:10025482;
-rdfs:seealso icd11:1841264793.
+    skos:prefLabel "疲労"@ja;
+    skos:altLabel "倦怠感"@ja;
+    rdfs:seealso meddra:10025482;
+    rdfs:seealso icd11:1841264793.
 
 obo:HP_0032016 rdfs:label "Abnormal sputum";
-skos:prefLabel "痰"@ja;
-skos:altlabel "喀痰"@ja;
-rdfs:seealso meddra:10041802;
-rdfs:seealso icd11:51680510.
+    skos:prefLabel "痰"@ja;
+    skos:altLabel "喀痰"@ja;
+    rdfs:seealso meddra:10041802;
+    rdfs:seealso icd11:51680510.
 
 obo:HP_0001945 rdfs:label "fever";
-rdfs:prefLabel "熱"@ja;
-rdfs:seealso meddra:10016558;
-rdfs:seealso icd11:915343154.
+    rdfs:prefLabel "熱"@ja;
+    rdfs:seealso meddra:10016558;
+    rdfs:seealso icd11:915343154.
 
 obo:HP_0025143 rdfs:label "Chills";
-skos:prefLabel "悪寒"@ja;
-rdfs:seealso meddra:10008531;
-rdfs:seealso icd11:1495646237.
+    skos:prefLabel "悪寒"@ja;
+    rdfs:seealso meddra:10008531;
+    rdfs:seealso icd11:1495646237.
 
 obo:HP_0012735 rdfs:label "Cough";
-skos:prefLabel "咳嗽"@ja;
-skos:altlabel "咳"@ja;
-rdfs:seealso meddra:10011224;
-rdfs:seealso meddra:2027526159.
+    skos:prefLabel "咳嗽"@ja;
+    skos:altLabel "咳"@ja;
+    rdfs:seealso meddra:10011224;
+    rdfs:seealso meddra:2027526159.
 
 obo:HP_0031417 rdfs:label "Rhinorrhea";
-skos:prefLabel "鼻漏"@ja;
-skos:altLabel "鼻水"@ja;
-rdfs:seealso meddra:10039296.
+    skos:prefLabel "鼻漏"@ja;
+    skos:altLabel "鼻水"@ja;
+    rdfs:seealso meddra:10039296.
 
 obo:HP_0002090 rdfs:label "Pneumonia";
-skos:prefLabel "肺炎"@ja;
-rdfs:seealso meddra:10035664;
-rdfs:seealso icd11:142052508 .
+    skos:prefLabel "肺炎"@ja;
+    rdfs:seealso meddra:10035664;
+    rdfs:seealso icd11:142052508 .
 
 #入院・退院の表現
 snomed:440654001 rdfs:label "Inpatient Environment"@en; 

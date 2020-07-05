@@ -64,7 +64,7 @@ obo:HP_0012378 rdfs:label "Fatigue"@en;
     rdfs:seealso meddra:10025482;
     rdfs:seealso icd11:1841264793.
 
-# 痰は該当する日本語が登録されていなかったため、和訳はaltLabelのみとする。
+# 痰は該当する日本語がPubcaseFinderに登録されていなかったため、和訳はaltLabelのみとする。
 obo:HP_0032016 rdfs:label "Abnormal sputum"@en;
     skos:prefLabel "Abnormal sputum"@en;
     skos:altLabel "喀痰"@ja;
@@ -91,7 +91,7 @@ obo:HP_0012735 rdfs:label "Cough"@en;
     rdfs:seealso meddra:10011224;
     rdfs:seealso meddra:2027526159.
 
-# 痰は該当する日本語が登録されていなかったため、和訳はaltLabelのみとする。
+# 鼻水は該当する日本語がPubcaseFinderに登録されていなかったため、和訳はaltLabelのみとする。
 obo:HP_0031417 rdfs:label "Rhinorrhea"@en;
     skos:prefLabel "Rhinorrhea"@en;
     skos:altLabel "鼻漏"@ja;

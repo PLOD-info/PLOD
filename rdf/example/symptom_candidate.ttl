@@ -30,7 +30,7 @@
 <http://plod.info/rdf/2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01-C01> a schema:MedicalCondition ;
     rdfs:label  "2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01-C01" ;
     plod:dateConfirmed "2020-01-20"^^schema:DateTime ;
-    schema:signOrSymptom obo:HP_0012735, obo:HP_0031417; #既存語彙で書いてみたが、独自にIDを振った方が日本語はかきやすいか？
+    schema:signOrSymptom <http://plod.info/rdf/S05> , <http://plod.info/rdf/S06>; #独自にIDを振ったパターンの場合
     schema:description "".
 
 #症状の記載例⑧の書き方
@@ -57,50 +57,66 @@ lnc:LA6577-6 rdfs:label "negative"@en;
     skos:prefLabel "negative"@en.
 
 #signOrSymptom下記はまとめて表現（①～⑦）
-obo:HP_0012378 rdfs:label "Fatigue"@en;
-    rdfs:label "徒労"@ja;
+#独自のラベルをつけるために、独自URIを設定したバージョン
+
+#UI上の記載をrdfs:labelとしてすぐに調べられるようにしたもの。
+<http://plod.info/rdf/S01> a plod:symptom;
+    rdfs:label "Fatigue"@en;
+    rdfs:lable "倦怠感"@ja;
     skos:prefLabel "Fatigue"@en;
+    skos:altLabel "徒労"@ja;
     skos:altLabel "倦怠感"@ja;
+    rdfs:seealso obo:HP_0012378;
     rdfs:seealso meddra:10025482;
     rdfs:seealso icd11:1841264793.
 
-# 痰は該当する日本語が登録されていなかったため、和訳はaltLabelのみとする。
-obo:HP_0032016 rdfs:label "Abnormal sputum"@en;
+<http://plod.info/rdf/S02> a plod:symptom;
+    rdfs:label "Abnormal sputum"@en;
+    rdfs:label "痰"@ja;
     skos:prefLabel "Abnormal sputum"@en;
     skos:altLabel "喀痰"@ja;
-    skos:altLabel "痰"@ja;
+    rdfs:seealso obo:HP_0032016;
     rdfs:seealso meddra:10041802;
     rdfs:seealso icd11:51680510.
 
-obo:HP_0001945 rdfs:label "Fever"@en;
+<http://plod.info/rdf/S03> a plod:symptom;
+    rdfs:label "Fever"@en;
     rdfs:label "熱"@ja;
     skos:prefLabel "Fever"@en;
+    rdfs:seealso obo:HP_0001945;
     rdfs:seealso meddra:10016558;
     rdfs:seealso icd11:915343154.
 
-obo:HP_0025143 rdfs:label "Chills"@en;
+<http://plod.info/rdf/S04> a plod:symptom;
+    rdfs:label "Chills"@en;
     rdfs:label "悪寒"@ja;
     skos:prefLabel "Chills"@en;
+    rdfs:seealso obo:HP_0025143;
     rdfs:seealso meddra:10008531;
     rdfs:seealso icd11:1495646237.
 
-obo:HP_0012735 rdfs:label "Cough"@en;
-    rdfs:label "咳嗽"@ja;
+<http://plod.info/rdf/S05> a plod:symptom;
+    rdfs:label "Cough"@en;
+    rdfs:label "咳"@ja;
     skos:prefLabel "Cough"@en;
-    skos:altLabel "咳"@ja;
+    skos:altLabel "咳嗽"@ja;
+    rdfs:seealso obo:HP_0012735;
     rdfs:seealso meddra:10011224;
     rdfs:seealso meddra:2027526159.
 
-# 痰は該当する日本語が登録されていなかったため、和訳はaltLabelのみとする。
-obo:HP_0031417 rdfs:label "Rhinorrhea"@en;
+<http://plod.info/rdf/S06> a plod:symptom;
+    rdfs:label "Rhinorrhea"@en;
+    rdfs:label "鼻水"@ja;
     skos:prefLabel "Rhinorrhea"@en;
     skos:altLabel "鼻漏"@ja;
-    skos:altLabel "鼻水"@ja;
+    rdfs:seealso obo:HP_0031417;
     rdfs:seealso meddra:10039296.
 
-obo:HP_0002090 rdfs:label "Pneumonia"@en;
+<http://plod.info/rdf/S07> a plod:symptom;
+    rdfs:label "Pneumonia"@en;
     rdfs:label "肺炎"@ja;    
     skos:prefLabel "Pneumonia"@en;
+    rdfs:seealso obo:HP_0002090;
     rdfs:seealso meddra:10035664;
     rdfs:seealso icd11:142052508 .
 

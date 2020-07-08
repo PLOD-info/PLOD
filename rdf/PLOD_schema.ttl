@@ -73,7 +73,8 @@ schema:instrument rdf:type owl:ObjectProperty ;
 
 ###  http://schema.org/location
 schema:location rdf:type owl:ObjectProperty ;
-                rdfs:domain schema:Action ,
+                rdfs:domain plod:CloseContact ,
+                            schema:Action ,
                             schema:Event ,
                             schema:Organization ;
                 rdfs:range schema:Place .
@@ -187,6 +188,20 @@ foaf:age rdf:type owl:DatatypeProperty .
 
 ###  http://plod.info/rdf/CloseContact
 plod:CloseContact rdf:type owl:Class ;
+                  rdfs:subClassOf schema:Action ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty plod:time ;
+                                    owl:someValuesFrom <http://www.w3.org/2006/time#TemporalEntity>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty schema:location ;
+                                    owl:someValuesFrom schema:Place
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty schema:agent ;
+                                    owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                    owl:onClass schema:Person
+                                  ] ;
                   rdfs:label "Close Contact" .
 
 
@@ -260,6 +275,10 @@ schema:Report rdf:type owl:Class ;
 ###  http://schema.org/WebPage
 schema:WebPage rdf:type owl:Class ;
                rdfs:subClassOf schema:CreativeWork .
+
+
+###  http://www.w3.org/2006/time#TemporalEntity
+<http://www.w3.org/2006/time#TemporalEntity> rdf:type owl:Class .
 
 
 #################################################################

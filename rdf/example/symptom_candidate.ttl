@@ -1,0 +1,114 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gnjp: <http://geonames.jp/resource/> .
+@prefix plod: <http://plod.info/rdf/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix meddra: <http://purl.bioontology.org/ontology/MEDDRA/> .
+@prefix icd11: <http://id.who.int/icd/entity/> .
+@prefix snomed: <http://purl.bioontology.org/ontology/SNOMEDCT/> .
+@prefix lnc: <http://purl.bioontology.org/ontology/LNC/> .
+
+#患者さん側の記載から症状に繋げる 
+<http://plod.info/rdf/2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01> a schema:Patient ;
+    rdfs:label "2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01" ;
+    schema:subjectOf <http://plod.info/rdf/2c5c6a22-c1b3-4097-b119-dad4c1ba57b9> ;
+    schema:healthCondition <http://plod.info/entity/COVID-19> ,
+                  <http://plod.info/rdf/2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01-C01> ,
+                  <http://plod.info/rdf/2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01-C02> ,
+                  <http://plod.info/rdf/2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01-C03> ;
+    plod:dateConfirmed "2020-01-31"^^schema:DateTime ;
+    foaf:age "20s" ;
+    schema:gender "Female" ;
+    schema:homeLocation gnjp:千葉県.
+
+#症状の記載例①～⑦の書き方
+<http://plod.info/rdf/2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01-C01> a schema:MedicalCondition ;
+    rdfs:label  "2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01-C01" ;
+    plod:dateConfirmed "2020-01-20"^^schema:DateTime ;
+    schema:signOrSymptom obo:HP_0012735, obo:HP_0031417; #既存語彙で書いてみたが、独自にIDを振った方が日本語はかきやすいか？
+    schema:description "".
+
+#症状の記載例⑧の書き方
+<http://plod.info/rdf/2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01-C02> a schema:MedicalCondition ;
+    rdfs:label  "2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01-C02" ;
+    plod:dateConfirmed "2020-01-23"^^schema:DateTime ;
+    schema:status snomed:440654001;
+    schema:description "".
+
+#症状の記載例⑨～⑩の書き方
+<http://plod.info/rdf/2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01-C03> a schema:MedicalCondition ;
+    rdfs:label  "2c5c6a22-c1b3-4097-b119-dad4c1ba57b9-P01-C03" ;
+    plod:dateConfirmed "2020-01-23"^^schema:DateTime ;
+    schema:signdetected lnc:LA6576-8 ;
+    schema:description "".
+
+#陽性、陰性の表現
+lnc:LA6576-8 rdfs:label "positive"@en;
+    rdfs:label "陽性"@ja;
+    skos:prefLabel "positive"@en.
+
+lnc:LA6577-6 rdfs:label "negative"@en;
+    rdfs:label "陰性"@ja;
+    skos:prefLabel "negative"@en.
+
+#signOrSymptom下記はまとめて表現（①～⑦）
+obo:HP_0012378 rdfs:label "Fatigue"@en;
+    rdfs:label "徒労"@ja;
+    skos:prefLabel "Fatigue"@en;
+    skos:altLabel "倦怠感"@ja;
+    rdfs:seealso meddra:10025482;
+    rdfs:seealso icd11:1841264793.
+
+# 痰は該当する日本語がPubcaseFinderに登録されていなかったため、和訳はaltLabelのみとする。
+obo:HP_0032016 rdfs:label "Abnormal sputum"@en;
+    skos:prefLabel "Abnormal sputum"@en;
+    skos:altLabel "喀痰"@ja;
+    skos:altLabel "痰"@ja;
+    rdfs:seealso meddra:10041802;
+    rdfs:seealso icd11:51680510.
+
+obo:HP_0001945 rdfs:label "Fever"@en;
+    rdfs:label "熱"@ja;
+    skos:prefLabel "Fever"@en;
+    rdfs:seealso meddra:10016558;
+    rdfs:seealso icd11:915343154.
+
+obo:HP_0025143 rdfs:label "Chills"@en;
+    rdfs:label "悪寒"@ja;
+    skos:prefLabel "Chills"@en;
+    rdfs:seealso meddra:10008531;
+    rdfs:seealso icd11:1495646237.
+
+obo:HP_0012735 rdfs:label "Cough"@en;
+    rdfs:label "咳嗽"@ja;
+    skos:prefLabel "Cough"@en;
+    skos:altLabel "咳"@ja;
+    rdfs:seealso meddra:10011224;
+    rdfs:seealso meddra:2027526159.
+
+# 鼻水は該当する日本語がPubcaseFinderに登録されていなかったため、和訳はaltLabelのみとする。
+obo:HP_0031417 rdfs:label "Rhinorrhea"@en;
+    skos:prefLabel "Rhinorrhea"@en;
+    skos:altLabel "鼻漏"@ja;
+    skos:altLabel "鼻水"@ja;
+    rdfs:seealso meddra:10039296.
+
+obo:HP_0002090 rdfs:label "Pneumonia"@en;
+    rdfs:label "肺炎"@ja;    
+    skos:prefLabel "Pneumonia"@en;
+    rdfs:seealso meddra:10035664;
+    rdfs:seealso icd11:142052508 .
+
+#入院・退院の表現
+snomed:440654001 rdfs:label "Inpatient Environment"@en; 
+    rdfs:label "入院環境"@ja;
+    skos:prefLabel "Inpatient Environment"@en.
+
+snomed:440655000 rdfs:label "Outpatient Environment"@en;
+    rdfs:label "退院環境"@ja;
+    skos:prefLabel "Outpatient Environment"@en.

@@ -1,380 +1,366 @@
+# baseURI: http://plod.info/rdf/
+# prefix: plod
+
 @prefix : <http://plod.info/rdf/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix gnjp: <http://geonames.jp/resource/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix plod: <http://plod.info/rdf/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rsctx: <http://softeng.polito.it/rsctx#> .
 @prefix schema: <http://schema.org/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://plod.info/rdf/> .
-
-<http://plod.info/rdf/> rdf:type owl:Ontology .
-
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://schema.org/name
-schema:name rdf:type owl:AnnotationProperty ;
-            rdfs:subPropertyOf rdfs:label ;
-            rdfs:range rdfs:Literal .
-
-
-#################################################################
-#    Object Properties
-#################################################################
-
-###  http://plod.info/rdf/time
-plod:time rdf:type owl:ObjectProperty .
-
-
-###  http://purl.org/dc/terms/isReferencedBy
-dcterms:isReferencedBy rdf:type owl:ObjectProperty .
-
-
-###  http://schema.org/agent
-schema:agent rdf:type owl:ObjectProperty ;
-             rdfs:domain schema:Action ;
-             rdfs:range schema:Organization ,
-                        schema:Person .
-
-
-###  http://schema.org/code
-schema:code rdf:type owl:ObjectProperty ;
-            rdfs:domain schema:MedicalEntity ;
-            rdfs:range schema:MedicalCode .
-
-
-###  http://schema.org/fromLocation
-schema:fromLocation rdf:type owl:ObjectProperty ;
-                    rdfs:domain schema:MoveAction ;
-                    rdfs:range schema:Place .
-
-
-###  http://schema.org/healthCondition
-schema:healthCondition rdf:type owl:ObjectProperty ;
-                       rdfs:domain schema:Patient ;
-                       rdfs:range schema:MedicalCondition .
-
-
-###  http://schema.org/homeLocation
-schema:homeLocation rdf:type owl:ObjectProperty ;
-                    rdfs:domain schema:Person ;
-                    rdfs:range schema:Place .
-
-
-###  http://schema.org/instrument
-schema:instrument rdf:type owl:ObjectProperty ;
-                  rdfs:domain schema:Action .
-
-
-###  http://schema.org/location
-schema:location rdf:type owl:ObjectProperty ;
-                rdfs:domain plod:CloseContact ,
-                            schema:Action ,
-                            schema:Event ,
-                            schema:Organization ;
-                rdfs:range schema:Place .
-
-
-###  http://schema.org/mainEntity
-schema:mainEntity rdf:type owl:ObjectProperty ;
-                  rdfs:domain schema:CreativeWork .
-
-
-###  http://schema.org/publisher
-schema:publisher rdf:type owl:ObjectProperty ;
-                 rdfs:domain schema:CreativeWork ;
-                 rdfs:range schema:Organization ,
-                            schema:Person .
-
-
-###  http://schema.org/subjectOf
-schema:subjectOf rdf:type owl:ObjectProperty ;
-                 rdfs:range schema:CreativeWork ,
-                            schema:Event .
-
-
-###  http://schema.org/toLocation
-schema:toLocation rdf:type owl:ObjectProperty ;
-                  rdfs:domain schema:MoveAction ;
-                  rdfs:range schema:Place .
-
-
-#################################################################
-#    Data properties
-#################################################################
-
-###  http://plod.info/rdf/dateConfirmed
-plod:dateConfirmed rdf:type owl:DatatypeProperty ;
-                   rdfs:domain schema:Report ;
-                   rdfs:range xsd:dateTime .
-
-
-###  http://plod.info/rdf/dateFevered
-plod:dateFevered rdf:type owl:DatatypeProperty ;
-                 rdfs:domain schema:Report ;
-                 rdfs:range xsd:dateTime .
-
-
-###  http://plod.info/rdf/numberOfPatients
-plod:numberOfPatients rdf:type owl:DatatypeProperty ;
-                      rdfs:domain schema:Report ;
-                      rdfs:range xsd:integer .
-
-
-###  http://schema.org/codeValue
-schema:codeValue rdf:type owl:DatatypeProperty ;
-                 rdfs:domain schema:MedicalCode ;
-                 rdfs:range rdfs:Literal .
-
-
-###  http://schema.org/codingSystem
-schema:codingSystem rdf:type owl:DatatypeProperty ;
-                    rdfs:domain schema:MedicalCode ;
-                    rdfs:range rdfs:Literal .
-
-
-###  http://schema.org/datePublished
-schema:datePublished rdf:type owl:DatatypeProperty ;
-                     rdfs:domain schema:CreativeWork ;
-                     rdfs:range xsd:dateTime .
-
-
-###  http://schema.org/description
-schema:description rdf:type owl:DatatypeProperty ;
-                   rdfs:range rdfs:Literal .
-
-
-###  http://schema.org/endTime
-schema:endTime rdf:type owl:DatatypeProperty ;
-               rdfs:domain schema:Action ;
-               rdfs:range xsd:dateTime .
-
-
-###  http://schema.org/gender
-schema:gender rdf:type owl:DatatypeProperty ;
-              rdfs:domain schema:Person ;
-              rdfs:range rdfs:Literal .
-
-
-###  http://schema.org/infectiousAgent
-schema:infectiousAgent rdf:type owl:DatatypeProperty ;
-                       rdfs:domain schema:InfectiousDisease ;
-                       rdfs:range rdfs:Literal .
-
-
-###  http://schema.org/startTime
-schema:startTime rdf:type owl:DatatypeProperty ;
-                 rdfs:domain schema:Action ;
-                 rdfs:range xsd:dateTime .
-
-
-###  http://schema.org/url
-schema:url rdf:type owl:DatatypeProperty ;
-           rdfs:range xsd:anyURI .
-
-
-###  http://xmlns.com/foaf/0.1/age
-foaf:age rdf:type owl:DatatypeProperty .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://plod.info/rdf/CloseContact
-plod:CloseContact rdf:type owl:Class ;
-                  rdfs:subClassOf schema:Action ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty plod:time ;
-                                    owl:someValuesFrom <http://www.w3.org/2006/time#TemporalEntity>
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty schema:location ;
-                                    owl:someValuesFrom schema:Place
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty schema:agent ;
-                                    owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-                                    owl:onClass schema:Person
-                                  ] ;
-                  rdfs:label "Close Contact" .
-
-
-###  http://schema.org/Action
-schema:Action rdf:type owl:Class .
-
-
-###  http://schema.org/Article
-schema:Article rdf:type owl:Class ;
-               rdfs:subClassOf schema:CreativeWork .
-
-
-###  http://schema.org/CreativeWork
-schema:CreativeWork rdf:type owl:Class .
-
-
-###  http://schema.org/Event
-schema:Event rdf:type owl:Class .
-
-
-###  http://schema.org/GovernmentOrganization
-schema:GovernmentOrganization rdf:type owl:Class ;
-                              rdfs:subClassOf schema:Organization .
-
-
-###  http://schema.org/InfectiousDisease
-schema:InfectiousDisease rdf:type owl:Class ;
-                         rdfs:subClassOf schema:MedicalCondition .
-
-
-###  http://schema.org/MedicalCode
-schema:MedicalCode rdf:type owl:Class .
-
-
-###  http://schema.org/MedicalCondition
-schema:MedicalCondition rdf:type owl:Class ;
-                        rdfs:subClassOf schema:MedicalEntity .
-
-
-###  http://schema.org/MedicalEntity
-schema:MedicalEntity rdf:type owl:Class .
-
-
-###  http://schema.org/MoveAction
-schema:MoveAction rdf:type owl:Class ;
-                  rdfs:subClassOf schema:Action .
-
-
-###  http://schema.org/Organization
-schema:Organization rdf:type owl:Class .
-
-
-###  http://schema.org/Patient
-schema:Patient rdf:type owl:Class ;
-               rdfs:subClassOf schema:Person .
-
-
-###  http://schema.org/Person
-schema:Person rdf:type owl:Class .
-
-
-###  http://schema.org/Place
-schema:Place rdf:type owl:Class .
-
-
-###  http://schema.org/Report
-schema:Report rdf:type owl:Class ;
-              rdfs:subClassOf schema:Article .
-
-
-###  http://schema.org/WebPage
-schema:WebPage rdf:type owl:Class ;
-               rdfs:subClassOf schema:CreativeWork .
-
-
-###  http://www.w3.org/2006/time#TemporalEntity
-<http://www.w3.org/2006/time#TemporalEntity> rdf:type owl:Class .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  http://geonames.jp/resource/千葉県
-gnjp:千葉県 rdf:type owl:NamedIndividual ,
-                  schema:Place ;
-         rdfs:label "Chiba" .
-
-
-###  http://geonames.jp/resource/大阪府
-gnjp:大阪府 rdf:type owl:NamedIndividual ,
-                  schema:Place ;
-         rdfs:label "Osaka" .
-
-
-###  http://geonames.jp/resource/東京都
-gnjp:東京都 rdf:type owl:NamedIndividual ,
-                  schema:Place ;
-         rdfs:label "Tokyo" .
-
-
-###  http://plod.info/rdf/COVID-19
-plod:COVID-19 rdf:type owl:NamedIndividual ,
-                       schema:InfectiousDisease ;
-              schema:code <http://purl.bioontology.org/ontology/ICD10/U07.1> ;
-              schema:infectiousAgent "2019-nCoV" ;
-              schema:name "2019-nCoV acute respiratory disease"@en ;
-              rdfs:label "COVID-19" .
-
-
-###  http://plod.info/rdf/ChibaPrefecturalGovernment
-plod:ChibaPrefecturalGovernment rdf:type owl:NamedIndividual ,
-                                         schema:GovernmentOrganization ;
-                                schema:location gnjp:千葉県 ;
-                                rdfs:label "Chiba Prefectural Government" ;
-                                rdfs:seeAlso <http://www.wikidata.org/entity/Q21666178> .
-
-
-###  http://plod.info/rdf/12202001311
-<http://plod.info/rdf/12202001311> rdf:type owl:NamedIndividual ,
-                                            schema:Event ;
-                                   rdfs:label "12202001311" .
-
-
-###  http://plod.info/rdf/12202001311-P01
-<http://plod.info/rdf/12202001311-P01> rdf:type owl:NamedIndividual ,
-                                                schema:Patient ;
-                                       schema:healthCondition plod:COVID-19 ;
-                                       schema:homeLocation gnjp:千葉県 ;
-                                       schema:subjectOf <http://plod.info/rdf/12202001311> ;
-                                       rdfs:label "12202001311-P01" .
-
-
-###  http://plod.info/rdf/12202001311-P01-M01
-<http://plod.info/rdf/12202001311-P01-M01> rdf:type owl:NamedIndividual ,
-                                                    schema:MoveAction ;
-                                           schema:agent <http://plod.info/rdf/12202001311-P01> ;
-                                           schema:fromLocation gnjp:東京都 ;
-                                           schema:toLocation gnjp:大阪府 ;
-                                           rdfs:label "12202001311-P01-M01" .
-
-
-###  http://plod.info/rdf/12202001311-P01-M02
-<http://plod.info/rdf/12202001311-P01-M02> rdf:type owl:NamedIndividual ,
-                                                    schema:MoveAction ;
-                                           schema:agent <http://plod.info/rdf/12202001311-P01> ;
-                                           schema:fromLocation gnjp:大阪府 ;
-                                           schema:toLocation gnjp:東京都 ;
-                                           rdfs:label "12202001311-P01-M02" .
-
-
-###  http://plod.info/rdf/12202001311-R01
-<http://plod.info/rdf/12202001311-R01> rdf:type owl:NamedIndividual ,
-                                                schema:Report ;
-                                       dcterms:isReferencedBy <https://www.pref.chiba.lg.jp/shippei/kansenshou/keihatu-index.html> ;
-                                       schema:mainEntity <http://plod.info/rdf/12202001311> ;
-                                       schema:publisher plod:ChibaPrefecturalGovernment ;
-                                       plod:numberOfPatients 1 ;
-                                       schema:url "https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200131.html"^^xsd:anyURI ;
-                                       rdfs:label "12202001311-R01" .
-
-
-###  http://purl.bioontology.org/ontology/ICD10/U07.1
-<http://purl.bioontology.org/ontology/ICD10/U07.1> rdf:type owl:NamedIndividual ,
-                                                            schema:MedicalCode ;
-                                                   schema:codeValue "U07.1" ;
-                                                   schema:codingSystem "ICD-10" .
-
-
-###  https://www.pref.chiba.lg.jp/shippei/kansenshou/keihatu-index.html
-<https://www.pref.chiba.lg.jp/shippei/kansenshou/keihatu-index.html> rdf:type owl:NamedIndividual ,
-                                                                              schema:WebPage ;
-                                                                     schema:url "https://www.pref.chiba.lg.jp/shippei/kansenshou/keihatu-index.html"^^xsd:anyURI .
-
-
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+gnjp:千葉県
+  a schema:Place ;
+  a owl:NamedIndividual ;
+  rdfs:label "Chiba" ;
+.
+gnjp:大阪府
+  a schema:Place ;
+  a owl:NamedIndividual ;
+  rdfs:label "Osaka" ;
+.
+gnjp:東京都
+  a schema:Place ;
+  a owl:NamedIndividual ;
+  rdfs:label "Tokyo" ;
+.
+plod:
+  a owl:Ontology ;
+.
+<http://plod.info/rdf/12202001311>
+  a schema:Event ;
+  a owl:NamedIndividual ;
+  rdfs:label "12202001311" ;
+.
+<http://plod.info/rdf/12202001311-P01>
+  a schema:Patient ;
+  a owl:NamedIndividual ;
+  schema:healthCondition plod:COVID-19 ;
+  schema:homeLocation gnjp:千葉県 ;
+  schema:subjectOf <http://plod.info/rdf/12202001311> ;
+  rdfs:label "12202001311-P01" ;
+.
+<http://plod.info/rdf/12202001311-P01-M01>
+  a schema:MoveAction ;
+  a owl:NamedIndividual ;
+  schema:agent <http://plod.info/rdf/12202001311-P01> ;
+  schema:fromLocation gnjp:東京都 ;
+  schema:toLocation gnjp:大阪府 ;
+  rdfs:label "12202001311-P01-M01" ;
+.
+<http://plod.info/rdf/12202001311-P01-M02>
+  a schema:MoveAction ;
+  a owl:NamedIndividual ;
+  schema:agent <http://plod.info/rdf/12202001311-P01> ;
+  schema:fromLocation gnjp:大阪府 ;
+  schema:toLocation gnjp:東京都 ;
+  rdfs:label "12202001311-P01-M02" ;
+.
+<http://plod.info/rdf/12202001311-R01>
+  a schema:Report ;
+  a owl:NamedIndividual ;
+  plod:numberOfPatients 1 ;
+  dcterms:isReferencedBy <https://www.pref.chiba.lg.jp/shippei/kansenshou/keihatu-index.html> ;
+  schema:mainEntity <http://plod.info/rdf/12202001311> ;
+  schema:publisher plod:ChibaPrefecturalGovernment ;
+  schema:url "https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200131.html"^^xsd:anyURI ;
+  rdfs:label "12202001311-R01" ;
+.
+plod:COVID-19
+  a schema:InfectiousDisease ;
+  a owl:NamedIndividual ;
+  schema:code <http://purl.bioontology.org/ontology/ICD10/U07.1> ;
+  schema:infectiousAgent "2019-nCoV" ;
+  schema:name "2019-nCoV acute respiratory disease"@en ;
+  rdfs:label "COVID-19" ;
+.
+plod:ChibaPrefecturalGovernment
+  a schema:GovernmentOrganization ;
+  a owl:NamedIndividual ;
+  schema:location gnjp:千葉県 ;
+  rdfs:label "Chiba Prefectural Government" ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q21666178> ;
+.
+plod:CloseContact
+  a owl:Class ;
+  rdfs:label "Close Contact" ;
+  rdfs:subClassOf schema:Action ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+      owl:onClass schema:Person ;
+      owl:onProperty schema:agent ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty plod:time ;
+      owl:someValuesFrom time:TemporalEntity ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty schema:location ;
+      owl:someValuesFrom schema:Place ;
+    ] ;
+.
+plod:dateConfirmed
+  a owl:DatatypeProperty ;
+  rdfs:domain schema:Report ;
+  rdfs:range xsd:dateTime ;
+.
+plod:dateFevered
+  a owl:DatatypeProperty ;
+  rdfs:domain schema:Report ;
+  rdfs:range xsd:dateTime ;
+.
+plod:numberOfPatients
+  a owl:DatatypeProperty ;
+  rdfs:domain schema:Report ;
+  rdfs:range xsd:integer ;
+.
+plod:time
+  a owl:ObjectProperty ;
+  rdfs:range time:TemporalEntity ;
+.
+<http://purl.bioontology.org/ontology/ICD10/U07.1>
+  a schema:MedicalCode ;
+  a owl:NamedIndividual ;
+  schema:codeValue "U07.1" ;
+  schema:codingSystem "ICD-10" ;
+.
+dcterms:isReferencedBy
+  a owl:ObjectProperty ;
+.
+schema:Action
+  a owl:Class ;
+.
+schema:Article
+  a owl:Class ;
+  rdfs:subClassOf schema:CreativeWork ;
+.
+schema:CreativeWork
+  a owl:Class ;
+.
+schema:Event
+  a owl:Class ;
+.
+schema:GovernmentOrganization
+  a owl:Class ;
+  rdfs:subClassOf schema:Organization ;
+.
+schema:InfectiousDisease
+  a owl:Class ;
+  rdfs:subClassOf schema:MedicalCondition ;
+.
+schema:MedicalCode
+  a owl:Class ;
+.
+schema:MedicalCondition
+  a owl:Class ;
+  rdfs:subClassOf schema:MedicalEntity ;
+.
+schema:MedicalEntity
+  a owl:Class ;
+.
+schema:MoveAction
+  a owl:Class ;
+  rdfs:subClassOf schema:Action ;
+.
+schema:Organization
+  a owl:Class ;
+.
+schema:Patient
+  a owl:Class ;
+  rdfs:subClassOf schema:Person ;
+.
+schema:Person
+  a owl:Class ;
+.
+schema:Place
+  a owl:Class ;
+.
+schema:Report
+  a owl:Class ;
+  rdfs:subClassOf schema:Article ;
+.
+schema:WebPage
+  a owl:Class ;
+  rdfs:subClassOf schema:CreativeWork ;
+.
+schema:agent
+  a owl:ObjectProperty ;
+  rdfs:domain schema:Action ;
+  rdfs:range schema:Organization ;
+  rdfs:range schema:Person ;
+.
+schema:code
+  a owl:ObjectProperty ;
+  rdfs:domain schema:MedicalEntity ;
+  rdfs:range schema:MedicalCode ;
+.
+schema:codeValue
+  a owl:DatatypeProperty ;
+  rdfs:domain schema:MedicalCode ;
+  rdfs:range rdfs:Literal ;
+.
+schema:codingSystem
+  a owl:DatatypeProperty ;
+  rdfs:domain schema:MedicalCode ;
+  rdfs:range rdfs:Literal ;
+.
+schema:datePublished
+  a owl:DatatypeProperty ;
+  rdfs:domain schema:CreativeWork ;
+  rdfs:range xsd:dateTime ;
+.
+schema:description
+  a owl:DatatypeProperty ;
+  rdfs:range rdfs:Literal ;
+.
+schema:endTime
+  a owl:DatatypeProperty ;
+  rdfs:domain schema:Action ;
+  rdfs:range xsd:dateTime ;
+.
+schema:fromLocation
+  a owl:ObjectProperty ;
+  rdfs:domain schema:MoveAction ;
+  rdfs:range schema:Place ;
+.
+schema:gender
+  a owl:DatatypeProperty ;
+  rdfs:domain schema:Person ;
+  rdfs:range rdfs:Literal ;
+.
+schema:healthCondition
+  a owl:ObjectProperty ;
+  rdfs:domain schema:Patient ;
+  rdfs:range schema:MedicalCondition ;
+.
+schema:homeLocation
+  a owl:ObjectProperty ;
+  rdfs:domain schema:Person ;
+  rdfs:range schema:Place ;
+.
+schema:infectiousAgent
+  a owl:DatatypeProperty ;
+  rdfs:domain schema:InfectiousDisease ;
+  rdfs:range rdfs:Literal ;
+.
+schema:instrument
+  a owl:ObjectProperty ;
+  rdfs:domain schema:Action ;
+.
+schema:location
+  a owl:ObjectProperty ;
+  rdfs:domain plod:CloseContact ;
+  rdfs:domain schema:Action ;
+  rdfs:domain schema:Event ;
+  rdfs:domain schema:Organization ;
+  rdfs:range schema:Place ;
+.
+schema:mainEntity
+  a owl:ObjectProperty ;
+  rdfs:domain schema:CreativeWork ;
+.
+schema:name
+  a owl:AnnotationProperty ;
+  rdfs:range rdfs:Literal ;
+  rdfs:subPropertyOf rdfs:label ;
+.
+schema:publisher
+  a owl:ObjectProperty ;
+  rdfs:domain schema:CreativeWork ;
+  rdfs:range schema:Organization ;
+  rdfs:range schema:Person ;
+.
+schema:startTime
+  a owl:DatatypeProperty ;
+  rdfs:domain schema:Action ;
+  rdfs:range xsd:dateTime ;
+.
+schema:subjectOf
+  a owl:ObjectProperty ;
+  rdfs:range schema:CreativeWork ;
+  rdfs:range schema:Event ;
+.
+schema:toLocation
+  a owl:ObjectProperty ;
+  rdfs:domain schema:MoveAction ;
+  rdfs:range schema:Place ;
+.
+schema:url
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:anyURI ;
+.
+rsctx:Afternoon
+  a rsctx:PartOfDay ;
+  a owl:NamedIndividual ;
+.
+rsctx:Evening
+  a rsctx:PartOfDay ;
+  a owl:NamedIndividual ;
+.
+rsctx:Morning
+  a rsctx:PartOfDay ;
+  a owl:NamedIndividual ;
+.
+rsctx:Night
+  a rsctx:PartOfDay ;
+  a owl:NamedIndividual ;
+.
+rsctx:PartOfDay
+  a owl:Class ;
+  rdfs:subClassOf rsctx:TimeInterval ;
+  owl:equivalentClass [
+      a owl:Class ;
+      owl:oneOf (
+          rsctx:Afternoon
+          rsctx:Evening
+          rsctx:Morning
+          rsctx:Night
+        ) ;
+    ] ;
+.
+rsctx:Time
+  a owl:Class ;
+  rdfs:subClassOf time:Instant ;
+.
+rsctx:TimeInterval
+  a owl:Class ;
+  rdfs:subClassOf time:ProperInterval ;
+.
+rsctx:partOfDay
+  a owl:FunctionalProperty ;
+  a owl:ObjectProperty ;
+  rdfs:domain rsctx:Time ;
+  rdfs:range rsctx:PartOfDay ;
+.
+time:Instant
+  a owl:Class ;
+  rdfs:subClassOf time:TemporalEntity ;
+.
+time:Interval
+  a owl:Class ;
+  rdfs:subClassOf time:TemporalEntity ;
+.
+time:ProperInterval
+  a owl:Class ;
+  rdfs:subClassOf time:Interval ;
+.
+time:TemporalEntity
+  a owl:Class ;
+.
+foaf:age
+  a owl:DatatypeProperty ;
+.
+<https://www.pref.chiba.lg.jp/shippei/kansenshou/keihatu-index.html>
+  a schema:WebPage ;
+  a owl:NamedIndividual ;
+  schema:url "https://www.pref.chiba.lg.jp/shippei/kansenshou/keihatu-index.html"^^xsd:anyURI ;
+.

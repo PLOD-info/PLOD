@@ -26,10 +26,6 @@ schema:name rdf:type owl:AnnotationProperty ;
             rdfs:range rdfs:Literal .
 
 
-###  http://www.w3.org/2002/07/owl#maxCardinality
-owl:maxCardinality rdf:type owl:AnnotationProperty .
-
-
 #################################################################
 #    Object Properties
 #################################################################
@@ -59,6 +55,32 @@ hutime:hasPossibleEnd rdf:type owl:ObjectProperty ;
                       rdfs:label "possible end" .
 
 
+###  http://resource.hutime.org/ontology/hasPossibleJdBeginning
+hutime:hasPossibleJdBeginning rdf:type owl:ObjectProperty ;
+                              rdfs:domain hutime:UncertainTimeInterval .
+
+
+###  http://resource.hutime.org/ontology/hasPossibleJdEnd
+hutime:hasPossibleJdEnd rdf:type owl:ObjectProperty ;
+                        rdfs:domain hutime:UncertainTimeInterval .
+
+
+###  http://resource.hutime.org/ontology/hasRangeOfBeginning
+hutime:hasRangeOfBeginning rdf:type owl:ObjectProperty ;
+                           rdfs:domain hutime:UncertainTimeInterval ;
+                           rdfs:range hutime:UncertainTimeInterval ;
+                           rdfs:comment "Beginning range an uncerain time interval." ;
+                           rdfs:label "beginning range" .
+
+
+###  http://resource.hutime.org/ontology/hasRangeOfEnd
+hutime:hasRangeOfEnd rdf:type owl:ObjectProperty ;
+                     rdfs:domain hutime:UncertainTimeInterval ;
+                     rdfs:range hutime:UncertainTimeInterval ;
+                     rdfs:comment "End range an uncerain time interval." ;
+                     rdfs:label "end range" .
+
+
 ###  http://resource.hutime.org/ontology/hasReliableBeginning
 hutime:hasReliableBeginning rdf:type owl:ObjectProperty ;
                             rdfs:domain hutime:UncertainTimeInterval ;
@@ -73,6 +95,16 @@ hutime:hasReliableEnd rdf:type owl:ObjectProperty ;
                       rdfs:range time:TemporalEntity ;
                       rdfs:comment "End point of a reliable time interval in an uncerain time interval." ;
                       rdfs:label "reliable end" .
+
+
+###  http://resource.hutime.org/ontology/hasReliableJdBeginning
+hutime:hasReliableJdBeginning rdf:type owl:ObjectProperty ;
+                              rdfs:domain hutime:UncertainTimeInterval .
+
+
+###  http://resource.hutime.org/ontology/hasReliableJdEnd
+hutime:hasReliableJdEnd rdf:type owl:ObjectProperty ;
+                        rdfs:domain hutime:UncertainTimeInterval .
 
 
 ###  http://schema.org/agent
@@ -173,6 +205,26 @@ plod:numberOfPatients rdf:type owl:DatatypeProperty ;
                       rdfs:range xsd:integer .
 
 
+###  http://resource.hutime.org/ontology/hasPossibleJdBeginning
+hutime:hasPossibleJdBeginning rdf:type owl:DatatypeProperty ;
+                              rdfs:range xsd:double .
+
+
+###  http://resource.hutime.org/ontology/hasPossibleJdEnd
+hutime:hasPossibleJdEnd rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:double .
+
+
+###  http://resource.hutime.org/ontology/hasReliableJdBeginning
+hutime:hasReliableJdBeginning rdf:type owl:DatatypeProperty ;
+                              rdfs:range xsd:double .
+
+
+###  http://resource.hutime.org/ontology/hasReliableJdEnd
+hutime:hasReliableJdEnd rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:double .
+
+
 ###  http://schema.org/codeValue
 schema:codeValue rdf:type owl:DatatypeProperty ;
                  rdfs:domain schema:MedicalCode ;
@@ -233,30 +285,6 @@ foaf:age rdf:type owl:DatatypeProperty .
 #    Classes
 #################################################################
 
-###  http://org.semanticweb.owlapi/error#Error1
-<http://org.semanticweb.owlapi/error#Error1> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error2
-<http://org.semanticweb.owlapi/error#Error2> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error3
-<http://org.semanticweb.owlapi/error#Error3> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error4
-<http://org.semanticweb.owlapi/error#Error4> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error5
-<http://org.semanticweb.owlapi/error#Error5> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error6
-<http://org.semanticweb.owlapi/error#Error6> rdf:type owl:Class .
-
-
 ###  http://plod.info/rdf/CloseContact
 plod:CloseContact rdf:type owl:Class ;
                   rdfs:subClassOf schema:Action ,
@@ -278,13 +306,7 @@ plod:CloseContact rdf:type owl:Class ;
 
 ###  http://resource.hutime.org/ontology/UncertainTimeInterval
 hutime:UncertainTimeInterval rdf:type owl:Class ;
-                             rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error1> ,
-                                             <http://org.semanticweb.owlapi/error#Error2> ,
-                                             <http://org.semanticweb.owlapi/error#Error3> ,
-                                             <http://org.semanticweb.owlapi/error#Error4> ,
-                                             <http://org.semanticweb.owlapi/error#Error5> ,
-                                             <http://org.semanticweb.owlapi/error#Error6> ,
-                                             time:Interval ,
+                             rdfs:subClassOf time:Interval ,
                                              [ rdf:type owl:Restriction ;
                                                owl:onProperty hutime:hasPossibleBeginning ;
                                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
@@ -294,11 +316,35 @@ hutime:UncertainTimeInterval rdf:type owl:Class ;
                                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
                                              ] ,
                                              [ rdf:type owl:Restriction ;
+                                               owl:onProperty hutime:hasPossibleJdBeginning ;
+                                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty hutime:hasPossibleJdEnd ;
+                                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty hutime:hasRangeOfBeginning ;
+                                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty hutime:hasRangeOfEnd ;
+                                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
                                                owl:onProperty hutime:hasReliableBeginning ;
                                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
                                              ] ,
                                              [ rdf:type owl:Restriction ;
                                                owl:onProperty hutime:hasReliableEnd ;
+                                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty hutime:hasReliableJdBeginning ;
+                                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty hutime:hasReliableJdEnd ;
                                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
                                              ] ;
                              rdfs:comment "The class of uncertain time interval." ;
@@ -535,22 +581,24 @@ rsctx:Night rdf:type owl:NamedIndividual ,
                                                                      schema:url "https://www.pref.chiba.lg.jp/shippei/kansenshou/keihatu-index.html"^^xsd:anyURI .
 
 
-[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
-] .
+#################################################################
+#    Annotations
+#################################################################
 
-[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
- ] .
+hutime:hasPossibleJdBeginning rdfs:comment "Julian date value of begnning point of a possible time interval in an uncerain time interval." ;
+                              rdfs:label "possible JD beginning" .
 
-[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
- ] .
 
-[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
- ] .
+hutime:hasPossibleJdEnd rdfs:label "possible JD end" ;
+                        rdfs:comment "Julian date value of end point of a possible time interval in an uncerain time interval." .
 
-[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
- ] .
 
-[ owl:maxCardinality "1"^^xsd:nonNegativeInteger
- ] .
+hutime:hasReliableJdBeginning rdfs:label "reliable JD beginning" ;
+                              rdfs:comment "Julian date value of begnning point of a reliable time interval in an uncerain time interval." .
+
+
+hutime:hasReliableJdEnd rdfs:label "reliable JD end" ;
+                        rdfs:comment "Julian date value of end point of a reliable time interval in an uncerain time interval." .
+
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -8,7 +8,6 @@
 @prefix plod: <http://plod.info/rdf/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix time: <http://www.w3.org/2006/time#> .
-@prefix rsctx: <http://softeng.polito.it/rsctx#> .
 @prefix hutime: <http://resource.hutime.org/ontology/> .
 @prefix schema: <http://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -27,8 +26,22 @@ schema:name rdf:type owl:AnnotationProperty ;
 
 
 #################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
 #    Object Properties
 #################################################################
+
+###  http://plod.info/rdf/partOfDay
+plod:partOfDay rdf:type owl:ObjectProperty ;
+               rdfs:domain time:TemporalEntity ;
+               rdfs:range plod:PartOfDay .
+
 
 ###  http://plod.info/rdf/time
 plod:time rdf:type owl:ObjectProperty ;
@@ -176,13 +189,6 @@ schema:toLocation rdf:type owl:ObjectProperty ;
                   rdfs:range schema:Place .
 
 
-###  http://softeng.polito.it/rsctx#partOfDay
-rsctx:partOfDay rdf:type owl:ObjectProperty ,
-                         owl:FunctionalProperty ;
-                rdfs:domain rsctx:Time ;
-                rdfs:range rsctx:PartOfDay .
-
-
 #################################################################
 #    Data properties
 #################################################################
@@ -277,6 +283,14 @@ schema:url rdf:type owl:DatatypeProperty ;
            rdfs:range xsd:anyURI .
 
 
+###  http://www.w3.org/2006/time#inXSDDate
+time:inXSDDate rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/2006/time#inXSDDateTime
+time:inXSDDateTime rdf:type owl:DatatypeProperty .
+
+
 ###  http://xmlns.com/foaf/0.1/age
 foaf:age rdf:type owl:DatatypeProperty .
 
@@ -284,6 +298,11 @@ foaf:age rdf:type owl:DatatypeProperty .
 #################################################################
 #    Classes
 #################################################################
+
+###  http://plod.info/rdf/Afternoon
+plod:Afternoon rdf:type owl:Class ;
+               rdfs:subClassOf plod:PartOfDay .
+
 
 ###  http://plod.info/rdf/CloseContact
 plod:CloseContact rdf:type owl:Class ;
@@ -302,6 +321,26 @@ plod:CloseContact rdf:type owl:Class ;
                                     owl:onClass schema:Person
                                   ] ;
                   rdfs:label "Close Contact" .
+
+
+###  http://plod.info/rdf/Evening
+plod:Evening rdf:type owl:Class ;
+             rdfs:subClassOf plod:PartOfDay .
+
+
+###  http://plod.info/rdf/Morning
+plod:Morning rdf:type owl:Class ;
+             rdfs:subClassOf plod:PartOfDay .
+
+
+###  http://plod.info/rdf/Night
+plod:Night rdf:type owl:Class ;
+           rdfs:subClassOf plod:PartOfDay .
+
+
+###  http://plod.info/rdf/PartOfDay
+plod:PartOfDay rdf:type owl:Class ;
+               rdfs:subClassOf time:ProperInterval .
 
 
 ###  http://resource.hutime.org/ontology/UncertainTimeInterval
@@ -423,28 +462,6 @@ schema:WebPage rdf:type owl:Class ;
                rdfs:subClassOf schema:CreativeWork .
 
 
-###  http://softeng.polito.it/rsctx#PartOfDay
-rsctx:PartOfDay rdf:type owl:Class ;
-                owl:equivalentClass [ rdf:type owl:Class ;
-                                      owl:oneOf ( rsctx:Afternoon
-                                                  rsctx:Evening
-                                                  rsctx:Morning
-                                                  rsctx:Night
-                                                )
-                                    ] ;
-                rdfs:subClassOf rsctx:TimeInterval .
-
-
-###  http://softeng.polito.it/rsctx#Time
-rsctx:Time rdf:type owl:Class ;
-           rdfs:subClassOf time:Instant .
-
-
-###  http://softeng.polito.it/rsctx#TimeInterval
-rsctx:TimeInterval rdf:type owl:Class ;
-                   rdfs:subClassOf time:ProperInterval .
-
-
 ###  http://www.w3.org/2006/time#Instant
 time:Instant rdf:type owl:Class ;
              rdfs:subClassOf time:TemporalEntity .
@@ -510,6 +527,55 @@ plod:ChibaPrefecturalGovernment rdf:type owl:NamedIndividual ,
                                    rdfs:label "12202001311" .
 
 
+###  http://plod.info/rdf/12202001311-C01
+<http://plod.info/rdf/12202001311-C01> rdf:type owl:NamedIndividual ,
+                                                plod:CloseContact ;
+                                       plod:time <http://plod.info/rdf/12202001311-C01-T01> ;
+                                       schema:agent <http://plod.info/rdf/12202001311-P01> ,
+                                                    <http://plod.info/rdf/12202001311-P02> ;
+                                       schema:location gnjp:千葉県 .
+
+
+###  http://plod.info/rdf/12202001311-C01-T01
+<http://plod.info/rdf/12202001311-C01-T01> rdf:type owl:NamedIndividual ,
+                                                    time:Instant ;
+                                           plod:partOfDay <http://plod.info/rdf/12202001311-C01-T01-AN> ;
+                                           time:inXSDDate "2020-01-31"^^xsd:date .
+
+
+###  http://plod.info/rdf/12202001311-C01-T01-AN
+<http://plod.info/rdf/12202001311-C01-T01-AN> rdf:type owl:NamedIndividual ,
+                                                       plod:Afternoon ;
+                                              hutime:hasPossibleBeginning <http://plod.info/rdf/12202001311-C01-T01-PB> ;
+                                              hutime:hasPossibleEnd <http://plod.info/rdf/12202001311-C01-T01-PE> ;
+                                              hutime:hasReliableBeginning <http://plod.info/rdf/12202001311-C01-T01-RB> ;
+                                              hutime:hasReliableEnd <http://plod.info/rdf/12202001311-C01-T01-RE> .
+
+
+###  http://plod.info/rdf/12202001311-C01-T01-PB
+<http://plod.info/rdf/12202001311-C01-T01-PB> rdf:type owl:NamedIndividual ,
+                                                       time:Instant ;
+                                              time:inXSDDateTime "2020-01-31T04:30:00"^^xsd:dateTime .
+
+
+###  http://plod.info/rdf/12202001311-C01-T01-PE
+<http://plod.info/rdf/12202001311-C01-T01-PE> rdf:type owl:NamedIndividual ,
+                                                       time:Instant ;
+                                              time:inXSDDateTime "2020-01-31T12:00:00"^^xsd:dateTime .
+
+
+###  http://plod.info/rdf/12202001311-C01-T01-RB
+<http://plod.info/rdf/12202001311-C01-T01-RB> rdf:type owl:NamedIndividual ,
+                                                       time:Instant ;
+                                              time:inXSDDateTime "2020-01-31T06:00:00"^^xsd:dateTime .
+
+
+###  http://plod.info/rdf/12202001311-C01-T01-RE
+<http://plod.info/rdf/12202001311-C01-T01-RE> rdf:type owl:NamedIndividual ,
+                                                       time:Instant ;
+                                              time:inXSDDateTime "2020-01-31T09:00:00"^^xsd:dateTime .
+
+
 ###  http://plod.info/rdf/12202001311-P01
 <http://plod.info/rdf/12202001311-P01> rdf:type owl:NamedIndividual ,
                                                 schema:Patient ;
@@ -537,6 +603,10 @@ plod:ChibaPrefecturalGovernment rdf:type owl:NamedIndividual ,
                                            rdfs:label "12202001311-P01-M02" .
 
 
+###  http://plod.info/rdf/12202001311-P02
+<http://plod.info/rdf/12202001311-P02> rdf:type owl:NamedIndividual .
+
+
 ###  http://plod.info/rdf/12202001311-R01
 <http://plod.info/rdf/12202001311-R01> rdf:type owl:NamedIndividual ,
                                                 schema:Report ;
@@ -553,26 +623,6 @@ plod:ChibaPrefecturalGovernment rdf:type owl:NamedIndividual ,
                                                             schema:MedicalCode ;
                                                    schema:codeValue "U07.1" ;
                                                    schema:codingSystem "ICD-10" .
-
-
-###  http://softeng.polito.it/rsctx#Afternoon
-rsctx:Afternoon rdf:type owl:NamedIndividual ,
-                         rsctx:PartOfDay .
-
-
-###  http://softeng.polito.it/rsctx#Evening
-rsctx:Evening rdf:type owl:NamedIndividual ,
-                       rsctx:PartOfDay .
-
-
-###  http://softeng.polito.it/rsctx#Morning
-rsctx:Morning rdf:type owl:NamedIndividual ,
-                       rsctx:PartOfDay .
-
-
-###  http://softeng.polito.it/rsctx#Night
-rsctx:Night rdf:type owl:NamedIndividual ,
-                     rsctx:PartOfDay .
 
 
 ###  https://www.pref.chiba.lg.jp/shippei/kansenshou/keihatu-index.html

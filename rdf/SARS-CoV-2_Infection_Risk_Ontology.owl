@@ -258,10 +258,21 @@
     
 
 
+    <!-- http://plod.info/rdf/Exercise -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Exercise">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:label xml:lang="en">Exercise</rdfs:label>
+        <rdfs:label xml:lang="ja">運動する</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://plod.info/rdf/Exercise_at_a_gym -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Exercise_at_a_gym">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Exercise"/>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_facilities"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
@@ -301,7 +312,7 @@
     <!-- http://plod.info/rdf/Flequently_breath -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Flequently_breath">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Respire"/>
         <rdfs:label xml:lang="en">Flequently breath</rdfs:label>
         <rdfs:label xml:lang="ja">頻繁な呼吸</rdfs:label>
     </owl:Class>
@@ -321,7 +332,7 @@
     <!-- http://plod.info/rdf/Forceful_exhalation -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Forceful_exhalation">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Respire"/>
         <rdfs:label xml:lang="en">Forceful exhalation</rdfs:label>
         <rdfs:label xml:lang="ja">強い呼気</rdfs:label>
     </owl:Class>
@@ -331,7 +342,7 @@
     <!-- http://plod.info/rdf/Go_to_a_store -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Go_to_a_store">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_facilities"/>
         <rdfs:label xml:lang="en">Go to a store</rdfs:label>
         <rdfs:label xml:lang="ja">店へ行く</rdfs:label>
     </owl:Class>
@@ -388,7 +399,7 @@
     <!-- http://plod.info/rdf/Go_to_concert -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Go_to_concert">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_facilities"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
@@ -415,6 +426,16 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Go to concert</rdfs:label>
         <rdfs:label xml:lang="ja">コンサートへ行く</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Go_to_facilities -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Go_to_facilities">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:label xml:lang="en">Go to facilities</rdfs:label>
+        <rdfs:label xml:lang="ja">施設へ行く</rdfs:label>
     </owl:Class>
     
 
@@ -495,7 +516,7 @@
     <!-- http://plod.info/rdf/Go_to_movie_theater_or_live_theater -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Go_to_movie_theater_or_live_theater">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_facilities"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
@@ -517,7 +538,7 @@
     <!-- http://plod.info/rdf/Go_to_museum -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Go_to_museum">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_facilities"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
@@ -851,7 +872,7 @@
     <!-- http://plod.info/rdf/Play_contact_sports -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Play_contact_sports">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Exercise"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
@@ -892,7 +913,7 @@
     <!-- http://plod.info/rdf/Play_distanced_sports_outside -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Play_distanced_sports_outside">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Exercise"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
@@ -993,7 +1014,7 @@
     <!-- http://plod.info/rdf/Religious_service -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Religious_service">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_facilities"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
@@ -1034,6 +1055,16 @@
     
 
 
+    <!-- http://plod.info/rdf/Respire -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Respire">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:label xml:lang="en">Respire</rdfs:label>
+        <rdfs:label xml:lang="ja">呼吸する</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://plod.info/rdf/Restaurant -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Restaurant">
@@ -1065,7 +1096,7 @@
     <!-- http://plod.info/rdf/Run_or_bike_with_another_person -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Run_or_bike_with_another_person">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Exercise"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
@@ -1182,7 +1213,7 @@
     <!-- http://plod.info/rdf/Visit_a_dentist -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Visit_a_dentist">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_facilities"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
@@ -1210,7 +1241,7 @@
     <!-- http://plod.info/rdf/Visit_a_hospital_emergency_department -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Visit_a_hospital_emergency_department">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_facilities"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
@@ -1226,7 +1257,7 @@
     <!-- http://plod.info/rdf/Visit_a_medical_office -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Visit_a_medical_office">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_facilities"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
@@ -1264,7 +1295,7 @@
     <!-- http://plod.info/rdf/Watching_sports -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Watching_sports">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_facilities"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>

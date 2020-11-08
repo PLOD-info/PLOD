@@ -41,6 +41,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+    
+
+
     <!-- http://www.w3.org/2006/time#hasDuration -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#hasDuration"/>
@@ -87,9 +93,9 @@
     
 
 
-    <!-- http://plod.info/rdf/Action -->
+    <!-- http://plod.info/rdf/Activity -->
 
-    <owl:Class rdf:about="http://plod.info/rdf/Action"/>
+    <owl:Class rdf:about="http://plod.info/rdf/Activity"/>
     
 
 
@@ -116,7 +122,7 @@
     <!-- http://plod.info/rdf/Alcohol_drinking -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Alcohol_drinking">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#Risk_Activity"/>
         <rdfs:comment xml:lang="ja">感染予防意識の低下を招く</rdfs:comment>
         <rdfs:label xml:lang="en">Alcohol drinking</rdfs:label>
         <rdfs:label xml:lang="ja">飲酒</rdfs:label>
@@ -127,8 +133,37 @@
     <!-- http://plod.info/rdf/Bar -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Bar">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowded_place"/>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Indoor_facility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Alcohol_drinking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowded_place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Flequently_breath"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Prolonged_close_contact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Yelling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Bar</rdfs:label>
         <rdfs:label xml:lang="ja">バー</rdfs:label>
     </owl:Class>
@@ -148,7 +183,7 @@
     <!-- http://plod.info/rdf/Close-contact -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Close-contact">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#Risk_Activity"/>
         <rdfs:label xml:lang="en">Close-contact</rdfs:label>
         <rdfs:label xml:lang="ja">密接</rdfs:label>
     </owl:Class>
@@ -168,8 +203,25 @@
     <!-- http://plod.info/rdf/Coffee_shop -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Coffee_shop">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowded_place"/>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Indoor_facility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowded_place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Prolonged_close_contact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Remove_a_mask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Coffee_shop</rdfs:label>
         <rdfs:label xml:lang="ja">喫茶店</rdfs:label>
     </owl:Class>
@@ -179,8 +231,31 @@
     <!-- http://plod.info/rdf/Concert_hall -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Concert_hall">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowded_place"/>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Indoor_facility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowded_place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/High-touch_surfaces"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Prolonged_close_contact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Yelling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Concert hall</rdfs:label>
         <rdfs:label xml:lang="ja">コンサートホール</rdfs:label>
     </owl:Class>
@@ -220,7 +295,7 @@
     <!-- http://plod.info/rdf/Crowded_place -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Crowded_place">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Space"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#Risk_Activity"/>
         <rdfs:label xml:lang="en">Crowded place</rdfs:label>
         <rdfs:label xml:lang="ja">密集</rdfs:label>
     </owl:Class>
@@ -230,8 +305,25 @@
     <!-- http://plod.info/rdf/Dental_clinic -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Dental_clinic">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowded_place"/>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Indoor_facility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Close-contact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowded_place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Remove_a_mask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Dental clinic</rdfs:label>
         <rdfs:label xml:lang="ja">歯科医院</rdfs:label>
     </owl:Class>
@@ -258,61 +350,10 @@
     
 
 
-    <!-- http://plod.info/rdf/Exercise -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Exercise">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
-        <rdfs:label xml:lang="en">Exercise</rdfs:label>
-        <rdfs:label xml:lang="ja">運動する</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Exercise_at_a_gym -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Exercise_at_a_gym">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Exercise"/>
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_facilities"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Gym"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Close-contact"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Flequently_breath"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/High-touch_surfaces"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Remove_a_mask"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Exercise at a gym</rdfs:label>
-        <rdfs:label xml:lang="ja">ジムで運動する</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://plod.info/rdf/Flequently_breath -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Flequently_breath">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Respire"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#Risk_Activity"/>
         <rdfs:label xml:lang="en">Flequently breath</rdfs:label>
         <rdfs:label xml:lang="ja">頻繁な呼吸</rdfs:label>
     </owl:Class>
@@ -332,287 +373,9 @@
     <!-- http://plod.info/rdf/Forceful_exhalation -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Forceful_exhalation">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Respire"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#Risk_Activity"/>
         <rdfs:label xml:lang="en">Forceful exhalation</rdfs:label>
         <rdfs:label xml:lang="ja">強い呼気</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Go_to_a_store -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Go_to_a_store">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_facilities"/>
-        <rdfs:label xml:lang="en">Go to a store</rdfs:label>
-        <rdfs:label xml:lang="ja">店へ行く</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Go_to_bars_or_nightclubs -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Go_to_bars_or_nightclubs">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_a_store"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://plod.info/rdf/Bar"/>
-                            <rdf:Description rdf:about="http://plod.info/rdf/Nightclub"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Alcohol_drinking"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Flequently_breath"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Prolonged_close_contact"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Yelling"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Go to bars or nightclubs</rdfs:label>
-        <rdfs:label xml:lang="ja">バーやナイトクラブへ行く</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Go_to_concert -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Go_to_concert">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_facilities"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Concert_hall"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/High-touch_surfaces"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Prolonged_close_contact"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Yelling"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Go to concert</rdfs:label>
-        <rdfs:label xml:lang="ja">コンサートへ行く</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Go_to_facilities -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Go_to_facilities">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
-        <rdfs:label xml:lang="en">Go to facilities</rdfs:label>
-        <rdfs:label xml:lang="ja">施設へ行く</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Go_to_grocery_store -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Go_to_grocery_store">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_a_store"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Grocery_store"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/High-touch_surfaces"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Go to grocery store</rdfs:label>
-        <rdfs:label xml:lang="ja">食料品店へ行く</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Go_to_hair_salon -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Go_to_hair_salon">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_a_store"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Hair_salon"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Go to hair/nail salon</rdfs:label>
-        <rdfs:label xml:lang="ja">ヘアー/ネイルサロンへ行く</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Go_to_indoor_restaurant_or_coffee_shop -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Go_to_indoor_restaurant_or_coffee_shop">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_a_store"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://plod.info/rdf/Coffee_shop"/>
-                            <rdf:Description rdf:about="http://plod.info/rdf/Restaurant"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Prolonged_close_contact"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Remove_a_mask"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Go to indoor restaurant or coffee shop</rdfs:label>
-        <rdfs:label xml:lang="ja">屋内レストランや喫茶店へ行く</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Go_to_movie_theater_or_live_theater -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Go_to_movie_theater_or_live_theater">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_facilities"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Movie_theater"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/High-touch_surfaces"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Go to movie theater or live theater</rdfs:label>
-        <rdfs:label xml:lang="ja">映画館や劇場へ行く</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Go_to_museum -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Go_to_museum">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_facilities"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Museum"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Close-contact"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Go to museum</rdfs:label>
-        <rdfs:label xml:lang="ja">博物館へ行く</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Go_to_outdoor_picnic_or_porch_dining -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Go_to_outdoor_picnic_or_porch_dining">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowded_place"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Go to picnic or porch dining</rdfs:label>
-        <rdfs:label xml:lang="ja">ピクニックやポーチダイニングへ行く</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Go_to_outdoor_restaurant -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Go_to_outdoor_restaurant">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_a_store"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Outdoor_restaurant"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Remove_a_mask"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Go to outdoor restaurant</rdfs:label>
-        <rdfs:label xml:lang="ja">屋外レストランへ行く</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Go_to_retail_store -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Go_to_retail_store">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_a_store"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Retail_store"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Close-contact"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Go to retail store</rdfs:label>
-        <rdfs:label xml:lang="ja">小売店へ行く</rdfs:label>
     </owl:Class>
     
 
@@ -620,8 +383,19 @@
     <!-- http://plod.info/rdf/Grocery_store -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Grocery_store">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowded_place"/>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Indoor_facility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowded_place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/High-touch_surfaces"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Grocery store</rdfs:label>
         <rdfs:label xml:lang="ja">食料品店</rdfs:label>
     </owl:Class>
@@ -631,8 +405,37 @@
     <!-- http://plod.info/rdf/Gym -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Gym">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowded_place"/>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Indoor_facility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Close-contact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowded_place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Flequently_breath"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/High-touch_surfaces"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Remove_a_mask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Gym</rdfs:label>
         <rdfs:label xml:lang="ja">ジム</rdfs:label>
     </owl:Class>
@@ -645,13 +448,13 @@
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Indoor_facility"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
                 <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Prolonged_close_contact"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
                 <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Remove_a_mask"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -664,7 +467,13 @@
     <!-- http://plod.info/rdf/High-touch_surfaces -->
 
     <owl:Class rdf:about="http://plod.info/rdf/High-touch_surfaces">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#Risk_Activity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Singing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">High-touch surfaces</rdfs:label>
         <rdfs:label xml:lang="ja">よく物を触る</rdfs:label>
     </owl:Class>
@@ -674,8 +483,13 @@
     <!-- http://plod.info/rdf/Hospital -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Hospital">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowded_place"/>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Indoor_facility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowded_place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Hospital</rdfs:label>
         <rdfs:label xml:lang="ja">病院</rdfs:label>
     </owl:Class>
@@ -702,52 +516,46 @@
     
 
 
-    <!-- http://plod.info/rdf/Indoor_party -->
+    <!-- http://plod.info/rdf/Indoor_sports_facility -->
 
-    <owl:Class rdf:about="http://plod.info/rdf/Indoor_party">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+    <owl:Class rdf:about="http://plod.info/rdf/Indoor_sports_facility">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Indoor_facility"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://plod.info/rdf/Crowded_place"/>
-                            <rdf:Description rdf:about="http://plod.info/rdf/Indoor_facility"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowded_place"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Alcohol_drinking"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Flequently_breath"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/High-touch_surfaces"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
                 <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Prolonged_close_contact"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Sharing_pipes"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Remove_a_mask"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Indoor party</rdfs:label>
-        <rdfs:label xml:lang="ja">インドアパーティ</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Indoor_sports_facility -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Indoor_sports_facility">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowded_place"/>
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Indoor_facility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Yelling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Indoor sports facility</rdfs:label>
         <rdfs:label xml:lang="ja">屋内スポーツ施設</rdfs:label>
     </owl:Class>
@@ -757,8 +565,19 @@
     <!-- http://plod.info/rdf/Live_theater -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Live_theater">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowded_place"/>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Indoor_facility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowded_place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/High-touch_surfaces"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Live theater</rdfs:label>
         <rdfs:label xml:lang="ja">劇場</rdfs:label>
     </owl:Class>
@@ -768,8 +587,25 @@
     <!-- http://plod.info/rdf/Medical_office -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Medical_office">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowded_place"/>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Indoor_facility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Close-contact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowded_place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/High-touch_surfaces"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Medical office</rdfs:label>
         <rdfs:label xml:lang="ja">診療所</rdfs:label>
     </owl:Class>
@@ -779,8 +615,19 @@
     <!-- http://plod.info/rdf/Movie_theater -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Movie_theater">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowded_place"/>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Indoor_facility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowded_place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/High-touch_surfaces"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Movie theater</rdfs:label>
         <rdfs:label xml:lang="ja">映画館</rdfs:label>
     </owl:Class>
@@ -790,8 +637,19 @@
     <!-- http://plod.info/rdf/Museum -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Museum">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowded_place"/>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Indoor_facility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Close-contact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowded_place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Museum</rdfs:label>
         <rdfs:label xml:lang="ja">博物館</rdfs:label>
     </owl:Class>
@@ -801,8 +659,37 @@
     <!-- http://plod.info/rdf/Nightclub -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Nightclub">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowded_place"/>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Indoor_facility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Alcohol_drinking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowded_place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Flequently_breath"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Prolonged_close_contact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Yelling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Nightclub</rdfs:label>
         <rdfs:label xml:lang="ja">ナイトクラブ</rdfs:label>
     </owl:Class>
@@ -812,8 +699,25 @@
     <!-- http://plod.info/rdf/Office -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Office">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowded_place"/>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Indoor_facility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowded_place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/High-touch_surfaces"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Prolonged_close_contact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Office</rdfs:label>
         <rdfs:label xml:lang="ja">オフィス</rdfs:label>
     </owl:Class>
@@ -833,8 +737,19 @@
     <!-- http://plod.info/rdf/Outdoor_restaurant -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Outdoor_restaurant">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowded_place"/>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Outdoor_facility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowded_place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Remove_a_mask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Outdoor restaurant</rdfs:label>
         <rdfs:label xml:lang="ja">屋外レストラン</rdfs:label>
     </owl:Class>
@@ -844,90 +759,45 @@
     <!-- http://plod.info/rdf/Outdoor_sports_facility -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Outdoor_sports_facility">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowded_place"/>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Outdoor_facility"/>
-        <rdfs:label xml:lang="en">Outdoor sports facility</rdfs:label>
-        <rdfs:label xml:lang="ja">屋外スポーツ施設</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Pick_up_takeout_food -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Pick_up_takeout_food">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
                 <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowded_place"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Pick up takeout food, coffee, or groceries from stores</rdfs:comment>
-        <rdfs:label xml:lang="en">Pick up takeout food</rdfs:label>
-        <rdfs:label xml:lang="ja">テイクアウトする</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Play_contact_sports -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Play_contact_sports">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Exercise"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://plod.info/rdf/Indoor_sports_facility"/>
-                            <rdf:Description rdf:about="http://plod.info/rdf/Outdoor_sports_facility"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
                 <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Flequently_breath"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/High-touch_surfaces"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
                 <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Prolonged_close_contact"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
                 <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Remove_a_mask"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Play contact sports</rdfs:label>
-        <rdfs:label xml:lang="ja">コンタクトスポーツをする</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Play_distanced_sports_outside -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Play_distanced_sports_outside">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Exercise"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Outdoor_sports_facility"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Yelling"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Flequently_breath"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Play distanced sports outside</rdfs:label>
-        <rdfs:label xml:lang="ja">外で遠距離スポーツをする</rdfs:label>
+        <rdfs:label xml:lang="en">Outdoor sports facility</rdfs:label>
+        <rdfs:label xml:lang="ja">屋外スポーツ施設</rdfs:label>
     </owl:Class>
     
 
@@ -980,8 +850,20 @@
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Confined_and_enclosed_space"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
                 <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowded_place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/High-touch_surfaces"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Prolonged_close_contact"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Public transportation</rdfs:label>
@@ -1003,44 +885,33 @@
     <!-- http://plod.info/rdf/Religious_facility -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Religious_facility">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowded_place"/>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Indoor_facility"/>
-        <rdfs:label xml:lang="en">Religious facility</rdfs:label>
-        <rdfs:label xml:lang="ja">宗教施設</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Religious_service -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Religious_service">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_facilities"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Religious_facility"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowded_place"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
                 <owl:someValuesFrom rdf:resource="http://plod.info/rdf/High-touch_surfaces"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
                 <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Prolonged_close_contact"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
                 <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Singing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Religious service</rdfs:label>
-        <rdfs:label xml:lang="ja">礼拝</rdfs:label>
+        <rdfs:label xml:lang="en">Religious facility</rdfs:label>
+        <rdfs:label xml:lang="ja">宗教施設</rdfs:label>
     </owl:Class>
     
 
@@ -1048,19 +919,9 @@
     <!-- http://plod.info/rdf/Remove_a_mask -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Remove_a_mask">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#Risk_Activity"/>
         <rdfs:label xml:lang="en">Remove a mask</rdfs:label>
         <rdfs:label xml:lang="ja">マスクを外す</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Respire -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Respire">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
-        <rdfs:label xml:lang="en">Respire</rdfs:label>
-        <rdfs:label xml:lang="ja">呼吸する</rdfs:label>
     </owl:Class>
     
 
@@ -1068,8 +929,25 @@
     <!-- http://plod.info/rdf/Restaurant -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Restaurant">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowded_place"/>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Indoor_facility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowded_place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Prolonged_close_contact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Remove_a_mask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Restaurant</rdfs:label>
         <rdfs:label xml:lang="ja">レストラン</rdfs:label>
     </owl:Class>
@@ -1081,6 +959,12 @@
     <owl:Class rdf:about="http://plod.info/rdf/Retail_store">
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowded_place"/>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Indoor_facility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Close-contact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Retail store</rdfs:label>
         <rdfs:label xml:lang="ja">小売店</rdfs:label>
     </owl:Class>
@@ -1093,32 +977,10 @@
     
 
 
-    <!-- http://plod.info/rdf/Run_or_bike_with_another_person -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Run_or_bike_with_another_person">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Exercise"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowded_place"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Close-contact"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Run or bike with another person</rdfs:label>
-        <rdfs:label xml:lang="ja">他の人とランニングまたは自転車に乗る</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://plod.info/rdf/Sharing_pipes -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Sharing_pipes">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#Risk_Activity"/>
         <rdfs:comment xml:lang="ja">咳を誘発する</rdfs:comment>
         <rdfs:label xml:lang="en">Sharing pipes</rdfs:label>
         <rdfs:label xml:lang="ja">パイプの共有</rdfs:label>
@@ -1152,16 +1014,6 @@
     
 
 
-    <!-- http://plod.info/rdf/Stay_at_home -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Stay_at_home">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
-        <rdfs:label xml:lang="en">Stay at home</rdfs:label>
-        <rdfs:label xml:lang="ja">家にいる</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://plod.info/rdf/Subway -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Subway">
@@ -1182,191 +1034,72 @@
     
 
 
-    <!-- http://plod.info/rdf/Use_public_transportation -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Use_public_transportation">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Public_transportation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/High-touch_surfaces"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Prolonged_close_contact"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Use public transportation</rdfs:label>
-        <rdfs:label xml:lang="ja">公共交通機関を使う</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Visit_a_dentist -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Visit_a_dentist">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_facilities"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Dental_clinic"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Close-contact"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Remove_a_mask"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Visit a dentist</rdfs:label>
-        <rdfs:label xml:lang="ja">歯科医院へ行く</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Visit_a_hospital_emergency_department -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Visit_a_hospital_emergency_department">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_facilities"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Hospital"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Visit a hospital emergency department</rdfs:label>
-        <rdfs:label xml:lang="ja">救急病棟を訪問する</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Visit_a_medical_office -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Visit_a_medical_office">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_facilities"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Medical_office"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Close-contact"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/High-touch_surfaces"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Visit a medical office</rdfs:label>
-        <rdfs:label xml:lang="ja">診療所を訪問する</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Walk_outdoor -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Walk_outdoor">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
-        <rdfs:label xml:lang="en">Walk outdoor</rdfs:label>
-        <rdfs:label xml:lang="ja">外を歩く</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Watching_sports -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Watching_sports">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Go_to_facilities"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://plod.info/rdf/Indoor_sports_facility"/>
-                            <rdf:Description rdf:about="http://plod.info/rdf/Outdoor_sports_facility"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/High-touch_surfaces"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Prolonged_close_contact"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Yelling"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Watching sports</rdfs:label>
-        <rdfs:label xml:lang="ja">スポーツ観戦</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Work_in_an_office -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Work_in_an_office">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/place"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Office"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/High-touch_surfaces"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/possible_action"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Prolonged_close_contact"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Work in an office</rdfs:label>
-        <rdfs:label xml:lang="ja">オフィスで働く</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://plod.info/rdf/Yelling -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Yelling">
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Forceful_exhalation"/>
         <rdfs:label xml:lang="en">Yelling</rdfs:label>
         <rdfs:label xml:lang="ja">叫ぶこと</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#Affordance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#Affordance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#Home -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#Home">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Indoor_facility"/>
+        <rdfs:label xml:lang="en">Home</rdfs:label>
+        <rdfs:label xml:lang="ja">家</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#Indoor_party_venue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#Indoor_party_venue">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Indoor_facility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Alcohol_drinking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowded_place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Prolonged_close_contact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Sharing_pipes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Indoor party venue</rdfs:label>
+        <rdfs:label xml:lang="ja">インドアパーティ会場</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#Risk_Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#Risk_Activity">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Activity"/>
+        <rdfs:label xml:lang="en">Risk activity</rdfs:label>
+        <rdfs:label xml:lang="ja">リスク行動</rdfs:label>
     </owl:Class>
     
 

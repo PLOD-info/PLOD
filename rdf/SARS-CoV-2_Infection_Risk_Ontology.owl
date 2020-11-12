@@ -957,12 +957,17 @@
     <!-- http://plod.info/rdf/Retail_store -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Retail_store">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowded_place"/>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Indoor_facility"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
                 <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Close-contact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowded_place"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Retail store</rdfs:label>

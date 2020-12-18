@@ -99,16 +99,6 @@
     
 
 
-    <!-- http://plod.info/rdf/Aerosol_infection -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Aerosol_infection">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Risk"/>
-        <rdfs:label xml:lang="en">Aerosol infection</rdfs:label>
-        <rdfs:label xml:lang="ja">エアロゾル感染</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://plod.info/rdf/Airplane -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Airplane">
@@ -183,7 +173,7 @@
     <!-- http://plod.info/rdf/Close-contact -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Close-contact">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#Risk_Activity"/>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
         <rdfs:label xml:lang="en">Close-contact</rdfs:label>
         <rdfs:label xml:lang="ja">密接</rdfs:label>
     </owl:Class>
@@ -196,6 +186,16 @@
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Close-contact"/>
         <rdfs:label xml:lang="en">Close-range conversation</rdfs:label>
         <rdfs:label xml:lang="ja">近距離の会話</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/ClosedSpace -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/ClosedSpace">
+        <owl:equivalentClass rdf:resource="http://plod.info/rdf/RiskSpaceSituation"/>
+        <rdfs:label xml:lang="en">Confined and enclosed space</rdfs:label>
+        <rdfs:label xml:lang="ja">密閉</rdfs:label>
     </owl:Class>
     
 
@@ -262,26 +262,6 @@
     
 
 
-    <!-- http://plod.info/rdf/Confined_and_enclosed_space -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Confined_and_enclosed_space">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Space"/>
-        <rdfs:label xml:lang="en">Confined and enclosed space</rdfs:label>
-        <rdfs:label xml:lang="ja">密閉</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Contact_infection -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Contact_infection">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Risk"/>
-        <rdfs:label xml:lang="en">Contact infection</rdfs:label>
-        <rdfs:label xml:lang="ja">接触感染</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://plod.info/rdf/Coughing -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Coughing">
@@ -292,10 +272,10 @@
     
 
 
-    <!-- http://plod.info/rdf/Crowding_activity -->
+    <!-- http://plod.info/rdf/CrowdingActivity -->
 
-    <owl:Class rdf:about="http://plod.info/rdf/Crowding_activity">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#Risk_Activity"/>
+    <owl:Class rdf:about="http://plod.info/rdf/CrowdingActivity">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
         <rdfs:label xml:lang="en">Crowding activity</rdfs:label>
         <rdfs:label xml:lang="ja">密集</rdfs:label>
     </owl:Class>
@@ -330,22 +310,11 @@
     
 
 
-    <!-- http://plod.info/rdf/Direct_contact_infection -->
+    <!-- http://plod.info/rdf/Event -->
 
-    <owl:Class rdf:about="http://plod.info/rdf/Direct_contact_infection">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Contact_infection"/>
-        <rdfs:label xml:lang="en">Direct contact infection</rdfs:label>
-        <rdfs:label xml:lang="ja">直接接触感染</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Droplet_infection -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Droplet_infection">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Risk"/>
-        <rdfs:label xml:lang="en">Droplet infection</rdfs:label>
-        <rdfs:label xml:lang="ja">飛沫感染</rdfs:label>
+    <owl:Class rdf:about="http://plod.info/rdf/Event">
+        <rdfs:label xml:lang="en">Event</rdfs:label>
+        <rdfs:label xml:lang="ja">イベント</rdfs:label>
     </owl:Class>
     
 
@@ -356,16 +325,6 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#Risk_Activity"/>
         <rdfs:label xml:lang="en">Flequently breath</rdfs:label>
         <rdfs:label xml:lang="ja">頻繁な呼吸</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Fomite_infection -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Fomite_infection">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Risk"/>
-        <rdfs:label xml:lang="en">Fomite infection</rdfs:label>
-        <rdfs:label xml:lang="ja">媒介物感染</rdfs:label>
     </owl:Class>
     
 
@@ -496,20 +455,10 @@
     
 
 
-    <!-- http://plod.info/rdf/Indirect_contact_infection -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Indirect_contact_infection">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Contact_infection"/>
-        <rdfs:label xml:lang="en">Indirect contact infection</rdfs:label>
-        <rdfs:label xml:lang="ja">間接接触感染</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://plod.info/rdf/Indoor_facility -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Indoor_facility">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Confined_and_enclosed_space"/>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/ClosedSpace"/>
         <rdfs:label xml:lang="en">Indoor facility</rdfs:label>
         <rdfs:label xml:lang="ja">屋内施設</rdfs:label>
     </owl:Class>
@@ -703,7 +652,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowding_activity"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/CrowdingActivity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -847,11 +796,11 @@
     <!-- http://plod.info/rdf/Public_transportation -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Public_transportation">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Confined_and_enclosed_space"/>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/ClosedSpace"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#afford"/>
-                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/Crowding_activity"/>
+                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/CrowdingActivity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -976,9 +925,19 @@
     
 
 
-    <!-- http://plod.info/rdf/Risk -->
+    <!-- http://plod.info/rdf/RiskActivitySituation -->
 
-    <owl:Class rdf:about="http://plod.info/rdf/Risk"/>
+    <owl:Class rdf:about="http://plod.info/rdf/RiskActivitySituation">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Situation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/RiskSpaceSituation -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/RiskSpaceSituation">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Situation"/>
+    </owl:Class>
     
 
 
@@ -999,6 +958,15 @@
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Forceful_exhalation"/>
         <rdfs:label xml:lang="en">Singing</rdfs:label>
         <rdfs:label xml:lang="ja">歌うこと</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Situation -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Situation">
+        <rdfs:label xml:lang="en">Situation</rdfs:label>
+        <rdfs:label xml:lang="ja">状態</rdfs:label>
     </owl:Class>
     
 
@@ -1155,7 +1123,7 @@
     <!-- http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#crowding_activity-i -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#crowding_activity-i">
-        <rdf:type rdf:resource="http://plod.info/rdf/Crowding_activity"/>
+        <rdf:type rdf:resource="http://plod.info/rdf/CrowdingActivity"/>
         <rdfs:label xml:lang="en">crowding activity instance</rdfs:label>
         <rdfs:label xml:lang="ja">密集（インスタンス）</rdfs:label>
     </owl:NamedIndividual>

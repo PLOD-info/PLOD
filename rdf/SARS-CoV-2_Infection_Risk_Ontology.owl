@@ -5,8 +5,10 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:plod="http://plod.info/rdf/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:event="http://purl.org/NET/c4dm/event.owl#">
     <owl:Ontology rdf:about="http://plod.info/rdf/SARS-CoV-2_Infection_Risk_Ontology.owl"/>
     
 
@@ -34,21 +36,21 @@
     
 
 
-    <!-- http://plod.info/rdf/agent -->
-
-    <owl:ObjectProperty rdf:about="http://plod.info/rdf/agent"/>
-    
-
-
-    <!-- http://plod.info/rdf/place -->
-
-    <owl:ObjectProperty rdf:about="http://plod.info/rdf/place"/>
-    
-
-
     <!-- http://plod.info/rdf/time -->
 
     <owl:ObjectProperty rdf:about="http://plod.info/rdf/time"/>
+    
+
+
+    <!-- http://purl.org/NET/c4dm/event.owl#agent -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/NET/c4dm/event.owl#agent"/>
+    
+
+
+    <!-- http://purl.org/NET/c4dm/event.owl#place -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/NET/c4dm/event.owl#place"/>
     
 
 
@@ -239,15 +241,6 @@
     
 
 
-    <!-- http://plod.info/rdf/Event -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Event">
-        <rdfs:label xml:lang="en">Event</rdfs:label>
-        <rdfs:label xml:lang="ja">イベント</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://plod.info/rdf/GroceryStore -->
 
     <owl:Class rdf:about="http://plod.info/rdf/GroceryStore">
@@ -331,7 +324,7 @@
     <!-- http://plod.info/rdf/IndoorFacility -->
 
     <owl:Class rdf:about="http://plod.info/rdf/IndoorFacility">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Space"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
         <rdfs:label xml:lang="en">Indoor facility</rdfs:label>
         <rdfs:label xml:lang="ja">屋内施設</rdfs:label>
     </owl:Class>
@@ -499,7 +492,7 @@
     <!-- http://plod.info/rdf/OutdoorFacility -->
 
     <owl:Class rdf:about="http://plod.info/rdf/OutdoorFacility">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Space"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
         <rdfs:label xml:lang="en">Outdoor facility</rdfs:label>
         <rdfs:label xml:lang="ja">屋外施設</rdfs:label>
     </owl:Class>
@@ -552,15 +545,6 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Outdoor sports facility</rdfs:label>
         <rdfs:label xml:lang="ja">屋外スポーツ施設</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Person -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Person">
-        <rdfs:label xml:lang="en">Person</rdfs:label>
-        <rdfs:label xml:lang="ja">人</rdfs:label>
     </owl:Class>
     
 
@@ -704,15 +688,6 @@
     
 
 
-    <!-- http://plod.info/rdf/Space -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Space">
-        <rdfs:label xml:lang="en">Space</rdfs:label>
-        <rdfs:label xml:lang="ja">空間</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://plod.info/rdf/Subway -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Subway">
@@ -739,6 +714,14 @@
     
 
 
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
+        <rdfs:label xml:lang="en">SpatialThing</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.w3.org/2006/time#TemporalDuration -->
 
     <owl:Class rdf:about="http://www.w3.org/2006/time#TemporalDuration">
@@ -751,6 +734,22 @@
 
     <owl:Class rdf:about="http://www.w3.org/2006/time#TemporalEntity">
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Event -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Event">
+        <rdfs:label xml:lang="en">Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:label xml:lang="en">Person</rdfs:label>
     </owl:Class>
     
 
@@ -797,9 +796,13 @@
     <!-- http://plod.info/rdf/event20200401-1 -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/event20200401-1">
-        <rdf:type rdf:resource="http://plod.info/rdf/Event"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Event"/>
         <plod:action rdf:resource="http://plod.info/rdf/chat"/>
         <plod:action rdf:resource="http://plod.info/rdf/eat"/>
+        <event:agent rdf:resource="http://plod.info/rdf/person-A"/>
+        <event:agent rdf:resource="http://plod.info/rdf/person-B"/>
+        <event:agent rdf:resource="http://plod.info/rdf/person-C"/>
+        <event:place rdf:resource="http://plod.info/rdf/restaurant-A"/>
         <rdfs:comment>ある時間帯におけるレストランAでの食事イベント1</rdfs:comment>
         <rdfs:label xml:lang="ja">ある時間帯におけるレストランAでの食事イベント1</rdfs:label>
     </owl:NamedIndividual>

@@ -36,6 +36,12 @@
     
 
 
+    <!-- http://plod.info/rdf/isSituationOf -->
+
+    <owl:ObjectProperty rdf:about="http://plod.info/rdf/isSituationOf"/>
+    
+
+
     <!-- http://plod.info/rdf/time -->
 
     <owl:ObjectProperty rdf:about="http://plod.info/rdf/time"/>
@@ -831,19 +837,25 @@
 
     <!-- http://plod.info/rdf/person-A -->
 
-    <owl:NamedIndividual rdf:about="http://plod.info/rdf/person-A"/>
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/person-A">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://plod.info/rdf/person-B -->
 
-    <owl:NamedIndividual rdf:about="http://plod.info/rdf/person-B"/>
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/person-B">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://plod.info/rdf/person-C -->
 
-    <owl:NamedIndividual rdf:about="http://plod.info/rdf/person-C"/>
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/person-C">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:NamedIndividual>
     
 
 
@@ -891,6 +903,7 @@
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/situation20200401-1">
         <rdf:type rdf:resource="http://plod.info/rdf/Situation"/>
+        <plod:isSituationOf rdf:resource="http://plod.info/rdf/restaurant-A"/>
         <rdfs:label xml:lang="ja">ある時間帯におけるレストランAの状態1</rdfs:label>
     </owl:NamedIndividual>
     

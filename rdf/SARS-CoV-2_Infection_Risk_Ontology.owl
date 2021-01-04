@@ -22,9 +22,21 @@
     
 
 
+    <!-- http://plod.info/rdf/action -->
+
+    <owl:ObjectProperty rdf:about="http://plod.info/rdf/action"/>
+    
+
+
     <!-- http://plod.info/rdf/afford -->
 
     <owl:ObjectProperty rdf:about="http://plod.info/rdf/afford"/>
+    
+
+
+    <!-- http://plod.info/rdf/agent -->
+
+    <owl:ObjectProperty rdf:about="http://plod.info/rdf/agent"/>
     
 
 
@@ -764,6 +776,36 @@
     
 
 
+    <!-- http://plod.info/rdf/chat -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/chat">
+        <rdf:type rdf:resource="http://plod.info/rdf/Activity"/>
+        <rdfs:label xml:lang="ja">会話</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/eat -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/eat">
+        <rdf:type rdf:resource="http://plod.info/rdf/Activity"/>
+        <rdfs:label xml:lang="ja">食事</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/event20200401-1 -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/event20200401-1">
+        <rdf:type rdf:resource="http://plod.info/rdf/Event"/>
+        <plod:action rdf:resource="http://plod.info/rdf/chat"/>
+        <plod:action rdf:resource="http://plod.info/rdf/eat"/>
+        <rdfs:comment>ある時間帯におけるレストランAでの食事イベント1</rdfs:comment>
+        <rdfs:label xml:lang="ja">ある時間帯におけるレストランAでの食事イベント1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://plod.info/rdf/frequentlyBreath -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/frequentlyBreath">
@@ -784,12 +826,40 @@
     
 
 
+    <!-- http://plod.info/rdf/person-A -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/person-A"/>
+    
+
+
+    <!-- http://plod.info/rdf/person-B -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/person-B"/>
+    
+
+
+    <!-- http://plod.info/rdf/person-C -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/person-C"/>
+    
+
+
     <!-- http://plod.info/rdf/removeMask -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/removeMask">
         <rdf:type rdf:resource="http://plod.info/rdf/RiskActivity"/>
         <rdfs:label xml:lang="en">Remove a mask</rdfs:label>
         <rdfs:label xml:lang="ja">マスクを外す</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/restaurant-A -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/restaurant-A">
+        <rdf:type rdf:resource="http://plod.info/rdf/Restaurant"/>
+        <plod:afford rdf:resource="http://plod.info/rdf/removeMask"/>
+        <rdfs:label xml:lang="ja">レストランA</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -810,6 +880,15 @@
         <rdf:type rdf:resource="http://plod.info/rdf/RiskActivity"/>
         <rdfs:label xml:lang="en">Sing</rdfs:label>
         <rdfs:label xml:lang="ja">歌う</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/situation20200401-1 -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/situation20200401-1">
+        <rdf:type rdf:resource="http://plod.info/rdf/Situation"/>
+        <rdfs:label xml:lang="ja">ある時間帯におけるレストランAの状態1</rdfs:label>
     </owl:NamedIndividual>
     
 

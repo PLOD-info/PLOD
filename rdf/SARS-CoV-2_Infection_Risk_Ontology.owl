@@ -163,9 +163,9 @@
     
 
 
-    <!-- http://plod.info/rdf/Close-contact -->
+    <!-- http://plod.info/rdf/CloseContact -->
 
-    <owl:Class rdf:about="http://plod.info/rdf/Close-contact">
+    <owl:Class rdf:about="http://plod.info/rdf/CloseContact">
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
         <rdfs:label xml:lang="en">Close-contact</rdfs:label>
         <rdfs:label xml:lang="ja">密接</rdfs:label>
@@ -221,11 +221,11 @@
     
 
 
-    <!-- http://plod.info/rdf/CrowdingActivity -->
+    <!-- http://plod.info/rdf/Crowding -->
 
-    <owl:Class rdf:about="http://plod.info/rdf/CrowdingActivity">
+    <owl:Class rdf:about="http://plod.info/rdf/Crowding">
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
-        <rdfs:label xml:lang="en">Crowding activity</rdfs:label>
+        <rdfs:label xml:lang="en">Crowding</rdfs:label>
         <rdfs:label xml:lang="ja">密集</rdfs:label>
     </owl:Class>
     
@@ -303,6 +303,36 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Hair salon</rdfs:label>
         <rdfs:label xml:lang="ja">美容院</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/HighLevelCloseContact -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/HighLevelCloseContact">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/CloseContact"/>
+        <rdfs:label xml:lang="en">High-level Close-contact</rdfs:label>
+        <rdfs:label xml:lang="ja">高密接</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/HighLevelClosedSpace -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/HighLevelClosedSpace">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/ClosedSpace"/>
+        <rdfs:label xml:lang="en">High-level closed space</rdfs:label>
+        <rdfs:label xml:lang="ja">高密閉</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/HighLevelCrowding -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/HighLevelCrowding">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowding"/>
+        <rdfs:label xml:lang="en">High-level crowding</rdfs:label>
+        <rdfs:label xml:lang="ja">高密集</rdfs:label>
     </owl:Class>
     
 
@@ -421,6 +451,36 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Medical office</rdfs:label>
         <rdfs:label xml:lang="ja">診療所</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/MediumLevelCloseContact -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/MediumLevelCloseContact">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/CloseContact"/>
+        <rdfs:label xml:lang="en">Medium-level Close-contact</rdfs:label>
+        <rdfs:label xml:lang="ja">中密接</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/MediumLevelClosedSpace -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/MediumLevelClosedSpace">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/ClosedSpace"/>
+        <rdfs:label xml:lang="en">Medium-level closed space</rdfs:label>
+        <rdfs:label xml:lang="ja">中密閉</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/MediumLevelCrowding -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/MediumLevelCrowding">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowding"/>
+        <rdfs:label xml:lang="en">Medium-level crowding</rdfs:label>
+        <rdfs:label xml:lang="ja">中密集</rdfs:label>
     </owl:Class>
     
 
@@ -584,7 +644,7 @@
     <!-- http://plod.info/rdf/Public_transportation -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Public_transportation">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/ClosedSpace"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>

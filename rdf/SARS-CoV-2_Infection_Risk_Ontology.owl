@@ -224,7 +224,7 @@
     <!-- http://plod.info/rdf/Crowding -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Crowding">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/RiskSpaceSituation"/>
         <rdfs:label xml:lang="en">Crowding</rdfs:label>
         <rdfs:label xml:lang="ja">密集</rdfs:label>
     </owl:Class>

@@ -866,6 +866,16 @@
     
 
 
+    <!-- http://plod.info/rdf/facetoface -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/facetoface">
+        <rdf:type rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
+        <rdfs:label xml:lang="en">Face-to-face</rdfs:label>
+        <rdfs:label xml:lang="ja">対面</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://plod.info/rdf/frequentlyBreath -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/frequentlyBreath">

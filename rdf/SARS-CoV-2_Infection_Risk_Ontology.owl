@@ -920,6 +920,16 @@
     
 
 
+    <!-- http://plod.info/rdf/relax -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/relax">
+        <rdf:type rdf:resource="http://plod.info/rdf/RiskActivity"/>
+        <rdfs:label xml:lang="en">relax</rdfs:label>
+        <rdfs:label xml:lang="ja">気が緩む</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://plod.info/rdf/removeMask -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/removeMask">

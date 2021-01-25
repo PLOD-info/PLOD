@@ -206,7 +206,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
-                <owl:hasValue rdf:resource="http://plod.info/rdf/high-touchSurface"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/highTouchSurface"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -254,7 +254,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
-                <owl:hasValue rdf:resource="http://plod.info/rdf/high-touchSurface"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/highTouchSurface"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Grocery store</rdfs:label>
@@ -276,7 +276,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
-                <owl:hasValue rdf:resource="http://plod.info/rdf/high-touchSurface"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/highTouchSurface"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -402,7 +402,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
-                <owl:hasValue rdf:resource="http://plod.info/rdf/high-touchSurface"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/highTouchSurface"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -430,7 +430,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
-                <owl:hasValue rdf:resource="http://plod.info/rdf/high-touchSurface"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/highTouchSurface"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Live theater</rdfs:label>
@@ -446,7 +446,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
-                <owl:hasValue rdf:resource="http://plod.info/rdf/high-touchSurface"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/highTouchSurface"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Medical office</rdfs:label>
@@ -492,7 +492,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
-                <owl:hasValue rdf:resource="http://plod.info/rdf/high-touchSurface"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/highTouchSurface"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Movie theater</rdfs:label>
@@ -546,7 +546,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
-                <owl:hasValue rdf:resource="http://plod.info/rdf/high-touchSurface"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/highTouchSurface"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Office</rdfs:label>
@@ -594,7 +594,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
-                <owl:hasValue rdf:resource="http://plod.info/rdf/high-touchSurface"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/highTouchSurface"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -648,7 +648,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
-                <owl:hasValue rdf:resource="http://plod.info/rdf/high-touchSurface"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/highTouchSurface"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Public transportation</rdfs:label>
@@ -674,7 +674,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
-                <owl:hasValue rdf:resource="http://plod.info/rdf/high-touchSurface"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/highTouchSurface"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -886,9 +886,9 @@
     
 
 
-    <!-- http://plod.info/rdf/high-touchSurface -->
+    <!-- http://plod.info/rdf/highTouchSurface -->
 
-    <owl:NamedIndividual rdf:about="http://plod.info/rdf/high-touchSurface">
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/highTouchSurface">
         <rdf:type rdf:resource="http://plod.info/rdf/RiskActivity"/>
         <rdfs:label xml:lang="en">High-touch surface</rdfs:label>
         <rdfs:label xml:lang="ja">よく物を触る</rdfs:label>

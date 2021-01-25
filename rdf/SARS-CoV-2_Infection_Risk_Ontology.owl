@@ -841,19 +841,10 @@
     
 
 
-    <!-- http://plod.info/rdf/chat -->
-
-    <owl:NamedIndividual rdf:about="http://plod.info/rdf/chat">
-        <rdf:type rdf:resource="http://plod.info/rdf/Activity"/>
-        <rdfs:label xml:lang="ja">会話</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://plod.info/rdf/eat -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/eat">
-        <rdf:type rdf:resource="http://plod.info/rdf/Activity"/>
+        <rdf:type rdf:resource="http://plod.info/rdf/RiskActivity"/>
         <rdfs:label xml:lang="ja">食事</rdfs:label>
     </owl:NamedIndividual>
     
@@ -863,8 +854,8 @@
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/event20200401-1">
         <rdf:type rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
-        <plod:action rdf:resource="http://plod.info/rdf/chat"/>
         <plod:action rdf:resource="http://plod.info/rdf/eat"/>
+        <plod:action rdf:resource="http://plod.info/rdf/talk"/>
         <event:agent rdf:resource="http://plod.info/rdf/person-A"/>
         <event:agent rdf:resource="http://plod.info/rdf/person-B"/>
         <event:agent rdf:resource="http://plod.info/rdf/person-C"/>
@@ -965,6 +956,14 @@
         <rdf:type rdf:resource="http://plod.info/rdf/Situation"/>
         <plod:isSituationOf rdf:resource="http://plod.info/rdf/restaurant-A"/>
         <rdfs:label xml:lang="ja">ある時間帯におけるレストランAの状態1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/talk -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/talk">
+        <rdf:type rdf:resource="http://plod.info/rdf/RiskActivity"/>
     </owl:NamedIndividual>
     
 

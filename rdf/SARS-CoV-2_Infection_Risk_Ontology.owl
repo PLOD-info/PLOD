@@ -380,7 +380,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
-                <owl:hasValue rdf:resource="http://plod.info/rdf/sharingPipe"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/shareThing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Indoor party venue</rdfs:label>
@@ -940,12 +940,12 @@
     
 
 
-    <!-- http://plod.info/rdf/sharingPipe -->
+    <!-- http://plod.info/rdf/shareThing -->
 
-    <owl:NamedIndividual rdf:about="http://plod.info/rdf/sharingPipe">
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/shareThing">
         <rdf:type rdf:resource="http://plod.info/rdf/RiskActivity"/>
-        <rdfs:label xml:lang="en">Sharing pipe</rdfs:label>
-        <rdfs:label xml:lang="ja">パイプの共有</rdfs:label>
+        <rdfs:label xml:lang="en">share things</rdfs:label>
+        <rdfs:label xml:lang="ja">物の共有</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -970,10 +970,22 @@
     
 
 
+    <!-- http://plod.info/rdf/smallSpace -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/smallSpace">
+        <rdf:type rdf:resource="http://plod.info/rdf/RiskSpaceSituation"/>
+        <rdfs:label xml:lang="en">small space</rdfs:label>
+        <rdfs:label xml:lang="ja">狭い空間</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://plod.info/rdf/talk -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/talk">
         <rdf:type rdf:resource="http://plod.info/rdf/RiskActivity"/>
+        <rdfs:label xml:lang="en">talk</rdfs:label>
+        <rdfs:label xml:lang="ja">会話する</rdfs:label>
     </owl:NamedIndividual>
     
 

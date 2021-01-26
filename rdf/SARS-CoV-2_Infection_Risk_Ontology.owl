@@ -8,6 +8,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:plod="http://plod.info/rdf/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:time="http://www.w3.org/2006/time#"
      xmlns:event="http://purl.org/NET/c4dm/event.owl#">
     <owl:Ontology rdf:about="http://plod.info/rdf/SARS-CoV-2_Infection_Risk_Ontology.owl"/>
     
@@ -39,6 +40,7 @@
     <!-- http://plod.info/rdf/inferredAction -->
 
     <owl:ObjectProperty rdf:about="http://plod.info/rdf/inferredAction">
+        <rdfs:subPropertyOf rdf:resource="http://plod.info/rdf/action"/>
         <rdfs:domain rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
         <rdfs:range rdf:resource="http://plod.info/rdf/Activity"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
@@ -109,12 +111,6 @@
     <!-- http://plod.info/rdf/distance -->
 
     <owl:DatatypeProperty rdf:about="http://plod.info/rdf/distance"/>
-    
-
-
-    <!-- http://plod.info/rdf/duration_of_interaction -->
-
-    <owl:DatatypeProperty rdf:about="http://plod.info/rdf/duration_of_interaction"/>
     
 
 
@@ -340,22 +336,26 @@
 
     <owl:Class rdf:about="http://plod.info/rdf/HighLevelCloseContact">
         <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
-                <owl:hasValue rdf:resource="http://plod.info/rdf/eat"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
-                <owl:hasValue rdf:resource="http://plod.info/rdf/removeMask"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
-                <owl:hasValue rdf:resource="http://plod.info/rdf/talk"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
+                        <owl:hasValue rdf:resource="http://plod.info/rdf/removeMask"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
+                        <owl:hasValue rdf:resource="http://plod.info/rdf/talk"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://plod.info/rdf/situation"/>
+                        <owl:hasValue rdf:resource="http://plod.info/rdf/facetoface"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
+                        <owl:hasValue rdf:resource="http://plod.info/rdf/ProlongedPeriodOfTime"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/CloseContact"/>
         <rdfs:label xml:lang="en">High-level Close-contact</rdfs:label>
@@ -688,32 +688,6 @@
     
 
 
-    <!-- http://plod.info/rdf/Prolonged_period_of_time_of_close_contact -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Prolonged_period_of_time_of_close_contact">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalDuration"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#numericDuration"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</xsd:minExclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="ja">15分以上の接触時間</rdfs:comment>
-        <rdfs:label xml:lang="en">Prolonged period of time of close contact</rdfs:label>
-        <rdfs:label xml:lang="ja">長い接触時間</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://plod.info/rdf/Public_transportation -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Public_transportation">
@@ -928,6 +902,16 @@
     
 
 
+    <!-- http://plod.info/rdf/ProlongedPeriodOfTime -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/ProlongedPeriodOfTime">
+        <rdfs:comment xml:lang="ja">15分以上</rdfs:comment>
+        <rdfs:label xml:lang="en">Prolonged period of time</rdfs:label>
+        <rdfs:label xml:lang="ja">長時間</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://plod.info/rdf/alcoholDrinking -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/alcoholDrinking">
@@ -953,10 +937,12 @@
         <rdf:type rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
         <plod:action rdf:resource="http://plod.info/rdf/eat"/>
         <plod:action rdf:resource="http://plod.info/rdf/talk"/>
+        <plod:situation rdf:resource="http://plod.info/rdf/facetoface"/>
         <event:agent rdf:resource="http://plod.info/rdf/person-A"/>
         <event:agent rdf:resource="http://plod.info/rdf/person-B"/>
         <event:agent rdf:resource="http://plod.info/rdf/person-C"/>
         <event:place rdf:resource="http://plod.info/rdf/restaurant-A"/>
+        <time:hasDuration rdf:resource="http://plod.info/rdf/ProlongedPeriodOfTime"/>
         <rdfs:comment>ある時間帯におけるレストランAでの食事イベント1</rdfs:comment>
         <rdfs:label xml:lang="ja">ある時間帯におけるレストランAでの食事イベント1</rdfs:label>
     </owl:NamedIndividual>

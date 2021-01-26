@@ -320,6 +320,19 @@
     <!-- http://plod.info/rdf/HighLevelClosedSpace -->
 
     <owl:Class rdf:about="http://plod.info/rdf/HighLevelClosedSpace">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/isSituationOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://plod.info/rdf/IndoorFacility"/>
+                            <rdf:Description rdf:about="http://plod.info/rdf/Public_transportation"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/ClosedSpace"/>
         <rdfs:label xml:lang="en">High-level closed space</rdfs:label>
         <rdfs:label xml:lang="ja">高密閉</rdfs:label>
@@ -468,6 +481,19 @@
     <!-- http://plod.info/rdf/MediumLevelClosedSpace -->
 
     <owl:Class rdf:about="http://plod.info/rdf/MediumLevelClosedSpace">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/isSituationOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://plod.info/rdf/IndoorFacility"/>
+                            <rdf:Description rdf:about="http://plod.info/rdf/Public_transportation"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/ClosedSpace"/>
         <rdfs:label xml:lang="en">Medium-level closed space</rdfs:label>
         <rdfs:label xml:lang="ja">中密閉</rdfs:label>

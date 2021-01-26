@@ -780,6 +780,12 @@
     
 
 
+    <!-- http://plod.info/rdf/SpatialRange -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/SpatialRange"/>
+    
+
+
     <!-- http://plod.info/rdf/Subway -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Subway">
@@ -1009,7 +1015,7 @@
     <!-- http://plod.info/rdf/smallSpace -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/smallSpace">
-        <rdf:type rdf:resource="http://plod.info/rdf/RiskSpaceSituation"/>
+        <rdf:type rdf:resource="http://plod.info/rdf/SpatialRange"/>
         <rdfs:label xml:lang="en">small space</rdfs:label>
         <rdfs:label xml:lang="ja">狭い空間</rdfs:label>
     </owl:NamedIndividual>

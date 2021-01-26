@@ -42,6 +42,14 @@
     
 
 
+    <!-- http://plod.info/rdf/size -->
+
+    <owl:ObjectProperty rdf:about="http://plod.info/rdf/size">
+        <rdfs:range rdf:resource="http://plod.info/rdf/SpatialRange"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://plod.info/rdf/time -->
 
     <owl:ObjectProperty rdf:about="http://plod.info/rdf/time"/>
@@ -310,6 +318,18 @@
     <!-- http://plod.info/rdf/HighLevelCloseContact -->
 
     <owl:Class rdf:about="http://plod.info/rdf/HighLevelCloseContact">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/eat"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/talk"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/CloseContact"/>
         <rdfs:label xml:lang="en">High-level Close-contact</rdfs:label>
         <rdfs:label xml:lang="ja">高密接</rdfs:label>
@@ -719,6 +739,12 @@
 
     <owl:Class rdf:about="http://plod.info/rdf/Restaurant">
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/eat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>

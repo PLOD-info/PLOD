@@ -820,7 +820,7 @@
     <owl:Class rdf:about="http://plod.info/rdf/RiskActivitySituation">
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Situation"/>
         <rdfs:label xml:lang="en">Risk activity situation</rdfs:label>
-        <rdfs:label xml:lang="ja">リスク行動状態</rdfs:label>
+        <rdfs:label xml:lang="ja">リスク行動状況</rdfs:label>
     </owl:Class>
     
 
@@ -830,7 +830,7 @@
     <owl:Class rdf:about="http://plod.info/rdf/RiskSpaceSituation">
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Situation"/>
         <rdfs:label xml:lang="en">Risk space situation</rdfs:label>
-        <rdfs:label xml:lang="ja">リスク空間状態</rdfs:label>
+        <rdfs:label xml:lang="ja">リスク空間状況</rdfs:label>
     </owl:Class>
     
 
@@ -839,7 +839,7 @@
 
     <owl:Class rdf:about="http://plod.info/rdf/Situation">
         <rdfs:label xml:lang="en">Situation</rdfs:label>
-        <rdfs:label xml:lang="ja">状態</rdfs:label>
+        <rdfs:label xml:lang="ja">状況</rdfs:label>
     </owl:Class>
     
 

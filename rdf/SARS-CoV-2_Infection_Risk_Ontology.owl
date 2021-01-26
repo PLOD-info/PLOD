@@ -339,6 +339,24 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#numericDuration"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</xsd:minExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
                         <owl:hasValue rdf:resource="http://plod.info/rdf/removeMask"/>
                     </owl:Restriction>
@@ -349,10 +367,6 @@
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://plod.info/rdf/situation"/>
                         <owl:hasValue rdf:resource="http://plod.info/rdf/facetoface"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
-                        <owl:hasValue rdf:resource="http://plod.info/rdf/ProlongedPeriodOfTime"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -910,16 +924,6 @@
     
 
 
-    <!-- http://plod.info/rdf/ProlongedPeriodOfTime -->
-
-    <owl:NamedIndividual rdf:about="http://plod.info/rdf/ProlongedPeriodOfTime">
-        <rdfs:comment xml:lang="ja">15分以上</rdfs:comment>
-        <rdfs:label xml:lang="en">Prolonged period of time</rdfs:label>
-        <rdfs:label xml:lang="ja">長時間</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://plod.info/rdf/alcoholDrinking -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/alcoholDrinking">
@@ -950,7 +954,7 @@
         <event:agent rdf:resource="http://plod.info/rdf/person-B"/>
         <event:agent rdf:resource="http://plod.info/rdf/person-C"/>
         <event:place rdf:resource="http://plod.info/rdf/restaurant-A"/>
-        <time:hasDuration rdf:resource="http://plod.info/rdf/ProlongedPeriodOfTime"/>
+        <time:hasDuration rdf:resource="http://plod.info/rdf/20200401-1-duration"/>
         <rdfs:comment>ある時間帯におけるレストランAでの食事イベント1</rdfs:comment>
         <rdfs:label xml:lang="ja">ある時間帯におけるレストランAでの食事イベント1</rdfs:label>
     </owl:NamedIndividual>
@@ -1096,6 +1100,14 @@
         <rdf:type rdf:resource="http://plod.info/rdf/RiskActivity"/>
         <rdfs:label xml:lang="en">yell</rdfs:label>
         <rdfs:label xml:lang="ja">叫ぶ</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/20200401-1-duration -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/20200401-1-duration">
+        <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</time:numericDuration>
     </owl:NamedIndividual>
 </rdf:RDF>
 

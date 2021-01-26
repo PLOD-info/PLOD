@@ -370,14 +370,22 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/isSituationOf"/>
-                <owl:allValuesFrom>
+                <owl:someValuesFrom>
                     <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://plod.info/rdf/IndoorFacility"/>
-                            <rdf:Description rdf:about="http://plod.info/rdf/Public_transportation"/>
-                        </owl:unionOf>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://plod.info/rdf/IndoorFacility"/>
+                                    <rdf:Description rdf:about="http://plod.info/rdf/Public_transportation"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://plod.info/rdf/size"/>
+                                <owl:hasValue rdf:resource="http://plod.info/rdf/smallSpace"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
                     </owl:Class>
-                </owl:allValuesFrom>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/ClosedSpace"/>
@@ -531,14 +539,14 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://plod.info/rdf/isSituationOf"/>
-                <owl:allValuesFrom>
+                <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://plod.info/rdf/IndoorFacility"/>
                             <rdf:Description rdf:about="http://plod.info/rdf/Public_transportation"/>
                         </owl:unionOf>
                     </owl:Class>
-                </owl:allValuesFrom>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/ClosedSpace"/>

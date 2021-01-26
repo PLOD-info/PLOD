@@ -751,6 +751,18 @@
                 <owl:hasValue rdf:resource="http://plod.info/rdf/removeMask"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/shareThing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/talk"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Restaurant</rdfs:label>
         <rdfs:label xml:lang="ja">レストラン</rdfs:label>
     </owl:Class>
@@ -902,7 +914,7 @@
     <!-- http://plod.info/rdf/eat -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/eat">
-        <rdf:type rdf:resource="http://plod.info/rdf/RiskActivity"/>
+        <rdf:type rdf:resource="http://plod.info/rdf/Activity"/>
         <rdfs:label xml:lang="ja">食事</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1002,7 +1014,6 @@
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/restaurant-A">
         <rdf:type rdf:resource="http://plod.info/rdf/Restaurant"/>
-        <plod:afford rdf:resource="http://plod.info/rdf/removeMask"/>
         <rdfs:label xml:lang="ja">レストランA</rdfs:label>
     </owl:NamedIndividual>
     

@@ -193,7 +193,7 @@
     <!-- http://plod.info/rdf/CloseContact -->
 
     <owl:Class rdf:about="http://plod.info/rdf/CloseContact">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/RiskIndex"/>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
         <rdfs:label xml:lang="en">Close-contact</rdfs:label>
         <rdfs:label xml:lang="ja">密接</rdfs:label>
     </owl:Class>
@@ -203,7 +203,7 @@
     <!-- http://plod.info/rdf/ClosedSpace -->
 
     <owl:Class rdf:about="http://plod.info/rdf/ClosedSpace">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/RiskIndex"/>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/RiskSpaceSituation"/>
         <rdfs:label xml:lang="en">Confined and enclosed space</rdfs:label>
         <rdfs:label xml:lang="ja">密閉</rdfs:label>
     </owl:Class>
@@ -251,7 +251,7 @@
     <!-- http://plod.info/rdf/Crowding -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Crowding">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/RiskIndex"/>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/RiskSpaceSituation"/>
         <rdfs:label xml:lang="en">Crowding</rdfs:label>
         <rdfs:label xml:lang="ja">密集</rdfs:label>
     </owl:Class>
@@ -957,15 +957,6 @@
     
 
 
-    <!-- http://plod.info/rdf/RiskIndex -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/RiskIndex">
-        <rdfs:label xml:lang="en">Risk index</rdfs:label>
-        <rdfs:label xml:lang="ja">リスク指標</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://plod.info/rdf/RiskSpaceSituation -->
 
     <owl:Class rdf:about="http://plod.info/rdf/RiskSpaceSituation">
@@ -1115,6 +1106,16 @@
         <rdf:type rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
         <rdfs:label xml:lang="en">Face-to-face</rdfs:label>
         <rdfs:label xml:lang="ja">対面</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/fiveOrMorePeople -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/fiveOrMorePeople">
+        <rdf:type rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
+        <rdfs:label xml:lang="ja">5 or more people</rdfs:label>
+        <rdfs:label xml:lang="ja">5人以上</rdfs:label>
     </owl:NamedIndividual>
     
 

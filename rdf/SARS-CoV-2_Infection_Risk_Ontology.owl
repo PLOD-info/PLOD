@@ -258,6 +258,16 @@
     
 
 
+    <!-- http://plod.info/rdf/DropletReachableActivity -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/DropletReachableActivity">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/RiskActivity"/>
+        <rdfs:label xml:lang="en">Droplet reachable activity</rdfs:label>
+        <rdfs:label xml:lang="ja">飛沫到達行動</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://plod.info/rdf/GroceryStore -->
 
     <owl:Class rdf:about="http://plod.info/rdf/GroceryStore">
@@ -447,6 +457,16 @@
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
         <rdfs:label xml:lang="en">Hospital</rdfs:label>
         <rdfs:label xml:lang="ja">病院</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/IndirectContact -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/IndirectContact">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/RiskActivity"/>
+        <rdfs:label xml:lang="en">Indirect contact</rdfs:label>
+        <rdfs:label xml:lang="ja">間接接触行動</rdfs:label>
     </owl:Class>
     
 
@@ -986,7 +1006,7 @@
     <!-- http://plod.info/rdf/frequentlyBreath -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/frequentlyBreath">
-        <rdf:type rdf:resource="http://plod.info/rdf/RiskActivity"/>
+        <rdf:type rdf:resource="http://plod.info/rdf/DropletReachableActivity"/>
         <rdfs:label xml:lang="en">Frequently breath</rdfs:label>
         <rdfs:label xml:lang="ja">頻繁な呼吸</rdfs:label>
     </owl:NamedIndividual>
@@ -996,7 +1016,7 @@
     <!-- http://plod.info/rdf/highTouchSurface -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/highTouchSurface">
-        <rdf:type rdf:resource="http://plod.info/rdf/RiskActivity"/>
+        <rdf:type rdf:resource="http://plod.info/rdf/IndirectContact"/>
         <rdfs:label xml:lang="en">High-touch surface</rdfs:label>
         <rdfs:label xml:lang="ja">よく物を触る</rdfs:label>
     </owl:NamedIndividual>
@@ -1040,7 +1060,7 @@
     <!-- http://plod.info/rdf/removeMask -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/removeMask">
-        <rdf:type rdf:resource="http://plod.info/rdf/RiskActivity"/>
+        <rdf:type rdf:resource="http://plod.info/rdf/DropletReachableActivity"/>
         <rdfs:label xml:lang="en">Remove a mask</rdfs:label>
         <rdfs:label xml:lang="ja">マスクを外す</rdfs:label>
     </owl:NamedIndividual>
@@ -1059,7 +1079,7 @@
     <!-- http://plod.info/rdf/shareThing -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/shareThing">
-        <rdf:type rdf:resource="http://plod.info/rdf/RiskActivity"/>
+        <rdf:type rdf:resource="http://plod.info/rdf/IndirectContact"/>
         <rdfs:label xml:lang="en">share things</rdfs:label>
         <rdfs:label xml:lang="ja">物の共有</rdfs:label>
     </owl:NamedIndividual>
@@ -1069,7 +1089,7 @@
     <!-- http://plod.info/rdf/sing -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/sing">
-        <rdf:type rdf:resource="http://plod.info/rdf/RiskActivity"/>
+        <rdf:type rdf:resource="http://plod.info/rdf/DropletReachableActivity"/>
         <rdfs:label xml:lang="en">Sing</rdfs:label>
         <rdfs:label xml:lang="ja">歌う</rdfs:label>
     </owl:NamedIndividual>
@@ -1099,7 +1119,7 @@
     <!-- http://plod.info/rdf/talk -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/talk">
-        <rdf:type rdf:resource="http://plod.info/rdf/RiskActivity"/>
+        <rdf:type rdf:resource="http://plod.info/rdf/DropletReachableActivity"/>
         <rdfs:label xml:lang="en">talk</rdfs:label>
         <rdfs:label xml:lang="ja">会話する</rdfs:label>
     </owl:NamedIndividual>
@@ -1109,7 +1129,7 @@
     <!-- http://plod.info/rdf/yell -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/yell">
-        <rdf:type rdf:resource="http://plod.info/rdf/RiskActivity"/>
+        <rdf:type rdf:resource="http://plod.info/rdf/DropletReachableActivity"/>
         <rdfs:label xml:lang="en">yell</rdfs:label>
         <rdfs:label xml:lang="ja">叫ぶ</rdfs:label>
     </owl:NamedIndividual>

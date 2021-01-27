@@ -334,40 +334,16 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/NET/c4dm/event.owl#place"/>
+                        <owl:someValuesFrom>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/NET/c4dm/event.owl#place"/>
-                                <owl:someValuesFrom>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
-                                        <owl:hasValue rdf:resource="http://plod.info/rdf/removeMask"/>
-                                    </owl:Restriction>
-                                </owl:someValuesFrom>
+                                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                                <owl:onClass rdf:resource="http://plod.info/rdf/DropletReachableActivity"/>
                             </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
-                                <owl:hasValue rdf:resource="http://plod.info/rdf/removeMask"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.org/NET/c4dm/event.owl#place"/>
-                                <owl:someValuesFrom>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
-                                        <owl:hasValue rdf:resource="http://plod.info/rdf/talk"/>
-                                    </owl:Restriction>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
-                                <owl:hasValue rdf:resource="http://plod.info/rdf/talk"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
                         <owl:someValuesFrom>
@@ -1141,6 +1117,34 @@
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/20200401-1-duration">
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</time:numericDuration>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://plod.info/rdf/frequentlyBreath"/>
+            <rdf:Description rdf:about="http://plod.info/rdf/removeMask"/>
+            <rdf:Description rdf:about="http://plod.info/rdf/sing"/>
+            <rdf:Description rdf:about="http://plod.info/rdf/talk"/>
+            <rdf:Description rdf:about="http://plod.info/rdf/yell"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://plod.info/rdf/highTouchSurface"/>
+            <rdf:Description rdf:about="http://plod.info/rdf/shareThing"/>
+        </owl:distinctMembers>
+    </rdf:Description>
 </rdf:RDF>
 
 

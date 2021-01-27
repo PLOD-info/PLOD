@@ -1308,6 +1308,20 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://plod.info/rdf/crowded"/>
+            <rdf:Description rdf:about="http://plod.info/rdf/smallSpace"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://plod.info/rdf/facetoface"/>
+            <rdf:Description rdf:about="http://plod.info/rdf/fiveOrMorePeople"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="http://plod.info/rdf/frequentlyBreath"/>
             <rdf:Description rdf:about="http://plod.info/rdf/removeMask"/>
             <rdf:Description rdf:about="http://plod.info/rdf/sing"/>

@@ -450,7 +450,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:annotatedTarget>
-        <rdfs:comment>飛沫到達行動2個以上 and 15分以上 and 対面</rdfs:comment>
+        <rdfs:comment>飛沫到達行動2個以上 and 15分以上 and リスク行動状況1個以上</rdfs:comment>
     </owl:Axiom>
     
 

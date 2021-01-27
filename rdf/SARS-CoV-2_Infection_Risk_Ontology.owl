@@ -489,6 +489,22 @@
     <!-- http://plod.info/rdf/HighLevelCrowding -->
 
     <owl:Class rdf:about="http://plod.info/rdf/HighLevelCrowding">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfSpace"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://plod.info/rdf/RiskSpaceSituation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowding"/>
         <rdfs:label xml:lang="en">High-level crowding</rdfs:label>
         <rdfs:label xml:lang="ja">高密集</rdfs:label>
@@ -708,6 +724,22 @@
     <!-- http://plod.info/rdf/MediumLevelCrowding -->
 
     <owl:Class rdf:about="http://plod.info/rdf/MediumLevelCrowding">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfSpace"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://plod.info/rdf/RiskSpaceSituation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowding"/>
         <rdfs:label xml:lang="en">Medium-level crowding</rdfs:label>
         <rdfs:label xml:lang="ja">中密集</rdfs:label>

@@ -1,0 +1,994 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://plod.info/rdf/"
+     xml:base="http://plod.info/rdf/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:gnjp="http://geonames.jp/resource/"
+     xmlns:plod="http://plod.info/rdf/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:hutime="http://resource.hutime.org/ontology/"
+     xmlns:schema="http://schema.org/"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://plod.info/rdf/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/name -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://plod.info/rdf/partOfDay -->
+
+    <owl:ObjectProperty rdf:about="http://plod.info/rdf/partOfDay">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:range rdf:resource="http://plod.info/rdf/PartOfDay"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://plod.info/rdf/time -->
+
+    <owl:ObjectProperty rdf:about="http://plod.info/rdf/time">
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isReferencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/isReferencedBy"/>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasPossibleBeginning -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasPossibleBeginning">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:comment>Begnning point of a possible time interval in an uncerain time interval.</rdfs:comment>
+        <rdfs:label>possible beginning</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasPossibleEnd -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasPossibleEnd">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:comment>End point of a possible time interval in an uncerain time interval.</rdfs:comment>
+        <rdfs:label>possible end</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasPossibleJdBeginning -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasPossibleJdBeginning">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasPossibleJdEnd -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasPossibleJdEnd">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasRangeOfBeginning -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasRangeOfBeginning">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:range rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:comment>Beginning range an uncerain time interval.</rdfs:comment>
+        <rdfs:label>beginning range</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasRangeOfEnd -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasRangeOfEnd">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:range rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:comment>End range an uncerain time interval.</rdfs:comment>
+        <rdfs:label>end range</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasReliableBeginning -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasReliableBeginning">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:comment>Begnning point of a reliable time interval in an uncerain time interval.</rdfs:comment>
+        <rdfs:label>reliable beginning</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasReliableEnd -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasReliableEnd">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:comment>End point of a reliable time interval in an uncerain time interval.</rdfs:comment>
+        <rdfs:label>reliable end</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasReliableJdBeginning -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasReliableJdBeginning">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasReliableJdEnd -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasReliableJdEnd">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/agent -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/agent">
+        <rdfs:domain rdf:resource="http://schema.org/Action"/>
+        <rdfs:range rdf:resource="http://schema.org/Organization"/>
+        <rdfs:range rdf:resource="http://schema.org/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/code -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/code">
+        <rdfs:domain rdf:resource="http://schema.org/MedicalEntity"/>
+        <rdfs:range rdf:resource="http://schema.org/MedicalCode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/fromLocation -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/fromLocation">
+        <rdfs:domain rdf:resource="http://schema.org/MoveAction"/>
+        <rdfs:range rdf:resource="http://schema.org/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/healthCondition -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/healthCondition">
+        <rdfs:domain rdf:resource="http://schema.org/Patient"/>
+        <rdfs:range rdf:resource="http://schema.org/MedicalCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/homeLocation -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/homeLocation">
+        <rdfs:domain rdf:resource="http://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://schema.org/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/instrument -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/instrument">
+        <rdfs:domain rdf:resource="http://schema.org/Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/location -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/location">
+        <rdfs:domain rdf:resource="http://plod.info/rdf/CloseContact"/>
+        <rdfs:domain rdf:resource="http://schema.org/Action"/>
+        <rdfs:domain rdf:resource="http://schema.org/Event"/>
+        <rdfs:domain rdf:resource="http://schema.org/Organization"/>
+        <rdfs:range rdf:resource="http://schema.org/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/mainEntity -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/mainEntity">
+        <rdfs:domain rdf:resource="http://schema.org/CreativeWork"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/publisher -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/publisher">
+        <rdfs:domain rdf:resource="http://schema.org/CreativeWork"/>
+        <rdfs:range rdf:resource="http://schema.org/Organization"/>
+        <rdfs:range rdf:resource="http://schema.org/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/subjectOf -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/subjectOf">
+        <rdfs:range rdf:resource="http://schema.org/CreativeWork"/>
+        <rdfs:range rdf:resource="http://schema.org/Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/toLocation -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/toLocation">
+        <rdfs:domain rdf:resource="http://schema.org/MoveAction"/>
+        <rdfs:range rdf:resource="http://schema.org/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://plod.info/rdf/dateConfirmed -->
+
+    <owl:DatatypeProperty rdf:about="http://plod.info/rdf/dateConfirmed">
+        <rdfs:domain rdf:resource="http://schema.org/Report"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://plod.info/rdf/dateFevered -->
+
+    <owl:DatatypeProperty rdf:about="http://plod.info/rdf/dateFevered">
+        <rdfs:domain rdf:resource="http://schema.org/Report"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://plod.info/rdf/numberOfPatients -->
+
+    <owl:DatatypeProperty rdf:about="http://plod.info/rdf/numberOfPatients">
+        <rdfs:domain rdf:resource="http://schema.org/Report"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasPossibleJdBeginning -->
+
+    <owl:DatatypeProperty rdf:about="http://resource.hutime.org/ontology/hasPossibleJdBeginning">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasPossibleJdEnd -->
+
+    <owl:DatatypeProperty rdf:about="http://resource.hutime.org/ontology/hasPossibleJdEnd">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasReliableJdBeginning -->
+
+    <owl:DatatypeProperty rdf:about="http://resource.hutime.org/ontology/hasReliableJdBeginning">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasReliableJdEnd -->
+
+    <owl:DatatypeProperty rdf:about="http://resource.hutime.org/ontology/hasReliableJdEnd">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/codeValue -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/codeValue">
+        <rdfs:domain rdf:resource="http://schema.org/MedicalCode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/codingSystem -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/codingSystem">
+        <rdfs:domain rdf:resource="http://schema.org/MedicalCode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/datePublished -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/datePublished">
+        <rdfs:domain rdf:resource="http://schema.org/CreativeWork"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/description -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/description">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/endTime -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/endTime">
+        <rdfs:domain rdf:resource="http://schema.org/Action"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/gender -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/gender">
+        <rdfs:domain rdf:resource="http://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/infectiousAgent -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/infectiousAgent">
+        <rdfs:domain rdf:resource="http://schema.org/InfectiousDisease"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/startTime -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/startTime">
+        <rdfs:domain rdf:resource="http://schema.org/Action"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/url -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/url">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#inXSDDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#inXSDDate"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#inXSDDateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#inXSDDateTime"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/age -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/age"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://plod.info/rdf/Afternoon -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Afternoon">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/PartOfDay"/>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/CloseContact -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/CloseContact">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/time"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://schema.org/location"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://schema.org/agent"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://schema.org/Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Close Contact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Evening -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Evening">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/PartOfDay"/>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Morning -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Morning">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/PartOfDay"/>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Night -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Night">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/PartOfDay"/>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/PartOfDay -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/PartOfDay">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/UncertainTimeInterval -->
+
+    <owl:Class rdf:about="http://resource.hutime.org/ontology/UncertainTimeInterval">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasPossibleBeginning"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasPossibleEnd"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasPossibleJdBeginning"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasPossibleJdEnd"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasRangeOfBeginning"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasRangeOfEnd"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasReliableBeginning"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasReliableEnd"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasReliableJdBeginning"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasReliableJdEnd"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The class of uncertain time interval.</rdfs:comment>
+        <rdfs:label>Uncertain Time Interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Action -->
+
+    <owl:Class rdf:about="http://schema.org/Action"/>
+    
+
+
+    <!-- http://schema.org/Article -->
+
+    <owl:Class rdf:about="http://schema.org/Article">
+        <rdfs:subClassOf rdf:resource="http://schema.org/CreativeWork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/CreativeWork -->
+
+    <owl:Class rdf:about="http://schema.org/CreativeWork"/>
+    
+
+
+    <!-- http://schema.org/Event -->
+
+    <owl:Class rdf:about="http://schema.org/Event"/>
+    
+
+
+    <!-- http://schema.org/GovernmentOrganization -->
+
+    <owl:Class rdf:about="http://schema.org/GovernmentOrganization">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/InfectiousDisease -->
+
+    <owl:Class rdf:about="http://schema.org/InfectiousDisease">
+        <rdfs:subClassOf rdf:resource="http://schema.org/MedicalCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/MedicalCode -->
+
+    <owl:Class rdf:about="http://schema.org/MedicalCode"/>
+    
+
+
+    <!-- http://schema.org/MedicalCondition -->
+
+    <owl:Class rdf:about="http://schema.org/MedicalCondition">
+        <rdfs:subClassOf rdf:resource="http://schema.org/MedicalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/MedicalEntity -->
+
+    <owl:Class rdf:about="http://schema.org/MedicalEntity"/>
+    
+
+
+    <!-- http://schema.org/MoveAction -->
+
+    <owl:Class rdf:about="http://schema.org/MoveAction">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Organization -->
+
+    <owl:Class rdf:about="http://schema.org/Organization"/>
+    
+
+
+    <!-- http://schema.org/Patient -->
+
+    <owl:Class rdf:about="http://schema.org/Patient">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Person -->
+
+    <owl:Class rdf:about="http://schema.org/Person"/>
+    
+
+
+    <!-- http://schema.org/Place -->
+
+    <owl:Class rdf:about="http://schema.org/Place"/>
+    
+
+
+    <!-- http://schema.org/Report -->
+
+    <owl:Class rdf:about="http://schema.org/Report">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Article"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/WebPage -->
+
+    <owl:Class rdf:about="http://schema.org/WebPage">
+        <rdfs:subClassOf rdf:resource="http://schema.org/CreativeWork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Instant">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Interval -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Interval">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#ProperInterval -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#ProperInterval">
+        <rdfs:subClassOf rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#Interval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#TemporalEntity"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://geonames.jp/resource/千葉県 -->
+
+    <owl:NamedIndividual rdf:about="http://geonames.jp/resource/千葉県">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <rdfs:label>Chiba</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://geonames.jp/resource/大阪府 -->
+
+    <owl:NamedIndividual rdf:about="http://geonames.jp/resource/大阪府">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <rdfs:label>Osaka</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://geonames.jp/resource/東京都 -->
+
+    <owl:NamedIndividual rdf:about="http://geonames.jp/resource/東京都">
+        <rdf:type rdf:resource="http://schema.org/Place"/>
+        <rdfs:label>Tokyo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/COVID-19 -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/COVID-19">
+        <rdf:type rdf:resource="http://schema.org/InfectiousDisease"/>
+        <schema:code rdf:resource="http://purl.bioontology.org/ontology/ICD10/U07.1"/>
+        <schema:infectiousAgent>2019-nCoV</schema:infectiousAgent>
+        <schema:name xml:lang="en">2019-nCoV acute respiratory disease</schema:name>
+        <rdfs:label>COVID-19</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/ChibaPrefecturalGovernment -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/ChibaPrefecturalGovernment">
+        <rdf:type rdf:resource="http://schema.org/GovernmentOrganization"/>
+        <schema:location rdf:resource="http://geonames.jp/resource/千葉県"/>
+        <rdfs:label>Chiba Prefectural Government</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.wikidata.org/entity/Q21666178"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/12202001311 -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/12202001311">
+        <rdf:type rdf:resource="http://schema.org/Event"/>
+        <rdfs:label>12202001311</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/12202001311-C01 -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/12202001311-C01">
+        <rdf:type rdf:resource="http://plod.info/rdf/CloseContact"/>
+        <time rdf:resource="http://plod.info/rdf/12202001311-C01-T01"/>
+        <schema:agent rdf:resource="http://plod.info/rdf/12202001311-P01"/>
+        <schema:agent rdf:resource="http://plod.info/rdf/12202001311-P02"/>
+        <schema:location rdf:resource="http://geonames.jp/resource/千葉県"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/12202001311-C01-T01 -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/12202001311-C01-T01">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <partOfDay rdf:resource="http://plod.info/rdf/12202001311-C01-T01-AN"/>
+        <time:inXSDDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-31</time:inXSDDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/12202001311-C01-T01-AN -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/12202001311-C01-T01-AN">
+        <rdf:type rdf:resource="http://plod.info/rdf/Afternoon"/>
+        <hutime:hasPossibleBeginning rdf:resource="http://plod.info/rdf/12202001311-C01-T01-PB"/>
+        <hutime:hasPossibleEnd rdf:resource="http://plod.info/rdf/12202001311-C01-T01-PE"/>
+        <hutime:hasReliableBeginning rdf:resource="http://plod.info/rdf/12202001311-C01-T01-RB"/>
+        <hutime:hasReliableEnd rdf:resource="http://plod.info/rdf/12202001311-C01-T01-RE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/12202001311-C01-T01-PB -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/12202001311-C01-T01-PB">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:inXSDDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-31T04:30:00</time:inXSDDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/12202001311-C01-T01-PE -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/12202001311-C01-T01-PE">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:inXSDDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-31T12:00:00</time:inXSDDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/12202001311-C01-T01-RB -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/12202001311-C01-T01-RB">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:inXSDDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-31T06:00:00</time:inXSDDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/12202001311-C01-T01-RE -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/12202001311-C01-T01-RE">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:inXSDDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-31T09:00:00</time:inXSDDateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/12202001311-P01 -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/12202001311-P01">
+        <rdf:type rdf:resource="http://schema.org/Patient"/>
+        <schema:healthCondition rdf:resource="http://plod.info/rdf/COVID-19"/>
+        <schema:homeLocation rdf:resource="http://geonames.jp/resource/千葉県"/>
+        <schema:subjectOf rdf:resource="http://plod.info/rdf/12202001311"/>
+        <rdfs:label>12202001311-P01</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/12202001311-P01-M01 -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/12202001311-P01-M01">
+        <rdf:type rdf:resource="http://schema.org/MoveAction"/>
+        <schema:agent rdf:resource="http://plod.info/rdf/12202001311-P01"/>
+        <schema:fromLocation rdf:resource="http://geonames.jp/resource/東京都"/>
+        <schema:toLocation rdf:resource="http://geonames.jp/resource/大阪府"/>
+        <rdfs:label>12202001311-P01-M01</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/12202001311-P01-M02 -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/12202001311-P01-M02">
+        <rdf:type rdf:resource="http://schema.org/MoveAction"/>
+        <schema:agent rdf:resource="http://plod.info/rdf/12202001311-P01"/>
+        <schema:fromLocation rdf:resource="http://geonames.jp/resource/大阪府"/>
+        <schema:toLocation rdf:resource="http://geonames.jp/resource/東京都"/>
+        <rdfs:label>12202001311-P01-M02</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/12202001311-P02 -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/12202001311-P02"/>
+    
+
+
+    <!-- http://plod.info/rdf/12202001311-R01 -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/12202001311-R01">
+        <rdf:type rdf:resource="http://schema.org/Report"/>
+        <dcterms:isReferencedBy rdf:resource="https://www.pref.chiba.lg.jp/shippei/kansenshou/keihatu-index.html"/>
+        <schema:mainEntity rdf:resource="http://plod.info/rdf/12202001311"/>
+        <schema:publisher rdf:resource="http://plod.info/rdf/ChibaPrefecturalGovernment"/>
+        <numberOfPatients rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</numberOfPatients>
+        <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.pref.chiba.lg.jp/shippei/press/2019/ncov20200131.html</schema:url>
+        <rdfs:label>12202001311-R01</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/ICD10/U07.1 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.bioontology.org/ontology/ICD10/U07.1">
+        <rdf:type rdf:resource="http://schema.org/MedicalCode"/>
+        <schema:codeValue>U07.1</schema:codeValue>
+        <schema:codingSystem>ICD-10</schema:codingSystem>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.pref.chiba.lg.jp/shippei/kansenshou/keihatu-index.html -->
+
+    <owl:NamedIndividual rdf:about="https://www.pref.chiba.lg.jp/shippei/kansenshou/keihatu-index.html">
+        <rdf:type rdf:resource="http://schema.org/WebPage"/>
+        <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.pref.chiba.lg.jp/shippei/kansenshou/keihatu-index.html</schema:url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://resource.hutime.org/ontology/hasPossibleJdBeginning">
+        <rdfs:comment>Julian date value of begnning point of a possible time interval in an uncerain time interval.</rdfs:comment>
+        <rdfs:label>possible JD beginning</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://resource.hutime.org/ontology/hasPossibleJdEnd">
+        <rdfs:label>possible JD end</rdfs:label>
+        <rdfs:comment>Julian date value of end point of a possible time interval in an uncerain time interval.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://resource.hutime.org/ontology/hasReliableJdBeginning">
+        <rdfs:label>reliable JD beginning</rdfs:label>
+        <rdfs:comment>Julian date value of begnning point of a reliable time interval in an uncerain time interval.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://resource.hutime.org/ontology/hasReliableJdEnd">
+        <rdfs:label>reliable JD end</rdfs:label>
+        <rdfs:comment>Julian date value of end point of a reliable time interval in an uncerain time interval.</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

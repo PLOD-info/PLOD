@@ -95,6 +95,104 @@
     
 
 
+    <!-- http://resource.hutime.org/ontology/hasPossibleBeginning -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasPossibleBeginning">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:comment>Begnning point of a possible time interval in an uncerain time interval.</rdfs:comment>
+        <rdfs:label>possible beginning</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasPossibleEnd -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasPossibleEnd">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:comment>End point of a possible time interval in an uncerain time interval.</rdfs:comment>
+        <rdfs:label>possible end</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasPossibleJdBeginning -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasPossibleJdBeginning">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasPossibleJdEnd -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasPossibleJdEnd">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasRangeOfBeginning -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasRangeOfBeginning">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:range rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:comment>Beginning range an uncerain time interval.</rdfs:comment>
+        <rdfs:label>beginning range</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasRangeOfEnd -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasRangeOfEnd">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:range rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:comment>End range an uncerain time interval.</rdfs:comment>
+        <rdfs:label>end range</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasReliableBeginning -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasReliableBeginning">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:comment>Begnning point of a reliable time interval in an uncerain time interval.</rdfs:comment>
+        <rdfs:label>reliable beginning</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasReliableEnd -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasReliableEnd">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:comment>End point of a reliable time interval in an uncerain time interval.</rdfs:comment>
+        <rdfs:label>reliable end</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasReliableJdBeginning -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasReliableJdBeginning">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasReliableJdEnd -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasReliableJdEnd">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.w3.org/2006/time#hasDuration -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#hasDuration"/>
@@ -140,6 +238,14 @@
     <owl:Class rdf:about="http://plod.info/rdf/Activity">
         <rdfs:label xml:lang="en">Activity</rdfs:label>
         <rdfs:label xml:lang="ja">行動</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Afternoon -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Afternoon">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/PartOfDay"/>
     </owl:Class>
     
 
@@ -282,6 +388,14 @@
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/RiskActivity"/>
         <rdfs:label xml:lang="en">Droplet reachable activity</rdfs:label>
         <rdfs:label xml:lang="ja">飛沫到達行動</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Evening -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Evening">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/PartOfDay"/>
     </owl:Class>
     
 
@@ -750,6 +864,14 @@
     
 
 
+    <!-- http://plod.info/rdf/Morning -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Morning">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/PartOfDay"/>
+    </owl:Class>
+    
+
+
     <!-- http://plod.info/rdf/MovieTheater -->
 
     <owl:Class rdf:about="http://plod.info/rdf/MovieTheater">
@@ -772,6 +894,14 @@
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
         <rdfs:label xml:lang="en">Museum</rdfs:label>
         <rdfs:label xml:lang="ja">博物館</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Night -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Night">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/PartOfDay"/>
     </owl:Class>
     
 
@@ -876,6 +1006,14 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Outdoor sports facility</rdfs:label>
         <rdfs:label xml:lang="ja">屋外スポーツ施設</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/PartOfDay -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/PartOfDay">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
     </owl:Class>
     
 
@@ -1045,10 +1183,105 @@
     
 
 
+    <!-- http://resource.hutime.org/ontology/UncertainTimeInterval -->
+
+    <owl:Class rdf:about="http://resource.hutime.org/ontology/UncertainTimeInterval">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasPossibleBeginning"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasPossibleEnd"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasPossibleJdBeginning"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasPossibleJdEnd"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasRangeOfBeginning"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasRangeOfEnd"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasReliableBeginning"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasReliableEnd"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasReliableJdBeginning"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasReliableJdEnd"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The class of uncertain time interval.</rdfs:comment>
+        <rdfs:label>Uncertain Time Interval</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing -->
 
     <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
         <rdfs:label xml:lang="en">SpatialThing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Instant">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#Temporalentity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Interval -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Interval">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#Temporalentity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#ProperInterval -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#ProperInterval">
+        <rdfs:subClassOf rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#Interval"/>
     </owl:Class>
     
 
@@ -1063,7 +1296,13 @@
 
     <!-- http://www.w3.org/2006/time#TemporalEntity -->
 
-    <owl:Class rdf:about="http://www.w3.org/2006/time#TemporalEntity">
+    <owl:Class rdf:about="http://www.w3.org/2006/time#TemporalEntity"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Temporalentity -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Temporalentity">
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Time"/>
     </owl:Class>
     

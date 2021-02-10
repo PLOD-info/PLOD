@@ -82,7 +82,7 @@
     <!-- http://purl.org/NET/c4dm/event.owl#agent -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/NET/c4dm/event.owl#agent">
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://schema.org/Person"/>
     </owl:ObjectProperty>
     
 
@@ -1175,14 +1175,6 @@
     
 
 
-    <!-- http://purl.org/NET/c4dm/event.owl#Event -->
-
-    <owl:Class rdf:about="http://purl.org/NET/c4dm/event.owl#Event">
-        <rdfs:label xml:lang="en">Event</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://resource.hutime.org/ontology/UncertainTimeInterval -->
 
     <owl:Class rdf:about="http://resource.hutime.org/ontology/UncertainTimeInterval">
@@ -1253,6 +1245,30 @@
     
 
 
+    <!-- http://schema.org/Event -->
+
+    <owl:Class rdf:about="http://schema.org/Event">
+        <rdfs:label xml:lang="en">Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Patient -->
+
+    <owl:Class rdf:about="http://schema.org/Patient">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Person -->
+
+    <owl:Class rdf:about="http://schema.org/Person">
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing -->
 
     <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
@@ -1308,14 +1324,6 @@
     
 
 
-    <!-- http://xmlns.com/foaf/0.1/Person -->
-
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
-        <rdfs:label xml:lang="en">Person</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1359,7 +1367,7 @@
     <!-- http://plod.info/rdf/event20200401-1 -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/event20200401-1">
-        <rdf:type rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdf:type rdf:resource="http://schema.org/Event"/>
         <plod:action rdf:resource="http://plod.info/rdf/eat"/>
         <plod:action rdf:resource="http://plod.info/rdf/talk"/>
         <plod:situationOfActivity rdf:resource="http://plod.info/rdf/facetoface"/>
@@ -1417,7 +1425,7 @@
     <!-- http://plod.info/rdf/person-A -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/person-A">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdf:type rdf:resource="http://schema.org/Person"/>
     </owl:NamedIndividual>
     
 
@@ -1425,7 +1433,7 @@
     <!-- http://plod.info/rdf/person-B -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/person-B">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdf:type rdf:resource="http://schema.org/Person"/>
     </owl:NamedIndividual>
     
 
@@ -1433,7 +1441,7 @@
     <!-- http://plod.info/rdf/person-C -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/person-C">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdf:type rdf:resource="http://schema.org/Person"/>
     </owl:NamedIndividual>
     
 

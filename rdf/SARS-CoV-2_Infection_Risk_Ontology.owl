@@ -37,7 +37,9 @@
 
     <!-- http://plod.info/rdf/afford -->
 
-    <owl:ObjectProperty rdf:about="http://plod.info/rdf/afford"/>
+    <owl:ObjectProperty rdf:about="http://plod.info/rdf/afford">
+        <rdfs:range rdf:resource="http://plod.info/rdf/Activity"/>
+    </owl:ObjectProperty>
     
 
 
@@ -252,9 +254,27 @@
     
 
 
+    <!-- http://www.w3.org/2006/time#hasBegininng -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#hasBegininng">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.w3.org/2006/time#hasDuration -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#hasDuration"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasEnd -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#hasEnd">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </owl:ObjectProperty>
     
 
 

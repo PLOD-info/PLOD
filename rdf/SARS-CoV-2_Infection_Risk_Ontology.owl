@@ -1219,6 +1219,16 @@
     
 
 
+    <!-- http://plod.info/rdf/School -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/School">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:label xml:lang="en">School</rdfs:label>
+        <rdfs:label xml:lang="ja">学校</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://plod.info/rdf/Situation -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Situation">

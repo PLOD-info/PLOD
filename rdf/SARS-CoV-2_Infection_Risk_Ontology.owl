@@ -1223,6 +1223,12 @@
 
     <owl:Class rdf:about="http://plod.info/rdf/School">
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/talk"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">School</rdfs:label>
         <rdfs:label xml:lang="ja">学校</rdfs:label>
     </owl:Class>

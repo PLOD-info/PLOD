@@ -43,6 +43,27 @@
     
 
 
+    <!-- http://plod.info/rdf/agent -->
+
+    <owl:ObjectProperty rdf:about="http://plod.info/rdf/agent">
+        <owl:inverseOf rdf:resource="http://plod.info/rdf/event"/>
+        <rdfs:domain rdf:resource="http://schema.org/Event"/>
+        <rdfs:range rdf:resource="http://schema.org/Organization"/>
+        <rdfs:range rdf:resource="http://schema.org/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://plod.info/rdf/event -->
+
+    <owl:ObjectProperty rdf:about="http://plod.info/rdf/event">
+        <rdfs:domain rdf:resource="http://schema.org/Organization"/>
+        <rdfs:domain rdf:resource="http://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://schema.org/Event"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://plod.info/rdf/isSituationOf -->
 
     <owl:ObjectProperty rdf:about="http://plod.info/rdf/isSituationOf">
@@ -179,15 +200,6 @@
 
     <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasReliableJdEnd">
         <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://schema.org/agent -->
-
-    <owl:ObjectProperty rdf:about="http://schema.org/agent">
-        <rdfs:range rdf:resource="http://schema.org/Organization"/>
-        <rdfs:range rdf:resource="http://schema.org/Person"/>
     </owl:ObjectProperty>
     
 
@@ -1533,10 +1545,10 @@
         <rdf:type rdf:resource="http://schema.org/Event"/>
         <plod:action rdf:resource="http://plod.info/rdf/eat"/>
         <plod:action rdf:resource="http://plod.info/rdf/talk"/>
+        <plod:agent rdf:resource="http://plod.info/rdf/person-A"/>
+        <plod:agent rdf:resource="http://plod.info/rdf/person-B"/>
+        <plod:agent rdf:resource="http://plod.info/rdf/person-C"/>
         <plod:situationOfActivity rdf:resource="http://plod.info/rdf/facetoface"/>
-        <schema:agent rdf:resource="http://plod.info/rdf/person-A"/>
-        <schema:agent rdf:resource="http://plod.info/rdf/person-B"/>
-        <schema:agent rdf:resource="http://plod.info/rdf/person-C"/>
         <schema:location rdf:resource="http://plod.info/rdf/restaurant-A"/>
         <time:hasDuration rdf:resource="http://plod.info/rdf/20200401-1-duration"/>
         <rdfs:comment>ある時間帯におけるレストランAでの食事イベント1</rdfs:comment>

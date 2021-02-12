@@ -362,7 +362,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Bar</rdfs:label>
-        <rdfs:label xml:lang="ja">バー</rdfs:label>
+        <rdfs:label xml:lang="ja">バー/居酒屋</rdfs:label>
     </owl:Class>
     
 
@@ -408,7 +408,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Coffee_shop</rdfs:label>
-        <rdfs:label xml:lang="ja">喫茶店</rdfs:label>
+        <rdfs:label xml:lang="ja">喫茶店/カフェ</rdfs:label>
     </owl:Class>
     
 

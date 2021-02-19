@@ -1533,7 +1533,7 @@
     <!-- http://plod.info/rdf/eat -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/eat">
-        <rdf:type rdf:resource="http://plod.info/rdf/Activity"/>
+        <rdf:type rdf:resource="http://plod.info/rdf/RiskActivity"/>
         <rdfs:label xml:lang="ja">食事</rdfs:label>
     </owl:NamedIndividual>
     

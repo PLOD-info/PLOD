@@ -558,46 +558,36 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://schema.org/location"/>
-                                <owl:someValuesFrom>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
                                     <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
-                                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                                        <owl:onClass rdf:resource="http://plod.info/rdf/DropletReachableActivity"/>
+                                        <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
+                                        <owl:hasValue rdf:resource="http://plod.info/rdf/frequentlyBreath"/>
                                     </owl:Restriction>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
+                                        <owl:hasValue rdf:resource="http://plod.info/rdf/sing"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
+                                        <owl:hasValue rdf:resource="http://plod.info/rdf/talk"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
+                                        <owl:hasValue rdf:resource="http://plod.info/rdf/yell"/>
+                                    </owl:Restriction>
+                                </owl:unionOf>
+                            </owl:Class>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
-                                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                                <owl:onClass rdf:resource="http://plod.info/rdf/DropletReachableActivity"/>
+                                <owl:hasValue rdf:resource="http://plod.info/rdf/removeMask"/>
                             </owl:Restriction>
-                        </owl:unionOf>
+                        </owl:intersectionOf>
                     </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#numericDuration"/>
-                                <owl:someValuesFrom>
-                                    <rdfs:Datatype>
-                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-                                        <owl:withRestrictions rdf:parseType="Collection">
-                                            <rdf:Description>
-                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</xsd:minExclusive>
-                                            </rdf:Description>
-                                        </owl:withRestrictions>
-                                    </rdfs:Datatype>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
-                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
+                        <owl:someValuesFrom rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -613,51 +603,41 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://schema.org/location"/>
-                                <owl:someValuesFrom>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
                                     <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
-                                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                                        <owl:onClass rdf:resource="http://plod.info/rdf/DropletReachableActivity"/>
+                                        <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
+                                        <owl:hasValue rdf:resource="http://plod.info/rdf/frequentlyBreath"/>
                                     </owl:Restriction>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
+                                        <owl:hasValue rdf:resource="http://plod.info/rdf/sing"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
+                                        <owl:hasValue rdf:resource="http://plod.info/rdf/talk"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
+                                        <owl:hasValue rdf:resource="http://plod.info/rdf/yell"/>
+                                    </owl:Restriction>
+                                </owl:unionOf>
+                            </owl:Class>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
-                                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                                <owl:onClass rdf:resource="http://plod.info/rdf/DropletReachableActivity"/>
+                                <owl:hasValue rdf:resource="http://plod.info/rdf/removeMask"/>
                             </owl:Restriction>
-                        </owl:unionOf>
+                        </owl:intersectionOf>
                     </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#numericDuration"/>
-                                <owl:someValuesFrom>
-                                    <rdfs:Datatype>
-                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-                                        <owl:withRestrictions rdf:parseType="Collection">
-                                            <rdf:Description>
-                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</xsd:minExclusive>
-                                            </rdf:Description>
-                                        </owl:withRestrictions>
-                                    </rdfs:Datatype>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
-                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
+                        <owl:someValuesFrom rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:annotatedTarget>
-        <rdfs:comment>飛沫到達行動2個以上 and 15分以上 and リスク行動状況1個以上</rdfs:comment>
+        <rdfs:comment>(マスクを外す+飛沫到達行動) and 15分以上 and リスク行動状況</rdfs:comment>
     </owl:Axiom>
     
 
@@ -679,8 +659,7 @@
                             </owl:Class>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfSpace"/>
-                                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                                <owl:onClass rdf:resource="http://plod.info/rdf/RiskSpaceSituation"/>
+                                <owl:someValuesFrom rdf:resource="http://plod.info/rdf/RiskSpaceSituation"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -702,13 +681,15 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
-                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
+                        <owl:someValuesFrom rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfSpace"/>
-                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="http://plod.info/rdf/RiskSpaceSituation"/>
+                        <owl:hasValue rdf:resource="http://plod.info/rdf/crowded"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfSpace"/>
+                        <owl:hasValue rdf:resource="http://plod.info/rdf/smallSpace"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -854,47 +835,13 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://schema.org/location"/>
-                                <owl:someValuesFrom>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
-                                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                                        <owl:onClass rdf:resource="http://plod.info/rdf/DropletReachableActivity"/>
-                                    </owl:Restriction>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
-                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                                <owl:onClass rdf:resource="http://plod.info/rdf/DropletReachableActivity"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#numericDuration"/>
-                                <owl:someValuesFrom>
-                                    <rdfs:Datatype>
-                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-                                        <owl:withRestrictions rdf:parseType="Collection">
-                                            <rdf:Description>
-                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</xsd:minExclusive>
-                                            </rdf:Description>
-                                        </owl:withRestrictions>
-                                    </rdfs:Datatype>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
+                        <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
+                        <owl:someValuesFrom rdf:resource="http://plod.info/rdf/DropletReachableActivity"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
-                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
+                        <owl:someValuesFrom rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -937,13 +884,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
-                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
+                        <owl:someValuesFrom rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfSpace"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://plod.info/rdf/RiskSpaceSituation"/>
+                        <owl:someValuesFrom rdf:resource="http://plod.info/rdf/RiskSpaceSituation"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1544,6 +1489,7 @@
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/event20200401-1">
         <rdf:type rdf:resource="http://schema.org/Event"/>
         <plod:action rdf:resource="http://plod.info/rdf/eat"/>
+        <plod:action rdf:resource="http://plod.info/rdf/removeMask"/>
         <plod:action rdf:resource="http://plod.info/rdf/talk"/>
         <plod:agent rdf:resource="http://plod.info/rdf/person-A"/>
         <plod:agent rdf:resource="http://plod.info/rdf/person-B"/>

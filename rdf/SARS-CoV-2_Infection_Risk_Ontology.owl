@@ -54,6 +54,14 @@
     
 
 
+    <!-- http://plod.info/rdf/city -->
+
+    <owl:ObjectProperty rdf:about="http://plod.info/rdf/city">
+        <rdfs:domain rdf:resource="http://schema.org/Place"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://plod.info/rdf/event -->
 
     <owl:ObjectProperty rdf:about="http://plod.info/rdf/event">

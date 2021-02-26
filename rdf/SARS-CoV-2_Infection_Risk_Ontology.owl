@@ -1575,6 +1575,16 @@
     
 
 
+    <!-- http://plod.info/rdf/prolongedContact -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/prolongedContact">
+        <rdf:type rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
+        <rdfs:label xml:lang="en">prolonged contact</rdfs:label>
+        <rdfs:label xml:lang="ja">長時間接触</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://plod.info/rdf/relax -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/relax">

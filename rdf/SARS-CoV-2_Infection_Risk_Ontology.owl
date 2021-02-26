@@ -593,10 +593,30 @@
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
-                        <owl:someValuesFrom rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
-                    </owl:Restriction>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
+                                        <owl:hasValue rdf:resource="http://plod.info/rdf/facetoface"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
+                                        <owl:hasValue rdf:resource="http://plod.info/rdf/fiveOrMorePeople"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
+                                        <owl:hasValue rdf:resource="http://plod.info/rdf/relax"/>
+                                    </owl:Restriction>
+                                </owl:unionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
+                                <owl:hasValue rdf:resource="http://plod.info/rdf/prolongedContact"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -638,10 +658,30 @@
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
-                        <owl:someValuesFrom rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
-                    </owl:Restriction>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
+                                        <owl:hasValue rdf:resource="http://plod.info/rdf/facetoface"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
+                                        <owl:hasValue rdf:resource="http://plod.info/rdf/fiveOrMorePeople"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
+                                        <owl:hasValue rdf:resource="http://plod.info/rdf/relax"/>
+                                    </owl:Restriction>
+                                </owl:unionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
+                                <owl:hasValue rdf:resource="http://plod.info/rdf/prolongedContact"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:annotatedTarget>
@@ -1503,6 +1543,7 @@
         <plod:agent rdf:resource="http://plod.info/rdf/person-B"/>
         <plod:agent rdf:resource="http://plod.info/rdf/person-C"/>
         <plod:situationOfActivity rdf:resource="http://plod.info/rdf/facetoface"/>
+        <plod:situationOfActivity rdf:resource="http://plod.info/rdf/prolongedContact"/>
         <schema:location rdf:resource="http://plod.info/rdf/restaurant-A"/>
         <time:hasDuration rdf:resource="http://plod.info/rdf/20200401-1-duration"/>
         <rdfs:comment>ある時間帯におけるレストランAでの食事イベント1</rdfs:comment>

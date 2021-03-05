@@ -1,0 +1,294 @@
+prefix dc: <http://purl.org/dc/elements/1.1/>
+prefix dcterms: <http://purl.org/dc/terms/>
+prefix err: <http://www.w3.org/2005/xqt-errors#>
+prefix fn: <http://www.w3.org/2005/xpath-functions#>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix fti: <http://franz.com/ns/allegrograph/2.2/textindex/>
+prefix keyword: <http://franz.com/ns/keyword#>
+prefix nd: <http://franz.com/ns/allegrograph/5.0/geo/nd#>
+prefix ndfn: <http://franz.com/ns/allegrograph/5.0/geo/nd/fn#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix xs: <http://www.w3.org/2001/XMLSchema#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+<http://plod.info/rdf/id/Home_b5> rdf:type <http://plod.info/rdf/Home>, owl:Individual ; 
+  rdfs:label "Home_b5" . 
+<http://plod.info/rdf/id/IndoorPartyVenue_b2> rdf:type <http://plod.info/rdf/IndoorPartyVenue>, owl:Individual ; 
+  rdfs:label "IndoorPartyVenue_b2" . 
+<http://plod.info/rdf/id/Restaurant_b4> rdf:type <http://plod.info/rdf/Restaurant>, owl:Individual ; 
+  rdfs:label "Restaurant_b4" . 
+<http://plod.info/rdf/id/bar_c1> rdf:type <http://plod.info/rdf/Bar>, owl:Individual ; 
+  rdfs:label "bar_c1" . 
+<http://plod.info/rdf/id/bus_a2> rdf:type <http://plod.info/rdf/Bus>, owl:Individual ; 
+  rdfs:label "bus_a2" . 
+<http://plod.info/rdf/id/coffeeShop_a1> rdf:type <http://plod.info/rdf/CoffeeShop>, owl:Individual ; 
+  rdfs:label "coffeeShop_a1" . 
+<http://plod.info/rdf/id/hairSalon_a3> rdf:type <http://plod.info/rdf/HairSalon>, owl:Individual ; 
+  rdfs:label "hairSalon_a3" . 
+<http://plod.info/rdf/id/home_a5> rdf:type <http://plod.info/rdf/Home>, owl:Individual ; 
+  rdfs:label "home_a5" . 
+<http://plod.info/rdf/id/indoorSportsFacility_c5> rdf:type <http://plod.info/rdf/IndoorSportsFacility>, owl:Individual ; 
+  rdfs:label "indoorSportsFacility_c5" . 
+<http://plod.info/rdf/id/movieTheater_c3> rdf:type <http://plod.info/rdf/MovieTheater>, owl:Individual ; 
+  rdfs:label "movieTheater_c3" . 
+<http://plod.info/rdf/id/museum_a4> rdf:type <http://plod.info/rdf/Museum>, owl:Individual ; 
+  rdfs:label "museum_a4" . 
+<http://plod.info/rdf/id/railway_c2> rdf:type <http://plod.info/rdf/Railway>, owl:Individual ; 
+  rdfs:label "railway_c2" . 
+<http://plod.info/rdf/id/school_b1> rdf:type <http://plod.info/rdf/School>, owl:Individual ; 
+  rdfs:label "school_b1" . 
+<http://plod.info/rdf/id/school_b3> rdf:type <http://plod.info/rdf/School>, owl:Individual ; 
+  rdfs:label "school_b3" . 
+<http://plod.info/rdf/id/school_c4> rdf:type <http://plod.info/rdf/School>, owl:Individual ; 
+  rdfs:label "school_c4" . 
+rdf:type rdf:type rdf:Property . 
+rdfs:label rdf:type rdf:Property . 
+owl:Individual rdf:type rdfs:Class . 
+<http://plod.info/rdf/id/time_a1> rdf:type <http://www.w3.org/2006/time#Interval> ; 
+  rdfs:label "time_a1" ; 
+  <http://www.w3.org/2006/time#hasBeginning> "2020/4/3 13:00:00" ; 
+  <http://www.w3.org/2006/time#hasEnd> "2020/4/3 15:00:00" . 
+<http://plod.info/rdf/id/time_a2> rdf:type <http://www.w3.org/2006/time#Interval> ; 
+  rdfs:label "time_a2" ; 
+  <http://www.w3.org/2006/time#hasBeginning> "2020/4/4 10:00:00" ; 
+  <http://www.w3.org/2006/time#hasEnd> "2020/4/4 18:00:00" . 
+<http://plod.info/rdf/id/time_a3> rdf:type <http://www.w3.org/2006/time#Interval> ; 
+  rdfs:label "time_a3" ; 
+  <http://www.w3.org/2006/time#hasBeginning> "2020/4/5 18:00:00" ; 
+  <http://www.w3.org/2006/time#hasEnd> "2020/4/5 20:00:00" . 
+<http://plod.info/rdf/id/time_a4> rdf:type <http://www.w3.org/2006/time#Interval> ; 
+  rdfs:label "time_a4" ; 
+  <http://www.w3.org/2006/time#hasBeginning> "午後" ; 
+  <http://www.w3.org/2006/time#hasEnd> "午後" . 
+<http://plod.info/rdf/id/time_a5> rdf:type <http://www.w3.org/2006/time#Interval> ; 
+  rdfs:label "time_a5" ; 
+  <http://www.w3.org/2006/time#hasBeginning> "2020/4/20 18:00:00" ; 
+  <http://www.w3.org/2006/time#hasEnd> "2020/4/20 23:00:00" . 
+<http://plod.info/rdf/id/time_b1> rdf:type <http://www.w3.org/2006/time#Interval> ; 
+  rdfs:label "time_b1" ; 
+  <http://www.w3.org/2006/time#hasBeginning> "2020/4/3 17:00" ; 
+  <http://www.w3.org/2006/time#hasEnd> "2020/4/3 18:20" . 
+<http://plod.info/rdf/id/time_b2> rdf:type <http://www.w3.org/2006/time#Interval> ; 
+  rdfs:label "time_b2" ; 
+  <http://www.w3.org/2006/time#hasBeginning> "2020/4/4 14:00" ; 
+  <http://www.w3.org/2006/time#hasEnd> "2020/4/4 20:00" . 
+<http://plod.info/rdf/id/time_b3> rdf:type <http://www.w3.org/2006/time#Interval> ; 
+  rdfs:label "time_b3" ; 
+  <http://www.w3.org/2006/time#hasBeginning> "終日" ; 
+  <http://www.w3.org/2006/time#hasEnd> "終日" . 
+<http://plod.info/rdf/id/time_b4> rdf:type <http://www.w3.org/2006/time#Interval> ; 
+  rdfs:label "time_b4" ; 
+  <http://www.w3.org/2006/time#hasBeginning> "2020-04-05T21:00:00+09:00"^^xsd:dateTime ; 
+  <http://www.w3.org/2006/time#hasEnd> "2020-04-05T21:30:00+09:00"^^xsd:dateTime . 
+<http://plod.info/rdf/id/time_b5> rdf:type <http://www.w3.org/2006/time#Interval> ; 
+  rdfs:label "time_b5" ; 
+  <http://www.w3.org/2006/time#hasBeginning> "2020/12/1 18:00" ; 
+  <http://www.w3.org/2006/time#hasEnd> "2020/12/1 22:00" . 
+<http://plod.info/rdf/id/time_c1> rdf:type <http://www.w3.org/2006/time#Interval> ; 
+  rdfs:label "time_c1" ; 
+  <http://www.w3.org/2006/time#hasBeginning> "2020-04-05T20:00:00+09:00"^^xsd:dateTime ; 
+  <http://www.w3.org/2006/time#hasEnd> "2020-04-05T22:30:00+09:00"^^xsd:dateTime . 
+<http://plod.info/rdf/id/time_c2> rdf:type <http://www.w3.org/2006/time#Interval> ; 
+  rdfs:label "time_c2" ; 
+  <http://www.w3.org/2006/time#hasBeginning> "2020/4/3 20:00:00" ; 
+  <http://www.w3.org/2006/time#hasEnd> "2020/4/3 20:30:00" . 
+<http://plod.info/rdf/id/time_c3> rdf:type <http://www.w3.org/2006/time#Interval> ; 
+  rdfs:label "time_c3" ; 
+  <http://www.w3.org/2006/time#hasBeginning> "2020/4/5 13:00:00" ; 
+  <http://www.w3.org/2006/time#hasEnd> "2020/4/5 15:00:00" . 
+<http://plod.info/rdf/id/time_c4> rdf:type <http://www.w3.org/2006/time#Interval> ; 
+  rdfs:label "time_c4" ; 
+  <http://www.w3.org/2006/time#hasBeginning> "2020/4/10 13:00:00" ; 
+  <http://www.w3.org/2006/time#hasEnd> "2020/4/10 14:30:00" . 
+<http://plod.info/rdf/id/time_c5> rdf:type <http://www.w3.org/2006/time#Interval> ; 
+  rdfs:label "time_c5" ; 
+  <http://www.w3.org/2006/time#hasBeginning> "2020/4/12 13:00:00" ; 
+  <http://www.w3.org/2006/time#hasEnd> "2020/4/12 16:00:00" . 
+<http://www.w3.org/2006/time#Interval> rdf:type rdfs:Class . 
+<http://www.w3.org/2006/time#hasBeginning> rdf:type rdf:Property . 
+<http://www.w3.org/2006/time#hasEnd> rdf:type rdf:Property . 
+<http://plod.info/rdf/action> rdf:type rdf:Property . 
+<http://plod.info/rdf/agent> rdf:type rdf:Property . 
+<http://plod.info/rdf/id/event_a1> <http://plod.info/rdf/action> <http://plod.info/rdf/eat>, <http://plod.info/rdf/removeMask>, <http://plod.info/rdf/talk> ; 
+  <http://plod.info/rdf/agent> <http://plod.info/rdf/id/person_a1_A>, <http://plod.info/rdf/id/person_a1_B>, <http://plod.info/rdf/id/person_a1_C> ; 
+  <http://plod.info/rdf/situationOfActivity> <http://plod.info/rdf/facetoface>, <http://plod.info/rdf/relax> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_a1> ; 
+  <http://schema.org/location> <http://plod.info/rdf/id/coffeeShop_a1> ; 
+  rdf:type <http://schema.org/Event> ; 
+  rdfs:label "2020年4月3日13:00~15:00にAさんが友人BさんとCさんとカフェで食事をした"@ja . 
+<http://plod.info/rdf/id/event_a2> <http://plod.info/rdf/action> <http://plod.info/rdf/eat>, <http://plod.info/rdf/talk> ; 
+  <http://plod.info/rdf/agent> <http://plod.info/rdf/id/person_a2_A>, <http://plod.info/rdf/id/person_a2_D> ; 
+  <http://plod.info/rdf/situationOfActivity> <http://plod.info/rdf/relax> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_a2> ; 
+  <http://schema.org/location> <http://plod.info/rdf/id/bus_a2> ; 
+  rdf:type <http://schema.org/Event> ; 
+  rdfs:label "2020年4月4日10:00~18:00にAさんが友人Dさんとバスツアーに参加"@ja . 
+<http://plod.info/rdf/id/event_a3> <http://plod.info/rdf/action> <http://plod.info/rdf/removeMask>, <http://plod.info/rdf/talk> ; 
+  <http://plod.info/rdf/agent> <http://plod.info/rdf/id/person_a3_A> ; 
+  <http://plod.info/rdf/situationOfActivity> <http://plod.info/rdf/relax> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_a3> ; 
+  <http://schema.org/location> <http://plod.info/rdf/id/hairSalon_a3> ; 
+  rdf:type <http://schema.org/Event> ; 
+  rdfs:label "2020年4月5日18:00~20:00にAさんが美容院に行った"@ja . 
+<http://plod.info/rdf/id/event_a4> <http://plod.info/rdf/agent> <http://plod.info/rdf/id/person_a4_A> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_a4> ; 
+  <http://schema.org/location> <http://plod.info/rdf/id/museum_a4> ; 
+  rdf:type <http://schema.org/Event> ; 
+  rdfs:label "2020年4月15日午後にAさんが博物館に行った"@ja . 
+<http://plod.info/rdf/id/event_a5> <http://plod.info/rdf/action> <http://plod.info/rdf/alcoholDrinking>, <http://plod.info/rdf/eat>, <http://plod.info/rdf/removeMask>, <http://plod.info/rdf/sharingThing>, <http://plod.info/rdf/talk>, <http://plod.info/rdf/yell> ; 
+  <http://plod.info/rdf/agent> <http://plod.info/rdf/id/person_a5_A>, <http://plod.info/rdf/id/person_a5_E>, <http://plod.info/rdf/id/person_a5_F>, <http://plod.info/rdf/id/person_a5_G>, <http://plod.info/rdf/id/person_a5_H>, <http://plod.info/rdf/id/person_a5_I> ; 
+  <http://plod.info/rdf/situationOfActivity> <http://plod.info/rdf/facetoface>, <http://plod.info/rdf/fiveOrMorePeople>, <http://plod.info/rdf/relax> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_a5> ; 
+  <http://schema.org/location> <http://plod.info/rdf/id/home_a5> ; 
+  rdf:type <http://schema.org/Event> ; 
+  rdfs:label "2020年4月20日18:00~23:00にAさんが友人Eさん,Fさん,Gさん,Hさん,Iさんと飲み会をした"@ja . 
+<http://plod.info/rdf/id/event_b1> <http://plod.info/rdf/action> <http://plod.info/rdf/sharingThing>, <http://plod.info/rdf/talk> ; 
+  <http://plod.info/rdf/agent> <http://plod.info/rdf/id/person_b1_A>, <http://plod.info/rdf/id/person_b1_B>, <http://plod.info/rdf/id/person_b1_C> ; 
+  <http://plod.info/rdf/situationOfActivity> <http://plod.info/rdf/facetoface>, <http://plod.info/rdf/fiveOrMorePeople> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_b1> ; 
+  <http://schema.org/location> <http://plod.info/rdf/id/school_b1> ; 
+  rdf:type <http://schema.org/Event> ; 
+  rdfs:label "2020年4月3日17:00~18:20まで教師Aさんが生徒Bさん、Cさんに個別指導塾の大型教室で授業を行った。"@ja . 
+<http://plod.info/rdf/id/event_b2> <http://plod.info/rdf/action> <http://plod.info/rdf/alcoholDrinking>, <http://plod.info/rdf/eat>, <http://plod.info/rdf/sharingThing>, <http://plod.info/rdf/talk>, <http://plod.info/rdf/yell> ; 
+  <http://plod.info/rdf/agent> <http://plod.info/rdf/id/person_b2_A>, <http://plod.info/rdf/id/person_b2_B>, <http://plod.info/rdf/id/person_b2_C>, <http://plod.info/rdf/id/person_b2_D> ; 
+  <http://plod.info/rdf/situationOfActivity> <http://plod.info/rdf/facetoface>, <http://plod.info/rdf/relax> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_b2> ; 
+  <http://schema.org/location> <http://plod.info/rdf/id/IndoorPartyVenue_b2> ; 
+  rdf:type <http://schema.org/Event> ; 
+  rdfs:label "2020年4月4日14:00~20:00までAさんが友人B,C,Dさんとカラオケに行った。"@ja . 
+<http://plod.info/rdf/id/event_b3> <http://plod.info/rdf/agent> <http://plod.info/rdf/id/person_b3_A> ; 
+  <http://plod.info/rdf/situationOfActivity> <http://plod.info/rdf/fiveOrMorePeople> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_b3> ; 
+  <http://schema.org/location> <http://plod.info/rdf/id/school_b3> ; 
+  rdf:type <http://schema.org/Event> ; 
+  rdfs:label "2021年1月16日大学の教室でAさんが試験を受けた。"@ja . 
+<http://plod.info/rdf/id/event_b4> <http://plod.info/rdf/action> <http://plod.info/rdf/eat>, <http://plod.info/rdf/removeMask>, <http://plod.info/rdf/sharingThing>, <http://plod.info/rdf/talk> ; 
+  <http://plod.info/rdf/agent> <http://plod.info/rdf/id/person_b4_A>, <http://plod.info/rdf/id/person_b4_B>, <http://plod.info/rdf/id/person_b4_C> ; 
+  <http://plod.info/rdf/situationOfActivity> <http://plod.info/rdf/relax> ; 
+  <http://plod.info/rdf/situationOfActivity> <http://plod.info/rdf/prolongedContact> ;
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_b4> ; 
+  <http://schema.org/location> <http://plod.info/rdf/id/Restaurant_b4> ; 
+  rdf:type <http://schema.org/Event> ; 
+  rdfs:label "2020年4月5日21:00~21:30までAさんが友人B,Cさんとレストランで食事をした"@ja . 
+<http://plod.info/rdf/id/event_b5> <http://plod.info/rdf/action> <http://plod.info/rdf/alcoholDrinking>, <http://plod.info/rdf/eat>, <http://plod.info/rdf/removeMask>, <http://plod.info/rdf/sharingThing>, <http://plod.info/rdf/talk> ; 
+  <http://plod.info/rdf/agent> <http://plod.info/rdf/id/person_b5_A>, <http://plod.info/rdf/id/person_b5_B>, <http://plod.info/rdf/id/person_b5_C>, <http://plod.info/rdf/id/person_b5_D> ; 
+  <http://plod.info/rdf/situationOfActivity> <http://plod.info/rdf/facetoface>, <http://plod.info/rdf/relax> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_b5> ; 
+  <http://schema.org/location> <http://plod.info/rdf/id/Home_b5> ; 
+  rdf:type <http://schema.org/Event> ; 
+  rdfs:label "2020年12月1日18:00~22:00までAさんが友人B,C,Dさんと自宅で鍋を食べた"@ja . 
+<http://plod.info/rdf/id/event_c1> <http://plod.info/rdf/action> <http://plod.info/rdf/alcoholDrinking>, <http://plod.info/rdf/eat>, <http://plod.info/rdf/removeMask>, <http://plod.info/rdf/sharingThing>, <http://plod.info/rdf/talk>, <http://plod.info/rdf/yell> ; 
+  <http://plod.info/rdf/agent> <http://plod.info/rdf/id/person_c1_A>, <http://plod.info/rdf/id/person_c1_B>, <http://plod.info/rdf/id/person_c1_C>, <http://plod.info/rdf/id/person_c1_D>, <http://plod.info/rdf/id/person_c1_E> ; 
+  <http://plod.info/rdf/situationOfActivity> <http://plod.info/rdf/facetoface>, <http://plod.info/rdf/fiveOrMorePeople>, <http://plod.info/rdf/relax> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_c1> ; 
+  <http://plod.info/rdf/situationOfActivity> <http://plod.info/rdf/prolongedContact> ;
+  <http://schema.org/location> <http://plod.info/rdf/id/Restaurant_b4> ; 
+  rdf:type <http://schema.org/Event> ; 
+  rdfs:comment "大皿で出てくる料理を各自の箸でとることがあった"@ja ; 
+  rdfs:label "2020年4月3日17:00~19:30にAさんが友人B,C,D,Eさんとレストランで飲酒を含む食事をした"@ja . 
+<http://plod.info/rdf/id/event_c2> <http://plod.info/rdf/action> <http://plod.info/rdf/talk> ; 
+  <http://plod.info/rdf/agent> <http://plod.info/rdf/id/person_c2_A>, <http://plod.info/rdf/id/person_c2_B>, <http://plod.info/rdf/id/person_c2_C> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_c2> ; 
+  <http://schema.org/location> <http://plod.info/rdf/id/railway_c2> ; 
+  rdf:type <http://schema.org/Event> ; 
+  rdfs:label "2020年4月3日20:00~20:30にAさんが友人A,B,Cさんと電車で帰った"@ja, "2020年4月3日20:00~20:30にAさんが友人B,Cさんと電車で帰った"@ja . 
+<http://plod.info/rdf/id/event_c3> <http://plod.info/rdf/action> <http://plod.info/rdf/eat>, <http://plod.info/rdf/sharingThing>, <http://plod.info/rdf/talk> ; 
+  <http://plod.info/rdf/agent> <http://plod.info/rdf/id/person_c3_A>, <http://plod.info/rdf/id/person_c3_F> ; 
+  <http://plod.info/rdf/situationOfActivity> <http://plod.info/rdf/relax> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_c3> ; 
+  <http://schema.org/location> <http://plod.info/rdf/id/movieTheater_c3> ; 
+  rdf:type <http://schema.org/Event> ; 
+  rdfs:label "2020年4月5日13:00~15:00にAさんが友人Fさんと映画館で映画を見た"@ja . 
+<http://plod.info/rdf/id/event_c4> <http://plod.info/rdf/action> <http://plod.info/rdf/eat>, <http://plod.info/rdf/talk> ; 
+  <http://plod.info/rdf/agent> <http://plod.info/rdf/id/person_c4_A>, <http://plod.info/rdf/id/person_c4_G>, <http://plod.info/rdf/id/person_c4_H> ; 
+  <http://plod.info/rdf/situationOfActivity> <http://plod.info/rdf/facetoface> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_c4> ; 
+  <http://schema.org/location> <http://plod.info/rdf/id/school_c4> ; 
+  rdf:type <http://schema.org/Event> ; 
+  rdfs:label "2020年4月10日13:00~13:30にAさんが教授Gさん会社員Hさんと打ち合わせを行った"@ja . 
+<http://plod.info/rdf/id/event_c5> <http://plod.info/rdf/action> <http://plod.info/rdf/eat>, <http://plod.info/rdf/removeMask>, <http://plod.info/rdf/sharingThing>, <http://plod.info/rdf/talk>, <http://plod.info/rdf/yell> ; 
+  <http://plod.info/rdf/agent> <http://plod.info/rdf/id/person_c5_A>, <http://plod.info/rdf/id/person_c5_E> ; 
+  <http://plod.info/rdf/situationOfActivity> <http://plod.info/rdf/facetoface>, <http://plod.info/rdf/fiveOrMorePeople>, <http://plod.info/rdf/relax> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_c5> ; 
+  <http://schema.org/location> <http://plod.info/rdf/id/indoorSportsFacility_c5> ; 
+  rdf:type <http://schema.org/Event> ; 
+  rdfs:comment "ハイタッチなどの接触があった"@ja, "友人以外に十数名と一緒にプレーした,隣のコートで十数名が活動していた"@ja ; 
+  rdfs:label "2020年4月12日13:00~16:00にAさんが友人Eさんと屋内スポーツ施設でバレーボールをした。"@ja . 
+<http://plod.info/rdf/situationOfActivity> rdf:type rdf:Property . 
+<http://plod.info/rdf/time> rdf:type rdf:Property . 
+<http://schema.org/Event> rdf:type rdfs:Class . 
+<http://schema.org/location> rdf:type rdf:Property . 
+rdfs:comment rdf:type rdf:Property . 
+<http://plod.info/rdf/Situation> rdf:type rdfs:Class . 
+<http://plod.info/rdf/id/situation_a1> <http://plod.info/rdf/isSituationOf> <http://plod.info/rdf/id/coffeeShop_a1> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_a1> ; 
+  rdf:type <http://plod.info/rdf/Situation> ; 
+  rdfs:label "situation_a1" . 
+<http://plod.info/rdf/id/situation_a2> <http://plod.info/rdf/isSituationOf> <http://plod.info/rdf/id/bus_a2> ; 
+  <http://plod.info/rdf/situationOfSpace> <http://plod.info/rdf/crowded> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_a2> ; 
+  rdf:type <http://plod.info/rdf/Situation> ; 
+  rdfs:label "situation_a2" . 
+<http://plod.info/rdf/id/situation_a3> <http://plod.info/rdf/isSituationOf> <http://plod.info/rdf/id/hairSalon_a3> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_a3> ; 
+  rdf:type <http://plod.info/rdf/Situation> ; 
+  rdfs:label "situation_a3" . 
+<http://plod.info/rdf/id/situation_a4> <http://plod.info/rdf/isSituationOf> <http://plod.info/rdf/id/museum_a4> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_a4> ; 
+  rdf:type <http://plod.info/rdf/Situation> ; 
+  rdfs:label "situation_a4" . 
+<http://plod.info/rdf/id/situation_a5> <http://plod.info/rdf/isSituationOf> <http://plod.info/rdf/id/home_a5> ; 
+  <http://plod.info/rdf/situationOfSpace> <http://plod.info/rdf/smallSpace> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_a5> ; 
+  rdf:type <http://plod.info/rdf/Situation> ; 
+  rdfs:label "situation_a5" . 
+<http://plod.info/rdf/id/situation_b1> <http://plod.info/rdf/isSituationOf> <http://plod.info/rdf/id/school_b1> ; 
+  <http://plod.info/rdf/situationOfSpace> <http://plod.info/rdf/crowded> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_b1> ; 
+  rdf:type <http://plod.info/rdf/Situation> ; 
+  rdfs:label "situation_b1" . 
+<http://plod.info/rdf/id/situation_b2> <http://plod.info/rdf/isSituationOf> <http://plod.info/rdf/id/IndoorPartyVenue_b2> ; 
+  <http://plod.info/rdf/situationOfSpace> <http://plod.info/rdf/smallSpace> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_b2> ; 
+  rdf:type <http://plod.info/rdf/Situation> ; 
+  rdfs:label "situation_b2" . 
+<http://plod.info/rdf/id/situation_b3> <http://plod.info/rdf/isSituationOf> <http://plod.info/rdf/id/school_b3> ; 
+  <http://plod.info/rdf/situationOfSpace> <http://plod.info/rdf/crowded> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_b3> ; 
+  rdf:type <http://plod.info/rdf/Situation> ; 
+  rdfs:label "situation_b3" . 
+<http://plod.info/rdf/id/situation_b4> <http://plod.info/rdf/isSituationOf> <http://plod.info/rdf/id/Restaurant_b4> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_b4> ; 
+  rdf:type <http://plod.info/rdf/Situation> ; 
+  rdfs:label "situation_b4" . 
+<http://plod.info/rdf/id/situation_b5> <http://plod.info/rdf/isSituationOf> <http://plod.info/rdf/id/Home_b5> ; 
+  <http://plod.info/rdf/situationOfSpace> <http://plod.info/rdf/smallSpace> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_b5> ; 
+  rdf:type <http://plod.info/rdf/Situation> ; 
+  rdfs:label "situation_b5" . 
+<http://plod.info/rdf/id/situation_c1> <http://plod.info/rdf/isSituationOf> <http://plod.info/rdf/id/bar_c1> ; 
+  <http://plod.info/rdf/situationOfSpace> <http://plod.info/rdf/smallSpace> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_c1> ; 
+  rdf:type <http://plod.info/rdf/Situation> ; 
+  rdfs:label "situation_c1" . 
+<http://plod.info/rdf/id/situation_c2> <http://plod.info/rdf/isSituationOf> <http://plod.info/rdf/id/railway_c2> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_c2> ; 
+  rdf:type <http://plod.info/rdf/Situation> ; 
+  rdfs:label "situation_c2" . 
+<http://plod.info/rdf/id/situation_c3> <http://plod.info/rdf/isSituationOf> <http://plod.info/rdf/id/movieTheater_c3> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_c3> ; 
+  rdf:type <http://plod.info/rdf/Situation> ; 
+  rdfs:label "situation_c3" . 
+<http://plod.info/rdf/id/situation_c4> <http://plod.info/rdf/isSituationOf> <http://plod.info/rdf/id/school_c4> ; 
+  <http://plod.info/rdf/situationOfSpace> <http://plod.info/rdf/smallSpace> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_c4> ; 
+  rdf:type <http://plod.info/rdf/Situation> ; 
+  rdfs:label "situation_c4" . 
+<http://plod.info/rdf/id/situation_c5> <http://plod.info/rdf/isSituationOf> <http://plod.info/rdf/id/indoorSportsFacility_c5> ; 
+  <http://plod.info/rdf/time> <http://plod.info/rdf/id/time_c5> ; 
+  rdf:type <http://plod.info/rdf/Situation> ; 
+  rdfs:label "situation_c5" . 
+<http://plod.info/rdf/isSituationOf> rdf:type rdf:Property . 
+<http://plod.info/rdf/situationOfSpace> rdf:type rdf:Property . 

@@ -613,7 +613,7 @@
                             </owl:Class>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
-                                <owl:hasValue rdf:resource="http://plod.info/rdf/prolongedContact"/>
+                                <owl:hasValue rdf:resource="http://plod.info/rdf/longTimeAction"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -678,7 +678,7 @@
                             </owl:Class>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
-                                <owl:hasValue rdf:resource="http://plod.info/rdf/prolongedContact"/>
+                                <owl:hasValue rdf:resource="http://plod.info/rdf/longTimeAction"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1543,7 +1543,7 @@
         <plod:agent rdf:resource="http://plod.info/rdf/person-B"/>
         <plod:agent rdf:resource="http://plod.info/rdf/person-C"/>
         <plod:situationOfActivity rdf:resource="http://plod.info/rdf/facetoface"/>
-        <plod:situationOfActivity rdf:resource="http://plod.info/rdf/prolongedContact"/>
+        <plod:situationOfActivity rdf:resource="http://plod.info/rdf/longTimeAction"/>
         <schema:location rdf:resource="http://plod.info/rdf/restaurant-A"/>
         <time:hasDuration rdf:resource="http://plod.info/rdf/20200401-1-duration"/>
         <rdfs:comment>ある時間帯におけるレストランAでの食事イベント1</rdfs:comment>
@@ -1616,12 +1616,12 @@
     
 
 
-    <!-- http://plod.info/rdf/prolongedContact -->
+    <!-- http://plod.info/rdf/longTimeAction -->
 
-    <owl:NamedIndividual rdf:about="http://plod.info/rdf/prolongedContact">
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/longTimeAction">
         <rdf:type rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
-        <rdfs:label xml:lang="en">prolonged contact</rdfs:label>
-        <rdfs:label xml:lang="ja">長時間接触</rdfs:label>
+        <rdfs:label xml:lang="en">long time action</rdfs:label>
+        <rdfs:label xml:lang="ja">長時間行動</rdfs:label>
     </owl:NamedIndividual>
     
 

@@ -585,6 +585,10 @@
                         </owl:unionOf>
                     </owl:Class>
                     <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
+                        <owl:hasValue rdf:resource="http://plod.info/rdf/longTimeAction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                         <owl:onClass rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
@@ -621,6 +625,10 @@
                             </owl:Restriction>
                         </owl:unionOf>
                     </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
+                        <owl:hasValue rdf:resource="http://plod.info/rdf/longTimeAction"/>
+                    </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
@@ -845,6 +853,10 @@
                             </owl:Restriction>
                         </owl:unionOf>
                     </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
+                        <owl:hasValue rdf:resource="http://plod.info/rdf/longTimeAction"/>
+                    </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
@@ -1504,9 +1516,8 @@
         <plod:agent rdf:resource="http://plod.info/rdf/person-B"/>
         <plod:agent rdf:resource="http://plod.info/rdf/person-C"/>
         <plod:situationOfActivity rdf:resource="http://plod.info/rdf/facetoface"/>
-        <plod:situationOfActivity rdf:resource="http://plod.info/rdf/longTimeAction"/>
         <schema:location rdf:resource="http://plod.info/rdf/restaurant-A"/>
-        <time:hasDuration rdf:resource="http://plod.info/rdf/20200401-1-duration"/>
+        <time:hasDuration rdf:resource="http://plod.info/rdf/longTimeAction"/>
         <rdfs:comment>ある時間帯におけるレストランAでの食事イベント1</rdfs:comment>
         <rdfs:label xml:lang="ja">ある時間帯におけるレストランAでの食事イベント1</rdfs:label>
     </owl:NamedIndividual>

@@ -22,10 +22,10 @@
     <rdfs:label>time_a1</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-03T13:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a1">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a1">
         <rdfs:label>duration_a1</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-03T15:00:00</time:hasEnd>
@@ -47,10 +47,10 @@
     <rdfs:label>time_a10</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-06T17:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a10">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a10">
         <rdfs:label>duration_a10</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-06T19:00:00</time:hasEnd>
@@ -72,10 +72,10 @@
     <rdfs:label>time_a11</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-06T19:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a11">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a11">
         <rdfs:label>duration_a11</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-06T20:30:00</time:hasEnd>
@@ -92,10 +92,10 @@
     <rdfs:label>time_a12</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-07T07:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a12">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a12">
         <rdfs:label>duration_a12</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-07T08:30:00</time:hasEnd>
@@ -117,10 +117,10 @@
     <rdfs:label>time_a13</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-07T09:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a13">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a13">
         <rdfs:label>duration_a13</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-07T10:40:00</time:hasEnd>
@@ -143,10 +143,10 @@
     <rdfs:label>time_a14</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-07T14:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a14">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a14">
         <rdfs:label>duration_a14</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-07T19:00:00</time:hasEnd>
@@ -169,10 +169,10 @@
     <rdfs:label>time_a15</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-07T20:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a15">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a15">
         <rdfs:label>duration_a15</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-07T22:00:00</time:hasEnd>
@@ -189,10 +189,10 @@
     <rdfs:label>time_a16</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-07T22:15:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a16">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a16">
         <rdfs:label>duration_a16</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-07T23:00:00</time:hasEnd>
@@ -209,10 +209,10 @@
     <rdfs:label>time_a17</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T07:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a17">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a17">
         <rdfs:label>duration_a17</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T08:30:00</time:hasEnd>
@@ -228,10 +228,10 @@
     <rdfs:label>time_a18</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T09:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a18">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a18">
         <rdfs:label>duration_a18</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T10:40:00</time:hasEnd>
@@ -254,10 +254,10 @@
     <rdfs:label>time_a19</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T12:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a19">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a19">
         <rdfs:label>duration_a19</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T13:00:00</time:hasEnd>
@@ -279,10 +279,10 @@
     <rdfs:label>time_a2</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-04T10:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a2">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a2">
         <rdfs:label>duration_a2</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-04T18:00:00</time:hasEnd>
@@ -298,10 +298,10 @@
     <rdfs:label>time_a20</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T14:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a20">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a20">
         <rdfs:label>duration_a20</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.4E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T18:00:00</time:hasEnd>
@@ -324,10 +324,10 @@
     <rdfs:label>time_a21</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T19:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a21">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a21">
         <rdfs:label>duration_a21</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.4E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T23:00:00</time:hasEnd>
@@ -343,10 +343,10 @@
     <rdfs:label>time_a22</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T23:15:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a22">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a22">
         <rdfs:label>duration_a22</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T23:45:00</time:hasEnd>
@@ -368,10 +368,10 @@
     <rdfs:label>time_a23</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T10:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a23">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a23">
         <rdfs:label>duration_a23</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T10:30:00</time:hasEnd>
@@ -394,10 +394,10 @@
     <rdfs:label>time_a24</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T10:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a24">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a24">
         <rdfs:label>duration_a24</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T14:00:00</time:hasEnd>
@@ -419,10 +419,10 @@
     <rdfs:label>time_a25</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T14:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a25">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a25">
         <rdfs:label>duration_a25</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T15:00:00</time:hasEnd>
@@ -439,10 +439,10 @@
     <rdfs:label>time_a26</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T17:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a26">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a26">
         <rdfs:label>duration_a26</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T17:40:00</time:hasEnd>
@@ -465,10 +465,10 @@
     <rdfs:label>time_a27</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T18:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a27">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a27">
         <rdfs:label>duration_a27</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T20:00:00</time:hasEnd>
@@ -485,10 +485,10 @@
     <rdfs:label>time_a28</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T07:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a28">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a28">
         <rdfs:label>duration_a28</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T08:30:00</time:hasEnd>
@@ -504,10 +504,10 @@
     <rdfs:label>time_a29</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T09:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a29">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a29">
         <rdfs:label>duration_a29</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T11:00:00</time:hasEnd>
@@ -529,10 +529,10 @@
     <rdfs:label>time_a3</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-05T18:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a3">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a3">
         <rdfs:label>duration_a3</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-05T20:00:00</time:hasEnd>
@@ -555,10 +555,10 @@
     <rdfs:label>time_a30</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T11:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a30">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a30">
         <rdfs:label>duration_a30</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T13:00:00</time:hasEnd>
@@ -575,10 +575,10 @@
     <rdfs:label>time_a31</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T13:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a31">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a31">
         <rdfs:label>duration_a31</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T14:00:00</time:hasEnd>
@@ -601,10 +601,10 @@
     <rdfs:label>time_a32</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T14:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a32">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a32">
         <rdfs:label>duration_a32</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T17:00:00</time:hasEnd>
@@ -620,10 +620,10 @@
     <rdfs:label>time_a33</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T17:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a33">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a33">
         <rdfs:label>duration_a33</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.3E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T23:00:00</time:hasEnd>
@@ -639,10 +639,10 @@
     <rdfs:label>time_a34</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T07:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a34">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a34">
         <rdfs:label>duration_a34</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T07:45:00</time:hasEnd>
@@ -664,10 +664,10 @@
     <rdfs:label>time_a35</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T08:20:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a35">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a35">
         <rdfs:label>duration_a35</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.4E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T17:20:00</time:hasEnd>
@@ -689,10 +689,10 @@
     <rdfs:label>time_a36</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T18:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a36">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a36">
         <rdfs:label>duration_a36</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T20:00:00</time:hasEnd>
@@ -714,10 +714,10 @@
     <rdfs:label>time_a37</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T09:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a37">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a37">
         <rdfs:label>duration_a37</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T10:00:00</time:hasEnd>
@@ -734,10 +734,10 @@
     <rdfs:label>time_a38</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T10:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a38">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a38">
         <rdfs:label>duration_a38</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T12:00:00</time:hasEnd>
@@ -760,10 +760,10 @@
     <rdfs:label>time_a39</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T14:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a39">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a39">
         <rdfs:label>duration_a39</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.6E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T20:00:00</time:hasEnd>
@@ -785,10 +785,10 @@
     <rdfs:label>time_a4</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-15T12:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a4">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a4">
         <rdfs:label>duration_a4</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.199833333E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-15T23:59:59</time:hasEnd>
@@ -805,10 +805,10 @@
     <rdfs:label>time_a40</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T20:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a40">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a40">
         <rdfs:label>duration_a40</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T21:00:00</time:hasEnd>
@@ -825,10 +825,10 @@
     <rdfs:label>time_a41</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T07:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a41">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a41">
         <rdfs:label>duration_a41</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T08:30:00</time:hasEnd>
@@ -845,10 +845,10 @@
     <rdfs:label>time_a42</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T09:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a42">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a42">
         <rdfs:label>duration_a42</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T10:40:00</time:hasEnd>
@@ -870,10 +870,10 @@
     <rdfs:label>time_a43</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T11:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a43">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a43">
         <rdfs:label>duration_a43</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T12:00:00</time:hasEnd>
@@ -889,10 +889,10 @@
     <rdfs:label>time_a44</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T13:20:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a44">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a44">
         <rdfs:label>duration_a44</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T15:00:00</time:hasEnd>
@@ -909,10 +909,10 @@
     <rdfs:label>time_a45</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T17:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a45">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a45">
         <rdfs:label>duration_a45</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T19:00:00</time:hasEnd>
@@ -929,10 +929,10 @@
     <rdfs:label>time_a46</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T19:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a46">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a46">
         <rdfs:label>duration_a46</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T20:30:00</time:hasEnd>
@@ -948,10 +948,10 @@
     <rdfs:label>time_a47</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T09:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a47">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a47">
         <rdfs:label>duration_a47</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T10:00:00</time:hasEnd>
@@ -974,10 +974,10 @@
     <rdfs:label>time_a48</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T10:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a48">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a48">
         <rdfs:label>duration_a48</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T13:00:00</time:hasEnd>
@@ -994,10 +994,10 @@
     <rdfs:label>time_a49</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T13:20:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a49">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a49">
         <rdfs:label>duration_a49</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T15:00:00</time:hasEnd>
@@ -1020,10 +1020,10 @@
     <rdfs:label>time_a5</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-20T18:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a5">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a5">
         <rdfs:label>duration_a5</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-20T23:00:00</time:hasEnd>
@@ -1039,10 +1039,10 @@
     <rdfs:label>time_a50</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T17:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a50">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a50">
         <rdfs:label>duration_a50</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T20:00:00</time:hasEnd>
@@ -1065,10 +1065,10 @@
     <rdfs:label>time_a51</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T20:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a51">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a51">
         <rdfs:label>duration_a51</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T22:00:00</time:hasEnd>
@@ -1085,10 +1085,10 @@
     <rdfs:label>time_a52</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T22:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a52">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a52">
         <rdfs:label>duration_a52</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T23:30:00</time:hasEnd>
@@ -1105,10 +1105,10 @@
     <rdfs:label>time_a53</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T12:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a53">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a53">
         <rdfs:label>duration_a53</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T13:00:00</time:hasEnd>
@@ -1130,10 +1130,10 @@
     <rdfs:label>time_a54</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T13:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a54">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a54">
         <rdfs:label>duration_a54</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T14:30:00</time:hasEnd>
@@ -1156,10 +1156,10 @@
     <rdfs:label>time_a55</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T15:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a55">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a55">
         <rdfs:label>duration_a55</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T16:00:00</time:hasEnd>
@@ -1181,10 +1181,10 @@
     <rdfs:label>time_a56</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T17:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a56">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a56">
         <rdfs:label>duration_a56</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T19:00:00</time:hasEnd>
@@ -1200,10 +1200,10 @@
     <rdfs:label>time_a57</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T19:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a57">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a57">
         <rdfs:label>duration_a57</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T20:30:00</time:hasEnd>
@@ -1220,10 +1220,10 @@
     <rdfs:label>time_a58</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T09:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a58">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a58">
         <rdfs:label>duration_a58</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T09:30:00</time:hasEnd>
@@ -1246,10 +1246,10 @@
     <rdfs:label>time_a59</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T10:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a59">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a59">
         <rdfs:label>duration_a59</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T12:30:00</time:hasEnd>
@@ -1266,10 +1266,10 @@
     <rdfs:label>time_a6</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-06T07:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a6">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a6">
         <rdfs:label>duration_a6</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-06T08:30:00</time:hasEnd>
@@ -1292,10 +1292,10 @@
     <rdfs:label>time_a60</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T13:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a60">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a60">
         <rdfs:label>duration_a60</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T14:00:00</time:hasEnd>
@@ -1317,10 +1317,10 @@
     <rdfs:label>time_a61</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T14:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a61">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a61">
         <rdfs:label>duration_a61</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T16:30:00</time:hasEnd>
@@ -1337,10 +1337,10 @@
     <rdfs:label>time_a62</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T17:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a62">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a62">
         <rdfs:label>duration_a62</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.4E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T21:00:00</time:hasEnd>
@@ -1356,10 +1356,10 @@
     <rdfs:label>time_a63</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T21:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a63">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a63">
         <rdfs:label>duration_a63</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T22:00:00</time:hasEnd>
@@ -1381,10 +1381,10 @@
     <rdfs:label>time_a64</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T10:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a64">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a64">
         <rdfs:label>duration_a64</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T12:00:00</time:hasEnd>
@@ -1406,10 +1406,10 @@
     <rdfs:label>time_a65</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T12:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a65">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a65">
         <rdfs:label>duration_a65</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T14:00:00</time:hasEnd>
@@ -1432,10 +1432,10 @@
     <rdfs:label>time_a66</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T14:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a66">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a66">
         <rdfs:label>duration_a66</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T15:30:00</time:hasEnd>
@@ -1452,10 +1452,10 @@
     <rdfs:label>time_a67</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T17:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a67">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a67">
         <rdfs:label>duration_a67</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T19:00:00</time:hasEnd>
@@ -1477,10 +1477,10 @@
     <rdfs:label>time_a68</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T19:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a68">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a68">
         <rdfs:label>duration_a68</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T21:00:00</time:hasEnd>
@@ -1497,10 +1497,10 @@
     <rdfs:label>time_a69</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T07:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a69">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a69">
         <rdfs:label>duration_a69</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T08:30:00</time:hasEnd>
@@ -1516,10 +1516,10 @@
     <rdfs:label>time_a7</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-06T09:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a7">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a7">
         <rdfs:label>duration_a7</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-06T10:40:00</time:hasEnd>
@@ -1536,10 +1536,10 @@
     <rdfs:label>time_a70</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T09:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a70">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a70">
         <rdfs:label>duration_a70</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T10:40:00</time:hasEnd>
@@ -1562,10 +1562,10 @@
     <rdfs:label>time_a71</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T11:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a71">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a71">
         <rdfs:label>duration_a71</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T12:30:00</time:hasEnd>
@@ -1581,10 +1581,10 @@
     <rdfs:label>time_a72</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T13:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a72">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a72">
         <rdfs:label>duration_a72</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.4E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T17:00:00</time:hasEnd>
@@ -1600,10 +1600,10 @@
     <rdfs:label>time_a73</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T17:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a73">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a73">
         <rdfs:label>duration_a73</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.3E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T23:00:00</time:hasEnd>
@@ -1620,10 +1620,10 @@
     <rdfs:label>time_a74</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T23:15:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a74">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a74">
         <rdfs:label>duration_a74</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T23:45:00</time:hasEnd>
@@ -1639,10 +1639,10 @@
     <rdfs:label>time_a75</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T07:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a75">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a75">
         <rdfs:label>duration_a75</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T09:00:00</time:hasEnd>
@@ -1664,10 +1664,10 @@
     <rdfs:label>time_a76</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T10:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a76">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a76">
         <rdfs:label>duration_a76</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T12:00:00</time:hasEnd>
@@ -1690,10 +1690,10 @@
     <rdfs:label>time_a77</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T12:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a77">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a77">
         <rdfs:label>duration_a77</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T13:30:00</time:hasEnd>
@@ -1716,10 +1716,10 @@
     <rdfs:label>time_a78</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T14:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a78">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a78">
         <rdfs:label>duration_a78</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T15:00:00</time:hasEnd>
@@ -1736,10 +1736,10 @@
     <rdfs:label>time_a79</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T16:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a79">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a79">
         <rdfs:label>duration_a79</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T17:00:00</time:hasEnd>
@@ -1762,10 +1762,10 @@
     <rdfs:label>time_a8</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-06T11:15:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a8">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a8">
         <rdfs:label>duration_a8</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-06T12:00:00</time:hasEnd>
@@ -1782,10 +1782,10 @@
     <rdfs:label>time_a9</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-06T13:20:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_a9">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a9">
         <rdfs:label>duration_a9</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-06T15:00:00</time:hasEnd>
@@ -1808,10 +1808,10 @@
     <rdfs:label>time_b1</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-03T17:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b1">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b1">
         <rdfs:label>duration_b1</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-03T18:20:00</time:hasEnd>
@@ -1834,10 +1834,10 @@
     <rdfs:label>time_b10</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T18:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b10">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b10">
         <rdfs:label>duration_b10</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T21:30:00</time:hasEnd>
@@ -1854,10 +1854,10 @@
     <rdfs:label>time_b11</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T22:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b11">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b11">
         <rdfs:label>duration_b11</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T23:00:00</time:hasEnd>
@@ -1874,10 +1874,10 @@
     <rdfs:label>time_b12</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T07:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b12">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b12">
         <rdfs:label>duration_b12</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T08:00:00</time:hasEnd>
@@ -1899,10 +1899,10 @@
     <rdfs:label>time_b13</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T08:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b13">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b13">
         <rdfs:label>duration_b13</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T12:00:00</time:hasEnd>
@@ -1925,10 +1925,10 @@
     <rdfs:label>time_b14</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T12:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b14">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b14">
         <rdfs:label>duration_b14</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T13:00:00</time:hasEnd>
@@ -1944,10 +1944,10 @@
     <rdfs:label>time_b15</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T13:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b15">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b15">
         <rdfs:label>duration_b15</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.7E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T17:30:00</time:hasEnd>
@@ -1964,10 +1964,10 @@
     <rdfs:label>time_b16</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T18:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b16">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b16">
         <rdfs:label>duration_b16</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T19:00:00</time:hasEnd>
@@ -1989,10 +1989,10 @@
     <rdfs:label>time_b17</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T19:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b17">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b17">
         <rdfs:label>duration_b17</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T19:30:00</time:hasEnd>
@@ -2009,10 +2009,10 @@
     <rdfs:label>time_b18</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T07:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b18">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b18">
         <rdfs:label>duration_b18</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T08:00:00</time:hasEnd>
@@ -2028,10 +2028,10 @@
     <rdfs:label>time_b19</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T08:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b19">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b19">
         <rdfs:label>duration_b19</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T12:00:00</time:hasEnd>
@@ -2054,10 +2054,10 @@
     <rdfs:label>time_b2</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-04T14:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b2">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b2">
         <rdfs:label>duration_b2</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.6E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-04T20:00:00</time:hasEnd>
@@ -2080,10 +2080,10 @@
     <rdfs:label>time_b20</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T12:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b20">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b20">
         <rdfs:label>duration_b20</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T13:00:00</time:hasEnd>
@@ -2106,10 +2106,10 @@
     <rdfs:label>time_b21</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T13:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b21">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b21">
         <rdfs:label>duration_b21</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T15:00:00</time:hasEnd>
@@ -2125,10 +2125,10 @@
     <rdfs:label>time_b22</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T15:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b22">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b22">
         <rdfs:label>duration_b22</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T17:30:00</time:hasEnd>
@@ -2151,10 +2151,10 @@
     <rdfs:label>time_b23</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T18:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b23">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b23">
         <rdfs:label>duration_b23</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T22:00:00</time:hasEnd>
@@ -2171,10 +2171,10 @@
     <rdfs:label>time_b24</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T22:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b24">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b24">
         <rdfs:label>duration_b24</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T23:30:00</time:hasEnd>
@@ -2191,10 +2191,10 @@
     <rdfs:label>time_b25</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T07:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b25">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b25">
         <rdfs:label>duration_b25</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T08:00:00</time:hasEnd>
@@ -2210,10 +2210,10 @@
     <rdfs:label>time_b26</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T08:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b26">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b26">
         <rdfs:label>duration_b26</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T12:00:00</time:hasEnd>
@@ -2236,10 +2236,10 @@
     <rdfs:label>time_b27</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T12:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b27">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b27">
         <rdfs:label>duration_b27</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T13:00:00</time:hasEnd>
@@ -2262,10 +2262,10 @@
     <rdfs:label>time_b28</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T13:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b28">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b28">
         <rdfs:label>duration_b28</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.7E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T17:30:00</time:hasEnd>
@@ -2282,10 +2282,10 @@
     <rdfs:label>time_b29</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T18:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b29">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b29">
         <rdfs:label>duration_b29</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T19:00:00</time:hasEnd>
@@ -2309,10 +2309,10 @@
     <rdfs:label>time_b3</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-01-16T00:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b3">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b3">
         <rdfs:label>duration_b3</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.439983333E3</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-01-16T23:59:59</time:hasEnd>
@@ -2335,10 +2335,10 @@
     <rdfs:label>time_b30</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T19:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b30">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b30">
         <rdfs:label>duration_b30</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T21:00:00</time:hasEnd>
@@ -2355,10 +2355,10 @@
     <rdfs:label>time_b31</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T09:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b31">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b31">
         <rdfs:label>duration_b31</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T09:30:00</time:hasEnd>
@@ -2381,10 +2381,10 @@
     <rdfs:label>time_b32</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T10:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b32">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b32">
         <rdfs:label>duration_b32</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T12:00:00</time:hasEnd>
@@ -2407,10 +2407,10 @@
     <rdfs:label>time_b33</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T12:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b33">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b33">
         <rdfs:label>duration_b33</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T14:00:00</time:hasEnd>
@@ -2433,10 +2433,10 @@
     <rdfs:label>time_b34</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T14:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b34">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b34">
         <rdfs:label>duration_b34</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.3E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T20:00:00</time:hasEnd>
@@ -2459,10 +2459,10 @@
     <rdfs:label>time_b35</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T20:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b35">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b35">
         <rdfs:label>duration_b35</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T23:30:00</time:hasEnd>
@@ -2479,10 +2479,10 @@
     <rdfs:label>time_b36</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T00:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b36">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b36">
         <rdfs:label>duration_b36</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T00:30:00</time:hasEnd>
@@ -2504,10 +2504,10 @@
     <rdfs:label>time_b37</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T09:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b37">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b37">
         <rdfs:label>duration_b37</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T11:00:00</time:hasEnd>
@@ -2529,10 +2529,10 @@
     <rdfs:label>time_b38</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T14:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b38">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b38">
         <rdfs:label>duration_b38</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.4E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T18:00:00</time:hasEnd>
@@ -2549,10 +2549,10 @@
     <rdfs:label>time_b39</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T18:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b39">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b39">
         <rdfs:label>duration_b39</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.4E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T22:00:00</time:hasEnd>
@@ -2575,10 +2575,10 @@
     <rdfs:label>time_b4</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-05T21:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b4">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b4">
         <rdfs:label>duration_b4</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-05T21:30:00</time:hasEnd>
@@ -2600,10 +2600,10 @@
     <rdfs:label>time_b40</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T06:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b40">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b40">
         <rdfs:label>duration_b40</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T07:00:00</time:hasEnd>
@@ -2620,10 +2620,10 @@
     <rdfs:label>time_b41</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T07:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b41">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b41">
         <rdfs:label>duration_b41</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T08:00:00</time:hasEnd>
@@ -2639,10 +2639,10 @@
     <rdfs:label>time_b42</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T08:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b42">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b42">
         <rdfs:label>duration_b42</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T12:00:00</time:hasEnd>
@@ -2659,10 +2659,10 @@
     <rdfs:label>time_b43</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T12:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b43">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b43">
         <rdfs:label>duration_b43</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T13:00:00</time:hasEnd>
@@ -2678,10 +2678,10 @@
     <rdfs:label>time_b44</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T13:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b44">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b44">
         <rdfs:label>duration_b44</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.7E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T17:30:00</time:hasEnd>
@@ -2698,10 +2698,10 @@
     <rdfs:label>time_b45</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T18:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b45">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b45">
         <rdfs:label>duration_b45</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T19:00:00</time:hasEnd>
@@ -2718,10 +2718,10 @@
     <rdfs:label>time_b46</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T07:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b46">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b46">
         <rdfs:label>duration_b46</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T08:00:00</time:hasEnd>
@@ -2738,10 +2738,10 @@
     <rdfs:label>time_b47</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T08:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b47">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b47">
         <rdfs:label>duration_b47</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T12:00:00</time:hasEnd>
@@ -2758,10 +2758,10 @@
     <rdfs:label>time_b48</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T12:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b48">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b48">
         <rdfs:label>duration_b48</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T13:00:00</time:hasEnd>
@@ -2777,10 +2777,10 @@
     <rdfs:label>time_b49</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T13:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b49">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b49">
         <rdfs:label>duration_b49</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.7E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T17:30:00</time:hasEnd>
@@ -2803,10 +2803,10 @@
     <rdfs:label>time_b5</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-01T18:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b5">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b5">
         <rdfs:label>duration_b5</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.4E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-01T22:00:00</time:hasEnd>
@@ -2823,10 +2823,10 @@
     <rdfs:label>time_b50</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T18:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b50">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b50">
         <rdfs:label>duration_b50</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T21:30:00</time:hasEnd>
@@ -2843,10 +2843,10 @@
     <rdfs:label>time_b51</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T22:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b51">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b51">
         <rdfs:label>duration_b51</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T23:00:00</time:hasEnd>
@@ -2863,10 +2863,10 @@
     <rdfs:label>time_b52</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T07:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b52">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b52">
         <rdfs:label>duration_b52</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T08:00:00</time:hasEnd>
@@ -2882,10 +2882,10 @@
     <rdfs:label>time_b53</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T08:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b53">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b53">
         <rdfs:label>duration_b53</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T12:00:00</time:hasEnd>
@@ -2908,10 +2908,10 @@
     <rdfs:label>time_b54</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T12:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b54">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b54">
         <rdfs:label>duration_b54</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T13:00:00</time:hasEnd>
@@ -2927,10 +2927,10 @@
     <rdfs:label>time_b55</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T13:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b55">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b55">
         <rdfs:label>duration_b55</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.7E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T17:30:00</time:hasEnd>
@@ -2947,10 +2947,10 @@
     <rdfs:label>time_b56</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T18:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b56">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b56">
         <rdfs:label>duration_b56</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T19:00:00</time:hasEnd>
@@ -2966,10 +2966,10 @@
     <rdfs:label>time_b57</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T19:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b57">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b57">
         <rdfs:label>duration_b57</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T21:00:00</time:hasEnd>
@@ -2991,10 +2991,10 @@
     <rdfs:label>time_b58</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T06:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b58">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b58">
         <rdfs:label>duration_b58</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T07:00:00</time:hasEnd>
@@ -3011,10 +3011,10 @@
     <rdfs:label>time_b59</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T07:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b59">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b59">
         <rdfs:label>duration_b59</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T08:00:00</time:hasEnd>
@@ -3031,10 +3031,10 @@
     <rdfs:label>time_b6</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T07:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b6">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b6">
         <rdfs:label>duration_b6</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T08:00:00</time:hasEnd>
@@ -3050,10 +3050,10 @@
     <rdfs:label>time_b60</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T08:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b60">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b60">
         <rdfs:label>duration_b60</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T12:00:00</time:hasEnd>
@@ -3070,10 +3070,10 @@
     <rdfs:label>time_b61</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T12:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b61">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b61">
         <rdfs:label>duration_b61</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T13:00:00</time:hasEnd>
@@ -3089,10 +3089,10 @@
     <rdfs:label>time_b62</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T13:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b62">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b62">
         <rdfs:label>duration_b62</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.7E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T17:30:00</time:hasEnd>
@@ -3109,10 +3109,10 @@
     <rdfs:label>time_b63</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T18:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b63">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b63">
         <rdfs:label>duration_b63</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T19:00:00</time:hasEnd>
@@ -3129,10 +3129,10 @@
     <rdfs:label>time_b64</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T07:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b64">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b64">
         <rdfs:label>duration_b64</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T08:00:00</time:hasEnd>
@@ -3148,10 +3148,10 @@
     <rdfs:label>time_b65</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T08:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b65">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b65">
         <rdfs:label>duration_b65</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T12:00:00</time:hasEnd>
@@ -3168,10 +3168,10 @@
     <rdfs:label>time_b66</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T12:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b66">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b66">
         <rdfs:label>duration_b66</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T13:00:00</time:hasEnd>
@@ -3187,10 +3187,10 @@
     <rdfs:label>time_b67</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T13:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b67">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b67">
         <rdfs:label>duration_b67</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T16:00:00</time:hasEnd>
@@ -3207,10 +3207,10 @@
     <rdfs:label>time_b68</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T16:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b68">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b68">
         <rdfs:label>duration_b68</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T17:30:00</time:hasEnd>
@@ -3227,10 +3227,10 @@
     <rdfs:label>time_b69</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T18:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b69">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b69">
         <rdfs:label>duration_b69</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T19:00:00</time:hasEnd>
@@ -3246,10 +3246,10 @@
     <rdfs:label>time_b7</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T08:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b7">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b7">
         <rdfs:label>duration_b7</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T12:00:00</time:hasEnd>
@@ -3266,10 +3266,10 @@
     <rdfs:label>time_b70</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T20:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b70">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b70">
         <rdfs:label>duration_b70</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T23:00:00</time:hasEnd>
@@ -3292,10 +3292,10 @@
     <rdfs:label>time_b71</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T01:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b71">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b71">
         <rdfs:label>duration_b71</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.3E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T06:30:00</time:hasEnd>
@@ -3318,10 +3318,10 @@
     <rdfs:label>time_b72</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T07:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b72">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b72">
         <rdfs:label>duration_b72</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T08:00:00</time:hasEnd>
@@ -3343,10 +3343,10 @@
     <rdfs:label>time_b73</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T08:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b73">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b73">
         <rdfs:label>duration_b73</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T09:00:00</time:hasEnd>
@@ -3369,10 +3369,10 @@
     <rdfs:label>time_b74</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T09:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b74">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b74">
         <rdfs:label>duration_b74</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T11:30:00</time:hasEnd>
@@ -3394,10 +3394,10 @@
     <rdfs:label>time_b75</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T12:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b75">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b75">
         <rdfs:label>duration_b75</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T12:30:00</time:hasEnd>
@@ -3420,10 +3420,10 @@
     <rdfs:label>time_b76</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T12:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b76">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b76">
         <rdfs:label>duration_b76</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T13:30:00</time:hasEnd>
@@ -3446,10 +3446,10 @@
     <rdfs:label>time_b77</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T14:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b77">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b77">
         <rdfs:label>duration_b77</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T16:30:00</time:hasEnd>
@@ -3472,10 +3472,10 @@
     <rdfs:label>time_b78</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T18:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b78">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b78">
         <rdfs:label>duration_b78</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T20:00:00</time:hasEnd>
@@ -3492,10 +3492,10 @@
     <rdfs:label>time_b79</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T20:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b79">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b79">
         <rdfs:label>duration_b79</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.2E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-20T08:00:00</time:hasEnd>
@@ -3512,10 +3512,10 @@
     <rdfs:label>time_b8</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T12:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b8">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b8">
         <rdfs:label>duration_b8</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T13:00:00</time:hasEnd>
@@ -3538,10 +3538,10 @@
     <rdfs:label>time_b80</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-20T08:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b80">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b80">
         <rdfs:label>duration_b80</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-20T09:00:00</time:hasEnd>
@@ -3564,10 +3564,10 @@
     <rdfs:label>time_b81</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-20T11:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b81">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b81">
         <rdfs:label>duration_b81</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-20T13:00:00</time:hasEnd>
@@ -3590,10 +3590,10 @@
     <rdfs:label>time_b82</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-20T13:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b82">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b82">
         <rdfs:label>duration_b82</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.3E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-20T19:00:00</time:hasEnd>
@@ -3616,10 +3616,10 @@
     <rdfs:label>time_b83</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-20T19:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b83">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b83">
         <rdfs:label>duration_b83</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-20T20:00:00</time:hasEnd>
@@ -3636,10 +3636,10 @@
     <rdfs:label>time_b84</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-21T07:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b84">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b84">
         <rdfs:label>duration_b84</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-21T08:00:00</time:hasEnd>
@@ -3655,10 +3655,10 @@
     <rdfs:label>time_b85</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-21T08:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b85">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b85">
         <rdfs:label>duration_b85</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-21T12:00:00</time:hasEnd>
@@ -3681,10 +3681,10 @@
     <rdfs:label>time_b86</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-21T12:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b86">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b86">
         <rdfs:label>duration_b86</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-21T13:00:00</time:hasEnd>
@@ -3700,10 +3700,10 @@
     <rdfs:label>time_b87</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-21T13:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b87">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b87">
         <rdfs:label>duration_b87</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.7E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-21T17:30:00</time:hasEnd>
@@ -3720,10 +3720,10 @@
     <rdfs:label>time_b88</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-21T18:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b88">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b88">
         <rdfs:label>duration_b88</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-21T21:00:00</time:hasEnd>
@@ -3740,10 +3740,10 @@
     <rdfs:label>time_b89</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-21T21:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b89">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b89">
         <rdfs:label>duration_b89</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-21T22:30:00</time:hasEnd>
@@ -3759,10 +3759,10 @@
     <rdfs:label>time_b9</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T13:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b9">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b9">
         <rdfs:label>duration_b9</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.7E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T17:30:00</time:hasEnd>
@@ -3778,10 +3778,10 @@
     <rdfs:label>time_b90</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-22T06:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b90">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b90">
         <rdfs:label>duration_b90</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-22T07:00:00</time:hasEnd>
@@ -3798,10 +3798,10 @@
     <rdfs:label>time_b91</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-22T07:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b91">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b91">
         <rdfs:label>duration_b91</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-22T08:00:00</time:hasEnd>
@@ -3817,10 +3817,10 @@
     <rdfs:label>time_b92</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-22T08:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b92">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b92">
         <rdfs:label>duration_b92</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-22T12:00:00</time:hasEnd>
@@ -3837,10 +3837,10 @@
     <rdfs:label>time_b93</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-22T12:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b93">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b93">
         <rdfs:label>duration_b93</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-22T13:00:00</time:hasEnd>
@@ -3856,10 +3856,10 @@
     <rdfs:label>time_b94</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-22T13:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b94">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b94">
         <rdfs:label>duration_b94</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.7E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-22T17:30:00</time:hasEnd>
@@ -3876,10 +3876,10 @@
     <rdfs:label>time_b95</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-22T18:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b95">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b95">
         <rdfs:label>duration_b95</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-22T19:00:00</time:hasEnd>
@@ -3902,10 +3902,10 @@
     <rdfs:label>time_b96</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-22T19:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_b96">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_b96">
         <rdfs:label>duration_b96</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.4E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-22T23:30:00</time:hasEnd>
@@ -3927,10 +3927,10 @@
     <rdfs:label>time_c1</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-03T17:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c1">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c1">
         <rdfs:label>duration_c1</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-03T19:30:00</time:hasEnd>
@@ -3952,10 +3952,10 @@
     <rdfs:label>time_c10</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-07T16:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c10">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c10">
         <rdfs:label>duration_c10</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-07T18:00:00</time:hasEnd>
@@ -3978,10 +3978,10 @@
     <rdfs:label>time_c11</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-07T18:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c11">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c11">
         <rdfs:label>duration_c11</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-07T19:00:00</time:hasEnd>
@@ -4003,10 +4003,10 @@
     <rdfs:label>time_c12</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T09:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c12">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c12">
         <rdfs:label>duration_c12</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T10:00:00</time:hasEnd>
@@ -4029,10 +4029,10 @@
     <rdfs:label>time_c13</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T10:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c13">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c13">
         <rdfs:label>duration_c13</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T12:00:00</time:hasEnd>
@@ -4056,10 +4056,10 @@
     <rdfs:label>time_c14</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T12:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c14">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c14">
         <rdfs:label>duration_c14</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T13:00:00</time:hasEnd>
@@ -4076,10 +4076,10 @@
     <rdfs:label>time_c15</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T13:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c15">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c15">
         <rdfs:label>duration_c15</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.4E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T17:00:00</time:hasEnd>
@@ -4103,10 +4103,10 @@
     <rdfs:label>time_c16</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T17:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c16">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c16">
         <rdfs:label>duration_c16</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T20:30:00</time:hasEnd>
@@ -4129,10 +4129,10 @@
     <rdfs:label>time_c17</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T21:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c17">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c17">
         <rdfs:label>duration_c17</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T22:00:00</time:hasEnd>
@@ -4154,10 +4154,10 @@
     <rdfs:label>time_c18</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T16:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c18">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c18">
         <rdfs:label>duration_c18</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T16:45:00</time:hasEnd>
@@ -4180,10 +4180,10 @@
     <rdfs:label>time_c19</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T17:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c19">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c19">
         <rdfs:label>duration_c19</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.6E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T23:00:00</time:hasEnd>
@@ -4204,10 +4204,10 @@
     <rdfs:label>time_c2</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-03T20:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c2">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c2">
         <rdfs:label>duration_c2</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-03T20:30:00</time:hasEnd>
@@ -4224,10 +4224,10 @@
     <rdfs:label>time_c20</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T23:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c20">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c20">
         <rdfs:label>duration_c20</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T23:45:00</time:hasEnd>
@@ -4250,10 +4250,10 @@
     <rdfs:label>time_c21</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T00:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c21">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c21">
         <rdfs:label>duration_c21</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T00:15:00</time:hasEnd>
@@ -4270,10 +4270,10 @@
     <rdfs:label>time_c22</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T14:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c22">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c22">
         <rdfs:label>duration_c22</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T14:45:00</time:hasEnd>
@@ -4296,10 +4296,10 @@
     <rdfs:label>time_c23</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T15:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c23">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c23">
         <rdfs:label>duration_c23</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T16:00:00</time:hasEnd>
@@ -4316,10 +4316,10 @@
     <rdfs:label>time_c24</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T16:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c24">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c24">
         <rdfs:label>duration_c24</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T16:45:00</time:hasEnd>
@@ -4336,10 +4336,10 @@
     <rdfs:label>time_c25</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T17:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c25">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c25">
         <rdfs:label>duration_c25</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.6E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T23:00:00</time:hasEnd>
@@ -4356,10 +4356,10 @@
     <rdfs:label>time_c26</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T23:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c26">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c26">
         <rdfs:label>duration_c26</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-10T23:45:00</time:hasEnd>
@@ -4377,10 +4377,10 @@
     <rdfs:label>time_c27</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T00:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c27">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c27">
         <rdfs:label>duration_c27</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T00:15:00</time:hasEnd>
@@ -4397,10 +4397,10 @@
     <rdfs:label>time_c28</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T09:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c28">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c28">
         <rdfs:label>duration_c28</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T10:00:00</time:hasEnd>
@@ -4417,10 +4417,10 @@
     <rdfs:label>time_c29</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T10:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c29">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c29">
         <rdfs:label>duration_c29</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T12:00:00</time:hasEnd>
@@ -4441,10 +4441,10 @@
     <rdfs:label>time_c3</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-05T13:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c3">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c3">
         <rdfs:label>duration_c3</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-05T15:00:00</time:hasEnd>
@@ -4468,10 +4468,10 @@
     <rdfs:label>time_c30</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T12:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c30">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c30">
         <rdfs:label>duration_c30</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T13:00:00</time:hasEnd>
@@ -4488,10 +4488,10 @@
     <rdfs:label>time_c31</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T13:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c31">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c31">
         <rdfs:label>duration_c31</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T18:00:00</time:hasEnd>
@@ -4509,10 +4509,10 @@
     <rdfs:label>time_c32</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T18:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c32">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c32">
         <rdfs:label>duration_c32</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-11T19:30:00</time:hasEnd>
@@ -4529,10 +4529,10 @@
     <rdfs:label>time_c33</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T16:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c33">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c33">
         <rdfs:label>duration_c33</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T16:45:00</time:hasEnd>
@@ -4549,10 +4549,10 @@
     <rdfs:label>time_c34</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T17:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c34">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c34">
         <rdfs:label>duration_c34</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.6E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T23:00:00</time:hasEnd>
@@ -4569,10 +4569,10 @@
     <rdfs:label>time_c35</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T23:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c35">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c35">
         <rdfs:label>duration_c35</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-12T23:45:00</time:hasEnd>
@@ -4590,10 +4590,10 @@
     <rdfs:label>time_c36</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T00:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c36">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c36">
         <rdfs:label>duration_c36</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T00:15:00</time:hasEnd>
@@ -4610,10 +4610,10 @@
     <rdfs:label>time_c37</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T16:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c37">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c37">
         <rdfs:label>duration_c37</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T16:30:00</time:hasEnd>
@@ -4635,10 +4635,10 @@
     <rdfs:label>time_c38</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T17:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c38">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c38">
         <rdfs:label>duration_c38</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.65E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T19:45:00</time:hasEnd>
@@ -4661,10 +4661,10 @@
     <rdfs:label>time_c39</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T20:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c39">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c39">
         <rdfs:label>duration_c39</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T23:00:00</time:hasEnd>
@@ -4686,10 +4686,10 @@
     <rdfs:label>time_c4</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-10T13:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c4">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c4">
         <rdfs:label>duration_c4</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-10T14:30:00</time:hasEnd>
@@ -4707,10 +4707,10 @@
     <rdfs:label>time_c40</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T23:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c40">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c40">
         <rdfs:label>duration_c40</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T00:30:00</time:hasEnd>
@@ -4732,10 +4732,10 @@
     <rdfs:label>time_c41</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T11:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c41">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c41">
         <rdfs:label>duration_c41</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T11:30:00</time:hasEnd>
@@ -4758,10 +4758,10 @@
     <rdfs:label>time_c42</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T12:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c42">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c42">
         <rdfs:label>duration_c42</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T13:00:00</time:hasEnd>
@@ -4783,10 +4783,10 @@
     <rdfs:label>time_c43</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T13:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c43">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c43">
         <rdfs:label>duration_c43</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T15:00:00</time:hasEnd>
@@ -4808,10 +4808,10 @@
     <rdfs:label>time_c44</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T15:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c44">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c44">
         <rdfs:label>duration_c44</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T16:00:00</time:hasEnd>
@@ -4834,10 +4834,10 @@
     <rdfs:label>time_c45</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T16:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c45">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c45">
         <rdfs:label>duration_c45</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T18:00:00</time:hasEnd>
@@ -4860,10 +4860,10 @@
     <rdfs:label>time_c46</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T18:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c46">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c46">
         <rdfs:label>duration_c46</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T18:30:00</time:hasEnd>
@@ -4880,10 +4880,10 @@
     <rdfs:label>time_c47</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T09:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c47">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c47">
         <rdfs:label>duration_c47</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T10:00:00</time:hasEnd>
@@ -4900,10 +4900,10 @@
     <rdfs:label>time_c48</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T10:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c48">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c48">
         <rdfs:label>duration_c48</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T12:00:00</time:hasEnd>
@@ -4921,10 +4921,10 @@
     <rdfs:label>time_c49</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T12:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c49">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c49">
         <rdfs:label>duration_c49</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T13:00:00</time:hasEnd>
@@ -4945,10 +4945,10 @@
     <rdfs:label>time_c5</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-12T13:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c5">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c5">
         <rdfs:label>duration_c5</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-12T16:00:00</time:hasEnd>
@@ -4971,10 +4971,10 @@
     <rdfs:label>time_c50</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T13:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c50">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c50">
         <rdfs:label>duration_c50</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T13:10:00</time:hasEnd>
@@ -4991,10 +4991,10 @@
     <rdfs:label>time_c51</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T13:10:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c51">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c51">
         <rdfs:label>duration_c51</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.3E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T17:00:00</time:hasEnd>
@@ -5017,10 +5017,10 @@
     <rdfs:label>time_c52</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T17:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c52">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c52">
         <rdfs:label>duration_c52</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T20:30:00</time:hasEnd>
@@ -5038,10 +5038,10 @@
     <rdfs:label>time_c53</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T21:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c53">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c53">
         <rdfs:label>duration_c53</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T22:00:00</time:hasEnd>
@@ -5058,10 +5058,10 @@
     <rdfs:label>time_c54</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T16:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c54">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c54">
         <rdfs:label>duration_c54</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T16:45:00</time:hasEnd>
@@ -5078,10 +5078,10 @@
     <rdfs:label>time_c55</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T17:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c55">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c55">
         <rdfs:label>duration_c55</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.6E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T23:00:00</time:hasEnd>
@@ -5098,10 +5098,10 @@
     <rdfs:label>time_c56</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T23:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c56">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c56">
         <rdfs:label>duration_c56</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T23:45:00</time:hasEnd>
@@ -5119,10 +5119,10 @@
     <rdfs:label>time_c57</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T00:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c57">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c57">
         <rdfs:label>duration_c57</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T00:15:00</time:hasEnd>
@@ -5139,10 +5139,10 @@
     <rdfs:label>time_c58</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T16:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c58">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c58">
         <rdfs:label>duration_c58</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T16:45:00</time:hasEnd>
@@ -5159,10 +5159,10 @@
     <rdfs:label>time_c59</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T17:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c59">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c59">
         <rdfs:label>duration_c59</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.6E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T23:00:00</time:hasEnd>
@@ -5184,10 +5184,10 @@
     <rdfs:label>time_c6</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-07T11:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c6">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c6">
         <rdfs:label>duration_c6</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-07T12:00:00</time:hasEnd>
@@ -5204,10 +5204,10 @@
     <rdfs:label>time_c60</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T23:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c60">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c60">
         <rdfs:label>duration_c60</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-17T23:45:00</time:hasEnd>
@@ -5225,10 +5225,10 @@
     <rdfs:label>time_c61</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T00:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c61">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c61">
         <rdfs:label>duration_c61</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T00:15:00</time:hasEnd>
@@ -5245,10 +5245,10 @@
     <rdfs:label>time_c62</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T09:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c62">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c62">
         <rdfs:label>duration_c62</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T10:00:00</time:hasEnd>
@@ -5265,10 +5265,10 @@
     <rdfs:label>time_c63</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T10:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c63">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c63">
         <rdfs:label>duration_c63</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T12:00:00</time:hasEnd>
@@ -5286,10 +5286,10 @@
     <rdfs:label>time_c64</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T12:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c64">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c64">
         <rdfs:label>duration_c64</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T13:00:00</time:hasEnd>
@@ -5306,10 +5306,10 @@
     <rdfs:label>time_c65</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T13:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c65">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c65">
         <rdfs:label>duration_c65</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T18:00:00</time:hasEnd>
@@ -5327,10 +5327,10 @@
     <rdfs:label>time_c66</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T18:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c66">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c66">
         <rdfs:label>duration_c66</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-18T19:30:00</time:hasEnd>
@@ -5347,10 +5347,10 @@
     <rdfs:label>time_c67</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T16:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c67">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c67">
         <rdfs:label>duration_c67</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T16:30:00</time:hasEnd>
@@ -5372,10 +5372,10 @@
     <rdfs:label>time_c68</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T17:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c68">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c68">
         <rdfs:label>duration_c68</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.65E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T19:45:00</time:hasEnd>
@@ -5398,10 +5398,10 @@
     <rdfs:label>time_c69</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T20:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c69">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c69">
         <rdfs:label>duration_c69</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T23:00:00</time:hasEnd>
@@ -5424,10 +5424,10 @@
     <rdfs:label>time_c7</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-07T12:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c7">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c7">
         <rdfs:label>duration_c7</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-07T13:30:00</time:hasEnd>
@@ -5445,10 +5445,10 @@
     <rdfs:label>time_c70</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T23:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c70">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c70">
         <rdfs:label>duration_c70</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-20T00:30:00</time:hasEnd>
@@ -5472,10 +5472,10 @@
     <rdfs:label>time_c71</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-20T00:00:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c71">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c71">
         <rdfs:label>duration_c71</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.439E3</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-20T23:59:00</time:hasEnd>
@@ -5497,10 +5497,10 @@
     <rdfs:label>time_c8</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-07T13:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c8">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c8">
         <rdfs:label>duration_c8</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2E2</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-07T15:30:00</time:hasEnd>
@@ -5522,19 +5522,19 @@
     <rdfs:label>time_c9</rdfs:label>
     <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-07T15:30:00</time:hasBeginning>
     <time:hasDuration>
-      <time:Duration rdf:about="http://plod.info/rdf/id/duration_c9">
+      <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_c9">
         <rdfs:label>duration_c9</rdfs:label>
         <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0E1</time:numericDuration>
-      </time:Duration>
+      </time:TemporalDuration>
     </time:hasDuration>
 
     <time:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-07T16:30:00</time:hasEnd>
   </time:Interval>
 
-  <time:Duration rdf:about="http://plod.info/rdf/id/duration_a80">
+  <time:TemporalDuration rdf:about="http://plod.info/rdf/id/duration_a80">
     <rdfs:label>duration_a80</rdfs:label>
     <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2E2</time:numericDuration>
-  </time:Duration>
+  </time:TemporalDuration>
 
   <schema:Event rdf:about="http://plod.info/rdf/id/event_a1">
     <rdfs:label xml:lang="ja">2020年4月3日13:00~15:00にAさんが友人BさんとCさんとカフェで食事をした</rdfs:label>

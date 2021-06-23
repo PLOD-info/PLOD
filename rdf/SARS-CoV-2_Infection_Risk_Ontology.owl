@@ -321,9 +321,21 @@
     
 
 
+    <!-- http://plod.info/rdf/age -->
+
+    <owl:DatatypeProperty rdf:about="http://plod.info/rdf/age"/>
+    
+
+
     <!-- http://plod.info/rdf/distance -->
 
     <owl:DatatypeProperty rdf:about="http://plod.info/rdf/distance"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
     
 
 
@@ -364,6 +376,379 @@
     <!-- http://plod.info/rdf/Age -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Age"/>
+    
+
+
+    <!-- http://plod.info/rdf/AgeOf100s -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/AgeOf100s">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/AgeOf10s -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/AgeOf10s">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:intersectionOf>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/AgeOf20s -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/AgeOf20s">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:intersectionOf>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/AgeOf30s -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/AgeOf30s">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">40</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:intersectionOf>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/AgeOf40s -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/AgeOf40s">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">40</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">50</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:intersectionOf>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/AgeOf50s -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/AgeOf50s">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">50</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:intersectionOf>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/AgeOf60s -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/AgeOf60s">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:intersectionOf>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/AgeOf70s -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/AgeOf70s">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">80</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:intersectionOf>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/AgeOf80s -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/AgeOf80s">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">80</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:intersectionOf>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/AgeOf90s -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/AgeOf90s">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:intersectionOf>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/AgeOfUnder10s -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/AgeOfUnder10s">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:intersectionOf>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -509,34 +894,10 @@
     
 
 
-    <!-- http://plod.info/rdf/Eighties -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Eighties">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
-    </owl:Class>
-    
-
-
     <!-- http://plod.info/rdf/Evening -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Evening">
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/PartOfDay"/>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Fifties -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Fifties">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Forties -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Forties">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
     </owl:Class>
     
 
@@ -811,14 +1172,6 @@
     
 
 
-    <!-- http://plod.info/rdf/Hundreds -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Hundreds">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
-    </owl:Class>
-    
-
-
     <!-- http://plod.info/rdf/IndirectContact -->
 
     <owl:Class rdf:about="http://plod.info/rdf/IndirectContact">
@@ -1068,14 +1421,6 @@
     
 
 
-    <!-- http://plod.info/rdf/Nineties -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Nineties">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
-    </owl:Class>
-    
-
-
     <!-- http://plod.info/rdf/Office -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Office">
@@ -1298,27 +1643,11 @@
     
 
 
-    <!-- http://plod.info/rdf/Seventies -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Seventies">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
-    </owl:Class>
-    
-
-
     <!-- http://plod.info/rdf/Situation -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Situation">
         <rdfs:label xml:lang="en">Situation</rdfs:label>
         <rdfs:label xml:lang="ja">状況</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Sixties -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Sixties">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
     </owl:Class>
     
 
@@ -1343,42 +1672,10 @@
     
 
 
-    <!-- http://plod.info/rdf/Teens -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Teens">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Thirties -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Thirties">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
-    </owl:Class>
-    
-
-
     <!-- http://plod.info/rdf/Time -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Time">
         <rdfs:label xml:lang="en">Time</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Twenties -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Twenties">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
-    </owl:Class>
-    
-
-
-    <!-- http://plod.info/rdf/Under10s -->
-
-    <owl:Class rdf:about="http://plod.info/rdf/Under10s">
-        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
     </owl:Class>
     
 

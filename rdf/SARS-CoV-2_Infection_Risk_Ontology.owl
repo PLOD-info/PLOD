@@ -274,6 +274,18 @@
     
 
 
+    <!-- http://www.w3.org/2006/time#after -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#after"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#before -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#before"/>
+    
+
+
     <!-- http://www.w3.org/2006/time#hasBegininng -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#hasBegininng">
@@ -346,6 +358,12 @@
     <owl:Class rdf:about="http://plod.info/rdf/Afternoon">
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/PartOfDay"/>
     </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Age -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Age"/>
     
 
 
@@ -491,10 +509,34 @@
     
 
 
+    <!-- http://plod.info/rdf/Eighties -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Eighties">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
+    </owl:Class>
+    
+
+
     <!-- http://plod.info/rdf/Evening -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Evening">
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/PartOfDay"/>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Fifties -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Fifties">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Forties -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Forties">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
     </owl:Class>
     
 
@@ -769,6 +811,14 @@
     
 
 
+    <!-- http://plod.info/rdf/Hundreds -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Hundreds">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
+    </owl:Class>
+    
+
+
     <!-- http://plod.info/rdf/IndirectContact -->
 
     <owl:Class rdf:about="http://plod.info/rdf/IndirectContact">
@@ -1018,6 +1068,14 @@
     
 
 
+    <!-- http://plod.info/rdf/Nineties -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Nineties">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
+    </owl:Class>
+    
+
+
     <!-- http://plod.info/rdf/Office -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Office">
@@ -1240,11 +1298,27 @@
     
 
 
+    <!-- http://plod.info/rdf/Seventies -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Seventies">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
+    </owl:Class>
+    
+
+
     <!-- http://plod.info/rdf/Situation -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Situation">
         <rdfs:label xml:lang="en">Situation</rdfs:label>
         <rdfs:label xml:lang="ja">状況</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Sixties -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Sixties">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
     </owl:Class>
     
 
@@ -1269,10 +1343,42 @@
     
 
 
+    <!-- http://plod.info/rdf/Teens -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Teens">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Thirties -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Thirties">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
+    </owl:Class>
+    
+
+
     <!-- http://plod.info/rdf/Time -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Time">
         <rdfs:label xml:lang="en">Time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Twenties -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Twenties">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Under10s -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Under10s">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Age"/>
     </owl:Class>
     
 
@@ -1592,6 +1698,16 @@
     
 
 
+    <!-- http://plod.info/rdf/longTimeAction -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/longTimeAction">
+        <rdf:type rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
+        <rdfs:label xml:lang="en">long time action</rdfs:label>
+        <rdfs:label xml:lang="ja">長時間行動</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://plod.info/rdf/person-A -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/person-A">
@@ -1612,16 +1728,6 @@
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/person-C">
         <rdf:type rdf:resource="http://schema.org/Person"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://plod.info/rdf/longTimeAction -->
-
-    <owl:NamedIndividual rdf:about="http://plod.info/rdf/longTimeAction">
-        <rdf:type rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
-        <rdfs:label xml:lang="en">long time action</rdfs:label>
-        <rdfs:label xml:lang="ja">長時間行動</rdfs:label>
     </owl:NamedIndividual>
     
 

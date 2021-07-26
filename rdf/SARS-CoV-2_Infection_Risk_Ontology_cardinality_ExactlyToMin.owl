@@ -1,0 +1,1772 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30#"
+     xml:base="http://www.semanticweb.org/image/ontologies/2020/9/untitled-ontology-30"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:plod="http://plod.info/rdf/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:event="http://purl.org/NET/c4dm/event.owl#"
+     xmlns:hutime="http://resource.hutime.org/ontology/"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="http://plod.info/rdf/SARS-CoV-2_Infection_Risk_Ontology.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://plod.info/rdf/action -->
+
+    <owl:ObjectProperty rdf:about="http://plod.info/rdf/action">
+        <rdfs:range rdf:resource="http://plod.info/rdf/Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://plod.info/rdf/afford -->
+
+    <owl:ObjectProperty rdf:about="http://plod.info/rdf/afford">
+        <rdfs:range rdf:resource="http://plod.info/rdf/Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://plod.info/rdf/agent -->
+
+    <owl:ObjectProperty rdf:about="http://plod.info/rdf/agent">
+        <owl:inverseOf rdf:resource="http://plod.info/rdf/event"/>
+        <rdfs:domain rdf:resource="http://schema.org/Event"/>
+        <rdfs:range rdf:resource="http://schema.org/Organization"/>
+        <rdfs:range rdf:resource="http://schema.org/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://plod.info/rdf/city -->
+
+    <owl:ObjectProperty rdf:about="http://plod.info/rdf/city">
+        <rdfs:domain rdf:resource="http://schema.org/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://plod.info/rdf/event -->
+
+    <owl:ObjectProperty rdf:about="http://plod.info/rdf/event">
+        <rdfs:domain rdf:resource="http://schema.org/Organization"/>
+        <rdfs:domain rdf:resource="http://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://schema.org/Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://plod.info/rdf/followingEvent -->
+
+    <owl:ObjectProperty rdf:about="http://plod.info/rdf/followingEvent">
+        <owl:inverseOf rdf:resource="http://plod.info/rdf/precedingEvent"/>
+        <rdfs:domain rdf:resource="http://schema.org/Event"/>
+        <rdfs:range rdf:resource="http://schema.org/Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://plod.info/rdf/isSituationOf -->
+
+    <owl:ObjectProperty rdf:about="http://plod.info/rdf/isSituationOf">
+        <rdfs:range rdf:resource="http://plod.info/rdf/Situation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://plod.info/rdf/precedingEvent -->
+
+    <owl:ObjectProperty rdf:about="http://plod.info/rdf/precedingEvent">
+        <rdfs:domain rdf:resource="http://schema.org/Event"/>
+        <rdfs:range rdf:resource="http://schema.org/Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://plod.info/rdf/situation -->
+
+    <owl:ObjectProperty rdf:about="http://plod.info/rdf/situation">
+        <rdfs:range rdf:resource="http://plod.info/rdf/Situation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://plod.info/rdf/situationOfActivity -->
+
+    <owl:ObjectProperty rdf:about="http://plod.info/rdf/situationOfActivity">
+        <rdfs:subPropertyOf rdf:resource="http://plod.info/rdf/situation"/>
+        <rdfs:range rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://plod.info/rdf/situationOfSpace -->
+
+    <owl:ObjectProperty rdf:about="http://plod.info/rdf/situationOfSpace">
+        <rdfs:subPropertyOf rdf:resource="http://plod.info/rdf/situation"/>
+        <rdfs:range rdf:resource="http://plod.info/rdf/RiskSpaceSituation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://plod.info/rdf/time -->
+
+    <owl:ObjectProperty rdf:about="http://plod.info/rdf/time">
+        <rdfs:range rdf:resource="http://plod.info/rdf/Time"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasPossibleBeginning -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasPossibleBeginning">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:comment>Begnning point of a possible time interval in an uncerain time interval.</rdfs:comment>
+        <rdfs:label>possible beginning</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasPossibleEnd -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasPossibleEnd">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:comment>End point of a possible time interval in an uncerain time interval.</rdfs:comment>
+        <rdfs:label>possible end</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasPossibleJdBeginning -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasPossibleJdBeginning">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasPossibleJdEnd -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasPossibleJdEnd">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasRangeOfBeginning -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasRangeOfBeginning">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:range rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:comment>Beginning range an uncerain time interval.</rdfs:comment>
+        <rdfs:label>beginning range</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasRangeOfEnd -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasRangeOfEnd">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:range rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:comment>End range an uncerain time interval.</rdfs:comment>
+        <rdfs:label>end range</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasReliableBeginning -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasReliableBeginning">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:comment>Begnning point of a reliable time interval in an uncerain time interval.</rdfs:comment>
+        <rdfs:label>reliable beginning</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasReliableEnd -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasReliableEnd">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:comment>End point of a reliable time interval in an uncerain time interval.</rdfs:comment>
+        <rdfs:label>reliable end</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasReliableJdBeginning -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasReliableJdBeginning">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/hasReliableJdEnd -->
+
+    <owl:ObjectProperty rdf:about="http://resource.hutime.org/ontology/hasReliableJdEnd">
+        <rdfs:domain rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/code -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/code">
+        <rdfs:domain rdf:resource="http://schema.org/MedicalEntity"/>
+        <rdfs:range rdf:resource="http://schema.org/MedicalCode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/healthCondition -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/healthCondition">
+        <rdfs:domain rdf:resource="http://schema.org/Patient"/>
+        <rdfs:range rdf:resource="http://schema.org/MedicalCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/homeLocation -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/homeLocation">
+        <rdfs:domain rdf:resource="http://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://schema.org/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/location -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/location">
+        <rdfs:range rdf:resource="http://schema.org/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/mainEntity -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/mainEntity">
+        <rdfs:domain rdf:resource="http://schema.org/CreativeWork"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/publisher -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/publisher">
+        <rdfs:domain rdf:resource="http://schema.org/CreativeWork"/>
+        <rdfs:range rdf:resource="http://schema.org/Organization"/>
+        <rdfs:range rdf:resource="http://schema.org/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/subjectOf -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/subjectOf">
+        <rdfs:domain rdf:resource="http://schema.org/Event"/>
+        <rdfs:range rdf:resource="http://schema.org/CreativeWork"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasBegininng -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#hasBegininng">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasDuration -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#hasDuration"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasEnd -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#hasEnd">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://plod.info/rdf/distance -->
+
+    <owl:DatatypeProperty rdf:about="http://plod.info/rdf/distance"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#numericDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#numericDuration"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://plod.info/rdf/Activity -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Activity">
+        <rdfs:label xml:lang="en">Activity</rdfs:label>
+        <rdfs:label xml:lang="ja">行動</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Afternoon -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Afternoon">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/PartOfDay"/>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Airplane -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Airplane">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Public_transportation"/>
+        <rdfs:label xml:lang="en">Airplane</rdfs:label>
+        <rdfs:label xml:lang="ja">飛行機</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Bar -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Bar">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/alcoholDrinking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/frequentlyBreath"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/yell"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Bar</rdfs:label>
+        <rdfs:label xml:lang="ja">バー/居酒屋</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Bus -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Bus">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Public_transportation"/>
+        <rdfs:label xml:lang="en">Bus</rdfs:label>
+        <rdfs:label xml:lang="ja">バス</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/CloseContact -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/CloseContact">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
+        <rdfs:label xml:lang="en">Close-contact</rdfs:label>
+        <rdfs:label xml:lang="ja">密接</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/ClosedSpace -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/ClosedSpace">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/RiskSpaceSituation"/>
+        <rdfs:label xml:lang="en">Confined and enclosed space</rdfs:label>
+        <rdfs:label xml:lang="ja">密閉</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/CoffeeShop -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/CoffeeShop">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/removeMask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Coffee_shop</rdfs:label>
+        <rdfs:label xml:lang="ja">喫茶店</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/ConcertHall -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/ConcertHall">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/highTouchSurface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/yell"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Concert hall</rdfs:label>
+        <rdfs:label xml:lang="ja">コンサートホール</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Crowding -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Crowding">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/RiskSpaceSituation"/>
+        <rdfs:label xml:lang="en">Crowding</rdfs:label>
+        <rdfs:label xml:lang="ja">密集</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/DentalClinic -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/DentalClinic">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/removeMask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Dental clinic</rdfs:label>
+        <rdfs:label xml:lang="ja">歯科医院</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/DropletReachableActivity -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/DropletReachableActivity">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/RiskActivity"/>
+        <rdfs:label xml:lang="en">Droplet reachable activity</rdfs:label>
+        <rdfs:label xml:lang="ja">飛沫到達行動</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Evening -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Evening">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/PartOfDay"/>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/GroceryStore -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/GroceryStore">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/highTouchSurface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Grocery store</rdfs:label>
+        <rdfs:label xml:lang="ja">食料品店</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Gym -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Gym">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/frequentlyBreath"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/highTouchSurface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/removeMask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Gym</rdfs:label>
+        <rdfs:label xml:lang="ja">ジム</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/HairSalon -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/HairSalon">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/removeMask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Hair salon</rdfs:label>
+        <rdfs:label xml:lang="ja">美容院</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/HighLevelCloseContact -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/HighLevelCloseContact">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://schema.org/location"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                                        <owl:onClass rdf:resource="http://plod.info/rdf/DropletReachableActivity"/>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
+                                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                                <owl:onClass rdf:resource="http://plod.info/rdf/DropletReachableActivity"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://plod.info/rdf/time"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#numericDuration"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</xsd:minExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/MediumLevelCloseContact"/>
+        <rdfs:label xml:lang="en">High-level Close-contact</rdfs:label>
+        <rdfs:label xml:lang="ja">高密接</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/HighLevelClosedSpace -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/HighLevelClosedSpace">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://plod.info/rdf/isSituationOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://plod.info/rdf/IndoorFacility"/>
+                                    <rdf:Description rdf:about="http://plod.info/rdf/Public_transportation"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfSpace"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://plod.info/rdf/RiskSpaceSituation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/MediumLevelClosedSpace"/>
+        <rdfs:label xml:lang="en">High-level closed space</rdfs:label>
+        <rdfs:label xml:lang="ja">高密閉</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/HighLevelCrowding -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/HighLevelCrowding">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfSpace"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://plod.info/rdf/RiskSpaceSituation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/MediumLevelCrowding"/>
+        <rdfs:label xml:lang="en">High-level crowding</rdfs:label>
+        <rdfs:label xml:lang="ja">高密集</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Home -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Home">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:label xml:lang="en">Home</rdfs:label>
+        <rdfs:label xml:lang="ja">家</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Hospital -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Hospital">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:label xml:lang="en">Hospital</rdfs:label>
+        <rdfs:label xml:lang="ja">病院</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/IndirectContact -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/IndirectContact">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/RiskActivity"/>
+        <rdfs:label xml:lang="en">Indirect contact</rdfs:label>
+        <rdfs:label xml:lang="ja">間接接触行動</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/IndoorFacility -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/IndoorFacility">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+        <rdfs:label xml:lang="en">Indoor facility</rdfs:label>
+        <rdfs:label xml:lang="ja">屋内施設</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/IndoorPartyVenue -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/IndoorPartyVenue">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/alcoholDrinking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/shareThing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Indoor party venue</rdfs:label>
+        <rdfs:label xml:lang="ja">インドアパーティ会場</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/IndoorSportsFacility -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/IndoorSportsFacility">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/frequentlyBreath"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/highTouchSurface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/removeMask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/yell"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Indoor sports facility</rdfs:label>
+        <rdfs:label xml:lang="ja">屋内スポーツ施設</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/LiveTheater -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/LiveTheater">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/highTouchSurface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Live theater</rdfs:label>
+        <rdfs:label xml:lang="ja">劇場</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/MedicalOffice -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/MedicalOffice">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/highTouchSurface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Medical office</rdfs:label>
+        <rdfs:label xml:lang="ja">診療所</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/MediumLevelCloseContact -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/MediumLevelCloseContact">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://schema.org/location"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                                        <owl:onClass rdf:resource="http://plod.info/rdf/DropletReachableActivity"/>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://plod.info/rdf/action"/>
+                                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                                <owl:onClass rdf:resource="http://plod.info/rdf/DropletReachableActivity"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://plod.info/rdf/time"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#numericDuration"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</xsd:minExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/CloseContact"/>
+        <rdfs:label xml:lang="en">Medium-level Close-contact</rdfs:label>
+        <rdfs:label xml:lang="ja">中密接</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/MediumLevelClosedSpace -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/MediumLevelClosedSpace">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/isSituationOf"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://plod.info/rdf/IndoorFacility"/>
+                            <rdf:Description rdf:about="http://plod.info/rdf/Public_transportation"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/ClosedSpace"/>
+        <rdfs:label xml:lang="en">Medium-level closed space</rdfs:label>
+        <rdfs:label xml:lang="ja">中密閉</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/MediumLevelCrowding -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/MediumLevelCrowding">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfActivity"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://plod.info/rdf/situationOfSpace"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://plod.info/rdf/RiskSpaceSituation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Crowding"/>
+        <rdfs:label xml:lang="en">Medium-level crowding</rdfs:label>
+        <rdfs:label xml:lang="ja">中密集</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Morning -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Morning">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/PartOfDay"/>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/MovieTheater -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/MovieTheater">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/highTouchSurface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Movie theater</rdfs:label>
+        <rdfs:label xml:lang="ja">映画館</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Museum -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Museum">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:label xml:lang="en">Museum</rdfs:label>
+        <rdfs:label xml:lang="ja">博物館</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Night -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Night">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/PartOfDay"/>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Nightclub -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Nightclub">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/alcoholDrinking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/frequentlyBreath"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/yell"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Nightclub</rdfs:label>
+        <rdfs:label xml:lang="ja">ナイトクラブ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Office -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Office">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/highTouchSurface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Office</rdfs:label>
+        <rdfs:label xml:lang="ja">オフィス</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/OutdoorFacility -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/OutdoorFacility">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+        <rdfs:label xml:lang="en">Outdoor facility</rdfs:label>
+        <rdfs:label xml:lang="ja">屋外施設</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/OutdoorRestaurant -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/OutdoorRestaurant">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/OutdoorFacility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/removeMask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Outdoor restaurant</rdfs:label>
+        <rdfs:label xml:lang="ja">屋外レストラン</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/OutdoorSportsFacility -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/OutdoorSportsFacility">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/OutdoorFacility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/frequentlyBreath"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/highTouchSurface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/removeMask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/yell"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Outdoor sports facility</rdfs:label>
+        <rdfs:label xml:lang="ja">屋外スポーツ施設</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/PartOfDay -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/PartOfDay">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Public_transportation -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Public_transportation">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/highTouchSurface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Public transportation</rdfs:label>
+        <rdfs:label xml:lang="ja">公共交通機関</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Railway -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Railway">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Public_transportation"/>
+        <rdfs:label xml:lang="en">Railway</rdfs:label>
+        <rdfs:label xml:lang="ja">電車</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/ReligiousFacility -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/ReligiousFacility">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/highTouchSurface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/sing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Religious facility</rdfs:label>
+        <rdfs:label xml:lang="ja">宗教施設</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Restaurant -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Restaurant">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/eat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/removeMask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/shareThing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/talk"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Restaurant</rdfs:label>
+        <rdfs:label xml:lang="ja">レストラン</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/RetailStore -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/RetailStore">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:label xml:lang="en">Retail store</rdfs:label>
+        <rdfs:label xml:lang="ja">小売店</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/RiskActivity -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/RiskActivity">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Activity"/>
+        <rdfs:label xml:lang="en">Risk activity</rdfs:label>
+        <rdfs:label xml:lang="ja">リスク行動</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/RiskActivitySituation -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/RiskActivitySituation">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Situation"/>
+        <rdfs:label xml:lang="en">Risk activity situation</rdfs:label>
+        <rdfs:label xml:lang="ja">リスク行動状況</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/RiskSpaceSituation -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/RiskSpaceSituation">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Situation"/>
+        <rdfs:label xml:lang="en">Risk space situation</rdfs:label>
+        <rdfs:label xml:lang="ja">リスク空間状況</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/School -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/School">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/IndoorFacility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://plod.info/rdf/afford"/>
+                <owl:hasValue rdf:resource="http://plod.info/rdf/talk"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">School</rdfs:label>
+        <rdfs:label xml:lang="ja">学校</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Situation -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Situation">
+        <rdfs:label xml:lang="en">Situation</rdfs:label>
+        <rdfs:label xml:lang="ja">状況</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Subway -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Subway">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Public_transportation"/>
+        <rdfs:label xml:lang="en">Subway</rdfs:label>
+        <rdfs:label xml:lang="ja">地下鉄</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Taxi -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Taxi">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Public_transportation"/>
+        <rdfs:label xml:lang="en">Taxi or ride-sharing service</rdfs:label>
+        <rdfs:label xml:lang="ja">タクシー/ライドシェアサービス</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://plod.info/rdf/Time -->
+
+    <owl:Class rdf:about="http://plod.info/rdf/Time">
+        <rdfs:label xml:lang="en">Time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.hutime.org/ontology/UncertainTimeInterval -->
+
+    <owl:Class rdf:about="http://resource.hutime.org/ontology/UncertainTimeInterval">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasPossibleBeginning"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasPossibleEnd"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasPossibleJdBeginning"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasPossibleJdEnd"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasRangeOfBeginning"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasRangeOfEnd"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasReliableBeginning"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasReliableEnd"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasReliableJdBeginning"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://resource.hutime.org/ontology/hasReliableJdEnd"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The class of uncertain time interval.</rdfs:comment>
+        <rdfs:label>Uncertain Time Interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Article -->
+
+    <owl:Class rdf:about="http://schema.org/Article">
+        <rdfs:subClassOf rdf:resource="http://schema.org/CreativeWork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/CreativeWork -->
+
+    <owl:Class rdf:about="http://schema.org/CreativeWork"/>
+    
+
+
+    <!-- http://schema.org/Event -->
+
+    <owl:Class rdf:about="http://schema.org/Event">
+        <rdfs:label xml:lang="en">Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/GovernmnetOrganization -->
+
+    <owl:Class rdf:about="http://schema.org/GovernmnetOrganization">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/InfectiousDisease -->
+
+    <owl:Class rdf:about="http://schema.org/InfectiousDisease">
+        <rdfs:subClassOf rdf:resource="http://schema.org/MedicalCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/MedicalCode -->
+
+    <owl:Class rdf:about="http://schema.org/MedicalCode"/>
+    
+
+
+    <!-- http://schema.org/MedicalCondition -->
+
+    <owl:Class rdf:about="http://schema.org/MedicalCondition">
+        <rdfs:subClassOf rdf:resource="http://schema.org/MedicalCode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/MedicalEntity -->
+
+    <owl:Class rdf:about="http://schema.org/MedicalEntity"/>
+    
+
+
+    <!-- http://schema.org/Organization -->
+
+    <owl:Class rdf:about="http://schema.org/Organization"/>
+    
+
+
+    <!-- http://schema.org/Patient -->
+
+    <owl:Class rdf:about="http://schema.org/Patient">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Person -->
+
+    <owl:Class rdf:about="http://schema.org/Person">
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Place -->
+
+    <owl:Class rdf:about="http://schema.org/Place">
+        <rdfs:label xml:lang="en">Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Report -->
+
+    <owl:Class rdf:about="http://schema.org/Report">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Article"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/WebPage -->
+
+    <owl:Class rdf:about="http://schema.org/WebPage">
+        <rdfs:subClassOf rdf:resource="http://schema.org/CreativeWork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Instant">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Interval -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Interval">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#ProperInterval -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#ProperInterval">
+        <rdfs:subClassOf rdf:resource="http://resource.hutime.org/ontology/UncertainTimeInterval"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#Interval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalDuration -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#TemporalDuration">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#TemporalEntity">
+        <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Time"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://plod.info/rdf/alcoholDrinking -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/alcoholDrinking">
+        <rdf:type rdf:resource="http://plod.info/rdf/RiskActivity"/>
+        <rdfs:label xml:lang="en">Alcohol drinking</rdfs:label>
+        <rdfs:label xml:lang="ja">飲酒</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/crowded -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/crowded">
+        <rdf:type rdf:resource="http://plod.info/rdf/RiskSpaceSituation"/>
+        <rdfs:label xml:lang="en">crowded</rdfs:label>
+        <rdfs:label xml:lang="ja">混んでいる</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/eat -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/eat">
+        <rdf:type rdf:resource="http://plod.info/rdf/RiskActivity"/>
+        <rdfs:label xml:lang="ja">食事</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/event20200401-1 -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/event20200401-1">
+        <rdf:type rdf:resource="http://schema.org/Event"/>
+        <plod:action rdf:resource="http://plod.info/rdf/eat"/>
+        <plod:action rdf:resource="http://plod.info/rdf/removeMask"/>
+        <plod:action rdf:resource="http://plod.info/rdf/talk"/>
+        <plod:agent rdf:resource="http://plod.info/rdf/person-A"/>
+        <plod:agent rdf:resource="http://plod.info/rdf/person-B"/>
+        <plod:agent rdf:resource="http://plod.info/rdf/person-C"/>
+        <plod:situationOfActivity rdf:resource="http://plod.info/rdf/facetoface"/>
+        <plod:situationOfActivity rdf:resource="http://plod.info/rdf/longTimeAction"/>
+        <plod:time rdf:resource="http://plod.info/rdf/SARS-CoV-2_Infection_Risk_Ontology.owl/time20200401-1"/>
+        <schema:location rdf:resource="http://plod.info/rdf/restaurant-A"/>
+        <rdfs:comment>ある時間帯におけるレストランAでの食事イベント1</rdfs:comment>
+        <rdfs:label xml:lang="ja">ある時間帯におけるレストランAでの食事イベント1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/facetoface -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/facetoface">
+        <rdf:type rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
+        <rdfs:label xml:lang="en">Face-to-face</rdfs:label>
+        <rdfs:label xml:lang="ja">対面</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/fiveOrMorePeople -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/fiveOrMorePeople">
+        <rdf:type rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
+        <rdfs:label xml:lang="ja">5 or more people</rdfs:label>
+        <rdfs:label xml:lang="ja">5人以上</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/frequentlyBreath -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/frequentlyBreath">
+        <rdf:type rdf:resource="http://plod.info/rdf/DropletReachableActivity"/>
+        <rdfs:label xml:lang="en">Frequently breath</rdfs:label>
+        <rdfs:label xml:lang="ja">頻繁な呼吸</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/highTouchSurface -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/highTouchSurface">
+        <rdf:type rdf:resource="http://plod.info/rdf/IndirectContact"/>
+        <rdfs:label xml:lang="en">High-touch surface</rdfs:label>
+        <rdfs:label xml:lang="ja">よく物を触る</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/longTimeAction -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/longTimeAction">
+        <rdf:type rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
+        <rdfs:label xml:lang="en">long time action</rdfs:label>
+        <rdfs:label xml:lang="ja">長時間行動</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/person-A -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/person-A">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/person-B -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/person-B">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/person-C -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/person-C">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/relax -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/relax">
+        <rdf:type rdf:resource="http://plod.info/rdf/RiskActivitySituation"/>
+        <rdfs:label xml:lang="en">relax</rdfs:label>
+        <rdfs:label xml:lang="ja">気が緩む</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/removeMask -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/removeMask">
+        <rdf:type rdf:resource="http://plod.info/rdf/DropletReachableActivity"/>
+        <rdfs:label xml:lang="en">Remove a mask</rdfs:label>
+        <rdfs:label xml:lang="ja">マスクを外す</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/restaurant-A -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/restaurant-A">
+        <rdf:type rdf:resource="http://plod.info/rdf/Restaurant"/>
+        <rdfs:label xml:lang="ja">レストランA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/shareThing -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/shareThing">
+        <rdf:type rdf:resource="http://plod.info/rdf/IndirectContact"/>
+        <rdfs:label xml:lang="en">share things</rdfs:label>
+        <rdfs:label xml:lang="ja">物の共有</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/sing -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/sing">
+        <rdf:type rdf:resource="http://plod.info/rdf/DropletReachableActivity"/>
+        <rdfs:label xml:lang="en">Sing</rdfs:label>
+        <rdfs:label xml:lang="ja">歌う</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/situation20200401-1 -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/situation20200401-1">
+        <rdf:type rdf:resource="http://plod.info/rdf/Situation"/>
+        <plod:isSituationOf rdf:resource="http://plod.info/rdf/restaurant-A"/>
+        <plod:situationOfSpace rdf:resource="http://plod.info/rdf/crowded"/>
+        <rdfs:label xml:lang="ja">ある時間帯におけるレストランAの状態1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/smallSpace -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/smallSpace">
+        <rdf:type rdf:resource="http://plod.info/rdf/RiskSpaceSituation"/>
+        <rdfs:label xml:lang="en">small space</rdfs:label>
+        <rdfs:label xml:lang="ja">狭い空間</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/talk -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/talk">
+        <rdf:type rdf:resource="http://plod.info/rdf/DropletReachableActivity"/>
+        <rdfs:label xml:lang="en">talk</rdfs:label>
+        <rdfs:label xml:lang="ja">会話する</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/yell -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/yell">
+        <rdf:type rdf:resource="http://plod.info/rdf/DropletReachableActivity"/>
+        <rdfs:label xml:lang="en">yell</rdfs:label>
+        <rdfs:label xml:lang="ja">叫ぶ</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/20200401-1-duration -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/20200401-1-duration">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#TemporalDuration"/>
+        <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</time:numericDuration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://plod.info/rdf/SARS-CoV-2_Infection_Risk_Ontology.owl/time20200401-1 -->
+
+    <owl:NamedIndividual rdf:about="http://plod.info/rdf/SARS-CoV-2_Infection_Risk_Ontology.owl/time20200401-1">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <time:hasDuration rdf:resource="http://plod.info/rdf/20200401-1-duration"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://plod.info/rdf/crowded"/>
+            <rdf:Description rdf:about="http://plod.info/rdf/smallSpace"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://plod.info/rdf/facetoface"/>
+            <rdf:Description rdf:about="http://plod.info/rdf/fiveOrMorePeople"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://plod.info/rdf/frequentlyBreath"/>
+            <rdf:Description rdf:about="http://plod.info/rdf/removeMask"/>
+            <rdf:Description rdf:about="http://plod.info/rdf/sing"/>
+            <rdf:Description rdf:about="http://plod.info/rdf/talk"/>
+            <rdf:Description rdf:about="http://plod.info/rdf/yell"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://plod.info/rdf/highTouchSurface"/>
+            <rdf:Description rdf:about="http://plod.info/rdf/shareThing"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

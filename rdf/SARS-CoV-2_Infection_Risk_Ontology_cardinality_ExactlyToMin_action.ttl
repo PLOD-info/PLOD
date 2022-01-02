@@ -1181,6 +1181,15 @@ plod:yell rdf:type owl:NamedIndividual ,
 #################################################################
 
 [ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( plod:alcoholDrinking
+                        plod:facetoface
+                        plod:fiveOrMorePeople
+                        plod:relax
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
   owl:distinctMembers ( plod:crowded
                         plod:smallSpace
                       )
@@ -1194,13 +1203,6 @@ plod:yell rdf:type owl:NamedIndividual ,
                         plod:sing
                         plod:talk
                         plod:yell
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( plod:facetoface
-                        plod:fiveOrMorePeople
                       )
 ] .
 

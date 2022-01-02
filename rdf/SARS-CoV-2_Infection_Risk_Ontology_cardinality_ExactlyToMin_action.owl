@@ -1746,6 +1746,15 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://plod.info/rdf/alcoholDrinking"/>
+            <rdf:Description rdf:about="http://plod.info/rdf/facetoface"/>
+            <rdf:Description rdf:about="http://plod.info/rdf/fiveOrMorePeople"/>
+            <rdf:Description rdf:about="http://plod.info/rdf/relax"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="http://plod.info/rdf/crowded"/>
             <rdf:Description rdf:about="http://plod.info/rdf/smallSpace"/>
         </owl:distinctMembers>
@@ -1759,13 +1768,6 @@
             <rdf:Description rdf:about="http://plod.info/rdf/sing"/>
             <rdf:Description rdf:about="http://plod.info/rdf/talk"/>
             <rdf:Description rdf:about="http://plod.info/rdf/yell"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://plod.info/rdf/facetoface"/>
-            <rdf:Description rdf:about="http://plod.info/rdf/fiveOrMorePeople"/>
         </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>

@@ -1045,19 +1045,6 @@ plod:eat rdf:type owl:NamedIndividual ,
          rdfs:label "食事"@ja .
 
 
-###  http://plod.info/rdf/event20200401-1
-plod:event20200401-1 rdf:type owl:NamedIndividual ,
-                              schema:Event ;
-                     plod:agent plod:person-A ,
-                                plod:person-B ,
-                                plod:person-C ;
-                     plod:context plod:facetoface ;
-                     plod:time plod:time20200401-1 ;
-                     schema:location plod:restaurant-A ;
-                     rdfs:comment "ある時間帯におけるレストランAでの食事イベント1" ;
-                     rdfs:label "ある時間帯におけるレストランAでの食事イベント1"@ja .
-
-
 ###  http://plod.info/rdf/facetoface
 plod:facetoface rdf:type owl:NamedIndividual ,
                          plod:BehavioralRiskContext ;
@@ -1086,21 +1073,6 @@ plod:highTouchSurface rdf:type owl:NamedIndividual ,
                                  "よく物を触る"@ja .
 
 
-###  http://plod.info/rdf/person-A
-plod:person-A rdf:type owl:NamedIndividual ,
-                       schema:Person .
-
-
-###  http://plod.info/rdf/person-B
-plod:person-B rdf:type owl:NamedIndividual ,
-                       schema:Person .
-
-
-###  http://plod.info/rdf/person-C
-plod:person-C rdf:type owl:NamedIndividual ,
-                       schema:Person .
-
-
 ###  http://plod.info/rdf/relax
 plod:relax rdf:type owl:NamedIndividual ,
                     plod:BehavioralRiskContext ;
@@ -1113,12 +1085,6 @@ plod:removeMask rdf:type owl:NamedIndividual ,
                          plod:DropletReachableAction ;
                 rdfs:label "Remove a mask"@en ,
                            "マスクを外す"@ja .
-
-
-###  http://plod.info/rdf/restaurant-A
-plod:restaurant-A rdf:type owl:NamedIndividual ,
-                           plod:Restaurant ;
-                  rdfs:label "レストランA"@ja .
 
 
 ###  http://plod.info/rdf/shareThing
@@ -1135,14 +1101,6 @@ plod:sing rdf:type owl:NamedIndividual ,
                      "歌う"@ja .
 
 
-###  http://plod.info/rdf/situation20200401-1
-plod:situation20200401-1 rdf:type owl:NamedIndividual ,
-                                  plod:Situation ;
-                         plod:context plod:crowded ;
-                         plod:isSituationOf plod:restaurant-A ;
-                         rdfs:label "ある時間帯におけるレストランAの状態1"@ja .
-
-
 ###  http://plod.info/rdf/smallSpace
 plod:smallSpace rdf:type owl:NamedIndividual ,
                          plod:SpatialRiskContext ;
@@ -1157,23 +1115,11 @@ plod:talk rdf:type owl:NamedIndividual ,
                      "会話する"@ja .
 
 
-###  http://plod.info/rdf/time20200401-1
-plod:time20200401-1 rdf:type owl:NamedIndividual ,
-                             time:TemporalDuration ;
-                    time:hasDuration <http://plod.info/rdf/20200401-1-duration> .
-
-
 ###  http://plod.info/rdf/yell
 plod:yell rdf:type owl:NamedIndividual ,
                    plod:DropletReachableAction ;
           rdfs:label "yell"@en ,
                      "叫ぶ"@ja .
-
-
-###  http://plod.info/rdf/20200401-1-duration
-<http://plod.info/rdf/20200401-1-duration> rdf:type owl:NamedIndividual ,
-                                                    time:TemporalDuration ;
-                                           time:numericDuration 60 .
 
 
 #################################################################

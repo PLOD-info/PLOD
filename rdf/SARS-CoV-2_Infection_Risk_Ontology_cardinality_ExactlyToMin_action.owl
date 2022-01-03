@@ -1547,22 +1547,6 @@
     
 
 
-    <!-- http://plod.info/rdf/event20200401-1 -->
-
-    <owl:NamedIndividual rdf:about="http://plod.info/rdf/event20200401-1">
-        <rdf:type rdf:resource="http://schema.org/Event"/>
-        <plod:agent rdf:resource="http://plod.info/rdf/person-A"/>
-        <plod:agent rdf:resource="http://plod.info/rdf/person-B"/>
-        <plod:agent rdf:resource="http://plod.info/rdf/person-C"/>
-        <plod:context rdf:resource="http://plod.info/rdf/facetoface"/>
-        <plod:time rdf:resource="http://plod.info/rdf/time20200401-1"/>
-        <schema:location rdf:resource="http://plod.info/rdf/restaurant-A"/>
-        <rdfs:comment>ある時間帯におけるレストランAでの食事イベント1</rdfs:comment>
-        <rdfs:label xml:lang="ja">ある時間帯におけるレストランAでの食事イベント1</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://plod.info/rdf/facetoface -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/facetoface">
@@ -1603,30 +1587,6 @@
     
 
 
-    <!-- http://plod.info/rdf/person-A -->
-
-    <owl:NamedIndividual rdf:about="http://plod.info/rdf/person-A">
-        <rdf:type rdf:resource="http://schema.org/Person"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://plod.info/rdf/person-B -->
-
-    <owl:NamedIndividual rdf:about="http://plod.info/rdf/person-B">
-        <rdf:type rdf:resource="http://schema.org/Person"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://plod.info/rdf/person-C -->
-
-    <owl:NamedIndividual rdf:about="http://plod.info/rdf/person-C">
-        <rdf:type rdf:resource="http://schema.org/Person"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://plod.info/rdf/relax -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/relax">
@@ -1643,15 +1603,6 @@
         <rdf:type rdf:resource="http://plod.info/rdf/DropletReachableAction"/>
         <rdfs:label xml:lang="en">Remove a mask</rdfs:label>
         <rdfs:label xml:lang="ja">マスクを外す</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://plod.info/rdf/restaurant-A -->
-
-    <owl:NamedIndividual rdf:about="http://plod.info/rdf/restaurant-A">
-        <rdf:type rdf:resource="http://plod.info/rdf/Restaurant"/>
-        <rdfs:label xml:lang="ja">レストランA</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1676,17 +1627,6 @@
     
 
 
-    <!-- http://plod.info/rdf/situation20200401-1 -->
-
-    <owl:NamedIndividual rdf:about="http://plod.info/rdf/situation20200401-1">
-        <rdf:type rdf:resource="http://plod.info/rdf/Situation"/>
-        <plod:context rdf:resource="http://plod.info/rdf/crowded"/>
-        <plod:isSituationOf rdf:resource="http://plod.info/rdf/restaurant-A"/>
-        <rdfs:label xml:lang="ja">ある時間帯におけるレストランAの状態1</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://plod.info/rdf/smallSpace -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/smallSpace">
@@ -1707,30 +1647,12 @@
     
 
 
-    <!-- http://plod.info/rdf/time20200401-1 -->
-
-    <owl:NamedIndividual rdf:about="http://plod.info/rdf/time20200401-1">
-        <rdf:type rdf:resource="http://www.w3.org/2006/time#TemporalDuration"/>
-        <time:hasDuration rdf:resource="http://plod.info/rdf/20200401-1-duration"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://plod.info/rdf/yell -->
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/yell">
         <rdf:type rdf:resource="http://plod.info/rdf/DropletReachableAction"/>
         <rdfs:label xml:lang="en">yell</rdfs:label>
         <rdfs:label xml:lang="ja">叫ぶ</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://plod.info/rdf/20200401-1-duration -->
-
-    <owl:NamedIndividual rdf:about="http://plod.info/rdf/20200401-1-duration">
-        <rdf:type rdf:resource="http://www.w3.org/2006/time#TemporalDuration"/>
-        <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</time:numericDuration>
     </owl:NamedIndividual>
     
 

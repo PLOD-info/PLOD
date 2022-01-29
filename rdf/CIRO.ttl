@@ -1,0 +1,1451 @@
+@prefix : <http://plod.info/rdf/SARS-CoV-2_Infection_Risk_Ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://plod.info/rdf/SARS-CoV-2_Infection_Risk_Ontology.owl> .
+
+<http://plod.info/rdf/SARS-CoV-2_Infection_Risk_Ontology.owl> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://plod.info/rdf/action
+<http://plod.info/rdf/action> rdf:type owl:ObjectProperty ;
+                              rdfs:range <http://plod.info/rdf/Action> .
+
+
+###  http://plod.info/rdf/afford
+<http://plod.info/rdf/afford> rdf:type owl:ObjectProperty ;
+                              rdfs:range <http://plod.info/rdf/Action> .
+
+
+###  http://plod.info/rdf/agent
+<http://plod.info/rdf/agent> rdf:type owl:ObjectProperty ;
+                             owl:inverseOf <http://plod.info/rdf/event> ;
+                             rdfs:domain <http://schema.org/Event> ;
+                             rdfs:range <http://schema.org/Organization> ,
+                                        <http://schema.org/Person> .
+
+
+###  http://plod.info/rdf/city
+<http://plod.info/rdf/city> rdf:type owl:ObjectProperty ;
+                            rdfs:domain <http://schema.org/Place> .
+
+
+###  http://plod.info/rdf/context
+<http://plod.info/rdf/context> rdf:type owl:ObjectProperty ;
+                               rdfs:domain <http://plod.info/rdf/Situation> ,
+                                           <http://schema.org/Event> ;
+                               rdfs:range <http://plod.info/rdf/Context> .
+
+
+###  http://plod.info/rdf/event
+<http://plod.info/rdf/event> rdf:type owl:ObjectProperty ;
+                             rdfs:domain <http://schema.org/Organization> ,
+                                         <http://schema.org/Person> ;
+                             rdfs:range <http://schema.org/Event> .
+
+
+###  http://plod.info/rdf/followingEvent
+<http://plod.info/rdf/followingEvent> rdf:type owl:ObjectProperty ;
+                                      owl:inverseOf <http://plod.info/rdf/precedingEvent> ;
+                                      rdfs:domain <http://schema.org/Event> ;
+                                      rdfs:range <http://schema.org/Event> .
+
+
+###  http://plod.info/rdf/isSituationOf
+<http://plod.info/rdf/isSituationOf> rdf:type owl:ObjectProperty ;
+                                     rdfs:range <http://plod.info/rdf/Situation> .
+
+
+###  http://plod.info/rdf/precedingEvent
+<http://plod.info/rdf/precedingEvent> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <http://schema.org/Event> ;
+                                      rdfs:range <http://schema.org/Event> .
+
+
+###  http://plod.info/rdf/situation
+<http://plod.info/rdf/situation> rdf:type owl:ObjectProperty ;
+                                 rdfs:range <http://plod.info/rdf/Situation> .
+
+
+###  http://plod.info/rdf/situationOfAction
+<http://plod.info/rdf/situationOfAction> rdf:type owl:ObjectProperty ;
+                                         rdfs:subPropertyOf <http://plod.info/rdf/situation> ;
+                                         rdfs:range <http://plod.info/rdf/BehavioralRiskContext> .
+
+
+###  http://plod.info/rdf/situationOfSpace
+<http://plod.info/rdf/situationOfSpace> rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf <http://plod.info/rdf/situation> ;
+                                        rdfs:range <http://plod.info/rdf/SpatialRiskContext> .
+
+
+###  http://plod.info/rdf/time
+<http://plod.info/rdf/time> rdf:type owl:ObjectProperty ;
+                            rdfs:range <http://plod.info/rdf/Time> .
+
+
+###  http://resource.hutime.org/ontology/hasPossibleBeginning
+<http://resource.hutime.org/ontology/hasPossibleBeginning> rdf:type owl:ObjectProperty ;
+                                                           rdfs:domain <http://resource.hutime.org/ontology/UncertainTimeInterval> ;
+                                                           rdfs:range <http://www.w3.org/2006/time#TemporalEntity> ;
+                                                           rdfs:comment "Begnning point of a possible time interval in an uncerain time interval." ;
+                                                           rdfs:label "possible beginning" .
+
+
+###  http://resource.hutime.org/ontology/hasPossibleEnd
+<http://resource.hutime.org/ontology/hasPossibleEnd> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain <http://resource.hutime.org/ontology/UncertainTimeInterval> ;
+                                                     rdfs:range <http://www.w3.org/2006/time#TemporalEntity> ;
+                                                     rdfs:comment "End point of a possible time interval in an uncerain time interval." ;
+                                                     rdfs:label "possible end" .
+
+
+###  http://resource.hutime.org/ontology/hasPossibleJdBeginning
+<http://resource.hutime.org/ontology/hasPossibleJdBeginning> rdf:type owl:ObjectProperty ;
+                                                             rdfs:domain <http://resource.hutime.org/ontology/UncertainTimeInterval> .
+
+
+###  http://resource.hutime.org/ontology/hasPossibleJdEnd
+<http://resource.hutime.org/ontology/hasPossibleJdEnd> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <http://resource.hutime.org/ontology/UncertainTimeInterval> .
+
+
+###  http://resource.hutime.org/ontology/hasRangeOfBeginning
+<http://resource.hutime.org/ontology/hasRangeOfBeginning> rdf:type owl:ObjectProperty ;
+                                                          rdfs:domain <http://resource.hutime.org/ontology/UncertainTimeInterval> ;
+                                                          rdfs:range <http://resource.hutime.org/ontology/UncertainTimeInterval> ;
+                                                          rdfs:comment "Beginning range an uncerain time interval." ;
+                                                          rdfs:label "beginning range" .
+
+
+###  http://resource.hutime.org/ontology/hasRangeOfEnd
+<http://resource.hutime.org/ontology/hasRangeOfEnd> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain <http://resource.hutime.org/ontology/UncertainTimeInterval> ;
+                                                    rdfs:range <http://resource.hutime.org/ontology/UncertainTimeInterval> ;
+                                                    rdfs:comment "End range an uncerain time interval." ;
+                                                    rdfs:label "end range" .
+
+
+###  http://resource.hutime.org/ontology/hasReliableBeginning
+<http://resource.hutime.org/ontology/hasReliableBeginning> rdf:type owl:ObjectProperty ;
+                                                           rdfs:domain <http://resource.hutime.org/ontology/UncertainTimeInterval> ;
+                                                           rdfs:range <http://www.w3.org/2006/time#TemporalEntity> ;
+                                                           rdfs:comment "Begnning point of a reliable time interval in an uncerain time interval." ;
+                                                           rdfs:label "reliable beginning" .
+
+
+###  http://resource.hutime.org/ontology/hasReliableEnd
+<http://resource.hutime.org/ontology/hasReliableEnd> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain <http://resource.hutime.org/ontology/UncertainTimeInterval> ;
+                                                     rdfs:range <http://www.w3.org/2006/time#TemporalEntity> ;
+                                                     rdfs:comment "End point of a reliable time interval in an uncerain time interval." ;
+                                                     rdfs:label "reliable end" .
+
+
+###  http://resource.hutime.org/ontology/hasReliableJdBeginning
+<http://resource.hutime.org/ontology/hasReliableJdBeginning> rdf:type owl:ObjectProperty ;
+                                                             rdfs:domain <http://resource.hutime.org/ontology/UncertainTimeInterval> .
+
+
+###  http://resource.hutime.org/ontology/hasReliableJdEnd
+<http://resource.hutime.org/ontology/hasReliableJdEnd> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <http://resource.hutime.org/ontology/UncertainTimeInterval> .
+
+
+###  http://schema.org/code
+<http://schema.org/code> rdf:type owl:ObjectProperty ;
+                         rdfs:domain <http://schema.org/MedicalEntity> ;
+                         rdfs:range <http://schema.org/MedicalCode> .
+
+
+###  http://schema.org/healthCondition
+<http://schema.org/healthCondition> rdf:type owl:ObjectProperty ;
+                                    rdfs:domain <http://schema.org/Patient> ;
+                                    rdfs:range <http://schema.org/MedicalCondition> .
+
+
+###  http://schema.org/homeLocation
+<http://schema.org/homeLocation> rdf:type owl:ObjectProperty ;
+                                 rdfs:domain <http://schema.org/Person> ;
+                                 rdfs:range <http://schema.org/Place> .
+
+
+###  http://schema.org/location
+<http://schema.org/location> rdf:type owl:ObjectProperty ;
+                             rdfs:range <http://schema.org/Place> .
+
+
+###  http://schema.org/mainEntity
+<http://schema.org/mainEntity> rdf:type owl:ObjectProperty ;
+                               rdfs:domain <http://schema.org/CreativeWork> .
+
+
+###  http://schema.org/publisher
+<http://schema.org/publisher> rdf:type owl:ObjectProperty ;
+                              rdfs:domain <http://schema.org/CreativeWork> ;
+                              rdfs:range <http://schema.org/Organization> ,
+                                         <http://schema.org/Person> .
+
+
+###  http://schema.org/subjectOf
+<http://schema.org/subjectOf> rdf:type owl:ObjectProperty ;
+                              rdfs:domain <http://schema.org/Event> ;
+                              rdfs:range <http://schema.org/CreativeWork> .
+
+
+###  http://www.w3.org/2006/time#hasBegininng
+<http://www.w3.org/2006/time#hasBegininng> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <http://www.w3.org/2006/time#Interval> ;
+                                           rdfs:range <http://www.w3.org/2006/time#Instant> .
+
+
+###  http://www.w3.org/2006/time#hasDuration
+<http://www.w3.org/2006/time#hasDuration> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/2006/time#hasEnd
+<http://www.w3.org/2006/time#hasEnd> rdf:type owl:ObjectProperty ;
+                                     rdfs:domain <http://www.w3.org/2006/time#Interval> ;
+                                     rdfs:range <http://www.w3.org/2006/time#Instant> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://plod.info/rdf/distance
+<http://plod.info/rdf/distance> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+rdf:value rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/2006/time#numericDuration
+<http://www.w3.org/2006/time#numericDuration> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://plod.info/rdf/Action
+<http://plod.info/rdf/Action> rdf:type owl:Class ;
+                              rdfs:label "Action"@en ,
+                                         "行動"@ja .
+
+
+###  http://plod.info/rdf/Afternoon
+<http://plod.info/rdf/Afternoon> rdf:type owl:Class ;
+                                 rdfs:subClassOf <http://plod.info/rdf/PartOfDay> .
+
+
+###  http://plod.info/rdf/Age
+<http://plod.info/rdf/Age> rdf:type owl:Class .
+
+
+###  http://plod.info/rdf/AgeOf100s
+<http://plod.info/rdf/AgeOf100s> rdf:type owl:Class ;
+                                 owl:equivalentClass [ owl:intersectionOf ( <http://plod.info/rdf/Age>
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty rdf:value ;
+                                                                              owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                  owl:onDatatype xsd:int ;
+                                                                                                  owl:withRestrictions ( [ xsd:minInclusive "100"^^xsd:int
+                                                                                                                         ]
+                                                                                                                       )
+                                                                                                ]
+                                                                            ]
+                                                                          ) ;
+                                                       rdf:type owl:Class
+                                                     ] .
+
+
+###  http://plod.info/rdf/AgeOf10s
+<http://plod.info/rdf/AgeOf10s> rdf:type owl:Class ;
+                                owl:equivalentClass [ owl:intersectionOf ( <http://plod.info/rdf/Age>
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty rdf:value ;
+                                                                             owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                 owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                                                                        owl:onDatatype xsd:int ;
+                                                                                                                        owl:withRestrictions ( [ xsd:minInclusive "10"^^xsd:int
+                                                                                                                                               ]
+                                                                                                                                             )
+                                                                                                                      ]
+                                                                                                                      [ rdf:type rdfs:Datatype ;
+                                                                                                                        owl:onDatatype xsd:int ;
+                                                                                                                        owl:withRestrictions ( [ xsd:maxInclusive "19"^^xsd:int
+                                                                                                                                               ]
+                                                                                                                                             )
+                                                                                                                      ]
+                                                                                                                    )
+                                                                                               ]
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ] .
+
+
+###  http://plod.info/rdf/AgeOf20s
+<http://plod.info/rdf/AgeOf20s> rdf:type owl:Class ;
+                                owl:equivalentClass [ owl:intersectionOf ( <http://plod.info/rdf/Age>
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty rdf:value ;
+                                                                             owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                 owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                                                                        owl:onDatatype xsd:int ;
+                                                                                                                        owl:withRestrictions ( [ xsd:minInclusive "20"^^xsd:int
+                                                                                                                                               ]
+                                                                                                                                             )
+                                                                                                                      ]
+                                                                                                                      [ rdf:type rdfs:Datatype ;
+                                                                                                                        owl:onDatatype xsd:int ;
+                                                                                                                        owl:withRestrictions ( [ xsd:maxInclusive "29"^^xsd:int
+                                                                                                                                               ]
+                                                                                                                                             )
+                                                                                                                      ]
+                                                                                                                    )
+                                                                                               ]
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ] .
+
+
+###  http://plod.info/rdf/AgeOf30s
+<http://plod.info/rdf/AgeOf30s> rdf:type owl:Class ;
+                                owl:equivalentClass [ owl:intersectionOf ( <http://plod.info/rdf/Age>
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty rdf:value ;
+                                                                             owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                 owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                                                                        owl:onDatatype xsd:int ;
+                                                                                                                        owl:withRestrictions ( [ xsd:minInclusive "30"^^xsd:int
+                                                                                                                                               ]
+                                                                                                                                             )
+                                                                                                                      ]
+                                                                                                                      [ rdf:type rdfs:Datatype ;
+                                                                                                                        owl:onDatatype xsd:int ;
+                                                                                                                        owl:withRestrictions ( [ xsd:maxInclusive "39"^^xsd:int
+                                                                                                                                               ]
+                                                                                                                                             )
+                                                                                                                      ]
+                                                                                                                    )
+                                                                                               ]
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ] .
+
+
+###  http://plod.info/rdf/AgeOf40s
+<http://plod.info/rdf/AgeOf40s> rdf:type owl:Class ;
+                                owl:equivalentClass [ owl:intersectionOf ( <http://plod.info/rdf/Age>
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty rdf:value ;
+                                                                             owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                 owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                                                                        owl:onDatatype xsd:int ;
+                                                                                                                        owl:withRestrictions ( [ xsd:minInclusive "40"^^xsd:int
+                                                                                                                                               ]
+                                                                                                                                             )
+                                                                                                                      ]
+                                                                                                                      [ rdf:type rdfs:Datatype ;
+                                                                                                                        owl:onDatatype xsd:int ;
+                                                                                                                        owl:withRestrictions ( [ xsd:maxInclusive "49"^^xsd:int
+                                                                                                                                               ]
+                                                                                                                                             )
+                                                                                                                      ]
+                                                                                                                    )
+                                                                                               ]
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ] .
+
+
+###  http://plod.info/rdf/AgeOf50s
+<http://plod.info/rdf/AgeOf50s> rdf:type owl:Class ;
+                                owl:equivalentClass [ owl:intersectionOf ( <http://plod.info/rdf/Age>
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty rdf:value ;
+                                                                             owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                 owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                                                                        owl:onDatatype xsd:int ;
+                                                                                                                        owl:withRestrictions ( [ xsd:minInclusive "50"^^xsd:int
+                                                                                                                                               ]
+                                                                                                                                             )
+                                                                                                                      ]
+                                                                                                                      [ rdf:type rdfs:Datatype ;
+                                                                                                                        owl:onDatatype xsd:int ;
+                                                                                                                        owl:withRestrictions ( [ xsd:maxInclusive "59"^^xsd:int
+                                                                                                                                               ]
+                                                                                                                                             )
+                                                                                                                      ]
+                                                                                                                    )
+                                                                                               ]
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ] .
+
+
+###  http://plod.info/rdf/AgeOf60s
+<http://plod.info/rdf/AgeOf60s> rdf:type owl:Class ;
+                                owl:equivalentClass [ owl:intersectionOf ( <http://plod.info/rdf/Age>
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty rdf:value ;
+                                                                             owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                 owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                                                                        owl:onDatatype xsd:int ;
+                                                                                                                        owl:withRestrictions ( [ xsd:minInclusive "60"^^xsd:int
+                                                                                                                                               ]
+                                                                                                                                             )
+                                                                                                                      ]
+                                                                                                                      [ rdf:type rdfs:Datatype ;
+                                                                                                                        owl:onDatatype xsd:int ;
+                                                                                                                        owl:withRestrictions ( [ xsd:maxInclusive "69"^^xsd:int
+                                                                                                                                               ]
+                                                                                                                                             )
+                                                                                                                      ]
+                                                                                                                    )
+                                                                                               ]
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ] .
+
+
+###  http://plod.info/rdf/AgeOf70s
+<http://plod.info/rdf/AgeOf70s> rdf:type owl:Class ;
+                                owl:equivalentClass [ owl:intersectionOf ( <http://plod.info/rdf/Age>
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty rdf:value ;
+                                                                             owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                 owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                                                                        owl:onDatatype xsd:int ;
+                                                                                                                        owl:withRestrictions ( [ xsd:minInclusive "70"^^xsd:int
+                                                                                                                                               ]
+                                                                                                                                             )
+                                                                                                                      ]
+                                                                                                                      [ rdf:type rdfs:Datatype ;
+                                                                                                                        owl:onDatatype xsd:int ;
+                                                                                                                        owl:withRestrictions ( [ xsd:maxInclusive "79"^^xsd:int
+                                                                                                                                               ]
+                                                                                                                                             )
+                                                                                                                      ]
+                                                                                                                    )
+                                                                                               ]
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ] .
+
+
+###  http://plod.info/rdf/AgeOf80s
+<http://plod.info/rdf/AgeOf80s> rdf:type owl:Class ;
+                                owl:equivalentClass [ owl:intersectionOf ( <http://plod.info/rdf/Age>
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty rdf:value ;
+                                                                             owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                 owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                                                                        owl:onDatatype xsd:int ;
+                                                                                                                        owl:withRestrictions ( [ xsd:minInclusive "80"^^xsd:int
+                                                                                                                                               ]
+                                                                                                                                             )
+                                                                                                                      ]
+                                                                                                                      [ rdf:type rdfs:Datatype ;
+                                                                                                                        owl:onDatatype xsd:int ;
+                                                                                                                        owl:withRestrictions ( [ xsd:maxInclusive "89"^^xsd:int
+                                                                                                                                               ]
+                                                                                                                                             )
+                                                                                                                      ]
+                                                                                                                    )
+                                                                                               ]
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ] .
+
+
+###  http://plod.info/rdf/AgeOf90s
+<http://plod.info/rdf/AgeOf90s> rdf:type owl:Class ;
+                                owl:equivalentClass [ owl:intersectionOf ( <http://plod.info/rdf/Age>
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty rdf:value ;
+                                                                             owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                 owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                                                                        owl:onDatatype xsd:int ;
+                                                                                                                        owl:withRestrictions ( [ xsd:minInclusive "90"^^xsd:int
+                                                                                                                                               ]
+                                                                                                                                             )
+                                                                                                                      ]
+                                                                                                                      [ rdf:type rdfs:Datatype ;
+                                                                                                                        owl:onDatatype xsd:int ;
+                                                                                                                        owl:withRestrictions ( [ xsd:maxInclusive "99"^^xsd:int
+                                                                                                                                               ]
+                                                                                                                                             )
+                                                                                                                      ]
+                                                                                                                    )
+                                                                                               ]
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ] .
+
+
+###  http://plod.info/rdf/AgeOfUnder10s
+<http://plod.info/rdf/AgeOfUnder10s> rdf:type owl:Class ;
+                                     owl:equivalentClass [ owl:intersectionOf ( <http://plod.info/rdf/Age>
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty rdf:value ;
+                                                                                  owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                      owl:onDatatype xsd:int ;
+                                                                                                      owl:withRestrictions ( [ xsd:maxExclusive "10"^^xsd:int
+                                                                                                                             ]
+                                                                                                                           )
+                                                                                                    ]
+                                                                                ]
+                                                                              ) ;
+                                                           rdf:type owl:Class
+                                                         ] .
+
+
+###  http://plod.info/rdf/AgeOfUnder60
+<http://plod.info/rdf/AgeOfUnder60> rdf:type owl:Class ;
+                                    owl:equivalentClass [ owl:intersectionOf ( <http://plod.info/rdf/Age>
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty rdf:value ;
+                                                                                 owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                     owl:onDatatype xsd:int ;
+                                                                                                     owl:withRestrictions ( [ xsd:maxExclusive "60"^^xsd:int
+                                                                                                                            ]
+                                                                                                                          )
+                                                                                                   ]
+                                                                               ]
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ] .
+
+
+###  http://plod.info/rdf/Airplane
+<http://plod.info/rdf/Airplane> rdf:type owl:Class ;
+                                rdfs:subClassOf <http://plod.info/rdf/Public_transportation> ;
+                                rdfs:label "Airplane"@en ,
+                                           "飛行機"@ja .
+
+
+###  http://plod.info/rdf/Bar
+<http://plod.info/rdf/Bar> rdf:type owl:Class ;
+                           rdfs:subClassOf <http://plod.info/rdf/IndoorFacility> ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://plod.info/rdf/afford> ;
+                                             owl:hasValue <http://plod.info/rdf/alcoholDrinking>
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://plod.info/rdf/afford> ;
+                                             owl:hasValue <http://plod.info/rdf/frequentlyBreath>
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://plod.info/rdf/afford> ;
+                                             owl:hasValue <http://plod.info/rdf/yell>
+                                           ] ;
+                           rdfs:label "Bar"@en ,
+                                      "バー/居酒屋"@ja .
+
+
+###  http://plod.info/rdf/BehavioralRiskContext
+<http://plod.info/rdf/BehavioralRiskContext> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://plod.info/rdf/RiskContext> ;
+                                             rdfs:label "Behavioral risk context"@en ,
+                                                        "リスク行動状況"@ja .
+
+
+###  http://plod.info/rdf/Bus
+<http://plod.info/rdf/Bus> rdf:type owl:Class ;
+                           rdfs:subClassOf <http://plod.info/rdf/Public_transportation> ;
+                           rdfs:label "Bus"@en ,
+                                      "バス"@ja .
+
+
+###  http://plod.info/rdf/CloseContact
+<http://plod.info/rdf/CloseContact> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://plod.info/rdf/BehavioralRiskContext> ;
+                                    rdfs:label "Close-contact"@en ,
+                                               "密接"@ja .
+
+
+###  http://plod.info/rdf/ClosedSpace
+<http://plod.info/rdf/ClosedSpace> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://plod.info/rdf/SpatialRiskContext> ;
+                                   rdfs:label "Confined and enclosed space"@en ,
+                                              "密閉"@ja .
+
+
+###  http://plod.info/rdf/CoffeeShop
+<http://plod.info/rdf/CoffeeShop> rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://plod.info/rdf/IndoorFacility> ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://plod.info/rdf/afford> ;
+                                                    owl:hasValue <http://plod.info/rdf/removeMask>
+                                                  ] ;
+                                  rdfs:label "Coffee_shop"@en ,
+                                             "喫茶店"@ja .
+
+
+###  http://plod.info/rdf/ConcertHall
+<http://plod.info/rdf/ConcertHall> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://plod.info/rdf/IndoorFacility> ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://plod.info/rdf/afford> ;
+                                                     owl:hasValue <http://plod.info/rdf/highTouchSurface>
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://plod.info/rdf/afford> ;
+                                                     owl:hasValue <http://plod.info/rdf/yell>
+                                                   ] ;
+                                   rdfs:label "Concert hall"@en ,
+                                              "コンサートホール"@ja .
+
+
+###  http://plod.info/rdf/Context
+<http://plod.info/rdf/Context> rdf:type owl:Class ;
+                               rdfs:label "Context"@en .
+
+
+###  http://plod.info/rdf/Crowding
+<http://plod.info/rdf/Crowding> rdf:type owl:Class ;
+                                rdfs:subClassOf <http://plod.info/rdf/SpatialRiskContext> ;
+                                rdfs:label "Crowding"@en ,
+                                           "密集"@ja .
+
+
+###  http://plod.info/rdf/DentalClinic
+<http://plod.info/rdf/DentalClinic> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://plod.info/rdf/IndoorFacility> ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <http://plod.info/rdf/afford> ;
+                                                      owl:hasValue <http://plod.info/rdf/removeMask>
+                                                    ] ;
+                                    rdfs:label "Dental clinic"@en ,
+                                               "歯科医院"@ja .
+
+
+###  http://plod.info/rdf/DropletReachableAction
+<http://plod.info/rdf/DropletReachableAction> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://plod.info/rdf/RiskAction> ;
+                                              rdfs:label "Droplet reachable action"@en ,
+                                                         "飛沫到達行動"@ja .
+
+
+###  http://plod.info/rdf/Evening
+<http://plod.info/rdf/Evening> rdf:type owl:Class ;
+                               rdfs:subClassOf <http://plod.info/rdf/PartOfDay> .
+
+
+###  http://plod.info/rdf/GroceryStore
+<http://plod.info/rdf/GroceryStore> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://plod.info/rdf/IndoorFacility> ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <http://plod.info/rdf/afford> ;
+                                                      owl:hasValue <http://plod.info/rdf/highTouchSurface>
+                                                    ] ;
+                                    rdfs:label "Grocery store"@en ,
+                                               "食料品店"@ja .
+
+
+###  http://plod.info/rdf/Gym
+<http://plod.info/rdf/Gym> rdf:type owl:Class ;
+                           rdfs:subClassOf <http://plod.info/rdf/IndoorFacility> ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://plod.info/rdf/afford> ;
+                                             owl:hasValue <http://plod.info/rdf/frequentlyBreath>
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://plod.info/rdf/afford> ;
+                                             owl:hasValue <http://plod.info/rdf/highTouchSurface>
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://plod.info/rdf/afford> ;
+                                             owl:hasValue <http://plod.info/rdf/removeMask>
+                                           ] ;
+                           rdfs:label "Gym"@en ,
+                                      "ジム"@ja .
+
+
+###  http://plod.info/rdf/HairSalon
+<http://plod.info/rdf/HairSalon> rdf:type owl:Class ;
+                                 rdfs:subClassOf <http://plod.info/rdf/IndoorFacility> ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <http://plod.info/rdf/afford> ;
+                                                   owl:hasValue <http://plod.info/rdf/removeMask>
+                                                 ] ;
+                                 rdfs:label "Hair salon"@en ,
+                                            "美容院"@ja .
+
+
+###  http://plod.info/rdf/HighLevelCloseContact
+<http://plod.info/rdf/HighLevelCloseContact> rdf:type owl:Class ;
+                                             owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                                          owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty <http://schema.org/location> ;
+                                                                                                          owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                               owl:onProperty <http://plod.info/rdf/afford> ;
+                                                                                                                               owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                                                                               owl:onClass <http://plod.info/rdf/DropletReachableAction>
+                                                                                                                             ]
+                                                                                                        ]
+                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty <http://plod.info/rdf/action> ;
+                                                                                                          owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                                                          owl:onClass <http://plod.info/rdf/DropletReachableAction>
+                                                                                                        ]
+                                                                                                      )
+                                                                                        ]
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty <http://plod.info/rdf/time> ;
+                                                                                          owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                               owl:onProperty <http://www.w3.org/2006/time#hasDuration> ;
+                                                                                                               owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                                    owl:onProperty <http://www.w3.org/2006/time#numericDuration> ;
+                                                                                                                                    owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                         owl:onDatatype xsd:integer ;
+                                                                                                                                                         owl:withRestrictions ( [ xsd:minExclusive 15
+                                                                                                                                                                                ]
+                                                                                                                                                                              )
+                                                                                                                                                       ]
+                                                                                                                                  ]
+                                                                                                             ]
+                                                                                        ]
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty <http://plod.info/rdf/context> ;
+                                                                                          owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                          owl:onClass <http://plod.info/rdf/BehavioralRiskContext>
+                                                                                        ]
+                                                                                      ) ;
+                                                                   rdf:type owl:Class
+                                                                 ] ;
+                                             rdfs:subClassOf <http://plod.info/rdf/MediumLevelCloseContact> ;
+                                             rdfs:label "High-level Close-contact"@en ,
+                                                        "高密接"@ja .
+
+
+###  http://plod.info/rdf/HighLevelClosedSpace
+<http://plod.info/rdf/HighLevelClosedSpace> rdf:type owl:Class ;
+                                            owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty <http://plod.info/rdf/isSituationOf> ;
+                                                                                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                              owl:unionOf ( <http://plod.info/rdf/IndoorFacility>
+                                                                                                                            <http://plod.info/rdf/Public_transportation>
+                                                                                                                          )
+                                                                                                            ]
+                                                                                       ]
+                                                                                       [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty <http://plod.info/rdf/context> ;
+                                                                                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                         owl:onClass <http://plod.info/rdf/SpatialRiskContext>
+                                                                                       ]
+                                                                                     ) ;
+                                                                  rdf:type owl:Class
+                                                                ] ;
+                                            rdfs:subClassOf <http://plod.info/rdf/MediumLevelClosedSpace> ;
+                                            rdfs:label "High-level closed space"@en ,
+                                                       "高密閉"@ja .
+
+
+###  http://plod.info/rdf/HighLevelCrowding
+<http://plod.info/rdf/HighLevelCrowding> rdf:type owl:Class ;
+                                         owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://plod.info/rdf/context> ;
+                                                                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                      owl:onClass <http://plod.info/rdf/BehavioralRiskContext>
+                                                                                    ]
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://plod.info/rdf/context> ;
+                                                                                      owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                                      owl:onClass <http://plod.info/rdf/SpatialRiskContext>
+                                                                                    ]
+                                                                                  ) ;
+                                                               rdf:type owl:Class
+                                                             ] ;
+                                         rdfs:subClassOf <http://plod.info/rdf/MediumLevelCrowding> ;
+                                         rdfs:label "High-level crowding"@en ,
+                                                    "高密集"@ja .
+
+
+###  http://plod.info/rdf/Home
+<http://plod.info/rdf/Home> rdf:type owl:Class ;
+                            rdfs:subClassOf <http://plod.info/rdf/IndoorFacility> ;
+                            rdfs:label "Home"@en ,
+                                       "家"@ja .
+
+
+###  http://plod.info/rdf/Hospital
+<http://plod.info/rdf/Hospital> rdf:type owl:Class ;
+                                rdfs:subClassOf <http://plod.info/rdf/IndoorFacility> ;
+                                rdfs:label "Hospital"@en ,
+                                           "病院"@ja .
+
+
+###  http://plod.info/rdf/IndirectContact
+<http://plod.info/rdf/IndirectContact> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://plod.info/rdf/RiskAction> ;
+                                       rdfs:label "Indirect contact"@en ,
+                                                  "間接接触行動"@ja .
+
+
+###  http://plod.info/rdf/IndoorFacility
+<http://plod.info/rdf/IndoorFacility> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://schema.org/Place> ;
+                                      rdfs:label "Indoor facility"@en ,
+                                                 "屋内施設"@ja .
+
+
+###  http://plod.info/rdf/IndoorPartyVenue
+<http://plod.info/rdf/IndoorPartyVenue> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://plod.info/rdf/IndoorFacility> ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://plod.info/rdf/afford> ;
+                                                          owl:hasValue <http://plod.info/rdf/alcoholDrinking>
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://plod.info/rdf/afford> ;
+                                                          owl:hasValue <http://plod.info/rdf/shareThing>
+                                                        ] ;
+                                        rdfs:label "Indoor party venue"@en ,
+                                                   "インドアパーティ会場"@ja .
+
+
+###  http://plod.info/rdf/IndoorSportsFacility
+<http://plod.info/rdf/IndoorSportsFacility> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://plod.info/rdf/IndoorFacility> ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://plod.info/rdf/afford> ;
+                                                              owl:hasValue <http://plod.info/rdf/frequentlyBreath>
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://plod.info/rdf/afford> ;
+                                                              owl:hasValue <http://plod.info/rdf/highTouchSurface>
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://plod.info/rdf/afford> ;
+                                                              owl:hasValue <http://plod.info/rdf/removeMask>
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://plod.info/rdf/afford> ;
+                                                              owl:hasValue <http://plod.info/rdf/yell>
+                                                            ] ;
+                                            rdfs:label "Indoor sports facility"@en ,
+                                                       "屋内スポーツ施設"@ja .
+
+
+###  http://plod.info/rdf/LiveTheater
+<http://plod.info/rdf/LiveTheater> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://plod.info/rdf/IndoorFacility> ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://plod.info/rdf/afford> ;
+                                                     owl:hasValue <http://plod.info/rdf/highTouchSurface>
+                                                   ] ;
+                                   rdfs:label "Live theater"@en ,
+                                              "劇場"@ja .
+
+
+###  http://plod.info/rdf/MedicalOffice
+<http://plod.info/rdf/MedicalOffice> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://plod.info/rdf/IndoorFacility> ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <http://plod.info/rdf/afford> ;
+                                                       owl:hasValue <http://plod.info/rdf/highTouchSurface>
+                                                     ] ;
+                                     rdfs:label "Medical office"@en ,
+                                                "診療所"@ja .
+
+
+###  http://plod.info/rdf/MediumLevelCloseContact
+<http://plod.info/rdf/MediumLevelCloseContact> rdf:type owl:Class ;
+                                               owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                                            owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                                            owl:onProperty <http://schema.org/location> ;
+                                                                                                            owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                                 owl:onProperty <http://plod.info/rdf/afford> ;
+                                                                                                                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                                 owl:onClass <http://plod.info/rdf/DropletReachableAction>
+                                                                                                                               ]
+                                                                                                          ]
+                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                            owl:onProperty <http://plod.info/rdf/action> ;
+                                                                                                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                            owl:onClass <http://plod.info/rdf/DropletReachableAction>
+                                                                                                          ]
+                                                                                                        )
+                                                                                          ]
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://plod.info/rdf/time> ;
+                                                                                            owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                 owl:onProperty <http://www.w3.org/2006/time#hasDuration> ;
+                                                                                                                 owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                                      owl:onProperty <http://www.w3.org/2006/time#numericDuration> ;
+                                                                                                                                      owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                           owl:onDatatype xsd:integer ;
+                                                                                                                                                           owl:withRestrictions ( [ xsd:minExclusive 15
+                                                                                                                                                                                  ]
+                                                                                                                                                                                )
+                                                                                                                                                         ]
+                                                                                                                                    ]
+                                                                                                               ]
+                                                                                          ]
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://plod.info/rdf/context> ;
+                                                                                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                            owl:onClass <http://plod.info/rdf/BehavioralRiskContext>
+                                                                                          ]
+                                                                                        ) ;
+                                                                     rdf:type owl:Class
+                                                                   ] ;
+                                               rdfs:subClassOf <http://plod.info/rdf/CloseContact> ;
+                                               rdfs:label "Medium-level Close-contact"@en ,
+                                                          "中密接"@ja .
+
+
+###  http://plod.info/rdf/MediumLevelClosedSpace
+<http://plod.info/rdf/MediumLevelClosedSpace> rdf:type owl:Class ;
+                                              owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://plod.info/rdf/isSituationOf> ;
+                                                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                         owl:unionOf ( <http://plod.info/rdf/IndoorFacility>
+                                                                                                       <http://plod.info/rdf/Public_transportation>
+                                                                                                     )
+                                                                                       ]
+                                                                  ] ;
+                                              rdfs:subClassOf <http://plod.info/rdf/ClosedSpace> ;
+                                              rdfs:label "Medium-level closed space"@en ,
+                                                         "中密閉"@ja .
+
+
+###  http://plod.info/rdf/MediumLevelCrowding
+<http://plod.info/rdf/MediumLevelCrowding> rdf:type owl:Class ;
+                                           owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://plod.info/rdf/context> ;
+                                                                                        owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                        owl:onClass <http://plod.info/rdf/BehavioralRiskContext>
+                                                                                      ]
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://plod.info/rdf/context> ;
+                                                                                        owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                        owl:onClass <http://plod.info/rdf/SpatialRiskContext>
+                                                                                      ]
+                                                                                    ) ;
+                                                                 rdf:type owl:Class
+                                                               ] ;
+                                           rdfs:subClassOf <http://plod.info/rdf/Crowding> ;
+                                           rdfs:label "Medium-level crowding"@en ,
+                                                      "中密集"@ja .
+
+
+###  http://plod.info/rdf/Morning
+<http://plod.info/rdf/Morning> rdf:type owl:Class ;
+                               rdfs:subClassOf <http://plod.info/rdf/PartOfDay> .
+
+
+###  http://plod.info/rdf/MovieTheater
+<http://plod.info/rdf/MovieTheater> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://plod.info/rdf/IndoorFacility> ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <http://plod.info/rdf/afford> ;
+                                                      owl:hasValue <http://plod.info/rdf/highTouchSurface>
+                                                    ] ;
+                                    rdfs:label "Movie theater"@en ,
+                                               "映画館"@ja .
+
+
+###  http://plod.info/rdf/Museum
+<http://plod.info/rdf/Museum> rdf:type owl:Class ;
+                              rdfs:subClassOf <http://plod.info/rdf/IndoorFacility> ;
+                              rdfs:label "Museum"@en ,
+                                         "博物館"@ja .
+
+
+###  http://plod.info/rdf/Night
+<http://plod.info/rdf/Night> rdf:type owl:Class ;
+                             rdfs:subClassOf <http://plod.info/rdf/PartOfDay> .
+
+
+###  http://plod.info/rdf/Nightclub
+<http://plod.info/rdf/Nightclub> rdf:type owl:Class ;
+                                 rdfs:subClassOf <http://plod.info/rdf/IndoorFacility> ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <http://plod.info/rdf/afford> ;
+                                                   owl:hasValue <http://plod.info/rdf/alcoholDrinking>
+                                                 ] ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <http://plod.info/rdf/afford> ;
+                                                   owl:hasValue <http://plod.info/rdf/frequentlyBreath>
+                                                 ] ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <http://plod.info/rdf/afford> ;
+                                                   owl:hasValue <http://plod.info/rdf/yell>
+                                                 ] ;
+                                 rdfs:label "Nightclub"@en ,
+                                            "ナイトクラブ"@ja .
+
+
+###  http://plod.info/rdf/Office
+<http://plod.info/rdf/Office> rdf:type owl:Class ;
+                              rdfs:subClassOf <http://plod.info/rdf/IndoorFacility> ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://plod.info/rdf/afford> ;
+                                                owl:hasValue <http://plod.info/rdf/highTouchSurface>
+                                              ] ;
+                              rdfs:label "Office"@en ,
+                                         "オフィス"@ja .
+
+
+###  http://plod.info/rdf/OutdoorFacility
+<http://plod.info/rdf/OutdoorFacility> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://schema.org/Place> ;
+                                       rdfs:label "Outdoor facility"@en ,
+                                                  "屋外施設"@ja .
+
+
+###  http://plod.info/rdf/OutdoorRestaurant
+<http://plod.info/rdf/OutdoorRestaurant> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://plod.info/rdf/OutdoorFacility> ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://plod.info/rdf/afford> ;
+                                                           owl:hasValue <http://plod.info/rdf/removeMask>
+                                                         ] ;
+                                         rdfs:label "Outdoor restaurant"@en ,
+                                                    "屋外レストラン"@ja .
+
+
+###  http://plod.info/rdf/OutdoorSportsFacility
+<http://plod.info/rdf/OutdoorSportsFacility> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://plod.info/rdf/OutdoorFacility> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://plod.info/rdf/afford> ;
+                                                               owl:hasValue <http://plod.info/rdf/frequentlyBreath>
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://plod.info/rdf/afford> ;
+                                                               owl:hasValue <http://plod.info/rdf/highTouchSurface>
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://plod.info/rdf/afford> ;
+                                                               owl:hasValue <http://plod.info/rdf/removeMask>
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://plod.info/rdf/afford> ;
+                                                               owl:hasValue <http://plod.info/rdf/yell>
+                                                             ] ;
+                                             rdfs:label "Outdoor sports facility"@en ,
+                                                        "屋外スポーツ施設"@ja .
+
+
+###  http://plod.info/rdf/PartOfDay
+<http://plod.info/rdf/PartOfDay> rdf:type owl:Class ;
+                                 rdfs:subClassOf <http://www.w3.org/2006/time#ProperInterval> .
+
+
+###  http://plod.info/rdf/Public_transportation
+<http://plod.info/rdf/Public_transportation> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://schema.org/Place> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://plod.info/rdf/afford> ;
+                                                               owl:hasValue <http://plod.info/rdf/highTouchSurface>
+                                                             ] ;
+                                             rdfs:label "Public transportation"@en ,
+                                                        "公共交通機関"@ja .
+
+
+###  http://plod.info/rdf/Railway
+<http://plod.info/rdf/Railway> rdf:type owl:Class ;
+                               rdfs:subClassOf <http://plod.info/rdf/Public_transportation> ;
+                               rdfs:label "Railway"@en ,
+                                          "電車"@ja .
+
+
+###  http://plod.info/rdf/ReligiousFacility
+<http://plod.info/rdf/ReligiousFacility> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://plod.info/rdf/IndoorFacility> ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://plod.info/rdf/afford> ;
+                                                           owl:hasValue <http://plod.info/rdf/highTouchSurface>
+                                                         ] ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://plod.info/rdf/afford> ;
+                                                           owl:hasValue <http://plod.info/rdf/sing>
+                                                         ] ;
+                                         rdfs:label "Religious facility"@en ,
+                                                    "宗教施設"@ja .
+
+
+###  http://plod.info/rdf/Restaurant
+<http://plod.info/rdf/Restaurant> rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://plod.info/rdf/IndoorFacility> ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://plod.info/rdf/afford> ;
+                                                    owl:hasValue <http://plod.info/rdf/eat>
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://plod.info/rdf/afford> ;
+                                                    owl:hasValue <http://plod.info/rdf/removeMask>
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://plod.info/rdf/afford> ;
+                                                    owl:hasValue <http://plod.info/rdf/shareThing>
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://plod.info/rdf/afford> ;
+                                                    owl:hasValue <http://plod.info/rdf/talk>
+                                                  ] ;
+                                  rdfs:label "Restaurant"@en ,
+                                             "レストラン"@ja .
+
+
+###  http://plod.info/rdf/RetailStore
+<http://plod.info/rdf/RetailStore> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://plod.info/rdf/IndoorFacility> ;
+                                   rdfs:label "Retail store"@en ,
+                                              "小売店"@ja .
+
+
+###  http://plod.info/rdf/RiskAction
+<http://plod.info/rdf/RiskAction> rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://plod.info/rdf/Action> ;
+                                  rdfs:label "Risk activity"@en ,
+                                             "リスク行動"@ja .
+
+
+###  http://plod.info/rdf/RiskContext
+<http://plod.info/rdf/RiskContext> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://plod.info/rdf/Context> .
+
+
+###  http://plod.info/rdf/School
+<http://plod.info/rdf/School> rdf:type owl:Class ;
+                              rdfs:subClassOf <http://plod.info/rdf/IndoorFacility> ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://plod.info/rdf/afford> ;
+                                                owl:hasValue <http://plod.info/rdf/talk>
+                                              ] ;
+                              rdfs:label "School"@en ,
+                                         "学校"@ja .
+
+
+###  http://plod.info/rdf/Situation
+<http://plod.info/rdf/Situation> rdf:type owl:Class ;
+                                 rdfs:label "Situation"@en ,
+                                            "状況"@ja .
+
+
+###  http://plod.info/rdf/SpatialRiskContext
+<http://plod.info/rdf/SpatialRiskContext> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://plod.info/rdf/RiskContext> ;
+                                          rdfs:label "Spatial risk context"@en ,
+                                                     "リスク空間状況"@ja .
+
+
+###  http://plod.info/rdf/Subway
+<http://plod.info/rdf/Subway> rdf:type owl:Class ;
+                              rdfs:subClassOf <http://plod.info/rdf/Public_transportation> ;
+                              rdfs:label "Subway"@en ,
+                                         "地下鉄"@ja .
+
+
+###  http://plod.info/rdf/Taxi
+<http://plod.info/rdf/Taxi> rdf:type owl:Class ;
+                            rdfs:subClassOf <http://plod.info/rdf/Public_transportation> ;
+                            rdfs:label "Taxi or ride-sharing service"@en ,
+                                       "タクシー/ライドシェアサービス"@ja .
+
+
+###  http://plod.info/rdf/Time
+<http://plod.info/rdf/Time> rdf:type owl:Class ;
+                            rdfs:label "Time"@en .
+
+
+###  http://resource.hutime.org/ontology/UncertainTimeInterval
+<http://resource.hutime.org/ontology/UncertainTimeInterval> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://www.w3.org/2006/time#Interval> ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://resource.hutime.org/ontology/hasPossibleBeginning> ;
+                                                                              owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                            ] ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://resource.hutime.org/ontology/hasPossibleEnd> ;
+                                                                              owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                            ] ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://resource.hutime.org/ontology/hasPossibleJdBeginning> ;
+                                                                              owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                            ] ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://resource.hutime.org/ontology/hasPossibleJdEnd> ;
+                                                                              owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                            ] ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://resource.hutime.org/ontology/hasRangeOfBeginning> ;
+                                                                              owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                            ] ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://resource.hutime.org/ontology/hasRangeOfEnd> ;
+                                                                              owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                            ] ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://resource.hutime.org/ontology/hasReliableBeginning> ;
+                                                                              owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                            ] ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://resource.hutime.org/ontology/hasReliableEnd> ;
+                                                                              owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                            ] ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://resource.hutime.org/ontology/hasReliableJdBeginning> ;
+                                                                              owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                            ] ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://resource.hutime.org/ontology/hasReliableJdEnd> ;
+                                                                              owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                            ] ;
+                                                            rdfs:comment "The class of uncertain time interval." ;
+                                                            rdfs:label "Uncertain Time Interval" .
+
+
+###  http://schema.org/Article
+<http://schema.org/Article> rdf:type owl:Class ;
+                            rdfs:subClassOf <http://schema.org/CreativeWork> .
+
+
+###  http://schema.org/CreativeWork
+<http://schema.org/CreativeWork> rdf:type owl:Class .
+
+
+###  http://schema.org/Event
+<http://schema.org/Event> rdf:type owl:Class ;
+                          rdfs:label "Event"@en .
+
+
+###  http://schema.org/GovernmnetOrganization
+<http://schema.org/GovernmnetOrganization> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://schema.org/Organization> .
+
+
+###  http://schema.org/InfectiousDisease
+<http://schema.org/InfectiousDisease> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://schema.org/MedicalCondition> .
+
+
+###  http://schema.org/MedicalCode
+<http://schema.org/MedicalCode> rdf:type owl:Class .
+
+
+###  http://schema.org/MedicalCondition
+<http://schema.org/MedicalCondition> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://schema.org/MedicalCode> .
+
+
+###  http://schema.org/MedicalEntity
+<http://schema.org/MedicalEntity> rdf:type owl:Class .
+
+
+###  http://schema.org/Organization
+<http://schema.org/Organization> rdf:type owl:Class .
+
+
+###  http://schema.org/Patient
+<http://schema.org/Patient> rdf:type owl:Class ;
+                            rdfs:subClassOf <http://schema.org/Person> .
+
+
+###  http://schema.org/Person
+<http://schema.org/Person> rdf:type owl:Class ;
+                           rdfs:label "Person"@en .
+
+
+###  http://schema.org/Place
+<http://schema.org/Place> rdf:type owl:Class ;
+                          rdfs:label "Place"@en .
+
+
+###  http://schema.org/Report
+<http://schema.org/Report> rdf:type owl:Class ;
+                           rdfs:subClassOf <http://schema.org/Article> .
+
+
+###  http://schema.org/WebPage
+<http://schema.org/WebPage> rdf:type owl:Class ;
+                            rdfs:subClassOf <http://schema.org/CreativeWork> .
+
+
+###  http://www.w3.org/2006/time#Instant
+<http://www.w3.org/2006/time#Instant> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity> .
+
+
+###  http://www.w3.org/2006/time#Interval
+<http://www.w3.org/2006/time#Interval> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity> .
+
+
+###  http://www.w3.org/2006/time#ProperInterval
+<http://www.w3.org/2006/time#ProperInterval> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://resource.hutime.org/ontology/UncertainTimeInterval> ,
+                                                             <http://www.w3.org/2006/time#Interval> .
+
+
+###  http://www.w3.org/2006/time#TemporalDuration
+<http://www.w3.org/2006/time#TemporalDuration> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://plod.info/rdf/Time> .
+
+
+###  http://www.w3.org/2006/time#TemporalEntity
+<http://www.w3.org/2006/time#TemporalEntity> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://plod.info/rdf/Time> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://plod.info/rdf/alcoholDrinking
+<http://plod.info/rdf/alcoholDrinking> rdf:type owl:NamedIndividual ,
+                                                <http://plod.info/rdf/BehavioralRiskContext> ;
+                                       rdfs:label "Alcohol drinking"@en ,
+                                                  "飲酒"@ja .
+
+
+###  http://plod.info/rdf/crowded
+<http://plod.info/rdf/crowded> rdf:type owl:NamedIndividual ,
+                                        <http://plod.info/rdf/SpatialRiskContext> ;
+                               rdfs:label "crowded"@en ,
+                                          "混んでいる"@ja .
+
+
+###  http://plod.info/rdf/eat
+<http://plod.info/rdf/eat> rdf:type owl:NamedIndividual ,
+                                    <http://plod.info/rdf/DropletReachableAction> ;
+                           rdfs:label "食事"@ja .
+
+
+###  http://plod.info/rdf/facetoface
+<http://plod.info/rdf/facetoface> rdf:type owl:NamedIndividual ,
+                                           <http://plod.info/rdf/BehavioralRiskContext> ;
+                                  rdfs:label "Face-to-face"@en ,
+                                             "対面"@ja .
+
+
+###  http://plod.info/rdf/fiveOrMorePeople
+<http://plod.info/rdf/fiveOrMorePeople> rdf:type owl:NamedIndividual ,
+                                                 <http://plod.info/rdf/BehavioralRiskContext> ;
+                                        rdfs:label "5 or more people"@ja ,
+                                                   "5人以上"@ja .
+
+
+###  http://plod.info/rdf/frequentlyBreath
+<http://plod.info/rdf/frequentlyBreath> rdf:type owl:NamedIndividual ,
+                                                 <http://plod.info/rdf/DropletReachableAction> ;
+                                        rdfs:label "Frequently breath"@en ,
+                                                   "頻繁な呼吸"@ja .
+
+
+###  http://plod.info/rdf/highTouchSurface
+<http://plod.info/rdf/highTouchSurface> rdf:type owl:NamedIndividual ,
+                                                 <http://plod.info/rdf/IndirectContact> ;
+                                        rdfs:label "High-touch surface"@en ,
+                                                   "よく物を触る"@ja .
+
+
+###  http://plod.info/rdf/relax
+<http://plod.info/rdf/relax> rdf:type owl:NamedIndividual ,
+                                      <http://plod.info/rdf/BehavioralRiskContext> ;
+                             rdfs:label "relax"@en ,
+                                        "気が緩む"@ja .
+
+
+###  http://plod.info/rdf/removeMask
+<http://plod.info/rdf/removeMask> rdf:type owl:NamedIndividual ,
+                                           <http://plod.info/rdf/DropletReachableAction> ;
+                                  rdfs:label "Remove a mask"@en ,
+                                             "マスクを外す"@ja .
+
+
+###  http://plod.info/rdf/shareThing
+<http://plod.info/rdf/shareThing> rdf:type owl:NamedIndividual ,
+                                           <http://plod.info/rdf/IndirectContact> ;
+                                  rdfs:label "share things"@en ,
+                                             "物の共有"@ja .
+
+
+###  http://plod.info/rdf/sing
+<http://plod.info/rdf/sing> rdf:type owl:NamedIndividual ,
+                                     <http://plod.info/rdf/DropletReachableAction> ;
+                            rdfs:label "Sing"@en ,
+                                       "歌う"@ja .
+
+
+###  http://plod.info/rdf/smallSpace
+<http://plod.info/rdf/smallSpace> rdf:type owl:NamedIndividual ,
+                                           <http://plod.info/rdf/SpatialRiskContext> ;
+                                  rdfs:label "small space"@en ,
+                                             "狭い空間"@ja .
+
+
+###  http://plod.info/rdf/talk
+<http://plod.info/rdf/talk> rdf:type owl:NamedIndividual ,
+                                     <http://plod.info/rdf/DropletReachableAction> ;
+                            rdfs:label "talk"@en ,
+                                       "会話する"@ja .
+
+
+###  http://plod.info/rdf/yell
+<http://plod.info/rdf/yell> rdf:type owl:NamedIndividual ,
+                                     <http://plod.info/rdf/DropletReachableAction> ;
+                            rdfs:label "yell"@en ,
+                                       "叫ぶ"@ja .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( <http://plod.info/rdf/alcoholDrinking>
+                        <http://plod.info/rdf/facetoface>
+                        <http://plod.info/rdf/fiveOrMorePeople>
+                        <http://plod.info/rdf/relax>
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( <http://plod.info/rdf/crowded>
+                        <http://plod.info/rdf/smallSpace>
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( <http://plod.info/rdf/eat>
+                        <http://plod.info/rdf/frequentlyBreath>
+                        <http://plod.info/rdf/removeMask>
+                        <http://plod.info/rdf/sing>
+                        <http://plod.info/rdf/talk>
+                        <http://plod.info/rdf/yell>
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( <http://plod.info/rdf/highTouchSurface>
+                        <http://plod.info/rdf/shareThing>
+                      )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

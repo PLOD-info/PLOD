@@ -2015,6 +2015,7 @@
 
     <owl:NamedIndividual rdf:about="http://plod.info/rdf/eat">
         <rdf:type rdf:resource="http://plod.info/rdf/DropletReachableAction"/>
+        <rdfs:label xml:lang="en">eat</rdfs:label>
         <rdfs:label xml:lang="ja">食事</rdfs:label>
     </owl:NamedIndividual>
     

@@ -4,9 +4,11 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://plod.info/rdf/SARS-CoV-2_Infection_Risk_Ontology.owl> .
+@base <http://plod.info/rdf/CIRO.owl> .
 
-<http://plod.info/rdf/SARS-CoV-2_Infection_Risk_Ontology.owl> rdf:type owl:Ontology .
+<http://plod.info/rdf/CIRO.owl> rdf:type owl:Ontology ;
+                                 rdfs:comment "This ontology expresses infection risks of COVID-19, toward automated assessment of infection risks of individuals."@en ;
+                                 rdfs:label "COVID-19 Infection Risk Ontology (CIRO)"@en .
 
 #################################################################
 #    Object Properties
@@ -14,20 +16,31 @@
 
 ###  http://plod.info/rdf/action
 <http://plod.info/rdf/action> rdf:type owl:ObjectProperty ;
+                              rdfs:domain <http://schema.org/Event> ;
                               rdfs:range <http://plod.info/rdf/Action> .
 
 
 ###  http://plod.info/rdf/afford
 <http://plod.info/rdf/afford> rdf:type owl:ObjectProperty ;
+                              rdfs:domain <http://schema.org/Place> ;
                               rdfs:range <http://plod.info/rdf/Action> .
+
+
+###  http://plod.info/rdf/age
+<http://plod.info/rdf/age> rdf:type owl:ObjectProperty ;
+                           rdfs:domain <http://schema.org/Person> ;
+                           rdfs:range <http://plod.info/rdf/Age> .
 
 
 ###  http://plod.info/rdf/agent
 <http://plod.info/rdf/agent> rdf:type owl:ObjectProperty ;
                              owl:inverseOf <http://plod.info/rdf/event> ;
                              rdfs:domain <http://schema.org/Event> ;
-                             rdfs:range <http://schema.org/Organization> ,
-                                        <http://schema.org/Person> .
+                             rdfs:range [ rdf:type owl:Class ;
+                                          owl:unionOf ( <http://schema.org/Organization>
+                                                        <http://schema.org/Person>
+                                                      )
+                                        ] .
 
 
 ###  http://plod.info/rdf/city
@@ -37,15 +50,21 @@
 
 ###  http://plod.info/rdf/context
 <http://plod.info/rdf/context> rdf:type owl:ObjectProperty ;
-                               rdfs:domain <http://plod.info/rdf/Situation> ,
-                                           <http://schema.org/Event> ;
+                               rdfs:domain [ rdf:type owl:Class ;
+                                             owl:unionOf ( <http://plod.info/rdf/Situation>
+                                                           <http://schema.org/Event>
+                                                         )
+                                           ] ;
                                rdfs:range <http://plod.info/rdf/Context> .
 
 
 ###  http://plod.info/rdf/event
 <http://plod.info/rdf/event> rdf:type owl:ObjectProperty ;
-                             rdfs:domain <http://schema.org/Organization> ,
-                                         <http://schema.org/Person> ;
+                             rdfs:domain [ rdf:type owl:Class ;
+                                           owl:unionOf ( <http://schema.org/Organization>
+                                                         <http://schema.org/Person>
+                                                       )
+                                         ] ;
                              rdfs:range <http://schema.org/Event> .
 
 
@@ -58,7 +77,8 @@
 
 ###  http://plod.info/rdf/isSituationOf
 <http://plod.info/rdf/isSituationOf> rdf:type owl:ObjectProperty ;
-                                     rdfs:range <http://plod.info/rdf/Situation> .
+                                     rdfs:domain <http://plod.info/rdf/Situation> ;
+                                     rdfs:range <http://schema.org/Place> .
 
 
 ###  http://plod.info/rdf/precedingEvent
@@ -69,6 +89,7 @@
 
 ###  http://plod.info/rdf/situation
 <http://plod.info/rdf/situation> rdf:type owl:ObjectProperty ;
+                                 rdfs:domain <http://schema.org/Place> ;
                                  rdfs:range <http://plod.info/rdf/Situation> .
 
 
@@ -86,6 +107,11 @@
 
 ###  http://plod.info/rdf/time
 <http://plod.info/rdf/time> rdf:type owl:ObjectProperty ;
+                            rdfs:domain [ rdf:type owl:Class ;
+                                          owl:unionOf ( <http://plod.info/rdf/Situation>
+                                                        <http://schema.org/Event>
+                                                      )
+                                        ] ;
                             rdfs:range <http://plod.info/rdf/Time> .
 
 
@@ -177,6 +203,7 @@
 
 ###  http://schema.org/location
 <http://schema.org/location> rdf:type owl:ObjectProperty ;
+                             rdfs:domain <http://schema.org/Event> ;
                              rdfs:range <http://schema.org/Place> .
 
 
@@ -188,8 +215,11 @@
 ###  http://schema.org/publisher
 <http://schema.org/publisher> rdf:type owl:ObjectProperty ;
                               rdfs:domain <http://schema.org/CreativeWork> ;
-                              rdfs:range <http://schema.org/Organization> ,
-                                         <http://schema.org/Person> .
+                              rdfs:range [ rdf:type owl:Class ;
+                                           owl:unionOf ( <http://schema.org/Organization>
+                                                         <http://schema.org/Person>
+                                                       )
+                                         ] .
 
 
 ###  http://schema.org/subjectOf
@@ -236,6 +266,7 @@ rdf:value rdf:type owl:DatatypeProperty .
 
 ###  http://plod.info/rdf/Action
 <http://plod.info/rdf/Action> rdf:type owl:Class ;
+                              rdfs:comment "This class represents various human actions."@en ;
                               rdfs:label "Action"@en ,
                                          "行動"@ja .
 
@@ -246,7 +277,9 @@ rdf:value rdf:type owl:DatatypeProperty .
 
 
 ###  http://plod.info/rdf/Age
-<http://plod.info/rdf/Age> rdf:type owl:Class .
+<http://plod.info/rdf/Age> rdf:type owl:Class ;
+                           rdfs:comment "Person's age"@en ;
+                           rdfs:label "Age"@en .
 
 
 ###  http://plod.info/rdf/AgeOf100s
@@ -263,7 +296,9 @@ rdf:value rdf:type owl:DatatypeProperty .
                                                                             ]
                                                                           ) ;
                                                        rdf:type owl:Class
-                                                     ] .
+                                                     ] ;
+                                 rdfs:comment "A class representing a person's age (100's)"@en ;
+                                 rdfs:label "100's"@en .
 
 
 ###  http://plod.info/rdf/AgeOf10s
@@ -289,7 +324,9 @@ rdf:value rdf:type owl:DatatypeProperty .
                                                                            ]
                                                                          ) ;
                                                       rdf:type owl:Class
-                                                    ] .
+                                                    ] ;
+                                rdfs:comment "A class representing a person's age (teens)"@en ;
+                                rdfs:label "10's"@en .
 
 
 ###  http://plod.info/rdf/AgeOf20s
@@ -315,7 +352,9 @@ rdf:value rdf:type owl:DatatypeProperty .
                                                                            ]
                                                                          ) ;
                                                       rdf:type owl:Class
-                                                    ] .
+                                                    ] ;
+                                rdfs:comment "A class representing a person's age (twenties)"@en ;
+                                rdfs:label "20's"@en .
 
 
 ###  http://plod.info/rdf/AgeOf30s
@@ -341,7 +380,9 @@ rdf:value rdf:type owl:DatatypeProperty .
                                                                            ]
                                                                          ) ;
                                                       rdf:type owl:Class
-                                                    ] .
+                                                    ] ;
+                                rdfs:comment "A class representing a person's age (thirties)"@en ;
+                                rdfs:label "30's"@en .
 
 
 ###  http://plod.info/rdf/AgeOf40s
@@ -367,7 +408,9 @@ rdf:value rdf:type owl:DatatypeProperty .
                                                                            ]
                                                                          ) ;
                                                       rdf:type owl:Class
-                                                    ] .
+                                                    ] ;
+                                rdfs:comment "A class representing a person's age (40's)"@en ;
+                                rdfs:label "40's"@en .
 
 
 ###  http://plod.info/rdf/AgeOf50s
@@ -393,7 +436,9 @@ rdf:value rdf:type owl:DatatypeProperty .
                                                                            ]
                                                                          ) ;
                                                       rdf:type owl:Class
-                                                    ] .
+                                                    ] ;
+                                rdfs:comment "A class representing a person's age (50's)"@en ;
+                                rdfs:label "50's"@en .
 
 
 ###  http://plod.info/rdf/AgeOf60s
@@ -419,7 +464,9 @@ rdf:value rdf:type owl:DatatypeProperty .
                                                                            ]
                                                                          ) ;
                                                       rdf:type owl:Class
-                                                    ] .
+                                                    ] ;
+                                rdfs:comment "A class representing a person's age (60's)"@en ;
+                                rdfs:label "60's"@en .
 
 
 ###  http://plod.info/rdf/AgeOf70s
@@ -445,7 +492,9 @@ rdf:value rdf:type owl:DatatypeProperty .
                                                                            ]
                                                                          ) ;
                                                       rdf:type owl:Class
-                                                    ] .
+                                                    ] ;
+                                rdfs:comment "A class representing a person's age (70's)"@en ;
+                                rdfs:label "70's"@en .
 
 
 ###  http://plod.info/rdf/AgeOf80s
@@ -471,7 +520,9 @@ rdf:value rdf:type owl:DatatypeProperty .
                                                                            ]
                                                                          ) ;
                                                       rdf:type owl:Class
-                                                    ] .
+                                                    ] ;
+                                rdfs:comment "A class representing a person's age (80's)"@en ;
+                                rdfs:label "80's"@en .
 
 
 ###  http://plod.info/rdf/AgeOf90s
@@ -497,7 +548,9 @@ rdf:value rdf:type owl:DatatypeProperty .
                                                                            ]
                                                                          ) ;
                                                       rdf:type owl:Class
-                                                    ] .
+                                                    ] ;
+                                rdfs:comment "A class representing a person's age (90's)"@en ;
+                                rdfs:label "90's"@en .
 
 
 ###  http://plod.info/rdf/AgeOfUnder10s
@@ -514,7 +567,9 @@ rdf:value rdf:type owl:DatatypeProperty .
                                                                                 ]
                                                                               ) ;
                                                            rdf:type owl:Class
-                                                         ] .
+                                                         ] ;
+                                     rdfs:comment "A class representing a person's age (under teens)"@en ;
+                                     rdfs:label "under teens"@en .
 
 
 ###  http://plod.info/rdf/AgeOfUnder60
@@ -531,7 +586,9 @@ rdf:value rdf:type owl:DatatypeProperty .
                                                                                ]
                                                                              ) ;
                                                           rdf:type owl:Class
-                                                        ] .
+                                                        ] ;
+                                    rdfs:comment "A class representing a person's age (not older adults)"@en ;
+                                    rdfs:label "under 60's"@en .
 
 
 ###  http://plod.info/rdf/Airplane
@@ -563,6 +620,7 @@ rdf:value rdf:type owl:DatatypeProperty .
 ###  http://plod.info/rdf/BehavioralRiskContext
 <http://plod.info/rdf/BehavioralRiskContext> rdf:type owl:Class ;
                                              rdfs:subClassOf <http://plod.info/rdf/RiskContext> ;
+                                             rdfs:comment "This class was created to indicate infection risks caused by behavioral events."@en ;
                                              rdfs:label "Behavioral risk context"@en ,
                                                         "リスク行動状況"@ja .
 
@@ -577,6 +635,7 @@ rdf:value rdf:type owl:DatatypeProperty .
 ###  http://plod.info/rdf/CloseContact
 <http://plod.info/rdf/CloseContact> rdf:type owl:Class ;
                                     rdfs:subClassOf <http://plod.info/rdf/BehavioralRiskContext> ;
+                                    rdfs:comment "This class corresponds \"Close-contact settings such as close-range conversations” in the “Three Cs.” Please see https://www.mhlw.go.jp/content/3CS.pdf"@en ;
                                     rdfs:label "Close-contact"@en ,
                                                "密接"@ja .
 
@@ -584,6 +643,7 @@ rdf:value rdf:type owl:DatatypeProperty .
 ###  http://plod.info/rdf/ClosedSpace
 <http://plod.info/rdf/ClosedSpace> rdf:type owl:Class ;
                                    rdfs:subClassOf <http://plod.info/rdf/SpatialRiskContext> ;
+                                   rdfs:comment "This class corresponds \"Closed spaces with poor ventilation\" in the \"Three Cs.\" Please see https://www.mhlw.go.jp/content/3CS.pdf"@en ;
                                    rdfs:label "Confined and enclosed space"@en ,
                                               "密閉"@ja .
 
@@ -616,12 +676,14 @@ rdf:value rdf:type owl:DatatypeProperty .
 
 ###  http://plod.info/rdf/Context
 <http://plod.info/rdf/Context> rdf:type owl:Class ;
+                               rdfs:comment "The concept of context was introduced to attach additional or contextual semantic information to events and situations."@en ;
                                rdfs:label "Context"@en .
 
 
 ###  http://plod.info/rdf/Crowding
 <http://plod.info/rdf/Crowding> rdf:type owl:Class ;
                                 rdfs:subClassOf <http://plod.info/rdf/SpatialRiskContext> ;
+                                rdfs:comment "This class corresponds \"Crowded places with many people nearby” in the “Three Cs.” Please see https://www.mhlw.go.jp/content/3CS.pdf"@en ;
                                 rdfs:label "Crowding"@en ,
                                            "密集"@ja .
 
@@ -640,6 +702,7 @@ rdf:value rdf:type owl:DatatypeProperty .
 ###  http://plod.info/rdf/DropletReachableAction
 <http://plod.info/rdf/DropletReachableAction> rdf:type owl:Class ;
                                               rdfs:subClassOf <http://plod.info/rdf/RiskAction> ;
+                                              rdfs:comment "This class represents actions that may deliver airborne droplets to people nearby."@en ;
                                               rdfs:label "Droplet reachable action"@en ,
                                                          "飛沫到達行動"@ja .
 
@@ -796,6 +859,7 @@ rdf:value rdf:type owl:DatatypeProperty .
 ###  http://plod.info/rdf/IndirectContact
 <http://plod.info/rdf/IndirectContact> rdf:type owl:Class ;
                                        rdfs:subClassOf <http://plod.info/rdf/RiskAction> ;
+                                       rdfs:comment "This class represents actions that cause indirect contact."@en ;
                                        rdfs:label "Indirect contact"@en ,
                                                   "間接接触行動"@ja .
 
@@ -1118,13 +1182,16 @@ rdf:value rdf:type owl:DatatypeProperty .
 ###  http://plod.info/rdf/RiskAction
 <http://plod.info/rdf/RiskAction> rdf:type owl:Class ;
                                   rdfs:subClassOf <http://plod.info/rdf/Action> ;
+                                  rdfs:comment "This class represents actions that pose a risk of infection."@en ;
                                   rdfs:label "Risk activity"@en ,
                                              "リスク行動"@ja .
 
 
 ###  http://plod.info/rdf/RiskContext
 <http://plod.info/rdf/RiskContext> rdf:type owl:Class ;
-                                   rdfs:subClassOf <http://plod.info/rdf/Context> .
+                                   rdfs:subClassOf <http://plod.info/rdf/Context> ;
+                                   rdfs:comment "This class was created to add contextual semantic information about infection risk."@en ;
+                                   rdfs:label "Risk context"@en .
 
 
 ###  http://plod.info/rdf/School
@@ -1140,6 +1207,7 @@ rdf:value rdf:type owl:DatatypeProperty .
 
 ###  http://plod.info/rdf/Situation
 <http://plod.info/rdf/Situation> rdf:type owl:Class ;
+                                 rdfs:comment "This class represents the spatial situation at a certain location at a certain time."@en ;
                                  rdfs:label "Situation"@en ,
                                             "状況"@ja .
 
@@ -1147,6 +1215,7 @@ rdf:value rdf:type owl:DatatypeProperty .
 ###  http://plod.info/rdf/SpatialRiskContext
 <http://plod.info/rdf/SpatialRiskContext> rdf:type owl:Class ;
                                           rdfs:subClassOf <http://plod.info/rdf/RiskContext> ;
+                                          rdfs:comment "This class was created to indicate infection risks caused by spatial events."@en ;
                                           rdfs:label "Spatial risk context"@en ,
                                                      "リスク空間状況"@ja .
 
@@ -1167,6 +1236,7 @@ rdf:value rdf:type owl:DatatypeProperty .
 
 ###  http://plod.info/rdf/Time
 <http://plod.info/rdf/Time> rdf:type owl:Class ;
+                            rdfs:comment "This is abstract class for time."@en ;
                             rdfs:label "Time"@en .
 
 
@@ -1330,7 +1400,8 @@ rdf:value rdf:type owl:DatatypeProperty .
 ###  http://plod.info/rdf/eat
 <http://plod.info/rdf/eat> rdf:type owl:NamedIndividual ,
                                     <http://plod.info/rdf/DropletReachableAction> ;
-                           rdfs:label "食事"@ja .
+                           rdfs:label "eat"@en ,
+                                      "食事"@ja .
 
 
 ###  http://plod.info/rdf/facetoface

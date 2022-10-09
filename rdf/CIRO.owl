@@ -413,6 +413,7 @@
     <!-- http://plod.info/rdf/Action -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Action">
+        <rdfs:comment xml:lang="en">This class represents various human actions.</rdfs:comment>
         <rdfs:label xml:lang="en">Action</rdfs:label>
         <rdfs:label xml:lang="ja">行動</rdfs:label>
     </owl:Class>
@@ -955,6 +956,7 @@
 
     <owl:Class rdf:about="http://plod.info/rdf/CloseContact">
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/BehavioralRiskContext"/>
+        <rdfs:comment xml:lang="en">This class corresponds &quot;Close-contact settings such as close-range conversations” in the “Three Cs.” Please see https://www.mhlw.go.jp/content/3CS.pdf</rdfs:comment>
         <rdfs:label xml:lang="en">Close-contact</rdfs:label>
         <rdfs:label xml:lang="ja">密接</rdfs:label>
     </owl:Class>
@@ -965,6 +967,7 @@
 
     <owl:Class rdf:about="http://plod.info/rdf/ClosedSpace">
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/SpatialRiskContext"/>
+        <rdfs:comment xml:lang="en">This class corresponds &quot;Closed spaces with poor ventilation&quot; in the &quot;Three Cs.&quot; Please see https://www.mhlw.go.jp/content/3CS.pdf</rdfs:comment>
         <rdfs:label xml:lang="en">Confined and enclosed space</rdfs:label>
         <rdfs:label xml:lang="ja">密閉</rdfs:label>
     </owl:Class>
@@ -1022,6 +1025,7 @@
 
     <owl:Class rdf:about="http://plod.info/rdf/Crowding">
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/SpatialRiskContext"/>
+        <rdfs:comment xml:lang="en">This class corresponds &quot;Crowded places with many people nearby” in the “Three Cs.” Please see https://www.mhlw.go.jp/content/3CS.pdf</rdfs:comment>
         <rdfs:label xml:lang="en">Crowding</rdfs:label>
         <rdfs:label xml:lang="ja">密集</rdfs:label>
     </owl:Class>
@@ -1048,6 +1052,7 @@
 
     <owl:Class rdf:about="http://plod.info/rdf/DropletReachableAction">
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/RiskAction"/>
+        <rdfs:comment xml:lang="en">This class represents actions that may deliver airborne droplets to people nearby.</rdfs:comment>
         <rdfs:label xml:lang="en">Droplet reachable action</rdfs:label>
         <rdfs:label xml:lang="ja">飛沫到達行動</rdfs:label>
     </owl:Class>
@@ -1267,6 +1272,7 @@
 
     <owl:Class rdf:about="http://plod.info/rdf/IndirectContact">
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/RiskAction"/>
+        <rdfs:comment xml:lang="en">This class represents actions that cause indirect contact.</rdfs:comment>
         <rdfs:label xml:lang="en">Indirect contact</rdfs:label>
         <rdfs:label xml:lang="ja">間接接触行動</rdfs:label>
     </owl:Class>
@@ -1733,6 +1739,7 @@
 
     <owl:Class rdf:about="http://plod.info/rdf/RiskAction">
         <rdfs:subClassOf rdf:resource="http://plod.info/rdf/Action"/>
+        <rdfs:comment xml:lang="en">This class represents actions that pose a risk of infection.</rdfs:comment>
         <rdfs:label xml:lang="en">Risk activity</rdfs:label>
         <rdfs:label xml:lang="ja">リスク行動</rdfs:label>
     </owl:Class>
@@ -1768,6 +1775,7 @@
     <!-- http://plod.info/rdf/Situation -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Situation">
+        <rdfs:comment xml:lang="en">This class represents the spatial situation at a certain location at a certain time.</rdfs:comment>
         <rdfs:label xml:lang="en">Situation</rdfs:label>
         <rdfs:label xml:lang="ja">状況</rdfs:label>
     </owl:Class>
@@ -1808,6 +1816,7 @@
     <!-- http://plod.info/rdf/Time -->
 
     <owl:Class rdf:about="http://plod.info/rdf/Time">
+        <rdfs:comment xml:lang="en">This is abstract class for time.</rdfs:comment>
         <rdfs:label xml:lang="en">Time</rdfs:label>
     </owl:Class>
     

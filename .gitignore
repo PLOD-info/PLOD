@@ -2,3 +2,4 @@ test/*
 .DS_Store
 _test/*
 rdf/config
+myDocumentation

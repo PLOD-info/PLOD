@@ -1,0 +1,3230 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://schema.org/Organization"
+    }, {
+      "@id" : "http://schema.org/Person"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://plod.info/rdf/Situation"
+    }, {
+      "@id" : "http://schema.org/Event"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid101",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://plod.info/rdf/Age"
+    }, {
+      "@id" : "_:genid103"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid103",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid104"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+  } ]
+}, {
+  "@id" : "_:genid104",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid110"
+    }, {
+      "@id" : "_:genid106"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid106",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid108"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid108",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "79"
+  } ]
+}, {
+  "@id" : "_:genid110",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid112"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid112",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "70"
+  } ]
+}, {
+  "@id" : "_:genid114",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://plod.info/rdf/Age"
+    }, {
+      "@id" : "_:genid116"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid116",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid117"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+  } ]
+}, {
+  "@id" : "_:genid117",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid123"
+    }, {
+      "@id" : "_:genid119"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid119",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid121"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid121",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "89"
+  } ]
+}, {
+  "@id" : "_:genid123",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid125"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid125",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "80"
+  } ]
+}, {
+  "@id" : "_:genid127",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://plod.info/rdf/Age"
+    }, {
+      "@id" : "_:genid129"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid129",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid130"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://schema.org/Organization"
+    }, {
+      "@id" : "http://schema.org/Person"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid130",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid136"
+    }, {
+      "@id" : "_:genid132"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid132",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid134"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid134",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "99"
+  } ]
+}, {
+  "@id" : "_:genid136",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid138"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid138",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "90"
+  } ]
+}, {
+  "@id" : "_:genid140",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://plod.info/rdf/Age"
+    }, {
+      "@id" : "_:genid142"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid142",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid143"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+  } ]
+}, {
+  "@id" : "_:genid143",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid145"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid145",
+  "http://www.w3.org/2001/XMLSchema#maxExclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "10"
+  } ]
+}, {
+  "@id" : "_:genid147",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://plod.info/rdf/Age"
+    }, {
+      "@id" : "_:genid149"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid149",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid150"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+  } ]
+}, {
+  "@id" : "_:genid150",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid152"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid152",
+  "http://www.w3.org/2001/XMLSchema#maxExclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "60"
+  } ]
+}, {
+  "@id" : "_:genid154",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/alcoholDrinking"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid155",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/frequentlyBreath"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid156",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/yell"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid157",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/removeMask"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid158",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/highTouchSurface"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid159",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/yell"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://plod.info/rdf/Age"
+    }, {
+      "@id" : "_:genid18"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid160",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/removeMask"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid161",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/highTouchSurface"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid162",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/frequentlyBreath"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid163",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/highTouchSurface"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid164",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/removeMask"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid165",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/removeMask"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid166",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid177"
+    }, {
+      "@id" : "_:genid170"
+    }, {
+      "@id" : "_:genid168"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid168",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://plod.info/rdf/BehavioralRiskContext"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/context"
+  } ]
+}, {
+  "@id" : "_:genid170",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/time"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid171"
+  } ]
+}, {
+  "@id" : "_:genid171",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasDuration"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid172"
+  } ]
+}, {
+  "@id" : "_:genid172",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#numericDuration"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid173"
+  } ]
+}, {
+  "@id" : "_:genid173",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid175"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid175",
+  "http://www.w3.org/2001/XMLSchema#minExclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "15"
+  } ]
+}, {
+  "@id" : "_:genid177",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid181"
+    }, {
+      "@id" : "_:genid179"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid179",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://plod.info/rdf/DropletReachableAction"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/action"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid19"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+  } ]
+}, {
+  "@id" : "_:genid181",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://schema.org/location"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid182"
+  } ]
+}, {
+  "@id" : "_:genid182",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://plod.info/rdf/DropletReachableAction"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid183",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid187"
+    }, {
+      "@id" : "_:genid185"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid185",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://plod.info/rdf/SpatialRiskContext"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/context"
+  } ]
+}, {
+  "@id" : "_:genid187",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/isSituationOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid188"
+  } ]
+}, {
+  "@id" : "_:genid188",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://plod.info/rdf/IndoorFacility"
+    }, {
+      "@id" : "http://plod.info/rdf/Public_transportation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid21"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid191",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid195"
+    }, {
+      "@id" : "_:genid193"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid193",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://plod.info/rdf/SpatialRiskContext"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/context"
+  } ]
+}, {
+  "@id" : "_:genid195",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://plod.info/rdf/BehavioralRiskContext"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/context"
+  } ]
+}, {
+  "@id" : "_:genid196",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/alcoholDrinking"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid197",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/shareThing"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid198",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/frequentlyBreath"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid199",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/highTouchSurface"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid200",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/removeMask"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid201",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/yell"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid202",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/highTouchSurface"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid203",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/highTouchSurface"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid204",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid215"
+    }, {
+      "@id" : "_:genid208"
+    }, {
+      "@id" : "_:genid206"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid206",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://plod.info/rdf/BehavioralRiskContext"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/context"
+  } ]
+}, {
+  "@id" : "_:genid208",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/time"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid209"
+  } ]
+}, {
+  "@id" : "_:genid209",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasDuration"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid210"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "100"
+  } ]
+}, {
+  "@id" : "_:genid210",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#numericDuration"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid211"
+  } ]
+}, {
+  "@id" : "_:genid211",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid213"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid213",
+  "http://www.w3.org/2001/XMLSchema#minExclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "15"
+  } ]
+}, {
+  "@id" : "_:genid215",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid219"
+    }, {
+      "@id" : "_:genid217"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid217",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://plod.info/rdf/DropletReachableAction"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/action"
+  } ]
+}, {
+  "@id" : "_:genid219",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://schema.org/location"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid220"
+  } ]
+}, {
+  "@id" : "_:genid220",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://plod.info/rdf/DropletReachableAction"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid221",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/isSituationOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid222"
+  } ]
+}, {
+  "@id" : "_:genid222",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://plod.info/rdf/IndoorFacility"
+    }, {
+      "@id" : "http://plod.info/rdf/Public_transportation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid225",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid229"
+    }, {
+      "@id" : "_:genid227"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid227",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://plod.info/rdf/SpatialRiskContext"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/context"
+  } ]
+}, {
+  "@id" : "_:genid229",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://plod.info/rdf/BehavioralRiskContext"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/context"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://plod.info/rdf/Age"
+    }, {
+      "@id" : "_:genid25"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid230",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/highTouchSurface"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid231",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/alcoholDrinking"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid232",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/frequentlyBreath"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid233",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/yell"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid234",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/highTouchSurface"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid235",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/removeMask"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid236",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/frequentlyBreath"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid237",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/highTouchSurface"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid238",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/removeMask"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid239",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/yell"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid240",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/highTouchSurface"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid241",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/highTouchSurface"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid242",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/sing"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid243",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/eat"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid244",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/removeMask"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid245",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/shareThing"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid246",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/talk"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid247",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://plod.info/rdf/talk"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://plod.info/rdf/afford"
+  } ]
+}, {
+  "@id" : "_:genid248",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://resource.hutime.org/ontology/hasPossibleBeginning"
+  } ]
+}, {
+  "@id" : "_:genid249",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://resource.hutime.org/ontology/hasPossibleEnd"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid26"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+  } ]
+}, {
+  "@id" : "_:genid250",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://resource.hutime.org/ontology/hasPossibleJdBeginning"
+  } ]
+}, {
+  "@id" : "_:genid251",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://resource.hutime.org/ontology/hasPossibleJdEnd"
+  } ]
+}, {
+  "@id" : "_:genid252",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://resource.hutime.org/ontology/hasRangeOfBeginning"
+  } ]
+}, {
+  "@id" : "_:genid253",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://resource.hutime.org/ontology/hasRangeOfEnd"
+  } ]
+}, {
+  "@id" : "_:genid254",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://resource.hutime.org/ontology/hasReliableBeginning"
+  } ]
+}, {
+  "@id" : "_:genid255",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://resource.hutime.org/ontology/hasReliableEnd"
+  } ]
+}, {
+  "@id" : "_:genid256",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://resource.hutime.org/ontology/hasReliableJdBeginning"
+  } ]
+}, {
+  "@id" : "_:genid257",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://resource.hutime.org/ontology/hasReliableJdEnd"
+  } ]
+}, {
+  "@id" : "_:genid258",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://plod.info/rdf/alcoholDrinking"
+    }, {
+      "@id" : "http://plod.info/rdf/facetoface"
+    }, {
+      "@id" : "http://plod.info/rdf/fiveOrMorePeople"
+    }, {
+      "@id" : "http://plod.info/rdf/relax"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid32"
+    }, {
+      "@id" : "_:genid28"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid263",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://plod.info/rdf/crowded"
+    }, {
+      "@id" : "http://plod.info/rdf/smallSpace"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid266",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://plod.info/rdf/eat"
+    }, {
+      "@id" : "http://plod.info/rdf/frequentlyBreath"
+    }, {
+      "@id" : "http://plod.info/rdf/removeMask"
+    }, {
+      "@id" : "http://plod.info/rdf/sing"
+    }, {
+      "@id" : "http://plod.info/rdf/talk"
+    }, {
+      "@id" : "http://plod.info/rdf/yell"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid273",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://plod.info/rdf/highTouchSurface"
+    }, {
+      "@id" : "http://plod.info/rdf/shareThing"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid30"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "19"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid34"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "10"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://plod.info/rdf/Age"
+    }, {
+      "@id" : "_:genid38"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid39"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid45"
+    }, {
+      "@id" : "_:genid41"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://plod.info/rdf/Situation"
+    }, {
+      "@id" : "http://schema.org/Event"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid43"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "29"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid47"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "20"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://plod.info/rdf/Age"
+    }, {
+      "@id" : "_:genid51"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid52"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid58"
+    }, {
+      "@id" : "_:genid54"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid56"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "39"
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid60"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "30"
+  } ]
+}, {
+  "@id" : "_:genid62",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://plod.info/rdf/Age"
+    }, {
+      "@id" : "_:genid64"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid65"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid71"
+    }, {
+      "@id" : "_:genid67"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid67",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid69"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "49"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://schema.org/Organization"
+    }, {
+      "@id" : "http://schema.org/Person"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid73"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid73",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "40"
+  } ]
+}, {
+  "@id" : "_:genid75",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://plod.info/rdf/Age"
+    }, {
+      "@id" : "_:genid77"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid77",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid78"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+  } ]
+}, {
+  "@id" : "_:genid78",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid84"
+    }, {
+      "@id" : "_:genid80"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid80",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid82"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid82",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "59"
+  } ]
+}, {
+  "@id" : "_:genid84",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid86"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid86",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "50"
+  } ]
+}, {
+  "@id" : "_:genid88",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://plod.info/rdf/Age"
+    }, {
+      "@id" : "_:genid90"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid90",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid91"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+  } ]
+}, {
+  "@id" : "_:genid91",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid97"
+    }, {
+      "@id" : "_:genid93"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid93",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid95"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid95",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "69"
+  } ]
+}, {
+  "@id" : "_:genid97",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid99"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid99",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "60"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Action",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents various human actions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Action"
+  }, {
+    "@language" : "ja",
+    "@value" : "行動"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Afternoon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/PartOfDay"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Age",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Person's age"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Age"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/AgeOf100s",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A class representing a person's age (100's)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "100's"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/AgeOf10s",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A class representing a person's age (teens)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "10's"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid23"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/AgeOf20s",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A class representing a person's age (twenties)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "20's"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid36"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/AgeOf30s",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A class representing a person's age (thirties)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "30's"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid49"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/AgeOf40s",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A class representing a person's age (40's)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "40's"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid62"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/AgeOf50s",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A class representing a person's age (50's)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "50's"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid75"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/AgeOf60s",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A class representing a person's age (60's)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "60's"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid88"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/AgeOf70s",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A class representing a person's age (70's)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "70's"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid101"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/AgeOf80s",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A class representing a person's age (80's)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "80's"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid114"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/AgeOf90s",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A class representing a person's age (90's)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "90's"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid127"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/AgeOfUnder10s",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A class representing a person's age (under teens)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "under teens"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid140"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/AgeOfUnder60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A class representing a person's age (not older adults)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "under 60's"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid147"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Airplane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Airplane"
+  }, {
+    "@language" : "ja",
+    "@value" : "飛行機"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/Public_transportation"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Bar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bar"
+  }, {
+    "@language" : "ja",
+    "@value" : "バー/居酒屋"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/IndoorFacility"
+  }, {
+    "@id" : "_:genid154"
+  }, {
+    "@id" : "_:genid155"
+  }, {
+    "@id" : "_:genid156"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/BehavioralRiskContext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class was created to indicate infection risks caused by behavioral events."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Behavioral risk context"
+  }, {
+    "@language" : "ja",
+    "@value" : "リスク行動状況"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/RiskContext"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Bus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bus"
+  }, {
+    "@language" : "ja",
+    "@value" : "バス"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/Public_transportation"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/CIRO.owl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This ontology expresses infection risks of COVID-19, toward automated assessment of infection risks of individuals."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "COVID-19 Infection Risk Ontology (CIRO)"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/CloseContact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class corresponds \"Close-contact settings such as close-range conversations” in the “Three Cs.” Please see https://www.mhlw.go.jp/content/3CS.pdf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Close-contact"
+  }, {
+    "@language" : "ja",
+    "@value" : "密接"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/BehavioralRiskContext"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/ClosedSpace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class corresponds \"Closed spaces with poor ventilation\" in the \"Three Cs.\" Please see https://www.mhlw.go.jp/content/3CS.pdf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Confined and enclosed space"
+  }, {
+    "@language" : "ja",
+    "@value" : "密閉"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/SpatialRiskContext"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/CoffeeShop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Coffee_shop"
+  }, {
+    "@language" : "ja",
+    "@value" : "喫茶店"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/IndoorFacility"
+  }, {
+    "@id" : "_:genid157"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/ConcertHall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Concert hall"
+  }, {
+    "@language" : "ja",
+    "@value" : "コンサートホール"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/IndoorFacility"
+  }, {
+    "@id" : "_:genid158"
+  }, {
+    "@id" : "_:genid159"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Context",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The concept of context was introduced to attach additional or contextual semantic information to events and situations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Context"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Crowding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class corresponds \"Crowded places with many people nearby” in the “Three Cs.” Please see https://www.mhlw.go.jp/content/3CS.pdf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Crowding"
+  }, {
+    "@language" : "ja",
+    "@value" : "密集"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/SpatialRiskContext"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/DentalClinic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dental clinic"
+  }, {
+    "@language" : "ja",
+    "@value" : "歯科医院"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/IndoorFacility"
+  }, {
+    "@id" : "_:genid160"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/DropletReachableAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents actions that may deliver airborne droplets to people nearby."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Droplet reachable action"
+  }, {
+    "@language" : "ja",
+    "@value" : "飛沫到達行動"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/RiskAction"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Evening",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/PartOfDay"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/GroceryStore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Grocery store"
+  }, {
+    "@language" : "ja",
+    "@value" : "食料品店"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/IndoorFacility"
+  }, {
+    "@id" : "_:genid161"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Gym",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Gym"
+  }, {
+    "@language" : "ja",
+    "@value" : "ジム"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/IndoorFacility"
+  }, {
+    "@id" : "_:genid162"
+  }, {
+    "@id" : "_:genid163"
+  }, {
+    "@id" : "_:genid164"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/HairSalon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hair salon"
+  }, {
+    "@language" : "ja",
+    "@value" : "美容院"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/IndoorFacility"
+  }, {
+    "@id" : "_:genid165"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/HighLevelCloseContact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "High-level Close-contact"
+  }, {
+    "@language" : "ja",
+    "@value" : "高密接"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/MediumLevelCloseContact"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid166"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/HighLevelClosedSpace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "High-level closed space"
+  }, {
+    "@language" : "ja",
+    "@value" : "高密閉"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/MediumLevelClosedSpace"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid183"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/HighLevelCrowding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "High-level crowding"
+  }, {
+    "@language" : "ja",
+    "@value" : "高密集"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/MediumLevelCrowding"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid191"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Home",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Home"
+  }, {
+    "@language" : "ja",
+    "@value" : "家"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/IndoorFacility"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Hospital",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hospital"
+  }, {
+    "@language" : "ja",
+    "@value" : "病院"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/IndoorFacility"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/IndirectContact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents actions that cause indirect contact."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Indirect contact"
+  }, {
+    "@language" : "ja",
+    "@value" : "間接接触行動"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/RiskAction"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/IndoorFacility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Indoor facility"
+  }, {
+    "@language" : "ja",
+    "@value" : "屋内施設"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Place"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/IndoorPartyVenue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Indoor party venue"
+  }, {
+    "@language" : "ja",
+    "@value" : "インドアパーティ会場"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/IndoorFacility"
+  }, {
+    "@id" : "_:genid196"
+  }, {
+    "@id" : "_:genid197"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/IndoorSportsFacility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Indoor sports facility"
+  }, {
+    "@language" : "ja",
+    "@value" : "屋内スポーツ施設"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/IndoorFacility"
+  }, {
+    "@id" : "_:genid198"
+  }, {
+    "@id" : "_:genid199"
+  }, {
+    "@id" : "_:genid200"
+  }, {
+    "@id" : "_:genid201"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/LiveTheater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Live theater"
+  }, {
+    "@language" : "ja",
+    "@value" : "劇場"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/IndoorFacility"
+  }, {
+    "@id" : "_:genid202"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/MedicalOffice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Medical office"
+  }, {
+    "@language" : "ja",
+    "@value" : "診療所"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/IndoorFacility"
+  }, {
+    "@id" : "_:genid203"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/MediumLevelCloseContact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Medium-level Close-contact"
+  }, {
+    "@language" : "ja",
+    "@value" : "中密接"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/CloseContact"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid204"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/MediumLevelClosedSpace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Medium-level closed space"
+  }, {
+    "@language" : "ja",
+    "@value" : "中密閉"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/ClosedSpace"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid221"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/MediumLevelCrowding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Medium-level crowding"
+  }, {
+    "@language" : "ja",
+    "@value" : "中密集"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/Crowding"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid225"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Morning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/PartOfDay"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/MovieTheater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Movie theater"
+  }, {
+    "@language" : "ja",
+    "@value" : "映画館"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/IndoorFacility"
+  }, {
+    "@id" : "_:genid230"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Museum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Museum"
+  }, {
+    "@language" : "ja",
+    "@value" : "博物館"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/IndoorFacility"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Night",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/PartOfDay"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Nightclub",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Nightclub"
+  }, {
+    "@language" : "ja",
+    "@value" : "ナイトクラブ"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/IndoorFacility"
+  }, {
+    "@id" : "_:genid231"
+  }, {
+    "@id" : "_:genid232"
+  }, {
+    "@id" : "_:genid233"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Office",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Office"
+  }, {
+    "@language" : "ja",
+    "@value" : "オフィス"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/IndoorFacility"
+  }, {
+    "@id" : "_:genid234"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/OutdoorFacility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Outdoor facility"
+  }, {
+    "@language" : "ja",
+    "@value" : "屋外施設"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Place"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/OutdoorRestaurant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Outdoor restaurant"
+  }, {
+    "@language" : "ja",
+    "@value" : "屋外レストラン"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/OutdoorFacility"
+  }, {
+    "@id" : "_:genid235"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/OutdoorSportsFacility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Outdoor sports facility"
+  }, {
+    "@language" : "ja",
+    "@value" : "屋外スポーツ施設"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/OutdoorFacility"
+  }, {
+    "@id" : "_:genid236"
+  }, {
+    "@id" : "_:genid237"
+  }, {
+    "@id" : "_:genid238"
+  }, {
+    "@id" : "_:genid239"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/PartOfDay",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2006/time#ProperInterval"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Public_transportation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Public transportation"
+  }, {
+    "@language" : "ja",
+    "@value" : "公共交通機関"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Place"
+  }, {
+    "@id" : "_:genid240"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Railway",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Railway"
+  }, {
+    "@language" : "ja",
+    "@value" : "電車"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/Public_transportation"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/ReligiousFacility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Religious facility"
+  }, {
+    "@language" : "ja",
+    "@value" : "宗教施設"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/IndoorFacility"
+  }, {
+    "@id" : "_:genid241"
+  }, {
+    "@id" : "_:genid242"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Restaurant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Restaurant"
+  }, {
+    "@language" : "ja",
+    "@value" : "レストラン"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/IndoorFacility"
+  }, {
+    "@id" : "_:genid243"
+  }, {
+    "@id" : "_:genid244"
+  }, {
+    "@id" : "_:genid245"
+  }, {
+    "@id" : "_:genid246"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/RetailStore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Retail store"
+  }, {
+    "@language" : "ja",
+    "@value" : "小売店"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/IndoorFacility"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/RiskAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents actions that pose a risk of infection."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Risk activity"
+  }, {
+    "@language" : "ja",
+    "@value" : "リスク行動"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/Action"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/RiskContext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class was created to add contextual semantic information about infection risk."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Risk context"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/Context"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/School",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "School"
+  }, {
+    "@language" : "ja",
+    "@value" : "学校"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/IndoorFacility"
+  }, {
+    "@id" : "_:genid247"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Situation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents the spatial situation at a certain location at a certain time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Situation"
+  }, {
+    "@language" : "ja",
+    "@value" : "状況"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/SpatialRiskContext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class was created to indicate infection risks caused by spatial events."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Spatial risk context"
+  }, {
+    "@language" : "ja",
+    "@value" : "リスク空間状況"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/RiskContext"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Subway",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Subway"
+  }, {
+    "@language" : "ja",
+    "@value" : "地下鉄"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/Public_transportation"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Taxi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Taxi or ride-sharing service"
+  }, {
+    "@language" : "ja",
+    "@value" : "タクシー/ライドシェアサービス"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/Public_transportation"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/Time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is abstract class for time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Time"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/action",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://plod.info/rdf/Action"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/afford",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://plod.info/rdf/Action"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/age",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://plod.info/rdf/Age"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://plod.info/rdf/event"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/alcoholDrinking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://plod.info/rdf/BehavioralRiskContext"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Alcohol drinking"
+  }, {
+    "@language" : "ja",
+    "@value" : "飲酒"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/city",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Place"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/context",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://plod.info/rdf/Context"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/crowded",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://plod.info/rdf/SpatialRiskContext"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "crowded"
+  }, {
+    "@language" : "ja",
+    "@value" : "混んでいる"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/distance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://plod.info/rdf/eat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://plod.info/rdf/DropletReachableAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "eat"
+  }, {
+    "@language" : "ja",
+    "@value" : "食事"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid7"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/Event"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/facetoface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://plod.info/rdf/BehavioralRiskContext"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Face-to-face"
+  }, {
+    "@language" : "ja",
+    "@value" : "対面"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/fiveOrMorePeople",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://plod.info/rdf/BehavioralRiskContext"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "ja",
+    "@value" : "5 or more people"
+  }, {
+    "@language" : "ja",
+    "@value" : "5人以上"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/followingEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/Event"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://plod.info/rdf/precedingEvent"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/frequentlyBreath",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://plod.info/rdf/DropletReachableAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Frequently breath"
+  }, {
+    "@language" : "ja",
+    "@value" : "頻繁な呼吸"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/highTouchSurface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://plod.info/rdf/IndirectContact"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "High-touch surface"
+  }, {
+    "@language" : "ja",
+    "@value" : "よく物を触る"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/isSituationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://plod.info/rdf/Situation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/Place"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/precedingEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/Event"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/relax",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://plod.info/rdf/BehavioralRiskContext"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "relax"
+  }, {
+    "@language" : "ja",
+    "@value" : "気が緩む"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/removeMask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://plod.info/rdf/DropletReachableAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Remove a mask"
+  }, {
+    "@language" : "ja",
+    "@value" : "マスクを外す"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/shareThing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://plod.info/rdf/IndirectContact"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "share things"
+  }, {
+    "@language" : "ja",
+    "@value" : "物の共有"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/sing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://plod.info/rdf/DropletReachableAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sing"
+  }, {
+    "@language" : "ja",
+    "@value" : "歌う"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/situation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://plod.info/rdf/Situation"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/situationOfAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://plod.info/rdf/BehavioralRiskContext"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://plod.info/rdf/situation"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/situationOfSpace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://plod.info/rdf/SpatialRiskContext"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://plod.info/rdf/situation"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/smallSpace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://plod.info/rdf/SpatialRiskContext"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "small space"
+  }, {
+    "@language" : "ja",
+    "@value" : "狭い空間"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/talk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://plod.info/rdf/DropletReachableAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "talk"
+  }, {
+    "@language" : "ja",
+    "@value" : "会話する"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid10"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://plod.info/rdf/Time"
+  } ]
+}, {
+  "@id" : "http://plod.info/rdf/yell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://plod.info/rdf/DropletReachableAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "yell"
+  }, {
+    "@language" : "ja",
+    "@value" : "叫ぶ"
+  } ]
+}, {
+  "@id" : "http://resource.hutime.org/ontology/UncertainTimeInterval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The class of uncertain time interval."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Uncertain Time Interval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2006/time#Interval"
+  }, {
+    "@id" : "_:genid248"
+  }, {
+    "@id" : "_:genid249"
+  }, {
+    "@id" : "_:genid250"
+  }, {
+    "@id" : "_:genid251"
+  }, {
+    "@id" : "_:genid252"
+  }, {
+    "@id" : "_:genid253"
+  }, {
+    "@id" : "_:genid254"
+  }, {
+    "@id" : "_:genid255"
+  }, {
+    "@id" : "_:genid256"
+  }, {
+    "@id" : "_:genid257"
+  } ]
+}, {
+  "@id" : "http://resource.hutime.org/ontology/hasPossibleBeginning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Begnning point of a possible time interval in an uncerain time interval."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://resource.hutime.org/ontology/UncertainTimeInterval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "possible beginning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ]
+}, {
+  "@id" : "http://resource.hutime.org/ontology/hasPossibleEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "End point of a possible time interval in an uncerain time interval."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://resource.hutime.org/ontology/UncertainTimeInterval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "possible end"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ]
+}, {
+  "@id" : "http://resource.hutime.org/ontology/hasPossibleJdBeginning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://resource.hutime.org/ontology/UncertainTimeInterval"
+  } ]
+}, {
+  "@id" : "http://resource.hutime.org/ontology/hasPossibleJdEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://resource.hutime.org/ontology/UncertainTimeInterval"
+  } ]
+}, {
+  "@id" : "http://resource.hutime.org/ontology/hasRangeOfBeginning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Beginning range an uncerain time interval."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://resource.hutime.org/ontology/UncertainTimeInterval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "beginning range"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://resource.hutime.org/ontology/UncertainTimeInterval"
+  } ]
+}, {
+  "@id" : "http://resource.hutime.org/ontology/hasRangeOfEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "End range an uncerain time interval."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://resource.hutime.org/ontology/UncertainTimeInterval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "end range"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://resource.hutime.org/ontology/UncertainTimeInterval"
+  } ]
+}, {
+  "@id" : "http://resource.hutime.org/ontology/hasReliableBeginning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Begnning point of a reliable time interval in an uncerain time interval."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://resource.hutime.org/ontology/UncertainTimeInterval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "reliable beginning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ]
+}, {
+  "@id" : "http://resource.hutime.org/ontology/hasReliableEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "End point of a reliable time interval in an uncerain time interval."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://resource.hutime.org/ontology/UncertainTimeInterval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "reliable end"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ]
+}, {
+  "@id" : "http://resource.hutime.org/ontology/hasReliableJdBeginning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://resource.hutime.org/ontology/UncertainTimeInterval"
+  } ]
+}, {
+  "@id" : "http://resource.hutime.org/ontology/hasReliableJdEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://resource.hutime.org/ontology/UncertainTimeInterval"
+  } ]
+}, {
+  "@id" : "http://schema.org/Article",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/CreativeWork"
+  } ]
+}, {
+  "@id" : "http://schema.org/CreativeWork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://schema.org/Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Event"
+  } ]
+}, {
+  "@id" : "http://schema.org/GovernmnetOrganization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Organization"
+  } ]
+}, {
+  "@id" : "http://schema.org/InfectiousDisease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/MedicalCondition"
+  } ]
+}, {
+  "@id" : "http://schema.org/MedicalCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://schema.org/MedicalCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/MedicalCode"
+  } ]
+}, {
+  "@id" : "http://schema.org/MedicalEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://schema.org/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://schema.org/Patient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Person"
+  } ]
+}, {
+  "@id" : "http://schema.org/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Person"
+  } ]
+}, {
+  "@id" : "http://schema.org/Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Place"
+  } ]
+}, {
+  "@id" : "http://schema.org/Report",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Article"
+  } ]
+}, {
+  "@id" : "http://schema.org/WebPage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/CreativeWork"
+  } ]
+}, {
+  "@id" : "http://schema.org/code",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/MedicalEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/MedicalCode"
+  } ]
+}, {
+  "@id" : "http://schema.org/healthCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/MedicalCondition"
+  } ]
+}, {
+  "@id" : "http://schema.org/homeLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/Place"
+  } ]
+}, {
+  "@id" : "http://schema.org/location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/Place"
+  } ]
+}, {
+  "@id" : "http://schema.org/mainEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/CreativeWork"
+  } ]
+}, {
+  "@id" : "http://schema.org/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/CreativeWork"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "http://schema.org/subjectOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/CreativeWork"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#Instant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#Interval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#ProperInterval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://resource.hutime.org/ontology/UncertainTimeInterval"
+  }, {
+    "@id" : "http://www.w3.org/2006/time#Interval"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#TemporalDuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/Time"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#TemporalEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://plod.info/rdf/Time"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#hasBegininng",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2006/time#Interval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2006/time#Instant"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#hasDuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#hasEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2006/time#Interval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2006/time#Instant"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#numericDuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+} ]

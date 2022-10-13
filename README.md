@@ -1,4 +1,4 @@
-# Patients Locational Ontology-based Data (PLOD)
+# Patient Locational Ontology-based Data (PLOD)
 (Under Construction)
 
 

@@ -6,7 +6,7 @@
 - [COVID-19感染リスク推論オントロジー（CIRO）](#covid-19感染リスク推論オントロジーciro)
 - [オントロジーに基づく個々のデータ（PLOD）](./rdf/example/)
 - [PLODの使用例](./sparql/)
-- [3つの密推論実験の再現](#3つの密推論実験の再現)
+- [3つの密の推論実験の結果](#3つの密の推論実験の結果)
 
 ## 概要
 - COVID-19の感染拡大防止に向けて，日本国政府では「[3つの密](https://www.kantei.go.jp/jp/content/000061868.pdf)」（以下，三密）や，「[5つの場面](https://corona.go.jp/prevention/pdf/infection-20201117.pdf)」を提言しています．
@@ -193,7 +193,7 @@ select ?s ?type where {
 }
 ```
 
-## 3つの密推論実験の再現
+## 3つの密の推論実験の結果
 3つの密を更に3段階（高リスク、中リスク、低リスク(リスク無し)）に分けて，与えられた行動イベントや空間的な状況がどのリスクに該当するか,OWL 2 DL推論により判定する実験を行いました.
 
 OWL 2 DL推論が可能な[HermiT](http://www.hermit-reasoner.com/)を内包する[Owlready2](https://owlready2.readthedocs.io/en/v0.37/)を使用した実験用スクリプトを公開しています。各のリスクパターンの疑似データ（PLOD）を自動的に作成し,CIROを用いて正しく推論できるか評価を行います.
@@ -202,6 +202,11 @@ OWL 2 DL推論が可能な[HermiT](http://www.hermit-reasoner.com/)を内包す�
 
 実験スクリプトおよび結果：  
 <a href="https://doi.org/10.5281/zenodo.6482275"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.6482275.svg" alt="DOI"></a>
+
+## リファレンス
+
+- 江上周作，山本泰智，大向一輝，奥村貴史: オントロジーを用いたCOVID-19感染リスク行動の推論，第56回人工知能学会セマンティックウェブとオントロジー研究会, SIG-SWO-056-16 (2022)[[J-STAGE]](https://www.jstage.jst.go.jp/article/jsaisigtwo/2022/SWO-056/2022_16/_article/-char/ja/)
+
 ## ライセンス
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><a xmlns:cc="http://creativecommons.org/ns#" href="https://profile.idease.info/" property="cc:attributionName" rel="cc:attributionURL">江上周作</a>，山本泰智，大向一輝，奥村貴史 作『<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Patient Locational Ontology-based Data (PLOD)</span>』は<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">クリエイティブ・コモンズ 表示 4.0 国際 ライセンス</a>で提供されています。
 

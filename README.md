@@ -211,4 +211,4 @@ OWL 2 DL推論が可能な[HermiT](http://www.hermit-reasoner.com/)を内包す�
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><a xmlns:cc="http://creativecommons.org/ns#" href="https://profile.idease.info/" property="cc:attributionName" rel="cc:attributionURL">江上周作</a>，山本泰智，大向一輝，奥村貴史 作『<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Patient Locational Ontology-based Data (PLOD)</span>』は<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">クリエイティブ・コモンズ 表示 4.0 国際 ライセンス</a>で提供されています。
 
 ## 謝辞
-本研究は，AMEDの課題番号JP20he0622042の支援を受けた．
+本研究は，AMEDの課題番号JP20he0622042の支援を受けた．また，神崎正英氏，坂根昌一氏，伊藤真和吏氏，野本昌子氏には，本研究を進める上で様々なご助力を頂いた．ここに深く感謝の意を表する．

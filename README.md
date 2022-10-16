@@ -40,7 +40,7 @@
         <td>URI</td>
     </tr>
     <tr>
-        <td>plod:</td>
+        <td>:</td>
         <td>http://plod.info/rdf/</td>
     </tr>
     <tr>

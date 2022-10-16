@@ -33,6 +33,32 @@
 <img src="./diagram/ontology_revise.png" alt="CIROクラス図">
 
 <details>
+<summary>接頭辞</summary>
+<table>
+    <tr>
+        <td>Prefix</td>
+        <td>URI</td>
+    </tr>
+    <tr>
+        <td>plod:</td>
+        <td>http://plod.info/rdf/</td>
+    </tr>
+    <tr>
+        <td>time:</td>
+        <td>http://www.w3.org/2006/time#</td>
+    </tr>
+    <tr>
+        <td>schema:</td>
+        <td>http://schema.org/</td>
+    </tr>
+    <tr>
+        <td>xsd:</td>
+        <td>http://www.w3.org/2001/XMLSchema#</td>
+    </tr>
+</table>
+</details>
+
+<details>
 <summary>代表的なプロパティ</summary>
 <table>
     <tr>

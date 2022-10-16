@@ -32,6 +32,66 @@
 黄色が新規に作成したクラス。青色が再利用したクラス。
 <img src="./diagram/ontology_revise.png" alt="CIROクラス図">
 
+<details>
+<summary>代表的なプロパティ</summary>
+<table>
+    <tr>
+        <td>QName</td>
+        <td>Domains</td>
+        <td>Ranges</td>
+        <td>Description</td>
+    </tr>
+    <tr>
+        <td>schema:location</td>
+        <td>schema:Event</td>
+        <td>schema:Place</td>
+        <td>イベントの場所を表す．</td>
+    </tr>
+    <tr>
+        <td>:action</td>
+        <td>schema:Event</td>
+        <td>:Action</td>
+        <td>イベントにおける人の行動を表す．</td>
+    </tr>
+    <tr>
+        <td>:agent</td>
+        <td>schema:Event</td>
+        <td>schema:Person</td>
+        <td>イベントの主体．</td>
+    </tr>
+    <tr>
+        <td>:time</td>
+        <td>schema:Event or schema:Situation</td>
+        <td>:Time</td>
+        <td>イベントや状況の時間を表す．</td>
+    </tr>
+    <tr>
+        <td>:followingEvent</td>
+        <td>schema:Event</td>
+        <td>schema:Event</td>
+        <td>次のイベントを表す．時系列的に直後のイベントを意味する．</td>
+    </tr>
+    <tr>
+        <td>:context</td>
+        <td>schema:Event</td>
+        <td>:Context</td>
+        <td>イベントや状況に背景的・文脈的なセマンティクスを付与する．CIROにおいては主に空間的または行動的なリスク要因を表すのに使用される．</td>
+    </tr>
+    <tr>
+        <td>:afford</td>
+        <td>schema:Place</td>
+        <td>:Action</td>
+        <td>場所が誘引する人の行動を表す．</td>
+    </tr>
+    <tr>
+        <td>:isSituationOf</td>
+        <td>:Situation</td>
+        <td>schema:Place</td>
+        <td>どの場所の状況であるか表す．</td>
+    </tr>
+</table>
+</details>
+
 ## オントロジーに基づく個々のデータ（PLOD）
 
 現在，構築したオントロジーを保健所のシステムに応用することを想定しています．そこで，システムへの導入を前に，行動調査を模した擬似的な行動シナリオの模擬データを作成し，オントロジーに基づいてナレッジグラフ化しました．例えば，下図のような行動イベントがナレッジグラフ化されています．赤矢印はCIROのOWL推論により導出されるリンクです．

@@ -59,6 +59,72 @@
 </details>
 
 <details>
+<summary>代表的なクラス</summary>
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Description</td>
+    </tr>
+    <tr>
+        <td>schema:Event</td>
+        <td>イベント</td>
+    </tr>
+    <tr>
+        <td>:Situation</td>
+        <td>場所の状況</td>
+    </tr>
+    <tr>
+        <td>:Action</td>
+        <td>人の行動</td>
+    </tr>
+    <tr>
+        <td>:RiskAction</td>
+        <td>リスク行動</td>
+    </tr>
+    <tr>
+        <td>:IndirectContact</td>
+        <td>間接接触行動</td>
+    </tr>
+    <tr>
+        <td>:DropletReachableAction</td>
+        <td>飛沫到達行動</td>
+    </tr>
+    <tr>
+        <td>:Context</td>
+        <td>コンテキスト。RiskContextをより抽象化したクラス。</td>
+    </tr>
+    <tr>
+        <td>:RiskContext</td>
+        <td>イベントや状況に関してリスク行動的な、またはリスク空間的なメタデータを表すクラス</td>
+    </tr>
+    <tr>
+        <td>:SpatialRiskContext</td>
+        <td>空間的な感染リスクを表す。</td>
+    </tr>
+    <tr>
+        <td>:BeihavioralRiskContext</td>
+        <td>行動的な感染リスクを表す。</td>
+    </tr>
+    <tr>
+        <td>:Crowding</td>
+        <td>密集</td>
+    </tr>
+    <tr>
+        <td>:ClosedSpace</td>
+        <td>密閉</td>
+    </tr>
+    <tr>
+        <td>:CloseContact</td>
+        <td>密接</td>
+    </tr>
+    <tr>
+        <td>:Time</td>
+        <td>時間（定性的、定量的なものを含む）</td>
+    </tr>
+</table>
+</details>
+
+<details>
 <summary>代表的なプロパティ</summary>
 <table>
     <tr>

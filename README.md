@@ -379,8 +379,8 @@ OWL 2 DL推論が可能な[HermiT](http://www.hermit-reasoner.com/)を内包す�
   - 現在，北海道庁との連携の議論が進んでおり，継続的な開発と社会実装が見込まれます．
 
 ## リファレンス
-- Shusaku Egami, Yasunori Yamamoto, Ikki Ohmukai, Takashi Okumura: CIRO: COVID-19 Infection Risk Ontology, PLOS ONE, 18(3):e0282291, pp.1-18, 2023 ([Open Access](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0282291))
-- 江上周作，山本泰智，大向一輝，奥村貴史: オントロジーを用いたCOVID-19感染リスク行動の推論，第56回人工知能学会セマンティックウェブとオントロジー研究会, SIG-SWO-056-16 (2022)[[J-STAGE]](https://doi.org/10.11517/jsaisigtwo.2022.SWO-056_16)
+- Shusaku Egami, Yasunori Yamamoto, Ikki Ohmukai, Takashi Okumura: CIRO: COVID-19 Infection Risk Ontology, PLOS ONE, 18(3):e0282291, pp.1-18 (2023) [[Open Access](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0282291)]
+- 江上周作，山本泰智，大向一輝，奥村貴史: オントロジーを用いたCOVID-19感染リスク行動の推論，第56回人工知能学会セマンティックウェブとオントロジー研究会, SIG-SWO-056-16 (2022) [[Open Access]](https://doi.org/10.11517/jsaisigtwo.2022.SWO-056_16)
 
 ## ライセンス
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><a xmlns:cc="http://creativecommons.org/ns#" href="https://profile.idease.info/" property="cc:attributionName" rel="cc:attributionURL">江上周作</a>，山本泰智，大向一輝，奥村貴史 作『<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Patient Locational Ontology-based Data (PLOD)</span>』は<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">クリエイティブ・コモンズ 表示 4.0 国際 ライセンス</a>で提供されています。
